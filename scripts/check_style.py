@@ -41,25 +41,57 @@ def sentences(text):
 
 
 def collect(note):
-    """검사 대상 한국어 문자열을 (위치, 내용) 목록으로 모은다."""
+    """검사 대상 한국어 문자열을 (위치, 내용) 목록으로 모은다.
+    회차 노트 구조가 바뀌어도 견디도록, 문자열이 아닌 값은 건너뛴다."""
     items = []
+
+    def add(where, val):
+        if isinstance(val, str) and val.strip():
+            items.append((where, val))
+
     for k in ("title_ko", "hook"):
-        if note.get(k):
-            items.append((k, note[k]))
+        add(k, note.get(k))
+
     for t in note.get("tldr") or []:
-        items.append(("tldr", t))
+        if isinstance(t, dict):
+            add("tldr.point", t.get("point"))
+            add("tldr.note", t.get("note"))
+        else:
+            add("tldr", t)
+
+    ii = note.get("issue_insight") or {}
+    add("issue_insight.summary", ii.get("summary"))
+    for kind in ("build", "signal"):
+        for b in ii.get(kind) or []:
+            if isinstance(b, dict):
+                add(f"issue_insight.{kind}.title", b.get("title"))
+                add(f"issue_insight.{kind}.detail", b.get("detail"))
+
     for i, s in enumerate(note.get("sections") or []):
-        for k in FIELDS:
-            if s.get(k):
-                items.append((f"sec{i+1}.{k}", s[k]))
+        n = i + 1
+        for k in ("heading_ko", "summary", "insight", "signal", *FIELDS):
+            add(f"sec{n}.{k}", s.get(k))
+        for c in s.get("author") or []:
+            add(f"sec{n}.author", c.get("claim"))
+            add(f"sec{n}.author.evidence", c.get("evidence"))
+        for c in s.get("experts") or []:
+            add(f"sec{n}.expert({c.get('who','')})", c.get("claim"))
+            add(f"sec{n}.expert.role", c.get("role"))
+            add(f"sec{n}.expert.evidence", c.get("evidence"))
+        for c in s.get("cases") or []:
+            add(f"sec{n}.case({c.get('name','')})", c.get("what"))
+            add(f"sec{n}.case.scale", c.get("scale"))
+            add(f"sec{n}.case.note", c.get("note"))
+        for t in s.get("notes") or []:
+            add(f"sec{n}.term({t.get('term','')})", t.get("plain"))
+        # 옛 판본 호환
         for t in s.get("terms") or []:
-            if t.get("plain"):
-                items.append((f"sec{i+1}.term({t.get('en','')})", t["plain"]))
-        for p in s.get("players") or []:
-            if p.get("what"):
-                items.append((f"sec{i+1}.player({p.get('name','')})", p["what"]))
+            add(f"sec{n}.term({t.get('en','')})", t.get("plain"))
+        for pl in s.get("players") or []:
+            add(f"sec{n}.player({pl.get('name','')})", pl.get("what"))
+
     for f in note.get("for_later") or []:
-        items.append(("for_later", f))
+        add("for_later", f)
     return items
 
 
@@ -111,7 +143,9 @@ def audit(path, as_text=False):
 
         # 용어 풀이, 회사 한 줄 소개, 제목은 사전 항목에 해당해서
         # 명사구로 끝나는 것이 자연스럽다. 지침도 헤더와 목록을 예외로 둔다.
-        is_entry = ("term(" in where) or ("player(" in where) or where == "title_ko" or where.startswith("목록")
+        is_entry = (("term(" in where) or ("player(" in where) or ("case(" in where)
+                    or where.endswith(".role") or where.endswith(".scale")
+                    or where.endswith(".title") or where == "title_ko" or where.endswith(".heading_ko") or where.startswith("목록"))
         for s in sentences(text):
             core = re.sub(r"[.!?\"')\]]+$", "", s).strip()
             if not core or len(core) < 6:
