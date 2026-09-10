@@ -1,0 +1,155 @@
+{
+  "index": "18",
+  "title_en": "Weekly Health Tech Reads 3/1/26",
+  "subtitle": "AI 파괴에 대한 단상, 쏟아진 VBC / MA 실적 발표, 비상장으로 가는 Enhabit, 어느 연구에서 고전한 ChatGPT Health, 그리고 더 많은 소식",
+  "sections": [
+    {
+      "heading_en": "",
+      "body": "👋 특이점 2026년의 3개월 차로 접어드는 지금, 일요일마다 전해 드리는 헬스케어 뉴스 정리에 오신 것을 환영한다. 이번 호는 헬스케어 이노베이션 업계의 또 한 번 분주했던 한 주를 다룬다. 여러 VBC / MA 기업의 4분기 실적 시즌이 마무리됐고, 헬스케어가 가장 아끼는 불평분자도 함께였다. 2027 Advance Notice를 두고는 실적 시즌 초반과 눈에 띄게 다른 반응들이 나왔다. Alignment CEO와 나눈 대화는 한번 확인해 볼 만하다고 생각한다. 이 회사의 임상 모델과 그것이 어떻게 MA에서 일관된 성과를 만들어 내는지에 대한 흥미로운 통찰이 담겨 있다. 마지막으로, 요즘 쏟아지는 AI 예측 글들을 그냥 지나치기가 어려워서, 어느 Dunkin' Donuts 홍보대사가 내놓은, 내가 제일 좋아하는 AI 사고 리더십 한 편을 공유하려 한다. 즐겁게 읽어 주시길!\n\n- Kevin"
+    },
+    {
+      "heading_en": "Sponsored by: AscendRural",
+      "body": "CMS Rural Health Transformation(RHT) 프로그램은 각 주가 농촌 보건 시스템을 강화하는 방식을 새로 짜고 있으며, 헬스 테크 혁신 기업에게 새로운 기회를 만들어 내고 있다.\n\n주 정부 리더, health plan, 혁신 기업이 참여하는 AscendRural의 3부작 웨비나 시리즈에 함께하자. RHT가 어떻게 틀에서 현장의 임팩트로 옮겨 가는지, 그리고 확장 가능하고 농촌에 바로 적용할 수 있는 솔루션을 만들려면 무엇이 필요한지 살펴본다.\n\n- 2월 26일: RHT에 스타트업 참여시키기\n- 3월 5일: RHT를 뒷받침하는 health plan의 역할\n- 3월 12일: RHT에서의 주 정부 리더십\n\n무료로 등록하기\n\n뉴스레터 스폰서십에 관심이 있다면 알려 주세요!"
+    },
+    {
+      "heading_en": "MUSING: Ben Affleck, the AI abundance / apocalypse, and healthcare",
+      "body": "AI 파괴를 둘러싼 시장 전반의 대화는 이번 주에 절정에 달한 느낌이었다. 주 초에는 Cintrini Research의 2028년발 리포트가 시장을 겁줬고, 이어 Jack Dorsey가 예상되는 AI 생산성 향상을 이유로 자기 회사 Block의 인력을 거의 절반 가까이 선제적으로 감축했다. 아니면 경영 실패 때문일지도 모르겠고. FOBO(Fear Of Being Obsolete)라는 말도 이제 생겼다고 한다. 그런데 그건 이미 몇 년째 커져 오고 있던 것이기도 하다.\n\nCintrini는 지금부터 2년 뒤, 우리가 본질적으로 덜 유쾌한 버전의 Wall-E 속 인간이 되어 있는 시나리오를 효과적으로 그려 낸다. 화이트칼라 일자리는 넘쳐나는 AI 에이전트로 대체되고, 그 에이전트들이 순식간에 일자리의 필요를 없애 버려, 아무도 주택담보대출을 감당할 수 없게 되면서 경제 붕괴가 촉발된다. 설상가상으로 우리 쓰레기를 치워 주는 그 귀여운 로봇은 Cintrini의 세계에는 없는 듯한데, 그건 좀 아쉽다.\n\n내가 보기에 Cintrini의 시나리오는 2028년의 현실을 반영하기보다는 좋은 SF 스릴러 소재가 될 가능성이 더 커 보인다. 다시 현실 세계로 돌아오면, Dunkin' Donuts 브랜드 홍보대사 Ben Affleck이 최근 하필이면 The Joe Rogan Show에서 AI에 대해 내가 들어 본 것 중 가장 흥미로운 관점 하나를 내놓았다. Affleck은 AI가 분명 많은 것을 바꾸겠지만 결국은 Hollywood 같은 산업에 생산성을 높여 주는 도구가 될 것이라고 주장했다. Citadel Securities도 여기에 가세해 Cintrini에 대한 훌륭한 반박문을 썼는데, Affleck과 비슷한 주장을 펴되 경제학자에게 기대할 법한 종류의 데이터로 뒷받침했다. 결론은 AI가 우리 경제가 마주한 역풍을 상쇄하고 GDP 성장률을 2% 안팎으로 유지하기에 딱 충분할지도 모른다는 것이다.\n\n이 대화는 몇 달 전 Financial Times가 만들어 여기저기 돌아다니고 있는 차트와도 비슷한 느낌이다. 여기서 논의되는 잠재적 결과의 범위가 기이할 정도로 넓다는 점을 보여 주는 차트다(FT 차트는 2025년 6월 Dallas Fed 포스트에 실린 차트를 양식화한 버전이다).\n\n출처: Financial Times가 이 Dallas Fed 포스트의 차트를 옮겨 표현한 것\n\n이번 주 대화에서 내가 가장 흥미로웠던 것은 Cintrini식 사고를 헬스케어에, 구체적으로는 2028년까지 이 산업의 노동 투입이 어떻게 바뀔지에 적용해 보는 일이었다.\n\n헬스케어 기업들이 Block식 구조조정을 거치며 'AI 네이티브' 조직이 되는 데 힘을 실으면서 엄청난 규모의 일자리 상실이 일어나는 시나리오는 상상하기 어렵지 않다. 지난 50년간 미국 헬스케어에서 만들어진 마찰을 관리하려고 존재해 온 백오피스 직무는 사실상 전부 자동화하기 딱 좋아 보이지 않는가? 그게 수십만 개인가? 수백만 개인가? 이건 케어 딜리버리와 임상 인력이라는 건드리기 힘든 주제는 꺼내기도 전의 이야기다. 그 사람들은 다 뭘 하게 될까? 사회 안전망 프로그램은 어떻게 굴러갈까? 여기서는 파멸론 시나리오가 아주 손에 잡히는 듯하다.\n\n그런데 동시에, 나는 불과 몇 주 전 이 뉴스레터에서 가장 최근의 고용 보고서에 대해 쓰고 있었다. 헬스케어 일자리가 경제에서 유일하게 꾸준히 늘고 있는 영역이라는 내용이었다. 그런 일이 벌어지는 동안 2025년 헬스케어의 최대 화두 중 하나는 health system들이 RCM 용도로 AI를 빠르게 도입한 것이었고, 그것이 재무 성과 초과 달성(그리고 payer의 부진)을 이끌고 있었다. 그렇다면 이미 일자리 감소의 증거가 보여야 하지 않나? 아니면 그 유명한 영상의학과 의사 사례는 어떤가. 실리콘밸리의 서사 속에서 놀라운 180도 전환을 겪은 직종이다. 10년 사이에 실리콘밸리는 영상의학과 의사를 가장 먼저 없어질 직종으로 보다가 이제는 Jevons Paradox의 대표 사례로 보게 된 듯하다. 영상의학과 의사들은 그 어느 때보다 잘나가는 것으로 보이니 말이다. 물론 그것이 Jevons Paradox의 증거가 아닐 수도 있지만.\n\n전부 아주 혼란스러운 뒤죽박죽이라 머리가 아프다. 한 가지 분명한 게 있다면, 앞으로 세상이 어떤 모습일지 씨름하는 전환의 시기에 우리가 놓여 있다는 것이다.\n\n2028년 헬스케어 고용 그림이 어떤 모습일지 여러분 생각이 궁금하다. 2028년 중반에 노동부 고용 보고서를 본다면, 헬스케어에서 일하는 사람이 지금보다 많아졌을 것 같은가, 적어졌을 것 같은가? 나는 이를 전체와 화이트칼라 대 블루칼라로 나눠 봤다. 그 모든 이동을 함께 따져 보는 게 의미 있다고 생각하기 때문이다. 2028년에 헬스케어 일자리 수는 오늘보다 늘어 있을까, 줄어 있을까?\n\n전체 증가: 화이트칼라·블루칼라 모두 증가\n\n전체 증가: 화이트칼라 증가, 블루칼라 감소\n\n전체 증가: 화이트칼라 감소, 블루칼라 증가\n\n전체 감소: 화이트칼라 증가, 블루칼라 감소\n\n전체 감소: 화이트칼라 감소, 블루칼라 증가\n\n전체 감소: 화이트칼라·블루칼라 모두 감소\n\n내 개인적인 직감: 헬스케어 일자리 총수는 늘어날 것이다. 화이트칼라 일자리가 다소 줄겠지만 블루칼라 일자리의 증가가 그것을 충분히 상쇄할 것이다. 달리 말하면… 나는 GDP 2% 성장 시나리오가 현실화되는 쪽이라고 보지만, 그 아래에서는 초자본주의 사회에서 커지는 불평등에 대한 어려운 질문들과 계속 씨름하게 될 것이다."
+    },
+    {
+      "heading_en": "Public Markets Updates",
+      "body": "이번 주에는 실적 발표 이후 VBC / Medicare Advantage 시장에서 주가가 크게 출렁였다. 아래에서 주요 실적 발표의 핵심 내용을 짚어 보겠다."
+    },
+    {
+      "heading_en": "Public Markets Updates",
+      "body": "Hims가 월요일에 실적을 발표했고, 주가는 한 주 동안 7% 더 떨어졌다. Hims는 지난 몇 주간의 GLP-1 중심 드라마 대부분을 비껴갔고, 대신 오늘날 자사 사업에서 compounded GLP-1이 차지하는 비중이 얼마나 작은지, 그리고 지금 처한 GLP-1 혼란에 대해 얼마나 개의치 않는지를 거듭 강조하는 데 공을 들였다. 해외 성장은 Hims 스토리의 중심축이 되어 가고 있다. 최근 인수들을 발판으로 상위 10개 해외 시장에서 빠르게 확장한 뒤, 그 시장들의 수익성은 나중에 챙기겠다는 계획을 밝혔다. 경영진의 서사를 믿는다면 여기에는 여전히 설득력 있는 이야기가 있다. 이들은 현재 각각 23억 달러와 3억 1,800만 달러인 매출과 조정 EBITDA를 2030년까지 연매출 65억 달러, 조정 EBITDA 13억 달러로 키우겠다고 전망한다. 이번 주에 Slack에 공유했듯이, 식별 정보를 다 지우고 매출 23억 달러에 전년 대비 59% 성장, 조정 EBITDA 마진 14%인 회사가 기업가치 38억 달러 언저리에 거래되고 있다고만 말해 준다면, 나는 훌륭한 투자처럼 보인다고 답할 것이다. 그런데 그 회사가 Hims이고, 최근의 온갖 소동을 겪고도 경영진이 실적 발표에서 SEC 조사를 받고 있다는 사실을 언급하지 않았다고 말해 준다면, 투자자들이 왜 회의적인지 아주 잘 이해가 간다."
+    },
+    {
+      "heading_en": "Public Markets Updates",
+      "body": "Evolent는 강한 성장, 특히 종양학에서의 성장을 발표한 뒤 한 주 동안 25% 올랐다. 종양학 사업은 2026년 Evolent 매출의 65%를 차지할 것으로 예상되는데, 2025년에는 36%에 불과했다. Evolent는 신규 수주가 대단히 많아, 2026년 코호트가 9억 달러의 매출을 낼 것으로 보고 있다. 이전 추정치인 5억 5,000만 달러에서 올린 수치다. 이번 발표에는 Evolent의 접근법이 종양학에서 특히 효과적으로 작동하고 있다는 흥미로운 대목들이 있었다. 오늘날 하나의 종양 유형에 최대 200가지의 서로 다른 케어 경로가 존재할 수 있는 영역이다. ACA 사업은 2026년 Evolent 실적에 뚜렷한 부담 요인이다. 가장 큰 두 개의 거래소 고객이 가입자를 각각 60%, 40% 줄였기 때문이다. VBC, 특히 전문과목 VBC에 관심이 있다면 이 발표를 들어 보길 권한다."
+    },
+    {
+      "heading_en": "Public Markets Updates",
+      "body": "agilon 주가는 2026년 조정 EBITDA 손익분기 달성 경로를 제시한 뒤 31% 올랐다. 2025년 거의 3억 달러에 달했던 손실에서 크게 개선된 것이다. 2025년 내내 대대적인 재계약 작업을 진행했는데, 수익성을 우선하는 자사 접근법과 맞지 않는 MA 가입자 약 5만 명을 떨어냈다는 점도 언급했다. agilon의 3대 고객은 Aetna, Humana, UHC이므로, 2026년에 그 나쁜 리스크를 누가 다시 떠안을지 생각해 보는 것도 흥미롭다."
+    },
+    {
+      "heading_en": "Public Markets Updates",
+      "body": "Alignment Health는 목요일에 실적을 발표했는데, 모든 지표에서 가이던스 상단을 넘어섰음에도 주가는 이번 주에 약 6% 떨어졌다. Alignment는 어려운 MA 시장 전반의 역학에도 불구하고 계속 잘 실행해 내고 있으며, 그 바탕에는 health plan으로서의 케어 매니지먼트 접근법이 있다. 이렇게 일관된 성과를 감안하면 Alignment에 대한 질문은 결국 얼마나 빨리 성장할 수 있는가, 그리고 이 모델이 계속 통할 것인가다. 2027년은 Alignment에 매우 흥미로운 해가 될 것으로 보인다. 시장은 이 회사가 특히 California 밖에서 빠르면서도 수익성 있게 성장할 능력을 입증하기를 기대하고 있다. 금요일 오후에 Alignment CEO John Kao와 이야기를 나눌 기회가 있었는데(인터뷰는 아래 참조), 그는 California 밖에 IPA가 없다는 점이 오히려 그 시장들에서 성과를 내기 더 쉽게 만들어 줄 것이라는 견해를 밝혔다. 그 시장들에서의 Alignment 초기 성과도 이를 뒷받침하는 것으로 보인다. 이 2027년 성장 논의는 계속 지켜볼 만하겠다."
+    },
+    {
+      "heading_en": "Public Markets Updates",
+      "body": "Clover 주가는 이번 주 크게 움직이지 않았다. 2025년 조정 EBITDA 흑자를 달성했고 2026년에는 순이익 흑자를 낼 것으로 전망한다고 밝혔다. 과장이 넘치던 SPAC 시절을 지나오면서 Clover는 점점 더 반대편 해안의 작은 Alignment 서사처럼 보인다. New Jersey에서 MA 플랜으로 성과를 내고 있는데, 그 시장에서 provider-sponsored plan이었던 이력 위에 세워진 것이다. 하지만 New Jersey 밖에서 그 기세를 이어 가는 데는 어려움을 겪었다. 2026년 53% 성장해 가입자 15만 3,000명이 됐지만, New Jersey가 Clover 가입자의 약 12만 7,000명을 차지한다. 눈에 띄는 가입자가 있는 유일한 다른 주는 Georgia로, 약 1만 명에서 약 2만 2,000명으로 늘었다. Clover의 기술 플랫폼 Counterpart Health는 여전히 서사의 일부이지만, 애널리스트가 '2026년 가이던스에 기여하느냐'고 묻는데 답이 '아니다'라면, Counterpart 모델이 공개적으로 발표된 지 거의 2년이 지난 지금 그 기회를 두고 크게 흥분하기는 어렵다."
+    },
+    {
+      "heading_en": "Public Markets Updates",
+      "body": "Privia Health는 견조한 성과 행진을 이어 갔고 이번 주 주가가 약 10% 올랐다. Privia의 실적 발표는 비교적 특별할 게 없었고, 질문은 대체로 Privia가 여기서 어떻게 더 성장할 것인지에 집중됐다. Q&A에서는 Privia가 AI를 활용할 준비가 어떻게 되어 있는지, Evolent Care Partners 인수와 다른 시장에서 오는 성장 기회, 그리고 MA에서의 공동 리스크 부담에 대한 Privia의 접근법을 두고 흥미로운 대화가 오갔다."
+    },
+    {
+      "heading_en": "Public Markets Updates",
+      "body": "GoodRx 주가는 2026년 매출 가이던스가 예상보다 낮아 18% 떨어졌다."
+    },
+    {
+      "heading_en": "Public Markets Updates",
+      "body": "Teladoc 주가는 특히 BetterHelp 사업의 광범위한 역풍에도 견조한 분기 실적에 힘입어 15% 뛰었다."
+    },
+    {
+      "heading_en": "Public Markets Updates",
+      "body": "이번 주 Slack에는 Option Care Health, Universal Health Services, Fresenius, Acadia Healthcare에 대한 업데이트도 썼다."
+    },
+    {
+      "heading_en": "HTN Radio: An interview with Alignment's John Kao",
+      "body": "목요일 오후 Alignment 실적 발표에 이어 금요일에 John Kao와 이야기를 나눌 기회가 있었다. 대화는 Alignment의 임상 모델에 집중됐다. 프로바이더 네트워크와 어떻게 협업하는지, 그리고 Care Anywhere 모델을 통해 어떻게 방문형 랩어라운드 서비스를 제공하는지에 관한 것이다. Medicare Advantage 플랜을 문화적으로는 그 무엇보다 케어 딜리버리 조직에 가깝게 느껴지도록 규정하는 흥미로운 틀이다. 이 접근법의 매력은 쉽게 알 수 있고, 업계의 더 많은 곳이 이 방향으로 움직일지 지켜보고 싶다.\n\nAlignment Healthcare가 Medicare Advantage에서 거둔 성공 뒤에 있는 임상 모델 | John Kao\n\n링크: Apple | Spotify | YouTube"
+    },
+    {
+      "heading_en": "Other episodes this week:",
+      "body": "경쟁과 더 나은 성과를 위해 ACO를 다시 설계하기 | Liz Fowler and Purva Rawal. ACO를 지원하기 위해 Fowler와 Rawal이 최근 내놓은 제안들에 관한 좋은 대화."
+    },
+    {
+      "heading_en": "Other episodes this week:",
+      "body": "이중수급 인구를 위한 재택 케어의 설계와 전달 | Oren Shatken + Romanos Fessas. Martin이 Jukebox Health 경영진과 LTSS 인구를 위한 재택 개입에 대해 이야기를 나눴다."
+    },
+    {
+      "heading_en": "Other episodes this week:",
+      "body": "The Grand Roundup: 2026년 2월 23일"
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "재택 의료 제공업체 Enhabit이 비상장 회사로 전환한다. PE 회사 Kinderhook Industries가 약 11억 달러에 인수한다. Enhabit은 2025년에 매출 10억 6,000만 달러, EBITDA 1억 700만 달러를 냈다. Enhabit은 2021년 Encompass에서 분사한 이후 상당한 역풍을 맞아 왔다. 수가 변화와 Medicare Advantage의 성장에 적응하는 데 어려움을 겪었다. 이 딜에 대한 애널리스트 논평이 여기 작동하는 역학을 잘 짚어 주는 것 같다 — Enhabit 주주와 Kinderhook 모두에게 괜찮은 윈윈이라는 것이다. Enhabit 주주는 단기적 이익을 얻고, Kinderhook 역시 앞으로 몇 년에 걸쳐 반등할 것으로 보이는 시장에서 장기적 상방을 확보한 듯하다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "DOJ가 Columbus에서의 계약 방식을 두고 OhioHealth를 제소하고 있다. DOJ는 OhioHealth의 계약 방식 때문에, 구체적으로는 anti-tiering / steering 조항과 all-or-nothing 계약의 사용 때문에 보험사가 대안적인 플랜 설계를 제시할 방법이 없다고 주장한다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "2027 Advance Notice에 대한 의견이 이번 주에 제출됐고, 많은 조직이 소셜 미디어에 자신들의 의견을 올렸다. 나는 아직 여러 건을 살펴보는 중이지만, Better Medicare Alliance의 의견서는 그 톤 때문에 한번 훑어볼 만해 보였다 — 프로그램 무결성과 관련한 일부 변화에는 지지를 표하면서도, 제안된 실효 성장률과 그것이 확정될 경우 수급자에게 미칠 부정적 영향에 대해서는 우려를 밝힌다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "CMS가 사기를 단속하기 위해 취할 새로운 조치들을 발표했다. 여기에는 최근 몇 달간 전국적 주목을 받아 온 프로그램 무결성과 사기 문제를 Minnesota주가 해결하는 동안 분기별 연방 지급금 2억 5,950만 달러를 유보하는 조치가 포함된다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Allina Health의 Minneapolis Heart Institute와 Innovaccer가 Innovaccer의 Story Health 플랫폼을 이용해 환자를 위한 가상 심부전 프로그램을 출범하는 파트너십을 발표했다. CMMI의 새 ACCESS 모델이라는 맥락에서 이런 파트너십을 생각해 보면 흥미롭다. 내가 CMMI라면 딱 이런 유형의 파트너십이 발표되기를 바랄 것 같기 때문이다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Oregon이 Medicaid의 어려운 비용 방정식과 계속 씨름하는 가운데, Providence Medical Group과 CareOregon이 2월 15일자로 Providence의 전문과목 클리닉 서비스로 보내는 의뢰를 중단하기로 합의했다. Portland 광역권 최대 Medicaid 플랜인 CareOregon은 가입자들이 여전히 케어를 받을 수 있을 것이라는 자신감을 표했다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "VBC 인에이블먼트 플랫폼 Honest Health가 1억 4,000만 달러를 유치했다. NewSpring Healthcare가 라운드를 주도했고 Rubicon Founders, Oak HC/FT, Welsh Carson 등 헬스케어의 큰 이름들이 참여했다. Honest는 2021년 Buffalo, NY의 한 IPA와의 파트너십으로 시작하고 2022년 BCBS Michigan과의 파트너십으로 Michigan에 확장한 이후 몇 년간 비교적 조용했다. 보도자료를 보면 Honest의 초점이 PCP 중심 접근에서 health system 인에이블먼트 쪽으로 옮겨 가고 있는 것으로 보이며, 이는 지켜볼 만하다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "뇌 건강을 위한 center-of-excellence 모델 Salma Health가 8,000만 달러를 유치했다. Mubadala Capital과 ARCH Venture Partners가 라운드를 주도했다. Salma는 우울증 치료를 위한 새로운 TMS 요법인 SAINT Neuromodulation System을 개발한 Magnus Medical과 관계가 있는 것으로 보인다. 이것이 Salma Health 클리닉이 제공하는 서비스의 핵심 구성 요소로 보인다. Salma는 현재 California에 네 곳의 클리닉을 두고 있으며 미국 전역으로 확장할 계획이다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "프로바이더 진료소를 위한 행정 플랫폼 Third Way가 1,500만 달러를 유치했다. Health Velocity Capital이 라운드를 주도했다. Third Way는 합쳐서 연간 500만 명의 환자를 보는 진료소들을 지원하고 있으며, 프런트 오피스 행정 비용을 최대 40% 줄이고 환자 방문을 11% 늘리며 전화 대기 시간을 절반으로 줄이고 있다고 밝혔다. Astrana Health와 California 기반 MSO인 MedPoint Management가 앞서 Third Way에 750만 달러를 투자한 바 있다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "복리후생 컨설턴트가 성과 좋은 health plan을 찾도록 돕는 플랫폼 Handl Health가 1,420만 달러를 유치했다. Arthur Ventures가 라운드를 주도했다. Handl은 쇼퍼블 시술에 대한 소비자 비용을 22% 줄였고, 지난 2년간 10억 달러의 헬스케어 지출에서 총 1억 1,300만 달러를 절감했다고 보고한다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "재택 소아 치료 모델 Coral Care가 1,300만 달러를 유치했다. Haymaker Ventures가 라운드를 주도했다. Coral Care는 현재 400명이 넘는 OT, PT, SLP로 구성된 임상 네트워크를 갖추고 있다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "인지 건강 평가를 위한 디지털 헬스 도구 BrainCheck가 1,300만 달러를 유치했다. Next Coast Ventures가 라운드를 주도했고 UPMC Enterprises와 S3 Ventures도 참여했다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "Medicare를 위한 애드보커시 모델 Baba가 650만 달러를 유치했다. General Catalyst가 라운드를 주도했다. Baba는 최근 훨씬 큰 라운드를 발표한 또 다른 스타트업 Solace와 개념적으로 비슷하게 들린다. Baba의 웹사이트에 따르면 원격의료 의사가 초진을 통해 의학적 필요성을 확인한 뒤 환자를 애드보킷에게 인계한다."
+    },
+    {
+      "heading_en": "Quote of the Week",
+      "body": "이번 주 실적 발표에서 더 흥미로웠던 요소 중 하나는 최근의 2027 Advance Notice를 대하는 agilon, Alignment, Clover의 톤 변화였다. 세 곳 모두 트렌드 숫자가 더 높았다면 좋았겠지만, 2027 Final Notice가 Advance Notice에서 크게 올라가지 않더라도 2027년 성과를 내기에 좋은 위치에 있다고 느낀다고 밝혔다.\n\nClover CEO Andrew Toy가 애널리스트 Q&A에서 이를 표현한 방식은 이렇다:\n\n…Advance Notice에 대해 말씀드리자면, 논평에서 말씀드린 대로 트렌드를 기준으로 볼 때 저희는 그것이 사실 어느 정도 합리적인 트렌드라고 생각합니다. 업계가 더 높은 수준의 트렌드를 기대했다는 것은 알고 있고, CMS는 낭비와 남용을 걷어내고 더 최근의 데이터를 보는 등 여러 조치를 했습니다. 지금도 기회는 있다고 보고 레이트가 조금 위로 움직일 가능성도 있다고 보지만, 저희가 거기에 기대고 있는 것은 결코 아닙니다.\n\n그래서 높은 수준의 벤치마크 레이트에 대해서는, 아마 다른 곳들은 더 높은 레이트를 기대했겠지만, 저희는 그것이 꽤 단순명료하고 합리적이라고 봅니다.\n\n출처: Clover의 2025년 4분기 실적 발표에서 Clover CEO Andrew Toy\n\n이 발언들에 함축된 게임 이론이 나에게는 흥미롭다. CMS에게도, 여러 Medicare Advantage 플랜에게도 그렇다. 몇 주 전 대형 사업자들은 한목소리로 Advance Notice 레이트에 대한 실망을 표했다. 이제 Medicare Advantage 생태계의 작고 스타트업다운 '인서전트' 계층은 자신들의 모델이 레이트 인하로부터 스스로를 지켜 주기 때문에 그 레이트로도 괜찮을 것이라고 사실상 말하고 있다. 이는 변화로 인해 특별히 큰 영향을 받지는 않을 것이라고 시사하는 듯했던 대형 사업자들의 화법과 갈린다.\n\nCMS 지도부가 다른 자리(예: ACCESS)에서 시장 내 경쟁을 더 끌어내기 위해 '인서전트' 모델을 지원한다는 구상을 공개적으로 논해 온 점을 감안하면, 실적 시즌 동안 '인서전트' 그룹이 CMS의 변화에 덜 비판적으로 나온 것은 흥미롭다.\n\n물론, 투자자에게 내세울 유일한 서사가 Medicare Advantage에서의 성공인 소형 상장사라면 그것을 해낼 수 있다는 자신감을 표현해야만 한다. 하지만 당신이 CMS 지도부라면, 그 실적 발표에서 인용구를 잘라내며 '다들 뭘 그렇게 화내는 거지?'라고 말하고 있을 것 같다. 몇 주 뒤 Final Notice를 준비하는 지금, 또 하나의 흥미로운 데이터 포인트다."
+    },
+    {
+      "heading_en": "What I'm Reading",
+      "body": "ChatGPT Health performance in a structured test of triage recommendations. Ashwin Ramaswamy 외\n\nMount Sinai 연구진이 Nature Medicine에 낸 글은 일련의 임상 증례에 ChatGPT Health가 어떻게 응답했는지를 두고 우려를 짚어 냈다. 일부 임상의는 그것이 '불필요한 위해와 사망으로 충분히 이어질 수 있다'고 걱정했다. 그 리스크가 있다는 건 분명하고, 그래도 내 아이가 독감인지 ChatGPT Health에 물어볼 때 그 점을 유념하겠다."
+    },
+    {
+      "heading_en": "What I'm Reading",
+      "body": "AI, Equity, and the Workforce That Makes Whole-Person Care Possible. Janine Kundsen, Soshanah Brown\n\nHTN에 실린 이 게스트 기고는 세이프티넷 환경에서 AI 도입을 검토할 때 고려해야 할 인력 관련 사안들을 짚는다. 몇 주 전 Toyin Ajayi와 Andy Slavitt의 글 위에 얹히는, 이 대화에 대한 좋은 보탬이다."
+    },
+    {
+      "heading_en": "What I'm Reading",
+      "body": "One Step Forward And One Step Back For US Health. Darshak Sanghavi, Jake Segal, Caroline Whistler\n\nARPA-H의 HEROS 프로그램에 대한 Health Affairs의 흥미로운 글이다. 연방 재정의 조류 변화로 끊겨 버린 흥미로운 성과 기반 모델의 또 하나의 사례다. 여기서 답이 무엇인지는 잘 모르겠지만, 이런 흥미로운 프로그램들이 시작과 중단을 반복하는 것은 진짜 난제로 보인다."
+    },
+    {
+      "heading_en": "What I'm Reading",
+      "body": "Accountable Health Communities Model - Final Evaluation Report. RTI International\n\nCMMI가 Accountable Health Communities 모델의 최종 평가 보고서를 냈다. 요약본이 결과를 잘 개괄해 주는데, '건강의 상류 동인'에 집중하면 입원과 응급실 이용을 줄이면서 비용 절감으로도 이어질 수 있음을 시사한다."
+    },
+    {
+      "heading_en": "What I'm Reading",
+      "body": "Issue 33: Evidence of Administrative Complexity: Health Insurance Claim Denials in Massachusetts. Massachusetts Health Policy Commission\n\nMassachusetts의 완전보험형 상업 health plan 데이터를 살펴본 결과, 2024년 보험사들이 상업 청구의 평균 20.4%를 거절한 것으로 나타났다."
+    },
+    {
+      "heading_en": "What I'm Reading",
+      "body": "Infinite Healthcare: What's It Worth? Jay Rughani, Jane Rhee, Julie Yoo\n\na16z 팀이 임상 AI의 미래에 대해 어번던스 관점의 글을 썼다. 선제적 케어가 늘면 사후 대응적 케어가 줄어들고, 그 결과 '우리가 지금까지 만든 그 어떤 것보다 달러당 더 많은 건강'을 전달하는 개선된 헬스 시스템이 될 것이라는 주장이다. 나는 이 글의 일부에는 동의하지만, 이 전환을 거치면서 GDP 대비 헬스케어 지출 비중이 떨어질 것이라는 차트에는 이견을 제기하고 싶다. 나는 그 반대가 일어난다는 데 가볍게 걸겠다. 다만 전체 논지에 대해서는, 그 과정에서 쓴 돈당 더 많은 건강을 얻고 있는 한 그것은 여전히 좋은 일일 수 있다. 그 단서야말로 앞으로 몇 년간 업계에서 더 큰 논쟁거리 중 하나가 될 것으로 보인다 — 이 선제적 케어의 물결 중에서 실제로 달러당 더 나은 건강으로 이어지는 것은 얼마나 될까?"
+    }
+  ]
+}

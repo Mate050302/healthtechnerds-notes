@@ -1,0 +1,127 @@
+{
+  "index": "42",
+  "title_en": "Weekly Health Tech Reads: 5/17/26",
+  "subtitle": "PhRMA의 접근성 논거와 의약품의 TAM에 대한 단상, 실적 발표로 급락한 HCAT·HIMS·DOCS, ACCESS에 반발하는 디지털 헬스, 그 밖의 소식",
+  "sections": [
+    {
+      "heading_en": "Sponsored by: Lorikeet",
+      "body": "스폰서: Lorikeet\n\nEucalyptus는 규제 체계가 서로 다른 네 개 국가에 걸쳐 환자 지원을 확장해야 했을 때, AI 고객 지원 플랫폼인 Lorikeet을 도입했습니다.\n\nLorikeet은 단순한 문의 차단을 넘어 처방, 사전 승인, 베네핏 확인, 보험 클레임, 케어 코디네이션을 처음부터 끝까지 처리하고, 사람의 판단이 필요할 때는 환자 컨텍스트와 함께 에스컬레이션합니다.\n\nEucalyptus는 기존 팀 그대로 환자 물량을 4배로 늘렸고, 티켓의 60~70%를 사람 개입 없이 해결했으며, CSAT를 10포인트 높였습니다.\n\nEucalyptus, Talkspace, SonderMind 등의 고객 지원을 뒷받침하는 Lorikeet에 대해 자세히 알아보기\n\n뉴스레터 스폰서십에 관심이 있으시면 알려 주세요!"
+    },
+    {
+      "heading_en": "MUSING: Musing on PhRMA’s take and the TAM for drug development",
+      "body": "제약 산업의 무역 협회인 PhRMA가 이번 주 흥미로운 백서를 공개했습니다. 여러 국가에서 신약에 대한 접근성이 어떠한지를 조명하면서, 미국의 MFN 가격제가 나쁜 아이디어라는 주장을 폅니다. 이 주장을 부각하기 위해 만든 차트는 보기 좋은 시각 자료인데, 미국이 신약의 88%에 접근할 수 있고 이는 다른 나라들의 대략 두 배임을 보여 줍니다:\n\n출처: PhRMA 백서\n\n자, 여러분은 어떨지 모르겠지만, 저는 저 차트를 보면 적어도 이 지표에서는 제가 어느 헬스케어 시스템을 선호할지 꽤 분명합니다. 새롭고 혁신적인 의약품에 접근할 수 있는 쪽입니다. 물론 여기서 우리는 트레이드오프라는 얽히고설킨 그물, 구체적으로는 그 새로운 의약품의 비용을 어떻게 관리할 것인가의 문제로 들어가게 됩니다. PhRMA가 이 주제를 이야기하는 이유는 MFN 가격제에 맞서 싸우고 있기 때문이며, 위 차트가 보여 주듯 미국이 다른 나라들처럼 의약품 가격을 매기면 생명을 살리는 약에 대한 접근을 잃을 위험이 있다고 주장합니다.\n\nPhRMA가 자기 시대의 결정적 전투를 치르고 있다고 느끼는 동안, 테크 커뮤니티는 X에서 신약 개발의 TAM 기회를 두고 군침을 흘리고 있습니다. 요즘 점점 더 자주 보게 되는 흥미로운 정서인데, 특히 Keytruda 같은 블록버스터 의약품의 연 매출을 AI 랩이나 AI 기반 컨설팅과 비교하며 눈독을 들이는 사람들이 그렇습니다:\n\n저는 위 TBPN 클립에서 Asparouhov가 표현한 기저의 정서에 대체로 동의합니다. AI가 신약 개발을 가속할 기회를 제시하면서 자본이 제약 쪽으로 회전하고 있다는 것입니다. 헬스케어 서비스 투자자들과 나누는 대화도 점점 이 방향으로 움직이는 듯합니다. 라이프 사이언스에 직접 투자하지 않더라도, 파생적인 플레이로 라이프 사이언스 인프라·이네이블먼트에 투자하는 것을 들여다보고 있을 가능성이 큽니다. 그 증거로 이번 주 가장 큰 펀딩 라운드 세 건(Forus, BranchLab, Tokaido)을 보십시오.\n\n저는 위 PhRMA 차트를 제약에 대한 기업가적 관점과 나란히 놓고 보는 것이 흥미롭습니다. 한쪽에는 신약 개발의 TAM이 AI 랩의 TAM보다 크다고 이야기하는 기업가들이 있습니다. 이는 거품이 끼었던 ZIRP 시절 디지털 헬스와 버추얼 케어를 둘러싸고 테크 커뮤니티에 감돌던 에너지와 무척 비슷하게 느껴집니다. 이 나라의 헬스케어를 바꾸겠다는 들뜬 아이디어, 풀기 어려운 문제를 해결하면서 재정적으로도 잘되리라는 기대로 테크 인재를 끌어들이던 모습 말입니다. 다른 한쪽에는 우리가 이 약들에 지불하는 가격에 나라 전체가 주춤하는 가운데, 그 TAM을 지켜 내기 위해 사실상 싸우고 있는 제약사 협회가 있습니다. 결국 저에게는 우리의 가장 뛰어난 인재들이 암 치료 같은 문제에 매달리는 것이 좋은 일로 보입니다. 그리고 재정적 성과에 대한 기대는 그런 일이 일어나는 데 따라붙는 요소라고도 생각합니다. 바로 거기에 트레이드오프가 있습니다.\n\n여러 면에서, 제약 혁신의 개발을 어떻게 재원 조달하고 그 접근에 어떻게 값을 치를 것인가라는 질문은 앞으로 이 나라 헬스케어의 결정적 질문처럼 느껴집니다. 언제나 그렇듯 아이언 트라이앵글은 이것이 어떻게 전개될지에 대한 유용한 렌즈를 제공합니다. 예를 들어 비용이 계속 올라가기만 할 수는 없다고 가정하고, 또 어떤 정치인도 제약 혁신의 속도를 늦추고 싶어 하지 않으리라고 가정하면, 필연적인 답은 신약에 대한 접근이 줄어들리라는 것입니다."
+    },
+    {
+      "heading_en": "Q1 EARNINGS WRAP-UP: Earnings season slows down with some major misses",
+      "body": "이번 주에는 몇몇 뒤늦은 기업들이 실적을 발표했는데, 이들은 헬스케어 전반의 서로 다른 내러티브에 대해 상당히 흥미로운 전략적 업데이트 세 가지를 제공했습니다. D2C 롱제비티 플레이(Hims), 헬스케어 엔터프라이즈를 위한 AI 플레이(Health Catalyst), 그리고 의사를 대상으로 한 제약 광고 플레이(Doximity)입니다. 세 곳 모두 각자의 사업에 대해 투자자들에게 고유한 우려 요인을 던지면서 주가가 한 주 동안 10% 넘게 빠졌습니다. 들어가 봅시다:"
+    },
+    {
+      "heading_en": "Q1 EARNINGS WRAP-UP: Earnings season slows down with some major misses",
+      "body": "Hims & Hers 주가는 이번 주 14% 하락했습니다. Hims가 매출 가이던스를 올리면서 동시에 2026년 EBITDA 가이던스를 낮춘 혼재된 실적 보고 때문입니다. 이번 분기에는 컴파운딩 GLP-1에서 브랜드 GLP-1로 방향을 틀면서 2,800만 달러의 구조조정 비용도 발생했는데, 다시 살아난 Novo와의 파트너십을 통한 전환이었습니다. Hims는 Q&A에서 브랜드 제품 고객과 컴파운딩 제품 고객의 유닛 이코노믹스가 \"대체로 비슷하다\"고 언급했는데, 액면 그대로는 저에게 그다지 말이 되지 않습니다. Hims는 단기적인 출렁임에도 불구하고 장기 목표(2030년까지 매출 65억 달러 이상, 조정 EBITDA 13억 달러 이상)는 그대로라고 보는 듯합니다."
+    },
+    {
+      "heading_en": "Q1 EARNINGS WRAP-UP: Earnings season slows down with some major misses",
+      "body": "Health Catalyst는 매출과 조정 EBITDA가 가이던스를 웃돌았음에도 이번 주 약 20% 하락했습니다. 현재 시가총액은 8,800만 달러에 불과한데, 실적 콜에서 HCAT가 인프라를 제공하던 레거시 플랫폼에서 새로운 AI 중심 애플리케이션 제공으로 넘어가는 대대적인 전략적 전환이 진행 중임이 부각되었기 때문입니다. HCAT는 고객사들이 자체 인프라로 옮겨 가면서 전환 기간 동안 5,200만 달러의 매출이 위험에 놓여 있지만, 그럼에도 대부분의 고객사를 새로운 애플리케이션 레이어의 고객으로 유지할 것으로 기대하고 있습니다. 앞으로 HCAT에 무슨 일이 일어나는지 지켜볼 만합니다."
+    },
+    {
+      "heading_en": "Q1 EARNINGS WRAP-UP: Earnings season slows down with some major misses",
+      "body": "Doximity 주가는 2026년 4분기 실적을 발표한 뒤 이번 주 크게 두들겨 맞았습니다. 제약 광고 시장의 부진과 AI 투자 확대로 인한 마진 하락을 보고하며 28% 떨어졌습니다. AI 지출이 늘면서 매출총이익률은 2% 하락했고, 조정 EBITDA 마진은 전년 대비 5% 떨어졌습니다. 그럼에도 Doximity는 AI 플레이에 자신감을 보이며, 프로바이더 \"유료 검색\" 시장에 진입하는 것이 회사에 수십억 달러 규모의 새로운 TAM이라고 언급했고, 한 대목에서는 AI가 구글이 옐로 페이지에 했던 것과 같은 역할을 하리라고 시사했습니다. 주가는 가파르게 떨어졌지만 Doximity가 이번 분기에도 여전히 45%의 조정 EBITDA 마진과 1억 700만 달러의 잉여현금흐름을 만들어 냈다는 점은 짚어 둘 만합니다.\n\n여담이지만, Doximity는 이제 OpenEvidence 가치의 약 30% 수준인데, 이번 분기에 만들어 낸 잉여현금흐름이 OpenEvidence가 2025년에 올린 매출과 맞먹습니다. 비상장 시장과 상장 시장이 가치를 다르게 매긴다는 것은 이해하지만, 그래도 저에게는 그저 우스워 보입니다. 저 두 밸류에이션 중 하나는 어긋나 있는 것 같습니다."
+    },
+    {
+      "heading_en": "Q1 EARNINGS WRAP-UP: Earnings season slows down with some major misses",
+      "body": "이번 주의 다른 실적 커버리지는 여기 Slack 디스커션에서 확인하시고, 주중 BofA에서 열린 상장기업 발표에 대한 Martin의 커버리지도 함께 보십시오."
+    },
+    {
+      "heading_en": "CHART OF THE WEEK: Healthcare: America’s Jobs Program",
+      "body": "Bijan Salehizadeh가 이번 주 X에서 이 점을 짚으며, 가장 최근 고용 보고서를 다룬 WSJ 게시물의 데이터를 조명했습니다. 헬스케어 산업을 기본적으로 이 나라의 일자리 프로그램으로 보고, 거기서 따라 나오는 후속 함의를 생각해 보는 것은 흥미로운 사고 실험이라고 생각합니다. 우리가 헬스케어 비용을 GDP 대비 비중으로 줄이는 데 진지하다면, 그 절감이 어디에서 나올지 저는 말씀드릴 수 있습니다. 그리고 실업률 급등의 여파를 감당하고 싶어 하는 사람이 있을지는 잘 모르겠습니다."
+    },
+    {
+      "heading_en": "A QUOTE TO PONDER: Digital health pushes back on ACCESS",
+      "body": "Endpoints와 Stat 모두 이번 주 디지털 헬스의 중진들이 ACCESS를 두고 내놓은 견해를 다루며, 이 프로그램이 핵심을 놓치고 있다고 지적했습니다. Hinge Health의 CEO Daniel Perez는 제가 지금까지 본 것 중 가장 직접적인 공개 질책을 내놓으며 Stat에 이렇게 말했습니다:\n\n\"그것은 성과를 개선하지 못할 것이고, 경험을 개선하지도 못할 것이며, 비용을 줄이는 일은 더더욱 없을 것입니다. 그리고 지금 짜여 있는 방식대로라면 디지털 헬스 기업들은 사실상 임상적인 사람의 감독을 전부 걷어내야 합니다.\"\n\n출처: Hinge Health CEO Daniel Perez; Stat News 인용\n\n말씀드리자면, ACCESS에 예측 시장이 있다면 저는 위에서 Perez가 시사한 것이 유력한 결과라고 봅니다. 미국 헬스케어의 전반적인 궤적을 감안하면 그것은 늘 안전한 베팅처럼 보입니다. 심지어 지금 헬스케어의 상태를 감안하면, 지난 10년간 붐이 일어난 이래 디지털 헬스 산업이 크게 봐서 만들어 낸 임팩트에 대해서도 같은 일반론을 펼 수 있다고 생각합니다. 이런 일들의 속성이 그렇습니다.\n\n그렇긴 해도, CMMI와 ACCESS에 참여하는 150곳 이상의 기업들은 ACCESS가 성과나 경험을 개선하지 못하고 비용도 줄이지 못하리라는 것이 이미 정해진 결론이라는 데 다르게 생각할 것입니다. 그래서 저는 ACCESS가 아주 흥미로운 실험이라고 봅니다. 궁극적으로 성공하든 아니든, 규제 당국이 이런 전선에서 밀어붙이고 있다는 것은 좋은 일이라고 생각합니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "OpenAI가 이번 주 OpenAI Deployment Company를 출범시키며, \"Forward Deployed Engineers\"를 활용해 엔터프라이즈의 AI 도구 도입을 돕는 컨설팅 회사를 세운 Anthropic에 합류했습니다. 열아홉 곳의 투자사와 컨설팅 회사가 참여하기로 했고, 그중 다수는 Welsh Carson을 비롯해 헬스케어 관련 투자를 갖고 있습니다. AI에서 벌어지는 모든 일의 결과 중 하나를 제가 확신한다면, 그것은 우리가 컨설팅의 황금기로 들어서고 있다는 것입니다. 지난 몇 주간 헬스케어 상장사 실적에서 AI의 가장 뚜렷한 임팩트는 AI 컴퓨트 비용 때문에 EBITDA 마진이 5% 떨어지면서 Doximity 주가가 30% 폭락한 것이었다는 점을 기억해 두십시오. 왜 대형 랩들이 여기서 컨설턴트, 아니 Forward Deployed Engineers를 데려오려고 경쟁하는지 이해가 갑니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "OptumRx가 더 투명한 PBM 가격 구조로 옮겨 가면서, 고객사에 GPO와 관련된 것을 포함해 OptumRx의 수수료를 들여다볼 수 있는 수수료 기반 모델을 제공합니다. 현재 시장 상황을 감안하면 논리적인 움직임으로 보입니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Function이 개인화된 보충제 \"스택\"을 제공하는 스타트업 SuppCo를 비공개 금액에 인수했습니다. SuppCo는 앞서 Union Square Ventures 등으로부터 550만 달러의 시드 자금을 유치한 바 있는데, 당시 USV가 내놓은 이 논지도 한번 볼 만합니다. 새로운 헬스케어 시스템을 구축한다는 것을 중심으로 한 롱제비티 시장 강세론의 핵심을 잘 짚어 냅니다. 저는 이 비전이 실현되리라는 데 여전히 깊이 회의적이지만, 제가 틀렸으면 좋겠습니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Mass General Brigham이 이번 주 다시 뉴스에 올랐습니다. Boston Globe가 K Health와의 파트너십을 통해 버추얼 진료를 출범시키려는 MGB의 노력을 조명했습니다. 9월 출범 이후 이 서비스는 1만 4,000건이 넘는 버추얼 진료를 기록했고 환자들에게 좋은 반응을 얻고 있는 것으로 보입니다. MGB의 프라이머리 케어 프로바이더들은 이 시도에 여전히 불만이며, MGB가 대신 프라이머리 케어에 투자해야 한다고 말합니다. 어느 주에는 MGB가 프라이머리 케어 접근을 늘려 비용을 올렸다는 이유로 매사추세츠 Health Policy Commission에게 두들겨 맞고, 그다음 주에는 자기네 프라이머리 케어 프로바이더들에게서 프로바이더에 투자하는 대신 값싼 진료 접근을 제공하는 서비스에 투자한다고 비판받습니다. 제가 학술 의료센터의 처지에 공감하는 일이 그리 잦지는 않지만, 여기서 우리가 MGB에게 달리 무엇을 하기를 바라는지는 잘 모르겠습니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Hippocratic AI가 회사를 겨냥한 Sergei Polevikov의 도를 넘은 비판 시리즈에 공개적으로 대응했습니다. 사람들 사이의 드라마를 걷어내고 나면, Hippocratic의 대응에는 현재 사업 상태에 대한 흥미로운 데이터 포인트가 몇 가지 담겨 있었습니다. 오늘 기준으로 월 매출이 거의 500만 달러에 이르는 한편 월 300만 달러의 현금을 태우고 있는 것으로 보입니다. 제공된 데이터를 근거로 보면 Hippocratic은 2025년에 많아야 2,000만 달러의 매출을 올린 것으로 보이며, 그렇다면 2025년 11월 시리즈 C에서의 35억 달러 밸류에이션은 트레일링 매출의 150배 배수가 됩니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "OpenEvidence가 이번 주 NBC News에 소개되었는데, 이 보도는 현재 65만 명의 미국 의사가 이 플랫폼을 활발히 사용하고 있으며 2026년 4월에 2,700만 건의 검색이 있었다고 전했습니다. 기사에서 가장 흥미로운 대목은, NBC News가 취재한 의사들이 OpenEvidence의 광고가 \"거슬리지 않거나 아예 없다\"고 말했다고 짚은 부분이었습니다. 이를 제약 광고 시장의 부진에 대한 위 Doximity 이야기와 나란히 놓고 보면, 이 모델에 어떤 함의가 있을지 생각해 보게 됩니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "CMS가 헬스케어의 사기, 낭비, 남용에 맞선 압박을 여러 전선에서 이어 가고 있습니다. 수요일 CMS는 신규 호스피스 및 홈헬스 기관의 메디케어 등록에 대해 6개월 모라토리엄을 발표했습니다. CMS는 또한 캘리포니아에 대한 13억 달러의 연방 메디케이드 자금 지급을 연기하겠다고 발표했습니다. 한편 DOJ는 한 개인이 플로리다에서 10억 달러가 넘는 사기 계획으로 연방 배심원단에게 유죄 판결을 받았다는 보도자료를 냈습니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Marty Makary가 공식적으로 FDA Commissioner 자리에서 물러났습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "처방을 위한 AI 인프라 레이어인 Forus(구 Tandem)가 1억 6,000만 달러를 유치했습니다. Thrive Capital, General Catalyst 등이 참여했습니다. Forus는 프로바이더 네트워크를 빠르게 확장하고 있으며, 지난 2년간 매년 전년 대비 10배 성장했고 현재 미국 우편번호 지역의 80%에서 환자를 지원하고 있습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "버추얼 전문 진료 플랫폼인 9am Health가 2,600만 달러를 유치했습니다. Define Ventures가 라운드를 리드했습니다. 보도자료에 따르면 9amHealth는 두 곳의 포춘 100 고용주를 대상으로 심장대사 케어에서 5,000만 달러의 의료비·약제비 절감을 만들어 냈으며, 이를 넘어 다른 고비용 만성질환으로 확장하고 있습니다"
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "제약사의 신약 상업화를 지원하는 플랫폼인 BranchLab이 2,600만 달러를 유치했습니다. McKesson Ventures가 라운드를 리드했습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "약국 내비게이션을 위한 행동경제학 모델인 Tokaido Health가 Primary Ventures의 리드로 2,500만 달러를 유치했습니다. Tokaido는 AI 기반 행동경제학 제안과 화이트글러브 지원을 결합해 고용주가 비용을 관리하도록 돕는 첫 기회군으로 인퓨전과 바이오시밀러에 집중하고 있는 것으로 보입니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "헬스케어 엔터프라이즈를 위한 AI ROI 계산기인 Optura가 Salesforce Ventures의 리드로 1,750만 달러 규모의 시리즈 A를 발표했습니다. Optura는 Independence Blue Cross, Prime Therapeutics, Ardent Health를 포함해 엔터프라이즈 헬스 플랜과 프로바이더를 고객으로 꼽습니다. 플랫폼에서 20억 달러가 넘는 AI 이니셔티브가 추적되고 있다고 밝힙니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "AI 레비뉴 사이클 플랫폼인 Anomaly Insights가 Sound Ventures의 리드로 1,700만 달러를 유치했습니다. Anomaly는 페이어와 프로바이더 사이의 정보 비대칭 때문에 발생하는 과소지급분을 프로바이더 조직이 회수하도록 돕는 데 집중하고 있습니다. Anomaly는 순 환자 매출이 평균 40억 달러가 넘는 20곳 이상의 헬스 시스템에 도입되어 있다고 밝힙니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "AI PCP 모델인 Clara가 1,200만 달러를 유치하고 YCombinator에 합류했습니다. A.Captial이 YC와 함께 라운드를 리드했습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "행동 건강을 위한 LLM인 Knit Health가 Uncork Capital과 Frist Cressey의 리드로 1,160만 달러 규모의 시드 라운드를 발표했습니다. 30개 헬스 시스템에 걸친 1억 3,000만 명 환자의 Truveta EMR 데이터로 모델을 학습시켰습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "프로바이더 스태핑 마켓플레이스인 Saile이 Matchstick Ventures와 Headwater Ventures가 공동 리드한 220만 달러 규모의 프리시드 라운드를 발표했습니다."
+    },
+    {
+      "heading_en": "What I’m Reading",
+      "body": "Olivia Webb Kosloff와 Alice Qin이 American Economic Liberties Project를 위해 독립 프로바이더들이 맞닥뜨린 자본 제약과 이들을 지원할 수 있는 정책 옵션에 관한 페이퍼를 썼습니다."
+    },
+    {
+      "heading_en": "What I’m Reading",
+      "body": "Grant Hesser가 X에 매니지드 케어가 1분기에 어떻게 반등했는지에 관한 글을 썼습니다. 메디케어 어드밴티지, 메디케이드, ACA 사업 전반에 걸쳐 업계가 맞닥뜨린 100년 만의 폭풍을 헤쳐 나오면서 말입니다. COVID가 계리 모델에 남긴 파급 효과를 되짚어 보고 업계가 마침내 그것을 지나왔을지 생각해 보는 것은 무척 흥미롭습니다."
+    },
+    {
+      "heading_en": "What I’m Reading",
+      "body": "Brendan Keeler의 Daily Ping이 WISeR에 대한 워싱턴 D.C.의 문제 제기를 조명했습니다. Government Accountability Office가 WISeR는 발효되기 전에 의회에 제출되었어야 하는 규칙이라는 통지를 냈습니다."
+    },
+    {
+      "heading_en": "What I’m Reading",
+      "body": "Zach Davis가 LI에 흥미로운 관점을 공유하며, 물량이 많고 변동성이 큰 전문의 지출이 ACO가 LEAD 안에서 전문 진료 리스크를 위임하는 메커니즘인 CARA를 고민해 볼 좋은 기회임을 짚었습니다.\n\nCARA를 더 깊이 파고들고 싶다면, 최근에 Manatt의 Will Gordon을 인터뷰하며 이 주제를 두고 아주 너드하게 들어간 적이 있습니다. CARA는 확실히 눈여겨볼 만한 모델로 보입니다."
+    }
+  ]
+}

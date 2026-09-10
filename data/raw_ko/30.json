@@ -1,0 +1,107 @@
+{
+  "index": "30",
+  "title_en": "Weekly Health Tech Reads 4/12/26",
+  "subtitle": "2027 Final Notice에 대한 단상, Jefferson과 Aetna 사이의 페이어/프로바이더 다툼, Teladoc의 밸류에이션 문제, BCBS MN의 재무 문제, 그리고 그 밖의 소식",
+  "sections": [
+    {
+      "heading_en": "Sponsored by: Alumni Ventures",
+      "body": "스폰서: Alumni Ventures\n\nAlumni Ventures Healthtech Syndicate는 보통 기관 투자자만 접근할 수 있는 헬스테크 스타트업에 개인이 투자할 기회를 제공합니다.\n\n멤버가 받는 것:\n\n- 매달 1~2건의 엄선된 헬스테크 딜. Andreessen Horowitz, Khosla Ventures, Sequoia 등과 함께 코인베스트합니다.\n- 각 딜에 대한 전체 실사 자료: 재무, 시장 분석, 그리고 AV 투자팀과의 라이브 논의.\n- 가입에 비용이나 의무는 없으며, 관심이 가는 딜에만 투자하면 됩니다.\n- 실제로 투자할 때는 딜당 최소 1만 달러.\n\n가입은 빠르고 간단합니다 – 자세한 내용을 확인하고 여기서 참여하세요.\n\n알림: HTN은 Alumni Ventures와 제휴 관계가 없으며 투자 자문을 제공하지 않습니다.\n\n뉴스레터 스폰서십에 관심이 있으시면 알려 주세요!"
+    },
+    {
+      "heading_en": "",
+      "body": "👋 이번 주 일요일 헬스케어 뉴스 정리에 오신 것을 환영합니다. 한 주 쉬고 다시 돌아왔습니다! 이번 주에는 2027 Final Notice 요율에 이르기까지의 여정을 두고 — Chris Klomp와의 재미있는 인터뷰를 포함해 — 많은 시간을 생각하며 보냈고, 그것이 앞으로의 업계에 어떤 의미인지도 함께 고민했습니다. 그런 배경 속에서 이번 주 Jefferson이 Aetna를 상대로 제기한 다운코딩 소송을 읽는 것은 흥미로웠습니다. 아래에서 그 이야기 전부와 함께, 미네소타 사람들의 Life Time 멤버십 사랑, 그리고 훨씬 더 많은 이야기를 다루겠습니다. 즐겁게 읽으세요!\n\n- Kevin"
+    },
+    {
+      "heading_en": "TOP HEADLINE: 2027 MA Final Notice comes in ahead of expectations",
+      "body": "월요일 오후, CMS는 2027 Final Notice, 다른 이름으로는 CY(Calendar Year) 2027 Medicare Advantage(MA) 및 Part D Rate Announcement를 발표했습니다. 헤드라인은 최종 Overall Expected Change가 기대를 웃도는 2.48%로 나왔다는 것으로, Advance Notice에서 애초에 제안됐던 0.09%에서 의미 있게 오른 수치입니다.\n\n이 소식에 Medicare Advantage 주식은 전반적으로 올랐고, 여러 기업이 한 주 동안 10% 안팎 상승했습니다. 저는 이번 주 초 Chris와 마주 앉아, CMS가 이 요율을 확정하며 무엇을 고민하고 있는지 직접 들을 기회가 있었습니다.\n\nChris Klomp: 2027 MA final rate notice, accountable relationships, and opportunity for startups\n\nApple, Spotify, YouTube에서 들으실 수 있습니다. 또는 여기서 전문을 읽어 보세요.\n\nKlomp이 Advance Notice에서 Final Notice로 넘어오며 무엇이 바뀌었는지 설명하는 것을 듣다 보니, 제 머릿속은 지난 주말 지역 신문에서 읽은 관련 기사로 자꾸 흘러갔습니다. Blue Cross Blue Shield of Minnesota가 2025년에 겪은 영업손실을 다룬 기사였습니다. 거기에는 12월에 BCBS MN 본사 앞에서 피켓 시위를 하는 시니어 50여 명의 사진이 실려 있었는데, BCBS MN이 피트니스 베네핏의 일부였던 YMCA와 Life Time 헬스장 무료 이용을 없앴기 때문입니다.\n\n출처: Star Tribune\n\n자, 이번 주에 Slack에서 이야기했듯이, 미네소타 사람을 안다면 우리가 지역 브랜드를 얼마나 사랑하는지 아실 겁니다. Life Time은 그 목록의 맨 위에 있습니다. 실제로 저는 지난주에 바로 이 문제를 한탄하던 가족 지인과 이야기를 나눴는데, 보험사에 대한 불만의 일부였습니다. 그분은 예전에 UCare를 통해 MA 커버리지를 갖고 있었고 Life Time 무료 이용을 무척 좋아했는데, BCBS MN으로 오면서 그것을 잃어 속상해했습니다. 평균적인 미국인이 Medicare Advantage를 바라보는 방식이 바로 이렇다고 저는 꽤 확신합니다.\n\nAdvance Notice 이후 CMS가 받은 44,000건 이상의 의견 중 상당수는, Advance Notice에서 상정된 요율 인상에 맞추기 위해 필요한 베네핏 삭감이 상당히 가혹할 것이라는 점, 그리고 삭감에 항의해 거리로 나서는 미네소타 사람이 몇 명 더 생길지도 모른다는 점을 어떤 형태로든 담고 있었으리라 짐작합니다.\n\n그런 점에서 Final Notice는 아주 합리적인 지점에 안착한 것으로 보입니다. 2027년 수급자들의 안정성을 확보하도록 조정하면서도, CMS가 납세자 돈의 더 나은 관리자가 되겠다는 데 진지하다는 점을 업계에 분명히 했습니다.\n\n약간 우호적인 결과가 2027년 전망에 대한 명확성을 제공하면서, 업계 반응의 상당 부분은 2028년 이후에 대한 함의에 집중됐습니다. 리스크 조정 변경의 1년 유예는 결국 이것이 2028년에 업계의 역풍으로 나타난다는 뜻일까요? 다시 말하지만, CMS가 무엇을 이루려 하는지에 대한 Klomp의 이야기를 듣고 나면, 저는 여기서의 전반적인 궤적이 꽤 분명하다고 봅니다. Klomp은 대화 중에 Final Notice 요율이 대략 GDP 성장률에 부합하는 수준으로 나왔다고 언급했고, 그 결과가 업계의 성장률로서 합리적이라는 견해를 밝혔습니다. 제게는 그것이 2028년 이후를 생각할 때의 출발점처럼 보입니다. 그 안에서 리스크 조정 변경 같은 주제는 CMS가 필요하면 당길 수 있고 또 당길 것을 아는 레버로 보입니다.\n\n이 모든 것이 맞다면, 이번 요율 고시 과정에서 나온 가장 흥미로운 질문은 리스크 조정이 아니라, 업계가 앞으로 그 medical cost trend 수치를 어떻게 통제할 것인가라고 생각합니다. 기저 의료비가 연 5% 이상 오르고 GDP가 연 3% 오른다면, 요율이 GDP와 함께 성장하도록 하겠다는 CMS의 목표에 그 계산은 당연히 맞아떨어지지 않습니다.\n\n그 격차를 어떻게 좁힐지 헤쳐 나가는 것이 CMS와 업계 전체 모두에게 당면한 핵심 질문으로 보이며, Klomp의 논평은 CMS 관점에서 답이 어디에 있을지에 대한 좋은 감을 준다고 생각합니다. 구체적으로는 페이어와 헬스 시스템 모두가 비용을 더 잘 통제해야 한다는 점, accountable care relationship의 역할, 그리고 디플레이션적 지불 메커니즘으로서의 ACCESS를 중심으로 말입니다."
+    },
+    {
+      "heading_en": "MUSING: The latest in payor/provider spats: Jefferson Health sues Aetna over two midnight rule downcoding",
+      "body": "Jefferson Health가 이번 주 초 Aetna를 상대로 소송을 제기했습니다. Two Midnight 규칙과 관련된, 비교적 최근에 이뤄진 Aetna의 지불 정책 변경에 불만을 품은 것입니다. Aetna는 이제 중증도가 더 낮다고 판단한 케어를 \"다운코딩\"하고 있습니다. Jefferson은 Aetna가 계약 조건을 바꾸고 있으며 그렇게 할 수 없다고 주장합니다. 그 점을 보이기 위해 Jefferson은 저중증도로 판정된 아래의 환자 사례를 제시하는데, Aetna에게는 좋지 않아 보입니다.\n\n하지만 제가 보기에 이 사건이 일리가 있어 보이더라도, Aetna가 애초에 왜 이 정책을 시행하기로 했는지는 설명해 주지 않습니다. 잠시 Aetna가 이 정책을 시행하면서 합리적으로 행동했다고 가정해 봅시다. 왜 이런 정책을 두는 걸까요? 저는 Aetna가, 프로바이더들이 Two Midnight 규칙을 이용해 원래라면 더 낮은 요율로 지불됐을 케어를 입원 요율로 받아 왔다는 것을 보여 주는 데이터를 갖고 있기 때문이라는 데 걸겠습니다. 이런 정책을 시행하고 프로바이더와의 마찰을 감수할 만한 유일하게 그럴듯한 이유는, 그것이 의미 있는 지출 증가에 대한 대응일 때뿐이라고 생각합니다.\n\n이 사건의 구체적인 시비에서 한 걸음 물러나 보면, 페이어와 프로바이더 사이의 눈에는 눈 식 싸움이 시스템 전체의 낭비를 어떻게 키우는지 보여 주는 좋은 사례 연구로 다가옵니다. 양쪽 모두 상대가 잘못했고 자기가 옳다는 훌륭한 주장을 펼 수 있는데, 제 생각에 그것은 대체로 당면한 논쟁의 구체적인 지점을 어떻게 프레이밍하느냐의 결과입니다.\n\n금요일 Slack 스레드에서 공유했듯이, 위에서 다룬 medical cost trend를 GDP에 맞추는 더 넓은 논의의 맥락에서 이런 사건을 생각하면, 저는 이것이 다음에 뭘 볼지 정하려고 TV 리모컨을 두고 다투는 두 아이가 부모가 리모컨을 뺏으러 다가오는 줄도 모르는 상황과 조금 비슷하다는 느낌을 지울 수 없습니다."
+    },
+    {
+      "heading_en": "CHART OF THE WEEK: Teladoc's BetterHelp Valuation Conundrum",
+      "body": "Teladoc은 현재 공개 시장에서의 밸류에이션을 감안하면 흥미로운 전략적 상황에 놓여 있습니다. 지난주 Teladoc은 행동주의 주주로부터 편지를 받았는데, 지금 회사가 저평가돼 있으며 그 원인은 대체로 지난 몇 년간의 일련의 전략적 실수가 사업에 대한 투자자 신뢰를 잠식했기 때문이라는 주장이었습니다. 이 투자자는 현재의 눌린 밸류에이션이 인수 제안을 부를 수 있고, 그러면 기존 주주들이 사업에 내재된 상방을 놓치게 될 것을 우려합니다. 구체적으로는 자사주 매입, 비용 절감, 그리고 BetterHelp에 대한 전략적 검토를 앞으로의 핵심 과제로 제안합니다.\n\n그리고 이번 주에는 Saki Georgiadis가 Substack에 훌륭한 글을 써서 BetterHelp에 내재된 재무적 기회를 파고들었습니다. 이 글은 BetterHelp가 보험 사업을 근거로 오늘 기준 약 10억 달러의 가치가 있다고 주장하며, Teladoc의 밸류에이션에 대해 매우 비슷한 지적을 합니다. 그는 또한 Teladoc이 BetterHelp를 10억 달러에 판다면 남은 사업은 총 약 36억 달러의 가치가 있어야 한다고 제안하는데, 이는 오늘 사업 전체의 가치인 12억 4천만 달러와 대비됩니다.\n\n이런 밸류에이션이라면, 논리적인 결론은 BetterHelp가 가까운 미래에 독립 사업이 될 가능성이 높다는 것으로 보입니다. Georgiadis의 글이 짚듯, 1분기 실적과 보험 사업 매출이 기대치대로 가고 있는지를 지켜볼 가치가 있겠습니다."
+    },
+    {
+      "heading_en": "A NUMBER TO PONDER: Humana's VBC membership",
+      "body": "71%\n\nHumana가 VBC 현황에 대한 최신 연례 보고서를 발표했습니다. 글로벌 캡의 정점기 때만큼은 아니더라도, 이 보고서를 꾸준히 이어 가는 데 대해 박수를 보냅니다. Humana는 개인 MA 멤버십의 71%가 VBC 계약에 속해 있다고 보고했습니다(글로벌 캡부터 셰어드 세이빙스가 없는 퀄리티 보너스까지 아우르는 자체 VBC 정의 기준). VBC 계약 멤버십 비율은 2022년 보고서의 68%, 2017년 보고서의 66%에서 소폭 올랐습니다. 시간이 흐르며 이 수치를 구성하는 계약 유형이 어떻게 달라졌는지, 특히 글로벌 캡이 최근 몇 년간 어떤 추세를 보였을지 생각해 보는 것이 흥미롭습니다.\n\n농촌 VBC의 기회에 관한 흥미로운 메모 하나: Humana는 도시 멤버의 75%가 VBC PCP와 연결돼 있는 반면, 농촌 멤버는 54%만 VBC PCP와 연결돼 있다고 밝혔습니다. 그리고 보고서에 따르면 그 농촌 수치는 2020년 이후 19% 올랐다고 합니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "CMS가 금요일 저녁에 또 하나의 대규모 개혁안을 발표했습니다. 상호운용성을 비롯한 여러 영역에 촉수를 뻗은 내용입니다. 특히 주목할 만한 것은 제안된 CJR-X 모델로, 기존 CJR 모델을 의무화하고 전국으로 확대하는 것입니다. 의무적이고 전국적인 번들은 CMS의 큰 움직임으로 보입니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "여기 미네소타에서는 BCBS MN이 2026년에 손실을 예상한다고 밝혔습니다. UCare가 시장에서 철수한 뒤 밀려든 Medicare Advantage 멤버십을 감당하면서 말입니다. BCBS MN은 2025년에 3억 5,300만 달러의 영업손실을 보고했는데, 여기에는 지속되는 손실에 대비한 1억 5,000만 달러의 보험료 부족 준비금이 포함돼 있습니다. 다만 전체적으로는 BCBS MN이 투자 포트폴리오 수익 덕분에 2025년에도 8,300만 달러의 이익을 냈다는 점은 참고하시기 바랍니다. BCBS MN은 입원 케어, 전문의약품, GLP-1을 손실의 핵심 동인으로 꼽았습니다. 위에서 짚었듯, 미네소타의 시니어들은 이런 문제에 따른 베네핏 삭감에 불만을 갖고 있습니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "유타의 Doctronic AI 파일럿이 주 Medical Board 위원들 사이에서 상당한 우려를 불러일으킨 것으로 보입니다. 금요일 Exits and Outcomes 뉴스레터에 실린 Brian Dolan의 훌륭한 보도에 따른 것입니다. Dolan은 Medical Board, Pharmacy Board, 그리고 Office of AI Policy 사이에 오간 서신을 입수했는데, 유타에서 벌어지는 혼란스러워 보이는 과정을 엿보게 해 줍니다. 임상 현장에서의 AI 도입에 조금이라도 관심이 있다면, 여기서 오간 공방을 보고 비슷한 프로그램을 검토 중인 다른 주들에 어떤 함의가 있을지 생각해 보는 것이 흥미로울 것입니다. 이런 종류의 서사에서는 당파적 전선이 드러나는 것 같습니다. 인서전트는 Medical Board가 환자보다 기존 이해관계를 보호하고 있다고 주장하고, 기존 세력은 인서전트가 환자 안전을 위험에 빠뜨리고 있다고 주장합니다. 늘 그렇듯 각 주장에 나름의 일리가 있다고 느끼지만, 정치적으로 어느 쪽이 이기는 주장인지는 제게 꽤 분명해 보입니다. 주 Medical Board를 열받게 하는 것은 지는 싸움이라고 생각합니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "Medicare 브로커리지/내비게이션 플랫폼 Chapter가 30억 달러 밸류에이션에 1억 달러를 조달했습니다. Generation Investment Management가 라운드를 리드했습니다. Chapter는 2025년에 매출을 세 배로 늘리고 1억 달러 ARR에 도달했으며, 그 사이 인원은 그대로 유지했다고 밝혔습니다. 아래 \"What I'm Reading\"에서 언급하듯, 변화하는 Medicare 지형은 (AI와 맞물려) 지금 브로커리지에 기회의 창을 열어 주고 있는 것으로 보입니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "헬스케어 오퍼레이션을 위한 AI 플랫폼 Luminai가 3,800만 달러를 조달했습니다. Peak XV Partners가 라운드를 리드했습니다. Luminai는 또한 행정 부담을 줄이기 위해 Cleveland Clinic과 파트너십을 맺었다고 발표했으며, 첫 활용 사례는 리퍼럴 관리에 초점을 맞춥니다. Cleveland Clinic의 JPM 발표로 거슬러 올라가 보면, 네 곳의 핵심 AI 파트너로 Bayseian Health, Ambience Healthcare, Palantir, Akasa를 꼽았습니다. 저는 그 목록에서 자신들이 Cleveland Clinic의 AI 오퍼레이션을 돕고 있다고 말할 만한 조직이 적어도 몇 곳은 된다고 봅니다. 이 시장이 시간이 흐르며 어떻게 진화할지 생각해 보면 흥미롭습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "대안적 플랜 설계를 지원하는 TPA 모델 Yuzu가 3,500만 달러를 조달했습니다. General Catalyst와 Chemistry가 라운드를 리드했습니다. 대안적 플랜 설계를 위한 TPA가 어떤 모습인지 궁금하시다면, 몇 달 전에 Yuzu의 공동창업자 중 한 명과 이 주제를 파헤치는 시간을 가진 적이 있습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "행동 건강 AI 모델 Jimini Health가 1,700만 달러를 조달했습니다. 투자자에는 Town Hall Ventures가 포함됐으며, 이들은 자사의 투자 논지를 공유했습니다. Jimini는 임상의의 연장선으로 작동해 이들이 진료 역량을 확장하도록 돕는 정신건강 챗봇 Sage를 만들고 있습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "임상 음성 AI 기업 Insight가 1,100만 달러를 조달했습니다. Standard Capital이 라운드를 리드했습니다. 보도자료에 따르면 Insight는 The Oregon Clinic, Pacific Sports & Spine, Inland Neurosurgery, Coastal Health, Santiam Hospital 등 고객사에서 5,000만 달러 이상의 행정 비용을 절감했습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "버추얼 모성 건강 플랫폼 SimpliFed가 1,000만 달러를 조달했습니다. Morningside와 Hesperia Capital이 라운드를 리드했습니다. SimpliFed는 대부분의 상업 플랜, 그리고 몇몇 주에서는 Medicaid와 인네트워크로 연결돼 있습니다. 내일 The Grand Round Up에서 Andrea와 SimpliFed에 대해 이야기를 나눌 예정입니다."
+    },
+    {
+      "heading_en": "What I'm Reading: He Was an Insurance Executive. She's a Doctor. They're Divided.",
+      "body": "Elisabeth Potter, Troyen Brennan 씀\n\nNew York Times에 실린 잘 만들어진 대화라고 생각했습니다. 보험사와의 갈등으로 유명한 텍사스의 의사 Elisabeth Potter와, CVS의 전 CMO였던 Troyen Brennan을 한자리에 모았습니다. 이번 주 Slack에서 이야기했듯이, Potter는 평균적인 청취자의 마음을 사는 합리적인 지적을 여럿 하지만, Brennan은 시스템이 직면한 과제를 훨씬 더 직접적으로 붙잡는, 훨씬 더 일관되고 결이 촘촘한 논점들을 편다고 생각합니다."
+    },
+    {
+      "heading_en": "What I'm Reading: The Most Responsible Path in Healthcare AI Is Also the Deadliest",
+      "body": "Giovanni Colella 씀\n\nColella는 문을 닫은 정신건강 AI 스타트업 Kintsugi의 이야기와, 원칙대로 헬스케어 AI를 만들려다 겪은 문제들을 조명합니다. 결국 Kintsugi는 7년과 3,000만 달러를 쓰고 정리 수순을 밟았고, 안타깝게도 헬스케어 AI의 어려움을 보여 주는 아주 좋은 사례 연구가 됐습니다. DC의 사람들이 인서전트가 업계를 뒤흔들 수 있는 공정한 운동장을 만드는 문제를 고민하는 지금, 이런 여정은 곱씹어 볼 만한 좋고도 까다로운 질문들을 던집니다."
+    },
+    {
+      "heading_en": "What I'm Reading: The MEDVi Files",
+      "body": "Brendan Keeler 씀\n\nMEDVi 이야기는 이번 주 소셜 미디어의 주목을 크게 끌었습니다. 저는 Brendan Keeler의 이 분석이 제가 읽은 것 중 가장 흥미로웠다고 생각합니다. 이 이야기가 지금 골드러시처럼 느껴지는 업계 한 부분의 시대상을 보여 주는 신호 같다는 점을 짚습니다. 규제 관점에서 우리가 어떤 행동을 뒷받침하고 싶은지 고민할 때, MEDVi 이야기를 위의 Kintsugi 이야기와 나란히 놓고 보면 흥미롭습니다. 개인적으로는 지금 모든 게 거꾸로 된 느낌이지만, 혁신가는 늘 규제 변화보다 앞서 나간다는 점은 염두에 둘 만합니다."
+    },
+    {
+      "heading_en": "What I'm Reading: Why Are People Injecting Themselves with Peptides?",
+      "body": "Dhruv Khullar 씀\n\n골드러시 이야기가 나온 김에, 펩타이드 열풍을 다룬 이 글이 훌륭했다고 생각합니다. 롱제비티 클리닉을 운영하며 연간 수천만 달러를 버는 찰스턴 의사의 사례가 좋은데, 특히 그 의사가 펩타이드 주사에 대한 일화적 데이터를 COVID-19 백신 연구와 견주어 평가하는 방식에 대한 논의가 그렇습니다."
+    },
+    {
+      "heading_en": "What I'm Reading: The CEO of UnitedHealthcare on Fixing What Frustrates Customers Most",
+      "body": "Tim Noel 씀\n\nUHC의 CEO Tim Noel이 쓴 HBR 기사로, UHC가 곤경에 처한 멤버의 문제를 해결하기 위해 AI와 사람의 전문성을 결합한 Consumer Resolution Center를 어떻게 구축했는지 다룹니다. 인용된 성과는 정말 인상적입니다. 15만 명 이상의 멤버를 지원하며 만족도 점수를 10점 만점에 0점에서 8.8점으로 끌어올렸고, 그 멤버들이 겪은 문제의 근본 원인을 해결한 것이 UHC 전체 고객의 10%에게 경험 개선으로 이어지는 파급 효과도 있었습니다. 충분히 읽어 볼 가치가 있습니다."
+    },
+    {
+      "heading_en": "What I'm Reading: UnitedHealth Group is making a $3 billion bet on AI. What does it mean for patients?",
+      "body": "Casey Ross 씀\n\nUHG가 조직 전반에 AI를 어떻게 배치하고 있는지 살펴보며, AI가 환자 안전에 가할 수 있는 잠재적 위험을 조명한 Stat 기사입니다. 위의 HBR 기사가 나온 같은 주에 이런 기사를 읽는 것이 흥미롭습니다. Stat 헤드라인이 던진 질문에 대한 제 개인적인 답은, UHG의 AI 활용이 실제로 환자에게 좋은 일로 보인다는 것입니다! UHC의 CRC는 그 아주 구체적인 예로 보입니다."
+    },
+    {
+      "heading_en": "What I'm Reading: Positioning for Leadership in Medicare Advantage Brokerage",
+      "body": "Patrick Keavy, Rebecca Springer, Collin Anderson 씀\n\nMA 브로커리지 시장에 대한 Bailey & Co. 보고서로, 앞으로의 통합 가능성을 짚습니다. 마진 압축을 겪고 있는 MA 시장에서 브로커리지가 앞으로 어떤 역할을 할지 생각해 보면 흥미롭습니다. 그것이 커미션 압축으로 이어질 수도 있지만, 플랜의 인게이지먼트와 리텐션을 개선하는 브로커에게는 더 많은 기회를 만들어 줄 수도 있습니다."
+    },
+    {
+      "heading_en": "What I'm Reading: Blues Plans Are Consolidating From Within. Your Pipeline May Not Reflect It Yet.",
+      "body": "Ryan Peterson 씀\n\nBlues 플랜 통합의 현주소를 흥미롭게 들여다봅니다. Second Blue Bid 과정이 이 시장의 통합을 가속할 것이라는 점을 짚는데, 이전에는 생각해 보지 못한 각도였지만 제게는 아주 말이 됩니다."
+    },
+    {
+      "heading_en": "What I'm Reading: The great unbundling",
+      "body": "Neel Shah 씀\n\n2027년 1월 1일부터 CPT 코드 변경으로 모성 케어가 여러 개별 청구로 언번들되면서, 모성 케어의 지불 방식이 어떻게 달라질지에 대한 좋은 관점입니다. 당연하게도 짚어 봐야 할 하방 파급 효과가 많습니다."
+    },
+    {
+      "heading_en": "HTN Content From the Week",
+      "body": "Health Tech Nerds Radio\n\n- Chris Klomp이 2027 MA final rate notice, accountable relationship, 그리고 지금이 Medicare에서 무언가를 만들기에 그 어느 때보다 좋은 시점인 이유에 대해 이야기합니다. Apple, Spotify, YouTube.\n\n- The Grand Roundup: CMMI의 LEAD 모델, Medicaid 삭감, 효과를 내고 있는 Medicare Advantage 케어 모델, 그리고 최신 헬스테크 펀딩. Apple, Spotify, YouTube.\n\n- 압박받는 Medicare Advantage: Greenbrook Medical이 풀리스크 프라이머리 케어로 정면 승부하는 이유 | Neil Machhar. Apple, Spotify, YouTube.\n\n- GLP-1을 환자와 페이어 모두에게 작동하게 만들기 | Evan Richardson (Form Health). Apple, Spotify, YouTube.\n\n- 밸류 기반 Medicaid 계약, 기술, 그리고 예방 우선 모델을 통한 소아 케어 접근성과 성과 개선 | Chris Johnson & Michael Glazier, MD (Bluebird Kids Health). Apple, Spotify, YouTube."
+    }
+  ]
+}

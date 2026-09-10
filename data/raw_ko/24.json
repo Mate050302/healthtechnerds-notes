@@ -1,0 +1,111 @@
+{
+  "index": "24",
+  "title_en": "Weekly Health Tech Reads 3/22/26",
+  "subtitle": "Sutter와 Allina의 LOI 체결, STAT에서 나온 Klomp의 발언, 프로바이더 코딩 인텐시티에 대한 Trilliant의 시각, 그리고 그 밖의 소식",
+  "sections": [
+    {
+      "heading_en": "",
+      "body": "👋 이번 주 일요일 헬스케어 뉴스 정리에 오신 것을 환영합니다. 주 초반에는 Sutter Health가 Allina Health를 인수하겠다는 LOI가 논의를 지배했고, 주 후반에는 STAT 서밋에서 나온 Klomp의 발언이 몇 주 뒤로 다가온 Final Notice를 앞두고 Medicare가 어디로 향하고 있는지에 대한 흥미로운 신호를 주었습니다. Trilliant는 AI와 맞물린 코딩 인텐시티 증가에 대해 유익하고 결이 섬세한 관점을 내놓았고, 저는 최근 North Carolina State Health Plan의 Tom Friedman과 나눈 대화를 되짚어 보며 시간을 보냈습니다. 자, 들어가 봅시다!\n\n- Kevin"
+    },
+    {
+      "heading_en": "Sponsored by: Ursa Health",
+      "body": "지난 10년 동안 Ursa Health는 가장 폭넓게 사업을 펼친 value-based care 기업 몇 곳을 조용히 뒷받침해 왔습니다. 그중에서도 agilon health와 함께 만들어 낸 결과물은 특히 인상적입니다.\n\n30개가 넘는 full-risk 페이어 계약과 50만 명 이상의 MA 및 ACO 라이브스를 아우르는 상장사로서, agilon은 대단히 까다로운 데이터 환경에서 운영됩니다.\n\nUrsa는 agilon의 도메인 전문가들과 직접 붙어서 이 복잡성과 엄격한 검증을 감당할 수 있는 재무 데이터 파이프라인을 구축했고, 1퍼센트의 몇 분의 일 수준까지 좁힌 예측 정확도, 6개월 단축된 대규모 페이어 온보딩, 원본 페이어 파일에서 GL 반영이 가능한 산출물까지 이어지는 완전한 추적성을 달성했습니다.\n\n대규모 VBC 데이터 인프라를 고민하고 있다면, 이 케이스 스터디는 읽어 볼 만합니다.\n\n뉴스레터 스폰서십에 관심이 있으시면 알려 주세요!"
+    },
+    {
+      "heading_en": "TOP NEWS: Sutter and Allina announce intent to merge",
+      "body": "California에 기반을 둔 Sutter Health가 Minnesota에 기반을 둔 Allina Health(제가 Health Tech Nerds를 시작하기 전 마지막으로 몸담았던 곳입니다!)와 합병하겠다는 의사를 발표했습니다. 양측은 LOI에 서명한 상태입니다. 합병이 승인되면 통합 시스템은 연간 약 250억 달러의 매출을 내고, California, Minnesota, Wisconsin에 걸쳐 39개 병원을 운영하게 됩니다.\n\nAllina Health는 지역 시장의 브랜드와 리더십을 유지하면서 \"Sutter Health's Upper Midwest Division\"이 됩니다. Sutter는 환자 접근성과 비용 부담 개선을 돕기 위해 Minnesota와 서부 Wisconsin에 20억 달러를 투자합니다.\n\nAllina를 \"Sutter Health's Upper Midwest Division\"이라고 부르는 명명법은 앞으로의 Sutter 확장 계획을 보여 주는 신호처럼 보이며, Sutter가 최근 M&A 리더를 영입한 것도 마찬가지입니다. 제 안의 Minnesota 사람은 Allina에 붙은 \"Upper Midwest\"라는 이름을 두고 한마디 하고 싶어집니다 — 이제 California, Minnesota, 서부 Wisconsin에서 병원을 운영하는 시스템인데, \"Midwest\" 앞에 방향을 가리키는 수식어가 정말 필요할까요?! 이 이름은 Sutter가 여기서 계획하고 있는 전략을 드러내는 단서라고 볼 수밖에 없습니다. 비교적 가까운 시일 안에 이런 움직임을 더 듣게 되지 않는다면 오히려 놀랄 것 같습니다.\n\n두 조직의 현재 상황을 감안하면 양쪽 경영진 모두에게 논리적인 선택으로 보입니다. Sutter는 전국구 헬스 시스템 경쟁에 뛰어들려는 야심을 구체화하기 시작했고, Allina는 Minnesota의 불확실한 헬스케어 환경에서 장기적인 안정성을 확보합니다. 헬스케어에서는 대체로 규모가 더 큰 쪽이 이기는 패로 보입니다. 그래서 헬스 시스템 간 교차 시장 합병이 사회적으로 어떤 가치를 갖는지, 이런 딜에 실질적인 시너지가 있기는 한지 같은 더 큰 질문들을 옆으로 치워 둔다면, 여기서의 전략적 논리는 저에게는 꽤 단순해 보입니다."
+    },
+    {
+      "heading_en": "TOP HEADLINES",
+      "body": "Qualtrics와 Press Ganey의 합병은 무산된 것으로 보입니다. 은행들이 부채 시장에서의 AI에 대한 우려를 이유로 딜을 중단시켰습니다. 2025년 10월에는 Qualtrics가 고객 경험을 위한 더 넓은 AI 플랫폼을 만들기 위해 67억 5,000만 달러를 들여 Press Ganey를 인수한다고 발표한 바 있습니다."
+    },
+    {
+      "heading_en": "TOP HEADLINES",
+      "body": "Providence가 자사 헬스 플랜인 Providence Health Plan의 매각을 검토하고 있습니다. Providence Health Plan은 ACA, 커머셜, Medicare, Medicaid 시장에 걸쳐 44만 명의 회원을 두고 있습니다. Providence의 CEO는 the Lund Report에 보낸 이메일에서 매각을 고려하는 여러 요인을 언급하며, 특히 \"처방 의약품 비용 상승, 가격을 감당 가능한 수준으로 유지해야 한다는 압박, 그리고 지속적으로 기술을 업그레이드해야 하는 필요성 때문에 소규모 플랜이 따라가기가 더 어려워지고 있다\"고 밝혔습니다. 현재 지역 헬스 플랜들이 처한 암울한 상황을 보여 주는 또 하나의 지표로 보입니다."
+    },
+    {
+      "heading_en": "TOP HEADLINES",
+      "body": "Verily가 이번 주 3억 달러 규모의 펀딩을 발표하면서 Alphabet은 이 회사의 소수 투자자로 내려앉았습니다. Series X Capital이 라운드를 주도했고 Alphabet, UCHealth, University of Colorado Anschutz가 참여했습니다. Verily는 Alphabet이 이 사업을 더 이상 핵심 사업으로 보지 않기로 하면서, 수년간 Alphabet에서 분사하기 위해 노력해 온 것으로 전해집니다. Series X는 Alphabet이 자사의 X 프로젝트들을 독립 기업으로 전환하도록 돕기 위해 2024년에 출범한 곳으로, Alphabet과 밀접한 관계가 있습니다."
+    },
+    {
+      "heading_en": "TOP HEADLINES",
+      "body": "The Seattle Times가 WISeR 프로그램이 Washington주에서 겪은 도입 초기의 난항을 1면 기사로 다루면서, 약을 받는 데 문제를 겪고 있는 한 사람의 사례를 통해 현실에서의 여파를 짚었습니다. 이 기사는 WISeR 모델에 대한 사실관계 일부를 틀리게 쓴 것으로 보이지만, 그럼에도 현재 사람들이 사전승인(prior auth)에 대해 갖고 있는 광범위한 불신, 그리고 그에 따른 WISeR의 정치적 어려움을 보여 주는 사례로 읽힙니다."
+    },
+    {
+      "heading_en": "TOP HEADLINES",
+      "body": "Chartis가 AI 벤처 스튜디오인 Leap AI를 인수했습니다. Leap AI는 포트폴리오에 다섯 개 사업을 올려 두고 있으며, 그중 셋은 유전학, 롱제비티, 임상시험 영역에서 아직 스텔스 상태입니다. Chartis가 Leap AI 팀을 활용해 고객사를 위한 AI 솔루션을 개발하고 배포하려는, 일종의 애퀴하이어로 보입니다."
+    },
+    {
+      "heading_en": "TOP HEADLINES",
+      "body": "MedArrive가 Inbound Health의 자산을 인수했다고 발표했습니다. Inbound는 앞서 자사의 hospital-at-home 모델 운영을 접었습니다."
+    },
+    {
+      "heading_en": "TOP HEADLINES",
+      "body": "VBC 이네이블러인 Oasis Health Partners가 레비뉴 사이클 및 진료 운영 플랫폼인 Premier Health를 인수했습니다. 보도자료는 Oasis가 최근 PreferCare와의 파트너십을 통해 North Carolina로 사업을 확장했다는 점을 언급하고 있습니다."
+    },
+    {
+      "heading_en": "CHART OF THE WEEK: Trilliant's exploration of hospital coding intensity",
+      "body": "Trilliant 팀이 헬스 시스템의 코딩 인텐시티 증가에서 AI가 하는 역할에 대해 사려 깊은 관점을 공유했습니다. AI 스크라이브를 도입한 여섯 개 헬스 시스템의 데이터를 살펴본 결과, 신규 환자와 기존 환자 모두에서 외래 E/M 방문의 인텐시티가 일관되게 상승하는 추세를 발견했습니다. 이 글은 그 배경에 있을 수 있는 여러 요인들을 잘 짚어 주고 있습니다. 아래 차트를 보시면 여러 헬스 시스템에 걸쳐 New Patient Visits의 코딩 인텐시티가 꾸준히 올라가는 모습을 확인할 수 있습니다.\n\n출처: Trilliant Health 블로그 포스트"
+    },
+    {
+      "heading_en": "MY MUSING: A reflection on building trust in healthcare innovation",
+      "body": "지난주에 North Carolina State Health Plan의 Tom Friedman과 팟캐스트 에피소드를 녹음하면서, 이 플랜을 정상화하기 위해 진행 중인 노력에 대해 이야기를 나눌 기회가 있었습니다. North Carolina는 늘 이 나라에서 헬스케어 혁신의 흥미로운 실험장 역할을 해 왔는데, 여기에는 State Health Plan(SHP)이 적극적인 역할을 해 온 것도 한몫했습니다.\n\nFriedman과 동료들은 작년 말 Health Affairs Forefront에 이 플랜을 정상화하려는 노력을 정리한 글을 실었습니다. 이 플랜은 North Carolina에서 약 75만 명을 커버하고 있으며, 2027년 말까지 약 10억 달러의 적자가 예상되던 상황이었습니다. 이 노력의 여러 측면이 저에게는 흥미로운데, 그중 하나가 Clear Pricing Project를 접기로 한 결정입니다. 이는 참조가격(reference-based pricing) 모델을 통해 가격 투명성을 높이고 궁극적으로 시장의 비용을 낮추려던 이전 이니셔티브였습니다. Clear Pricing Project는 비용 절감을 노린 시도가 어떻게 의도와 정반대의 결과를 낳아 주(州) 내 헬스케어 비용을 오히려 올릴 수 있는지를 보여 주는 훌륭한 사례 연구였습니다(과거에 RBP 요율보다 낮게 지급받던 프로바이더들은 참여를 선택했고, 그렇지 않던 곳들은 참여할 이유가 없어 참여하지 않았기 때문에 결과적으로 비용이 올라갔습니다).\n\nFriedman과 SHP가 지금 펼치고 있는 핵심 노력 중 하나는 수술 진료의 능동적인 구매자(active purchaser)로 더 나서는 것이며, 구체적으로는 Lantern(이번 주에 펀딩 라운드를 발표했습니다)과 손잡고 특정 수술 유형에 대해 본인부담이 없는 번들을 제공하는 것입니다. 그 일환으로 SHP는 가입자들의 행동에 영향을 주어 더 저렴한 프로바이더로 볼륨을 유도하려 하고 있고, Novant Health도 여기에 합류했습니다.\n\nTom과 제가 나눈 주제 중 하나는, 이런 변화를 도입할 때 SHP 가입 직원들과 신뢰를 쌓아야 한다는 점이었습니다. 특히 SHP의 적자를 메우는 과정의 일부로 그 직원들의 보험료를 올린 뒤라면 더욱 그렇습니다. 그는 페이어들이 역사적으로 신뢰를 쌓는 데 그리 능하지 못했다는 점, 그리고 SHP가 이런 프로그램들을 펼쳐 나가는 데 신뢰 구축이 핵심이라는 점을 짚었습니다. 혁신 이니셔티브의 성공적인 도입을 이끄는 결정적 재료로서 흥미로운 프레이밍입니다. 신뢰를 쌓는다는 이 개념은 요즘 제가 나누는 대화 대부분에서 등장하는 것 같고, 어떤 헬스케어 시도에서든 핵심 요소로 느껴집니다.\n\n아래에서 전체 대화를 보시거나, Apple / Spotify에서 들으실 수 있습니다.\n\nHow North Carolina is fixing its $5.5B state employee health plan | Tom Friedman (State Health Plan)"
+    },
+    {
+      "heading_en": "A QUOTE TO PONDER",
+      "body": "Medicare Director인 Chris Klomp가 이번 주 STAT의 Breakthrough Summit East에서 발언했습니다. Klomp의 발언 일부는 목요일 Bloomberg에 실렸는데, Medicare Advantage 프로그램이 비용을 충분히 관리하지 못하고 있다는 취지였습니다.\n\n같은 행사에서 STAT의 Mario Aguilar와 진행한 인터뷰에서 Medicare 수급자를 기본값으로 MA에 등록시키는 방안에 대해 한 다음 발언을, 그 헤드라인과 나란히 놓고 보면 무척 흥미롭습니다.\n\nKlomp: CMS에는 명시된 목표가 있고, 이는 트럼프 행정부보다, 바이든 행정부보다, 그 이전보다도 앞서는 것인데, 모든 수급자가 어카운터블한 관계 안에 있게 하는 것입니다. 우리는 왜 그것을 중요하게 여길까요? 방금 이야기한 대로, 어카운터블한 관계가 더 높은 품질 지표, 더 나은 임상 경험, 더 나은 임상 성과로 이어지기 때문입니다. 더 건강한 수급자, 더 건강한 환자를 뜻하니까요. 그렇다면 어카운터블한 관계로의 기본 선택, 즉 Medicare Shared Savings Program을 통한 ACO나 Director Sutton이 이끄는 Center for Medicare and Medicaid Innovation의 파생 혹은 후속 CMMI 모델로의 기본 선택을 보게 될 수 있을까요? 네. Medicare Advantage 등록을 통해서일 수도 있을까요? 네.\n\n제 생각에 그 둘 중 어느 쪽이든, 수급자와 환자, 그리고 그들의 프로바이더 사이에 이런 장기적이고 지속적인 관계가 없는 fee-for-service 방식으로의 기본 등록보다 더 나을까요? 네. 왜냐고요? 더 건강한 수급자를 보게 되기 때문입니다. 그건 좋은 일이죠.\n\nAguilar: 이번 행정부에서 그런 걸 보게 될 거라고 생각하십니까?\n\nKlomp: 저희가 검토하고 있는 사안입니다.\n\n출처: Mario Aguilar의 Chris Klomp 인터뷰\n\n지난 몇 달간 Klomp가 해 온 여러 발언을 이어 붙여 보면, 지금 CMS에서 나오는 흥미로운 공통의 실마리가 있다고 생각합니다. 가입자와 장기적이고 어카운터블한 관계를 장려한다는 이 발상이 현재 진행되는 큰 서사의 중심에 있는 것으로 보이며, 이는 대부분이 좋은 일이라고 동의할 만한 방향이라고 생각합니다.\n\n그래서 그 관계를 CMS가 이루려는 것의 중심 원칙으로 놓고, 동시에 Medicare Advantage 같은 프로그램이 납세자의 자원을 잘 관리하도록 보장하는 것을 함께 놓고 보면, 그 모든 발언들이 서로 잘 맞아떨어지는 것처럼 보입니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "전문 의약품 승인을 위한 AI 플랫폼 Latent가 6억 달러 밸류에이션에 8,000만 달러를 조달했습니다. Spark Capital과 Transformation Capital이 참여했습니다. 보도자료는 Latent가 헬스 시스템에서 인상적인 트랙션을 보이고 있다고 밝히고 있습니다 — Latent는 미국 상위 20개 시스템 중 절반을 포함해 45개 헬스 시스템을 고객으로 두고 있다고 합니다. Ochsner Health는 Latent와 협업하며 자사 전문 약국 사업에서 전년 대비 30% 성장을 기록했다고 보고했습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "가격 투명성 플랫폼 Turquoise Health가 4,000만 달러를 조달했습니다. Oak HC/FT가 라운드를 주도했고, 이로써 누적 조달액은 1억 달러에 가까워졌습니다. Turquoise는 헬스케어 조직들을 위한 계약(contracting) 플랫폼이 되겠다는 야심을 갖고 있습니다. 회사는 선도적인 헬스 시스템, 페이어, 제약사, 보험 브로커를 포함해 280곳이 넘는 고객을 두고 있다고 밝혔습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "고용주를 위한 수술 진료 네트워크 Lantern이 3,000만 달러를 조달했습니다. Morgan Health와 Echo Health Ventures가 라운드를 주도했습니다. Lantern이 실제 고객사에서 어떻게 도입되고 있는지 보고 싶다면 North Carolina State Health Plan의 Tom Friedman 인터뷰를 확인해 보세요."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "DME 플랫폼 Conduit Health가 1,700만 달러를 조달했습니다. Drive Capital이 라운드를 주도했습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "산모 케어 모델 Nadia Care가 1,200만 달러를 조달했습니다. Valtruis가 이름을 밝히지 않은 전국 단위 페이어와 함께 라운드를 주도했습니다. 이전에 Cayaba Care로 알려졌던 Nadia는 DC, Maryland, Tennessee의 지역 Medicaid 플랜들과 일해 왔습니다."
+    },
+    {
+      "heading_en": "What I'm Reading: CMS Proposes Its Best NBPP Yet",
+      "body": "Brian Blase 씀\n\nBlase는 이번 안이 자신이 본 것 중 최고의 Notice of Benefit and Payment Parameters라고 평가하며, 선택지 확대, 경쟁 강화, 지급 무결성(payment integrity) 개혁 등을 그 이유로 들었습니다."
+    },
+    {
+      "heading_en": "What I'm Reading: What's Worse than a Ghost Network Plan? A No-Network Plan",
+      "body": "Sabrina Corlette, Jason Levitis, Lindsey Murtagh 씀\n\nGeorgetown CHIR의 연구진이 NBPP가 ACA 시장에서 네트워크 없는 플랜을 장려하는 것을 비판하며, 오늘날 이 나라 헬스케어의 현실을 무시하는 처사라고 주장합니다."
+    },
+    {
+      "heading_en": "What I'm Reading: Doximity Study Finds Physicians Rapidly Adopting AI, But Accuracy Concerns Persist",
+      "body": "Doximity가 의사들의 AI 도입에 대해 자체 진행한 연구 결과를 공유했습니다. 획기적인 내용은 없지만, 의사들이 실제 진료에서 AI를 어떻게 쓰고 있는지에 대한 좋은 데이터 포인트들이 담겨 있습니다."
+    },
+    {
+      "heading_en": "What I'm Reading: The Peptide Boom Is Getting Out of Hand",
+      "body": "Nicholas Florko 씀\n\n솔직히 말하면 저는 펩타이드에 그다지 관심을 두지 않았습니다. 그런데 이번 주에 눈길이 갔습니다. The Atlantic의 이 기사와 Martin Shkreli의 X 게시물 사이에서, 이 회색시장 펩타이드 열풍에 대한 논의가 얼마나 주류로 올라오게 될지 지켜보는 것이 흥미로울 것 같습니다."
+    },
+    {
+      "heading_en": "HTN Content",
+      "body": "Community Brain Trust: 난임 치료 전달 방식의 변화, Walz 주지사의 Medicaid 개편안, 정신건강용 AI 도구 평가 등."
+    },
+    {
+      "heading_en": "HTN Content",
+      "body": "Weekly Health Policy Briefing: MedPAC 권고안, 주 지정 지급(state-directed payments), 그리고 ESRD 번들 지급."
+    },
+    {
+      "heading_en": "HTN Content",
+      "body": "특별한 의료적 요구가 있는 아동이 집에서 안전하게 보내는 날을 늘리기 | Taylor Beery, Imagine Pediatrics."
+    },
+    {
+      "heading_en": "HTN Content",
+      "body": "Health Tech Nerds Radio\n\n- The Grand Roundup: Devoted Health의 전략, Doctronic과 AI 규제, DC의 MA 지출 논쟁 등. Apple. Spotify. YouTube.\n\n- How North Carolina is fixing its $5.5B state employee health plan | Tom Friedman (NC State Health Plan). Apple. Spotify. YouTube.\n\n- Why CMMI needs simpler models and better measurement | Ankit Patel (Percepta, ex-CMMI). Apple. Spotify. YouTube.\n\n- Medicaid is an underappreciated innovation lab | Dr. Chris Cogle (Florida Medicaid). Apple. Spotify. YouTube."
+    }
+  ]
+}
