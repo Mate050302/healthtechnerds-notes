@@ -216,7 +216,7 @@ button{font-family:inherit; font-size:inherit; color:inherit}
 .csum{margin:0 0 12px; font-size:14px; line-height:1.8; color:var(--muted)}
 .ctab{width:100%; border-collapse:collapse; margin:0 0 12px; font-size:13.5px}
 .ctab th{
-  text-align:left; width:118px; vertical-align:top; padding:7px 10px 7px 0; font-weight:700;
+  text-align:left; width:126px; vertical-align:top; padding:7px 10px 7px 0; font-weight:700;
   color:var(--muted); font-size:12px; white-space:nowrap; border-top:1px solid var(--line-soft);
 }
 .ctab td{padding:7px 0; line-height:1.7; border-top:1px solid var(--line-soft)}
@@ -1015,9 +1015,11 @@ function viewCompanies(){
       h.push('<div class="ctags">' + cd.tags.map(function(t){
         return '<span>' + esc(t) + '</span>'; }).join('') + '</div>');
     }
-    if(cd.summary) h.push('<p class="csum">' + esc(cd.summary) + '</p>');
-    /* 표: 값, 성과, 주의 */
+    /* 표: 문제와 해법부터 값, 성과, 주의까지 한 자리에 놓는다. */
     var rows = [];
+    if(cd.problem) rows.push(['푸는 문제', esc(cd.problem), '']);
+    else if(cd.summary) rows.push(['요약', esc(cd.summary), '']);
+    if(cd.solution) rows.push(['솔루션', esc(cd.solution), '']);
     if(cd.price) rows.push(['소비자가 내는 값', esc(cd.price), '']);
     if(cd.headline_traction) rows.push(['성과', esc(cd.headline_traction), '']);
     if(cd.watch) rows.push(['주의', esc(cd.watch), 'w']);
