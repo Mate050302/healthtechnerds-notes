@@ -55,8 +55,13 @@ const SCHEMA = `## 저장할 JSON 스키마
   ],
   "issue_insight": {
     "verdict": "yes 또는 no",
-    "summary": "이 회차 전체를 실행 관점에서 종합한 2~4문장",
-    "sections": [5, 8]
+    "summary": "이 회차 전체 판단 한두 문장. 길게 쓰지 않는다.",
+    "build": [
+      { "title": "짧은 제목 한 줄", "detail": "무엇을 만들 수 있는지 한두 문장", "section": 5 }
+    ],
+    "signal": [
+      { "title": "짧은 제목 한 줄", "detail": "미국 소비자가 어디에 돈과 시간을 쓰는지 한두 문장", "section": 9 }
+    ]
   },
   "sections": [
     {
@@ -64,7 +69,8 @@ const SCHEMA = `## 저장할 JSON 스키마
       "heading_en": "원문 소제목. 없으면 빈 문자열",
       "skip": null,
       "summary": "이 꼭지가 무슨 이야기인지 2~4문장. 왼쪽 번역본을 읽기 전에 방향을 잡아 주는 글이다.",
-      "insight": "위 목적에 쓸 수 있는 것이 보일 때만 2~4문장. 없으면 null.",
+      "insight": "3개월 안에 앱에서 만들 수 있는 것이 보일 때만 2~4문장. 없으면 null.",
+      "signal": "미국 소비자 시장의 흐름이 드러날 때만 2~4문장. 없으면 null. 아래 '시장 신호' 참고.",
       "author": [
         { "claim": "필자가 한 주장 한 줄", "evidence": "그 주장을 뒷받침하려고 필자가 든 근거. 없으면 '근거를 대지 않았다'라고 적는다." }
       ],
@@ -74,7 +80,8 @@ const SCHEMA = `## 저장할 JSON 스키마
       "cases": [
         { "name": "회사·기관·제도 이름", "what": "무엇을 했는지 1~2문장",
           "scale": "금액·건수·비율 같은 규모. 원문에 없으면 빈 문자열",
-          "note": "이 사례에서 눈여겨볼 대목. 없으면 빈 문자열" }
+          "note": "이 사례에서 눈여겨볼 대목. 없으면 빈 문자열",
+          "sells_to": "consumer | mixed | provider | payer | employer | pharma | other | none" }
       ],
       "notes": [
         { "term": "PBM", "ko": "약제비 관리 회사",
@@ -88,25 +95,49 @@ const SCHEMA = `## 저장할 JSON 스키마
 
 ## 각 항목을 채우는 법
 
-**tldr (요약 쓰는 법)** — 3~6개다. point 는 한 문장으로 핵심을 적는다.
+**tldr (요약 쓰는 법)** — 3~6개다.
+
+  **한 항목에 한 주제를 통째로 담는다.** 같은 사건, 같은 회사, 같은 논쟁을 두 항목으로 쪼개지 않는다.
+  쪼개 놓으면 읽는 사람이 두 항목을 스스로 이어 붙여야 해서 오히려 헷갈린다.
+  point 가 두 줄이 되어도 괜찮다. 다만 세 줄은 넘기지 않는다.
+    나쁜 예 (같은 사건을 둘로 쪼갬):
+      1. "시 직원 보험 플랜이 응급실 체인 한 곳 때문에 예산을 4,000만 달러 넘겼다"
+      2. "그 체인은 중재 절차로 값을 두 배로 올렸고 넘긴 건의 99.6%에서 이겼다"
+    좋은 예 (한 항목에 담음):
+      1. "시 직원 보험 플랜이 응급실 체인 한 곳 때문에 한 해 예산을 4,000만 달러 넘겼는데,
+         그 체인은 No Surprises Act 중재로 값을 두 배로 올리고 넘긴 건의 99.6%에서 이겼다"
+  항목 수는 회차에 담긴 **주제 수**에 맞춘다. 여섯 개를 채우려고 한 주제를 나누지 않는다.
+
+  point 는 그 주제의 핵심을 적는다.
   note 는 그 문장을 이해하는 데 필요한 설명 **한 문장**이다. 배경, 용어 풀이, 왜 그런 일이 벌어지는지 가운데
   가장 막히는 것 하나만 고른다. point 에 이미 있는 말을 되풀이하지 않는다.
     나쁜 예: point "AI 투자가 접수 창구로 몰렸다" / note "AI 투자가 접수 창구 쪽으로 몰렸다는 뜻이다"
     좋은 예: point "AI 투자가 접수 창구로 몰렸다" / note "미국 병원은 진료비를 스스로 올릴 수 없어 이익을 늘리려면 인건비를 줄여야 하고, 전화 응대가 사람이 가장 많이 필요한 자리다"
   point 만으로 충분히 읽히면 note 를 빈 문자열로 둔다. 억지로 채우지 않는다.
 
-**issue_insight (회차 전체 인사이트)** — 독자는 회차를 열면 요약을 보고, 그다음 이것을 보고,
-  읽어 볼 꼭지를 고른다. 그러므로 이 항목이 회차 전체의 판단이 된다.
-  각 꼭지의 insight 를 그대로 이어 붙이지 말고, 이 회차에서 건질 것이 무엇인지 한 덩어리로 정리한다.
-  sections 에는 insight 가 달린 꼭지 번호를 넣는다. 첫 꼭지가 1이다.
-  건질 것이 하나도 없으면 verdict 를 "no" 로 두고 summary 에 **왜 없는지** 적는다.
-  없다고 적는 것이 정상적인 결과 가운데 하나다. 억지로 만들어 내지 않는다.
-
 **summary** — 왼쪽 번역본을 읽기 전에 방향을 잡아 주는 글이다. 2~4문장. 사건을 되풀이하지 말고 무슨 이야기인지 알려 준다.
 
 **insight** — 위 '이 노트를 읽는 사람이 하려는 일'을 기준으로 판단한다.
   앱에서 시험해 볼 수 있는 것이 실제로 보일 때만 적는다. 그럴 때도 "무엇을 해 볼 수 있는지"를 구체적으로 적는다.
   보이지 않으면 **null 로 둔다.** 억지로 만들지 않는다. 인사이트가 없는 꼭지가 대부분이다.
+
+**signal (시장 신호)** — 지금 당장 만들 것은 아니지만, **미국 소비자가 무엇에 돈과 시간을 쓰고 있는지**
+  보여 주는 흐름이다. 실행할 것을 찾으려면 먼저 사람들이 어디에 이미 돈을 쓰고 있는지 알아야 하므로,
+  insight 와 따로 모은다.
+  예를 들면 승인 절차 밖의 주사제를 스스로 사 오는 흐름, 무료 AI 상담 창구로 사람이 몰리는 흐름,
+  비만 치료제를 시작한 사람이 계속 맞기 어려워하는 흐름 같은 것이다.
+  판단 기준은 두 가지이고 **둘 다** 맞아야 한다.
+    (1) 미국 소비자가 직접 돈이나 시간을 쓰는 행동이 드러나는가
+    (2) 그 규모나 방향을 보여 주는 근거가 원문에 있는가
+  규제나 기기 개발이 필요해서 우리가 못 만드는 것이어도, 수요가 어디 있는지 보여 주면 signal 로 남긴다.
+  다만 병원과 보험사 사이의 돈 이야기, 청구 업무, 기업 인수합병은 소비자 행동이 아니므로 signal 이 아니다.
+  보이지 않으면 null 로 둔다.
+
+**issue_insight (회차 전체)** — build 와 signal 두 갈래로 나눠 **불렛으로** 적는다.
+  summary 는 회차 전체 판단 한두 문장이다. 길게 늘어놓지 않는다. 상세한 내용은 불렛으로 옮긴다.
+  build 에는 3개월 안에 앱에서 만들 수 있는 것을, signal 에는 소비자 시장의 흐름을 넣는다.
+  각 불렛의 title 은 한 줄로 짧게, detail 은 한두 문장으로 적는다. section 에는 근거가 된 꼭지 번호를 넣는다.
+  build 와 signal 이 둘 다 비면 verdict 를 "no" 로 두고 summary 에 왜 없는지 적는다.
 
 **author** — 필자(뉴스레터를 쓰는 사람)가 자기 의견으로 내놓은 주장만 담는다.
   사실 전달은 여기에 넣지 않는다. 근거가 없으면 없다고 적는다. 주장이 없으면 빈 배열로 둔다.
@@ -118,6 +149,19 @@ const SCHEMA = `## 저장할 JSON 스키마
 
 **cases** — 실제로 벌어진 일이다. 투자 유치, 인수합병, 제품 출시, 소송, 제도 시행, 실적 발표가 여기 들어간다.
   회사가 무엇을 파는 곳인지 what 안에서 한 줄로 밝힌다. 없으면 빈 배열로 둔다.
+
+  **sells_to (누구에게 파는가)** 를 반드시 붙인다. 나중에 이 값으로 더 조사할 회사를 고른다.
+  기준은 **누가 고르고 누가 돈을 내는가** 하나다.
+    - "consumer" : 소비자가 스스로 찾아와 가입하고 자기 돈을 낸다. 앱이나 웹에서 바로 쓸 수 있다.
+    - "mixed"    : 소비자 직접 판매와 고용주·보험사 판매를 함께 한다.
+    - "provider" : 병원, 의원, 의사에게 판다. 소비자는 그 존재를 모른다.
+    - "payer"    : 보험사에게 판다.
+    - "employer" : 고용주에게 판다. 직원이 쓰더라도 고를 권한과 지불은 회사에 있다.
+    - "pharma"   : 제약사나 기기 회사에게 판다.
+    - "other"    : 위 어디에도 안 맞는다. 정부 기관이나 제도가 여기 들어간다.
+    - "none"     : 회사가 아니다. 소송, 규제, 제도 같은 사례다.
+  환자를 직접 보더라도 지불하는 쪽이 정부나 보험사라면 consumer 가 아니다. 그때는 payer 나 other 다.
+  판단이 서지 않으면 원문 표현을 그대로 따르되, 소비자가 직접 돈을 낸다는 근거가 없으면 consumer 로 적지 않는다.
 
 **notes** — **모르면 그 꼭지가 안 읽히는 말만** 넣는다. 뜻이 뻔한 말은 넣지 않는다.
   꼭지마다 0~4개다. 하나도 필요 없으면 빈 배열로 둔다.
@@ -193,7 +237,7 @@ const AUDIT_SCHEMA = {
   required: ['index', 'verdict', 'summary'],
 }
 
-const files = [{"index": "04", "date": "2026-01-11", "type": "reads", "subject": "Weekly Health Tech Reads 1/11/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/04_2026-01-11_Weekly-Health-Tech-Reads-1-11-26.md", "hasRaw": false}, {"index": "06", "date": "2026-01-18", "type": "reads", "subject": "Weekly Health Tech Reads 1/18/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/06_2026-01-18_Weekly-Health-Tech-Reads-1-18-26.md", "hasRaw": false}, {"index": "08", "date": "2026-01-25", "type": "reads", "subject": "Weekly Health Tech Reads 1/25/2026", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/08_2026-01-25_Weekly-Health-Tech-Reads-1-25-2026.md", "hasRaw": false}, {"index": "10", "date": "2026-02-01", "type": "reads", "subject": "Weekly Health Tech Reads 2/1/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/10_2026-02-01_Weekly-Health-Tech-Reads-2-1-26.md", "hasRaw": false}, {"index": "12", "date": "2026-02-08", "type": "reads", "subject": "Weekly Health Tech Reads 2/8/25", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/12_2026-02-08_Weekly-Health-Tech-Reads-2-8-25.md", "hasRaw": false}, {"index": "14", "date": "2026-02-15", "type": "reads", "subject": "Weekly Health Tech Reads 2/15/25", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/14_2026-02-15_Weekly-Health-Tech-Reads-2-15-25.md", "hasRaw": false}, {"index": "16", "date": "2026-02-22", "type": "reads", "subject": "Weekly Health Tech Reads 2/22/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/16_2026-02-22_Weekly-Health-Tech-Reads-2-22-26.md", "hasRaw": false}, {"index": "18", "date": "2026-03-01", "type": "reads", "subject": "Weekly Health Tech Reads 3/1/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/18_2026-03-01_Weekly-Health-Tech-Reads-3-1-26.md", "hasRaw": false}, {"index": "20", "date": "2026-03-08", "type": "reads", "subject": "Weekly Health Tech Reads 3/8/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/20_2026-03-08_Weekly-Health-Tech-Reads-3-8-26.md", "hasRaw": false}, {"index": "22", "date": "2026-03-15", "type": "reads", "subject": "Weekly Health Tech Reads 3/15/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/22_2026-03-15_Weekly-Health-Tech-Reads-3-15-26.md", "hasRaw": false}, {"index": "24", "date": "2026-03-22", "type": "reads", "subject": "Weekly Health Tech Reads 3/22/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/24_2026-03-22_Weekly-Health-Tech-Reads-3-22-26.md", "hasRaw": false}, {"index": "26", "date": "2026-03-29", "type": "reads", "subject": "Weekly Health Tech Reads 3/29/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/26_2026-03-29_Weekly-Health-Tech-Reads-3-29-26.md", "hasRaw": true}, {"index": "30", "date": "2026-04-12", "type": "reads", "subject": "Weekly Health Tech Reads 4/12/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/30_2026-04-12_Weekly-Health-Tech-Reads-4-12-26.md", "hasRaw": false}, {"index": "33", "date": "2026-04-19", "type": "reads", "subject": "Weekly Health Tech Reads 4/19/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/33_2026-04-19_Weekly-Health-Tech-Reads-4-19-26.md", "hasRaw": false}, {"index": "36", "date": "2026-04-26", "type": "reads", "subject": "Weekly Health Tech Reads 4/26/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/36_2026-04-26_Weekly-Health-Tech-Reads-4-26-26.md", "hasRaw": false}, {"index": "39", "date": "2026-05-03", "type": "reads", "subject": "Weekly Health Tech Reads 5/3/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/39_2026-05-03_Weekly-Health-Tech-Reads-5-3-26.md", "hasRaw": false}, {"index": "41", "date": "2026-05-10", "type": "reads", "subject": "Weekly Health Tech Reads 5/10/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/41_2026-05-10_Weekly-Health-Tech-Reads-5-10-26.md", "hasRaw": false}, {"index": "42", "date": "2026-05-17", "type": "reads", "subject": "Weekly Health Tech Reads: 5/17/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/42_2026-05-17_Weekly-Health-Tech-Reads-5-17-26.md", "hasRaw": false}, {"index": "43", "date": "2026-05-31", "type": "reads", "subject": "Weekly Health Tech Reads 5/31/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/43_2026-05-31_Weekly-Health-Tech-Reads-5-31-26.md", "hasRaw": false}, {"index": "44", "date": "2026-06-07", "type": "reads", "subject": "Weekly Health Tech Reads 6/7/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/44_2026-06-07_Weekly-Health-Tech-Reads-6-7-26.md", "hasRaw": false}, {"index": "45", "date": "2026-06-14", "type": "reads", "subject": "Weekly Health Tech Reads 6/14/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/45_2026-06-14_Weekly-Health-Tech-Reads-6-14-26.md", "hasRaw": false}, {"index": "46", "date": "2026-06-21", "type": "reads", "subject": "Weekly Health Tech Reads 6/21/2026", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/46_2026-06-21_Weekly-Health-Tech-Reads-6-21-2026.md", "hasRaw": false}, {"index": "47", "date": "2026-06-28", "type": "reads", "subject": "Weekly Health Tech Reads 6/28/2026", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/47_2026-06-28_Weekly-Health-Tech-Reads-6-28-2026.md", "hasRaw": false}, {"index": "48", "date": "2026-07-12", "type": "reads", "subject": "Weekly Health Tech Reads 7/12/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/48_2026-07-12_Weekly-Health-Tech-Reads-7-12-26.md", "hasRaw": false}, {"index": "49", "date": "2026-07-19", "type": "reads", "subject": "Weekly Health Tech Reads 7/19/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/49_2026-07-19_Weekly-Health-Tech-Reads-7-19-26.md", "hasRaw": false}, {"index": "50", "date": "2026-07-26", "type": "reads", "subject": "Weekly Health Tech Reads 7/26/2026", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/50_2026-07-26_Weekly-Health-Tech-Reads-7-26-2026.md", "hasRaw": false}, {"index": "51", "date": "2026-08-02", "type": "reads", "subject": "Weekly Health Tech Reads 8/2/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/51_2026-08-02_Weekly-Health-Tech-Reads-8-2-26.md", "hasRaw": false}, {"index": "52", "date": "2026-08-09", "type": "reads", "subject": "Weekly Health Tech Reads 8/9/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/52_2026-08-09_Weekly-Health-Tech-Reads-8-9-26.md", "hasRaw": false}, {"index": "53", "date": "2026-08-16", "type": "reads", "subject": "Weekly Health Tech Reads 8/16/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/53_2026-08-16_Weekly-Health-Tech-Reads-8-16-26.md", "hasRaw": false}, {"index": "54", "date": "2026-08-23", "type": "reads", "subject": "Weekly Health Tech Reads 8/23/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/54_2026-08-23_Weekly-Health-Tech-Reads-8-23-26.md", "hasRaw": true}, {"index": "55", "date": "2026-08-30", "type": "reads", "subject": "Weekly Health Tech Reads 8/30/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/55_2026-08-30_Weekly-Health-Tech-Reads-8-30-26.md", "hasRaw": false}]
+const files = [{"index": "04", "date": "2026-01-11", "type": "reads", "subject": "Weekly Health Tech Reads 1/11/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/04_2026-01-11_Weekly-Health-Tech-Reads-1-11-26.md", "hasRaw": false}, {"index": "06", "date": "2026-01-18", "type": "reads", "subject": "Weekly Health Tech Reads 1/18/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/06_2026-01-18_Weekly-Health-Tech-Reads-1-18-26.md", "hasRaw": false}, {"index": "08", "date": "2026-01-25", "type": "reads", "subject": "Weekly Health Tech Reads 1/25/2026", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/08_2026-01-25_Weekly-Health-Tech-Reads-1-25-2026.md", "hasRaw": false}, {"index": "10", "date": "2026-02-01", "type": "reads", "subject": "Weekly Health Tech Reads 2/1/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/10_2026-02-01_Weekly-Health-Tech-Reads-2-1-26.md", "hasRaw": false}, {"index": "12", "date": "2026-02-08", "type": "reads", "subject": "Weekly Health Tech Reads 2/8/25", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/12_2026-02-08_Weekly-Health-Tech-Reads-2-8-25.md", "hasRaw": false}, {"index": "14", "date": "2026-02-15", "type": "reads", "subject": "Weekly Health Tech Reads 2/15/25", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/14_2026-02-15_Weekly-Health-Tech-Reads-2-15-25.md", "hasRaw": false}, {"index": "16", "date": "2026-02-22", "type": "reads", "subject": "Weekly Health Tech Reads 2/22/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/16_2026-02-22_Weekly-Health-Tech-Reads-2-22-26.md", "hasRaw": false}, {"index": "18", "date": "2026-03-01", "type": "reads", "subject": "Weekly Health Tech Reads 3/1/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/18_2026-03-01_Weekly-Health-Tech-Reads-3-1-26.md", "hasRaw": false}, {"index": "20", "date": "2026-03-08", "type": "reads", "subject": "Weekly Health Tech Reads 3/8/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/20_2026-03-08_Weekly-Health-Tech-Reads-3-8-26.md", "hasRaw": false}, {"index": "22", "date": "2026-03-15", "type": "reads", "subject": "Weekly Health Tech Reads 3/15/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/22_2026-03-15_Weekly-Health-Tech-Reads-3-15-26.md", "hasRaw": false}, {"index": "24", "date": "2026-03-22", "type": "reads", "subject": "Weekly Health Tech Reads 3/22/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/24_2026-03-22_Weekly-Health-Tech-Reads-3-22-26.md", "hasRaw": false}, {"index": "30", "date": "2026-04-12", "type": "reads", "subject": "Weekly Health Tech Reads 4/12/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/30_2026-04-12_Weekly-Health-Tech-Reads-4-12-26.md", "hasRaw": false}, {"index": "33", "date": "2026-04-19", "type": "reads", "subject": "Weekly Health Tech Reads 4/19/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/33_2026-04-19_Weekly-Health-Tech-Reads-4-19-26.md", "hasRaw": false}, {"index": "36", "date": "2026-04-26", "type": "reads", "subject": "Weekly Health Tech Reads 4/26/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/36_2026-04-26_Weekly-Health-Tech-Reads-4-26-26.md", "hasRaw": false}, {"index": "39", "date": "2026-05-03", "type": "reads", "subject": "Weekly Health Tech Reads 5/3/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/39_2026-05-03_Weekly-Health-Tech-Reads-5-3-26.md", "hasRaw": false}, {"index": "41", "date": "2026-05-10", "type": "reads", "subject": "Weekly Health Tech Reads 5/10/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/41_2026-05-10_Weekly-Health-Tech-Reads-5-10-26.md", "hasRaw": false}, {"index": "42", "date": "2026-05-17", "type": "reads", "subject": "Weekly Health Tech Reads: 5/17/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/42_2026-05-17_Weekly-Health-Tech-Reads-5-17-26.md", "hasRaw": false}, {"index": "43", "date": "2026-05-31", "type": "reads", "subject": "Weekly Health Tech Reads 5/31/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/43_2026-05-31_Weekly-Health-Tech-Reads-5-31-26.md", "hasRaw": false}, {"index": "44", "date": "2026-06-07", "type": "reads", "subject": "Weekly Health Tech Reads 6/7/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/44_2026-06-07_Weekly-Health-Tech-Reads-6-7-26.md", "hasRaw": false}, {"index": "45", "date": "2026-06-14", "type": "reads", "subject": "Weekly Health Tech Reads 6/14/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/45_2026-06-14_Weekly-Health-Tech-Reads-6-14-26.md", "hasRaw": false}, {"index": "46", "date": "2026-06-21", "type": "reads", "subject": "Weekly Health Tech Reads 6/21/2026", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/46_2026-06-21_Weekly-Health-Tech-Reads-6-21-2026.md", "hasRaw": false}, {"index": "47", "date": "2026-06-28", "type": "reads", "subject": "Weekly Health Tech Reads 6/28/2026", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/47_2026-06-28_Weekly-Health-Tech-Reads-6-28-2026.md", "hasRaw": false}, {"index": "48", "date": "2026-07-12", "type": "reads", "subject": "Weekly Health Tech Reads 7/12/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/48_2026-07-12_Weekly-Health-Tech-Reads-7-12-26.md", "hasRaw": false}, {"index": "49", "date": "2026-07-19", "type": "reads", "subject": "Weekly Health Tech Reads 7/19/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/49_2026-07-19_Weekly-Health-Tech-Reads-7-19-26.md", "hasRaw": false}, {"index": "50", "date": "2026-07-26", "type": "reads", "subject": "Weekly Health Tech Reads 7/26/2026", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/50_2026-07-26_Weekly-Health-Tech-Reads-7-26-2026.md", "hasRaw": false}, {"index": "51", "date": "2026-08-02", "type": "reads", "subject": "Weekly Health Tech Reads 8/2/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/51_2026-08-02_Weekly-Health-Tech-Reads-8-2-26.md", "hasRaw": false}, {"index": "52", "date": "2026-08-09", "type": "reads", "subject": "Weekly Health Tech Reads 8/9/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/52_2026-08-09_Weekly-Health-Tech-Reads-8-9-26.md", "hasRaw": false}, {"index": "53", "date": "2026-08-16", "type": "reads", "subject": "Weekly Health Tech Reads 8/16/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/53_2026-08-16_Weekly-Health-Tech-Reads-8-16-26.md", "hasRaw": false}, {"index": "55", "date": "2026-08-30", "type": "reads", "subject": "Weekly Health Tech Reads 8/30/26", "path": "/Users/gravitylabs/Downloads/HealthTechNerds_뉴스레터_20260910/55_2026-08-30_Weekly-Health-Tech-Reads-8-30-26.md", "hasRaw": false}]
 log(`회차 ${files.length}건 처리 시작`)
 
 const results = await pipeline(
@@ -294,9 +338,15 @@ ${GOAL}
 2. **주장 귀속**: 필자가 한 말이 experts 에 들어가 있거나, 인터뷰이가 한 말이 author 에 들어가 있지 않은가.
    섞여 있으면 갈라 놓는다. 이것이 이 감사에서 가장 중요한 항목이다.
 3. **근거**: claim 마다 evidence 가 원문에 실제로 있는가. 없는데 있는 것처럼 적었으면 "근거를 대지 않았다"로 고친다.
-4-0. **회차 전체 인사이트**: issue_insight 의 sections 가 실제로 insight 가 달린 꼭지와 일치하는가.
-   summary 가 꼭지 인사이트를 그대로 이어 붙인 것에 그치지 않는가. 그렇다면 회차 전체의 판단으로 다시 쓴다.
+3-1. **요약이 쪼개져 있는가**: tldr 의 두 항목이 같은 사건이나 같은 회사를 나눠 담고 있으면 한 항목으로 합친다.
+   합칠 때 point 가 두 줄이 되어도 괜찮다. 합친 뒤 note 도 다시 쓴다.
+4-0. **회차 전체 인사이트**: issue_insight 가 build 와 signal 두 갈래 불렛으로 되어 있는가.
+   summary 가 한두 문장을 넘겨 장황하면 줄이고 내용을 불렛으로 옮긴다.
+   build 와 signal 의 section 번호가 실제 꼭지와 맞는지 확인한다.
    tldr 의 note 가 point 를 되풀이하고 있으면 배경 설명으로 바꾸거나 빈 문자열로 둔다.
+4-1. **시장 신호**: 소비자가 직접 돈이나 시간을 쓰는 흐름이 드러난 꼭지에 signal 이 비어 있으면 채운다.
+   반대로 병원과 보험사 사이의 돈 이야기, 청구 업무, 기업 인수합병에 signal 이 붙어 있으면 null 로 되돌린다.
+   그것은 소비자 행동이 아니다.
 4. **억지 인사이트**: insight 가 위 목적에 정말로 쓸 수 있는 것인가.
    "업계 흐름이라 흥미롭다" 수준이거나, 웨어러블 개발·규제 허가처럼 3개월 안에 불가능한 것을 적었으면 **null 로 되돌린다.**
    인사이트가 없는 꼭지가 대부분인 것이 정상이다. 억지로 채운 것을 걷어내는 일이 이 항목의 목적이다.
