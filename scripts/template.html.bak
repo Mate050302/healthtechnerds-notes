@@ -573,41 +573,7 @@ mark{background:var(--accent-soft); color:var(--accent-ink); padding:0 2px; bord
 var DB = JSON.parse(document.getElementById('payload').textContent);
 var ISSUES = DB.issues || [];
 var EXTRAS = DB.extras || {};
-var COMPANIES = {};
-(DB.companies || []).forEach(function(c){ COMPANIES[c.slug] = c; });
-var SPLIT = !!DB.split;          /* 본문을 조각 파일로 나눠 두었는가 */
-var CACHE = { issue:{}, company:{}, extras:null };
-
-function fetchJSON(path){
-  return fetch(path, {cache:'no-cache'}).then(function(r){
-    if(!r.ok) throw new Error(path + ' ' + r.status);
-    return r.json();
-  });
-}
-function showLoading(msg){
-  document.getElementById('content').innerHTML =
-    '<div class="empty">' + esc(msg || '불러오는 중입니다') + '</div>';
-}
-/* 본문이 필요한 화면은 조각 파일을 먼저 받아 온 뒤에 그린다. */
-function need(kind, id, draw){
-  if(!SPLIT){ draw(); return; }
-  if(CACHE[kind][id]){ draw(); return; }
-  showLoading();
-  var path = kind === 'issue' ? 'site/issue-' + id + '.json' : 'site/company-' + id + '.json';
-  fetchJSON(path).then(function(d){
-    CACHE[kind][id] = d;
-    draw();
-  }).catch(function(e){
-    document.getElementById('content').innerHTML =
-      '<div class="empty">내용을 불러오지 못했습니다.<br><small>' + esc(String(e)) + '</small></div>';
-  });
-}
-function needExtras(draw){
-  if(!SPLIT || CACHE.extras){ draw(); return; }
-  showLoading();
-  fetchJSON('site/extras.json').then(function(d){ CACHE.extras = d; EXTRAS = d; draw(); })
-    .catch(function(){ CACHE.extras = {}; EXTRAS = {}; draw(); });
-}
+var COMPANIES = DB.companies || {};
 var TYPE_LABEL = {reads:'테크 리즈', policy:'정책 브리핑', roundup:'그랜드 라운드업', interview:'인터뷰', event:'안내'};
 var THEME_LABEL = DB.themeLabels || {};
 
@@ -628,7 +594,6 @@ function el(html){ var d = document.createElement('div'); d.innerHTML = html; re
 function fmtDate(d){ if(!d) return ''; var p = d.split('-'); return p[0] + '.' + p[1] + '.' + p[2]; }
 function monthKey(d){ var p = String(d||'').split('-'); return p[0] + '년 ' + parseInt(p[1],10) + '월'; }
 function issueText(it){
-  if(it.q) return it.q;
   if(it._txt) return it._txt;
   var buf = [it.title_ko, it.title_en, it.hook, (it.tldr||[]).join(' ')];
   (it.sections||[]).forEach(function(s){
@@ -813,15 +778,10 @@ function secHTML(s, n){
 function viewIssue(id){
   var i = ISSUES.findIndex(function(x){ return x.index === id; });
   if(i < 0){ document.getElementById('content').innerHTML = '<div class="empty">해당 회차를 찾을 수 없습니다</div>'; return; }
-  need('issue', id, function(){ drawIssue(id, i); });
-}
-function drawIssue(id, i){
-  var part = CACHE.issue[id];
-  var it = part ? part.issue : ISSUES[i];
-  var h = [];
+  var it = ISSUES[i], h = [];
   var secs = it.sections || [];
   /* 원문 번역본은 늘 함께 보여 준다. 켜고 끄는 단추를 두지 않는다. */
-  state.raw = part ? (part.raw || null) : null;
+  state.raw = (DB.raw && DB.raw[it.index]) ? DB.raw[it.index] : null;
   document.getElementById('content').className = 'wrap doc' + (state.raw ? ' cmpon' : '');
 
   /* --- 1. 제목 --- */
@@ -1029,7 +989,7 @@ function viewCompanies(){
   var list = Object.keys(COMPANIES).map(function(k){ return COMPANIES[k]; });
   var q = state.q.trim().toLowerCase();
   if(q) list = list.filter(function(c){
-    return (c.q || JSON.stringify(c).toLowerCase()).indexOf(q) >= 0; });
+    return JSON.stringify(c).toLowerCase().indexOf(q) >= 0; });
   list.sort(function(a,b){ return (a.name||'').localeCompare(b.name||''); });
 
   var h = ['<h2>투자받은 회사</h2>',
@@ -1078,11 +1038,8 @@ function viewCompanies(){
   document.getElementById('content').innerHTML = h.join('');
 }
 function viewCompany(slug){
-  if(!COMPANIES[slug]){ document.getElementById('content').innerHTML = '<div class="empty">해당 회사를 찾을 수 없습니다</div>'; return; }
-  need('company', slug, function(){ drawCompany(slug); });
-}
-function drawCompany(slug){
-  var c = CACHE.company[slug] || COMPANIES[slug];
+  var c = COMPANIES[slug];
+  if(!c){ document.getElementById('content').innerHTML = '<div class="empty">해당 회사를 찾을 수 없습니다</div>'; return; }
   document.getElementById('crumb').textContent = '회사 · ' + c.name;
   var h = ['<button class="backlink" data-nav="companies">회사 목록으로</button>'];
   h.push('<h2>' + esc(c.name) + '</h2>');
@@ -1164,11 +1121,11 @@ function render(){
   if(v === 'issue') viewIssue(state.id);
   else if(v === 'companies') viewCompanies();
   else if(v === 'company') viewCompany(state.id);
-  else if(v === 'glossary') needExtras(viewGlossary);
-  else if(v === 'themes') needExtras(viewThemes);
-  else if(v === 'timeline') needExtras(viewTimeline);
-  else if(v === 'primer') needExtras(function(){ viewDoc('primer','미국 헬스케어 101'); });
-  else if(v === 'consumer') needExtras(function(){ viewDoc('consumer','소비자 시장'); });
+  else if(v === 'glossary') viewGlossary();
+  else if(v === 'themes') viewThemes();
+  else if(v === 'timeline') viewTimeline();
+  else if(v === 'primer') viewDoc('primer','미국 헬스케어 101');
+  else if(v === 'consumer') viewDoc('consumer','소비자 시장');
   else viewHome();
   document.querySelector('.main').scrollTop = 0;
   window.scrollTo(0,0);

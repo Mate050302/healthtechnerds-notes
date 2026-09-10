@@ -175,70 +175,20 @@ def main():
             except Exception as e:  # noqa: BLE001
                 print(f"  ! companies/{p3.name} 파싱 실패: {e}")
 
-    # 회차가 늘수록 한 파일이 무거워지므로, 본문은 조각 파일로 빼고
-    # 첫 화면에는 목록을 그리는 데 필요한 만큼만 담는다.
-    site = ROOT / "site"
-    if site.exists():
-        for old_f in site.glob("*.json"):
-            old_f.unlink()
-    site.mkdir(exist_ok=True)
-
-    def dump(name, obj):
-        (site / name).write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-
-    index_issues = []
-    for it in issues:
-        secs = it.get("sections") or []
-        ii = it.get("issue_insight") or {}
-        # 검색은 목록에서 이루어지므로 훑을 만큼의 글자만 색인에 넣는다.
-        bits = [it.get("title_ko", ""), it.get("title_en", ""), it.get("hook", "")]
-        for t in it.get("tldr") or []:
-            bits.append(t.get("point", "") if isinstance(t, dict) else str(t))
-        for sec in secs:
-            bits.append(sec.get("heading_ko", ""))
-            bits.append(sec.get("heading_en", ""))
-            for c in sec.get("cases") or []:
-                bits.append(c.get("name", ""))
-            for n in sec.get("notes") or []:
-                bits.append(n.get("term", ""))
-        index_issues.append({
-            "index": it["index"], "date": it.get("date", ""), "type": it.get("type", ""),
-            "title_ko": it.get("title_ko", ""), "title_en": it.get("title_en", ""),
-            "hook": it.get("hook", ""), "themes": it.get("themes", []),
-            "n_sec": len(secs),
-            "n_build": len(ii.get("build") or []), "n_signal": len(ii.get("signal") or []),
-            "q": " ".join(x for x in bits if x).lower(),
-        })
-        dump(f"issue-{it['index']}.json", {"issue": it, "raw": raw.get(it["index"])})
-
-    index_companies = []
-    for slug, c in companies.items():
-        cd = c.get("card") or {}
-        index_companies.append({
-            "slug": slug, "name": c.get("name", ""), "one_liner": c.get("one_liner", ""),
-            "sells_to": c.get("sells_to", ""), "seen_in": c.get("seen_in", []),
-            "card": cd, "screenshots": (c.get("screenshots") or [])[:3],
-            "q": json.dumps(c, ensure_ascii=False).lower(),
-        })
-        dump(f"company-{slug}.json", c)
-
-    dump("extras.json", extras)
-
-    payload = {"issues": index_issues, "companies": index_companies,
-               "themeLabels": THEME_LABELS, "split": True}
+    payload = {"issues": issues, "extras": extras, "themeLabels": THEME_LABELS,
+               "raw": raw, "companies": companies}
     data = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     data = data.replace("</script", "<\\/script").replace("<!--", "<\\!--")
 
     html = TPL.read_text(encoding="utf-8").replace("__DATA__", data)
     OUT.write_text(html, encoding="utf-8")
-    n_parts = len(list(site.glob("*.json")))
 
     n_sec = sum(len(i.get("sections") or []) for i in issues)
     print(
         f"빌드 완료 → {OUT}\n"
         f"  회차 {len(issues)}건 · 꼭지 {n_sec}개 · 용어 {n_terms}개 · 원문 번역본 {len(raw)}건 · 회사 {len(companies)}곳 · "
         f"부록 {', '.join(sorted(extras)) or '없음'}\n"
-        f"  첫 화면 {OUT.stat().st_size/1024:.0f}KB · 조각 파일 {n_parts}개"
+        f"  크기 {OUT.stat().st_size/1024:.0f}KB"
     )
 
 
