@@ -1,0 +1,1148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Health Tech Nerds 정리 노트 — 미국 헬스케어 읽기</title>
+<meta name="description" content="Health Tech Nerds 뉴스레터 55회차를, 미국 헬스케어를 처음 보는 사람 기준으로 한글로 풀어 쓴 정리 노트">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{
+  --bg:#faf9f7; --surface:#fff; --surface-2:#f4f2ee; --text:#1b1a18; --muted:#6d6860;
+  --line:#e5e1d9; --line-soft:#efece6;
+  --accent:#1c6d5b; --accent-soft:#e4f1ed; --accent-ink:#12503f;
+  --warn:#8a5a10; --warn-soft:#fbf0dc;
+  --t-reads:#1f5fa8; --t-reads-bg:#e6eefa;
+  --t-policy:#8a5a10; --t-policy-bg:#fbf0dc;
+  --t-roundup:#6b3f9e; --t-roundup-bg:#f0e9fb;
+  --t-interview:#a33a6b; --t-interview-bg:#fbe8f1;
+  --t-event:#5a5a5a; --t-event-bg:#ececec;
+  --radius:12px;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+  --sans:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+}
+:root:not([data-theme="light"]){ color-scheme:light }
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#131519; --surface:#1a1d22; --surface-2:#20242b; --text:#e9e7e3; --muted:#9aa0a8;
+    --line:#2b3038; --line-soft:#232830;
+    --accent:#63c3a8; --accent-soft:#173028; --accent-ink:#8fd9c2;
+    --warn:#d9ab63; --warn-soft:#2e2415;
+    --t-reads:#7fb0e8; --t-reads-bg:#182634;
+    --t-policy:#d9ab63; --t-policy-bg:#2e2415;
+    --t-roundup:#b493e0; --t-roundup-bg:#241c33;
+    --t-interview:#e08bb2; --t-interview-bg:#331823;
+    --t-event:#a8a8a8; --t-event-bg:#26262a;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#131519; --surface:#1a1d22; --surface-2:#20242b; --text:#e9e7e3; --muted:#9aa0a8;
+  --line:#2b3038; --line-soft:#232830;
+  --accent:#63c3a8; --accent-soft:#173028; --accent-ink:#8fd9c2;
+  --t-reads:#7fb0e8; --t-reads-bg:#182634;
+  --t-policy:#d9ab63; --t-policy-bg:#2e2415;
+  --t-roundup:#b493e0; --t-roundup-bg:#241c33;
+  --t-interview:#e08bb2; --t-interview-bg:#331823;
+  --t-event:#a8a8a8; --t-event-bg:#26262a;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--text); font-family:var(--sans);
+  font-size:16px; line-height:1.75; -webkit-font-smoothing:antialiased;
+  word-break:keep-all; overflow-wrap:anywhere;
+}
+a{color:var(--accent-ink); text-decoration:none}
+a:hover{text-decoration:underline}
+button{font-family:inherit; font-size:inherit; color:inherit}
+
+/* ---------- layout ---------- */
+.app{display:grid; grid-template-columns:308px minmax(0,1fr); min-height:100vh}
+.side{
+  border-right:1px solid var(--line); background:var(--surface);
+  position:sticky; top:0; height:100vh; display:flex; flex-direction:column; min-width:0;
+}
+.main{min-width:0; display:flex; flex-direction:column}
+
+/* ---------- sidebar ---------- */
+.brand{padding:18px 18px 12px; border-bottom:1px solid var(--line-soft)}
+.brand h1{margin:0; font-size:15px; font-weight:700; letter-spacing:-.01em}
+.brand p{margin:4px 0 0; font-size:12.5px; color:var(--muted); line-height:1.5}
+.searchwrap{padding:12px 14px 8px}
+.search{
+  width:100%; padding:9px 12px; border-radius:9px; border:1px solid var(--line);
+  background:var(--surface-2); color:var(--text); font-size:13.5px;
+}
+.search::placeholder{color:var(--muted)}
+.search:focus{outline:2px solid var(--accent); outline-offset:-1px; background:var(--surface)}
+.navlinks{display:flex; flex-wrap:wrap; gap:6px; padding:2px 14px 10px}
+.navlink{
+  border:1px solid var(--line); background:var(--surface-2); border-radius:999px;
+  padding:5px 11px; font-size:12.5px; cursor:pointer; color:var(--muted);
+}
+.navlink:hover{border-color:var(--accent); color:var(--accent-ink)}
+.navlink.on{background:var(--accent-soft); border-color:var(--accent); color:var(--accent-ink); font-weight:600}
+.filters{display:flex; flex-wrap:wrap; gap:5px; padding:0 14px 10px; border-bottom:1px solid var(--line-soft)}
+.chip{
+  border:1px solid var(--line); background:transparent; border-radius:999px;
+  padding:3px 9px; font-size:11.5px; cursor:pointer; color:var(--muted);
+}
+.chip.on{background:var(--accent); border-color:var(--accent); color:#fff}
+:root[data-theme="dark"] .chip.on{color:#0e1a16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .chip.on{color:#0e1a16}}
+.issuelist{overflow-y:auto; flex:1; padding:6px 8px 24px}
+.ilist-head{
+  font-size:11px; color:var(--muted); padding:10px 8px 4px; letter-spacing:.04em;
+  text-transform:uppercase; font-weight:700; position:sticky; top:0; background:var(--surface);
+}
+.ilist-month{
+  font-size:11.5px; color:var(--muted); font-weight:700; padding:12px 8px 4px;
+  border-top:1px solid var(--line-soft); margin-top:6px;
+}
+.ilist-month:first-child{border-top:0; margin-top:0}
+.irow{
+  display:block; width:100%; text-align:left; border:0; background:transparent;
+  padding:8px 10px; border-radius:9px; cursor:pointer; line-height:1.45;
+}
+.irow:hover{background:var(--surface-2)}
+.irow.on{background:var(--accent-soft)}
+.irow .r1{display:flex; align-items:center; gap:6px; margin-bottom:2px}
+.irow .num{font-family:var(--mono); font-size:10.5px; color:var(--muted)}
+.irow .ttl{font-size:13px; font-weight:600; color:var(--text); display:block}
+.irow.on .ttl{color:var(--accent-ink)}
+.irow .sub{font-size:11.5px; color:var(--muted); display:block; margin-top:2px}
+.badge{
+  font-size:10px; font-weight:700; padding:1.5px 6px; border-radius:5px; white-space:nowrap;
+  letter-spacing:.01em;
+}
+.b-reads{background:var(--t-reads-bg); color:var(--t-reads)}
+.b-policy{background:var(--t-policy-bg); color:var(--t-policy)}
+.b-roundup{background:var(--t-roundup-bg); color:var(--t-roundup)}
+.b-interview{background:var(--t-interview-bg); color:var(--t-interview)}
+.b-event{background:var(--t-event-bg); color:var(--t-event)}
+
+/* ---------- topbar ---------- */
+.topbar{
+  position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:saturate(180%) blur(10px);
+  border-bottom:1px solid var(--line); padding:10px 16px;
+  display:flex; align-items:center; gap:10px;
+}
+.menubtn{display:none; border:1px solid var(--line); background:var(--surface); border-radius:8px; padding:6px 10px; cursor:pointer}
+.crumb{font-size:12.5px; color:var(--muted); flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.iconbtn{border:1px solid var(--line); background:var(--surface); border-radius:8px; padding:5px 10px; cursor:pointer; font-size:12.5px; color:var(--muted)}
+.iconbtn:hover{border-color:var(--accent); color:var(--accent-ink)}
+
+/* ---------- content ---------- */
+.wrap{padding:26px 30px 120px; max-width:860px; width:100%; margin:0 auto}
+.doc h2{font-size:25px; line-height:1.35; margin:0 0 6px; letter-spacing:-.02em}
+.doc h3{font-size:18px; margin:34px 0 10px; letter-spacing:-.01em; scroll-margin-top:70px}
+.doc h4{font-size:15px; margin:22px 0 6px}
+.doc p{margin:0 0 12px}
+.doc ul,.doc ol{margin:0 0 14px; padding-left:20px}
+.doc li{margin-bottom:5px}
+.meta{display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin:0 0 16px; font-size:12.5px; color:var(--muted)}
+.hook{
+  font-size:17px; line-height:1.7; font-weight:600; letter-spacing:-.01em;
+  padding:14px 16px; border-left:3px solid var(--accent); background:var(--accent-soft);
+  border-radius:0 10px 10px 0; margin:0 0 22px; color:var(--accent-ink);
+}
+.card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; margin:0 0 14px}
+.tldr{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:14px 18px 6px; margin:0 0 26px}
+.tldr .lbl{font-size:11px; font-weight:800; letter-spacing:.06em; color:var(--muted); text-transform:uppercase}
+.tldr ol{margin:8px 0 10px; padding-left:20px}
+.tldr li{margin-bottom:7px}
+
+.sec{border:1px solid var(--line); border-radius:var(--radius); background:var(--surface); margin:0 0 16px; overflow:hidden}
+.sec > h3{margin:0; padding:14px 18px 12px; font-size:17px; border-bottom:1px solid var(--line-soft); background:var(--surface)}
+.sec > h3 .en{display:block; font-size:11.5px; font-weight:500; color:var(--muted); margin-top:3px; letter-spacing:0}
+.secbody{padding:14px 18px 6px}
+.qa{margin:0 0 14px}
+.qa .lbl{
+  display:inline-block; font-size:10.5px; font-weight:800; letter-spacing:.05em;
+  padding:2px 7px; border-radius:5px; margin-bottom:6px;
+  background:var(--surface-2); color:var(--muted); border:1px solid var(--line-soft);
+}
+.qa.what .lbl{background:var(--t-reads-bg); color:var(--t-reads); border-color:transparent}
+.qa.why .lbl{background:var(--accent-soft); color:var(--accent-ink); border-color:transparent}
+.qa.struct .lbl{background:var(--t-roundup-bg); color:var(--t-roundup); border-color:transparent}
+.qa.consumer .lbl{background:var(--t-policy-bg); color:var(--t-policy); border-color:transparent}
+.qa p{margin:0 0 10px}
+.qa p:last-child{margin-bottom:0}
+.stats{display:flex; flex-wrap:wrap; gap:8px; margin:0 0 14px}
+.stat{background:var(--surface-2); border:1px solid var(--line-soft); border-radius:9px; padding:8px 11px; min-width:0}
+.stat b{display:block; font-size:15px; font-family:var(--mono); letter-spacing:-.02em}
+.stat span{display:block; font-size:11.5px; color:var(--muted); line-height:1.45; margin-top:2px}
+.players{display:flex; flex-direction:column; gap:6px; margin:0 0 14px}
+.player{font-size:13px; line-height:1.6; padding:7px 11px; background:var(--surface-2); border-radius:8px; border:1px solid var(--line-soft)}
+.player b{color:var(--text)}
+.player span{color:var(--muted)}
+.terms{margin:0 0 16px; padding:12px 15px 13px; background:var(--surface-2); border:1px solid var(--line-soft); border-radius:10px}
+.terms .lbl{font-size:11px; font-weight:800; letter-spacing:.04em; color:var(--accent-ink); display:block; margin-bottom:9px}
+.term{font-size:13px; line-height:1.65; margin-bottom:9px}
+.term:last-child{margin-bottom:0}
+.term.core{
+  background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--accent);
+  border-radius:8px; padding:11px 13px; margin-bottom:10px; font-size:13.5px; line-height:1.75;
+}
+.term.core b{font-size:14px}
+.term.core .pl{margin-top:4px}
+.term b{color:var(--text)}
+.term .ko{color:var(--accent-ink); font-weight:600}
+.term .pl{color:var(--muted); display:block}
+/* ---------- 투자받은 회사 ---------- */
+.ccard{
+  display:block; width:100%; text-align:left; border:1px solid var(--line); background:var(--surface);
+  border-radius:var(--radius); padding:14px 17px; margin:0 0 10px; cursor:pointer; line-height:1.6;
+}
+.ccard:hover{border-color:var(--accent); background:var(--surface-2)}
+.ccard .cn{font-size:16px; font-weight:700; margin-right:8px}
+.ccard .cs{font-size:11px; font-weight:700; padding:2px 8px; border-radius:5px; background:var(--t-reads-bg); color:var(--t-reads)}
+.ccard .co{display:block; font-size:13.5px; color:var(--muted); margin-top:4px}
+.ccard .cr{display:inline-block; font-size:11px; color:var(--muted); font-family:var(--mono); margin-top:6px}
+.backlink{
+  border:1px solid var(--line); background:var(--surface); color:var(--muted);
+  border-radius:8px; padding:5px 11px; font-size:12.5px; cursor:pointer; margin:0 0 14px;
+}
+.backlink:hover{border-color:var(--accent); color:var(--accent-ink)}
+.cblock{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:15px 18px; margin:0 0 12px}
+.cblock .lbl{display:block; font-size:11px; font-weight:800; letter-spacing:.05em; color:var(--muted); margin-bottom:8px}
+.cblock p{margin:0 0 10px; font-size:14.5px; line-height:1.8}
+.cblock p:last-child{margin-bottom:0}
+.cblock.warn{border-color:var(--t-policy); background:var(--t-policy-bg)}
+.cblock.warn .lbl{color:var(--t-policy)}
+.cblock.forus{border-color:var(--accent); background:var(--accent-soft)}
+.cblock.forus .lbl, .cblock.forus p{color:var(--accent-ink)}
+.cfeat, .cteam, .ctrac, .csrc{list-style:none; margin:0; padding:0}
+.cfeat li{padding:8px 0 8px 12px; border-left:3px solid var(--line); margin-bottom:8px}
+.cfeat b{display:block; font-size:14px}
+.cfeat span{display:block; font-size:13.5px; color:var(--muted); margin-top:2px; line-height:1.7}
+.cteam li{padding:7px 0; border-bottom:1px solid var(--line-soft); font-size:14px}
+.cteam li:last-child{border-bottom:0}
+.cteam .role{font-size:11.5px; color:var(--muted); background:var(--surface-2); padding:1px 7px; border-radius:5px; margin-left:7px}
+.cteam span:not(.role){display:block; font-size:13px; color:var(--muted); margin-top:3px}
+.ctrac li{display:flex; gap:9px; align-items:baseline; padding:7px 0; border-bottom:1px solid var(--line-soft); flex-wrap:wrap}
+.ctrac li:last-child{border-bottom:0}
+.tt2{font-size:10.5px; font-weight:800; padding:2px 8px; border-radius:5px; background:var(--surface-2); color:var(--muted); flex:none}
+.tt2.t-funding{background:var(--accent-soft); color:var(--accent-ink)}
+.tt2.t-regulatory{background:var(--t-policy-bg); color:var(--t-policy)}
+.tt2.t-partnership{background:var(--t-roundup-bg); color:var(--t-roundup)}
+.tt2.t-revenue, .tt2.t-customers, .tt2.t-traffic{background:var(--t-reads-bg); color:var(--t-reads)}
+.ctrac .d{flex:1; min-width:0; font-size:14px; line-height:1.7}
+.ctrac .w{font-family:var(--mono); font-size:11.5px; color:var(--muted)}
+/* 세로로 긴 갈무리가 섞여 있어 단 배치로 빈 공간을 줄인다. */
+.cshots{columns:2; column-gap:12px}
+.cshots figure{margin:0 0 14px; break-inside:avoid}
+.cshots a{display:block; position:relative; border:1px solid var(--line); border-radius:9px; overflow:hidden; background:var(--surface-2)}
+.cshots img{width:100%; display:block; max-height:520px; object-fit:cover; object-position:top}
+.cshots a::after{
+  content:'원본 보기'; position:absolute; right:8px; bottom:8px; font-size:10.5px; font-weight:700;
+  background:rgba(0,0,0,.62); color:#fff; padding:3px 8px; border-radius:5px; opacity:0; transition:opacity .15s;
+}
+.cshots a:hover::after{opacity:1}
+.cshots figcaption{font-size:12px; color:var(--muted); margin-top:5px; line-height:1.6}
+@media (max-width:900px){ .cshots{columns:1} }
+.csrc li{padding:6px 0; font-size:13.5px; border-bottom:1px solid var(--line-soft)}
+.csrc li:last-child{border-bottom:0}
+.csrc span{display:block; font-size:12.5px; color:var(--muted); margin-top:2px}
+
+/* ---------- 회차 머리: 요약 → 건질 것 → 꼭지 고르기 ---------- */
+.ihead{margin:0 0 26px}
+.tldr{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:15px 20px 8px; margin:0 0 14px}
+.tldr .lbl{font-size:11px; font-weight:800; letter-spacing:.05em; color:var(--muted)}
+.tldr ol{margin:10px 0 8px; padding-left:20px}
+.tldr li{margin-bottom:12px}
+.tldr .pt{display:block; font-size:15px; line-height:1.7; font-weight:600}
+.tldr .nt{display:block; font-size:13.5px; line-height:1.7; color:var(--muted); margin-top:3px}
+
+.issueins{border-radius:var(--radius); padding:15px 20px; margin:0 0 16px}
+.issueins.yes{background:var(--accent-soft); border:1px solid var(--accent); border-left:4px solid var(--accent)}
+.issueins.no{background:var(--surface); border:1px dashed var(--line)}
+.issueins .lbl{display:block; font-size:11px; font-weight:800; letter-spacing:.05em; margin-bottom:7px}
+.issueins.yes .lbl{color:var(--accent-ink)}
+.issueins.no .lbl{color:var(--muted)}
+.issueins p{margin:0; font-size:14.5px; line-height:1.8}
+.issueins.yes p{color:var(--accent-ink)}
+.issueins.no p{color:var(--muted)}
+.issueins .jump{display:flex; flex-wrap:wrap; gap:6px; margin-top:11px}
+.issueins .jump button{
+  border:1px solid var(--accent); background:var(--surface); color:var(--accent-ink);
+  border-radius:8px; padding:5px 11px; font-size:12.5px; cursor:pointer; font-weight:600;
+}
+.issueins .jump button:hover{background:var(--accent); color:#fff}
+
+.issueins .igrp{margin-top:13px}
+.issueins .gl{
+  display:inline-block; font-size:10.5px; font-weight:800; letter-spacing:.04em;
+  padding:2px 9px; border-radius:5px; margin-bottom:8px;
+}
+.issueins .igrp.b .gl{background:var(--accent); color:#fff}
+.issueins .igrp.s .gl{background:var(--t-policy-bg); color:var(--t-policy)}
+:root[data-theme="dark"] .issueins .igrp.b .gl{color:#0e1a16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .issueins .igrp.b .gl{color:#0e1a16}}
+.ibul{list-style:none; margin:0; padding:0}
+.ibul li{
+  padding:9px 0 9px 13px; border-left:3px solid var(--accent); margin-bottom:8px;
+  background:var(--surface); border-radius:0 8px 8px 0; padding-right:12px;
+}
+.ibul.s li{border-left-color:var(--t-policy)}
+.ibul li:last-child{margin-bottom:0}
+.ibul b{display:block; font-size:14px; line-height:1.6; color:var(--text)}
+.ibul span{display:block; font-size:13.5px; line-height:1.7; color:var(--muted); margin-top:3px}
+.ibul .src{
+  display:inline-block; margin-top:6px; border:1px solid var(--line); background:var(--surface-2);
+  color:var(--muted); border-radius:5px; font-size:11px; padding:2px 8px; cursor:pointer;
+}
+.ibul .src:hover{border-color:var(--accent); color:var(--accent-ink)}
+.insbox.sig{border-color:var(--t-policy); border-left-color:var(--t-policy); background:var(--t-policy-bg)}
+.insbox.sig .lbl{color:var(--t-policy)}
+.insbox.sig p{color:var(--text)}
+.pbadge.sig{background:var(--t-policy-bg); color:var(--t-policy)}
+.stoc .dot.sig{background:var(--t-policy)}
+
+.picker{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:13px 12px 10px}
+.picker .lbl{display:block; font-size:11px; font-weight:800; letter-spacing:.05em; color:var(--muted); padding:0 8px 8px}
+.prow{
+  display:flex; align-items:flex-start; gap:10px; width:100%; text-align:left;
+  border:0; background:transparent; padding:8px 10px; border-radius:9px; cursor:pointer; line-height:1.5;
+}
+.prow:hover{background:var(--surface-2)}
+.prow .pn{font-family:var(--mono); font-size:11px; color:var(--muted); padding-top:3px; min-width:16px}
+.prow .pmain{flex:1; min-width:0}
+.prow .pt{display:block; font-size:14px; font-weight:600}
+.prow .ps{display:block; font-size:12.5px; color:var(--muted); margin-top:2px}
+.prow.dim .pt{color:var(--muted); font-weight:500}
+.prow.has .pt{color:var(--accent-ink)}
+.pbadge{font-size:10px; font-weight:800; padding:2px 7px; border-radius:5px; white-space:nowrap; margin-top:2px}
+.pbadge.ins{background:var(--accent); color:#fff}
+.pbadge.skip{background:var(--line-soft); color:var(--muted)}
+:root[data-theme="dark"] .pbadge.ins{color:#0e1a16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pbadge.ins{color:#0e1a16}}
+
+/* ---------- 사이드바 탭과 꼭지 목차 ---------- */
+.sidetabs{display:flex; gap:4px; padding:8px 14px 6px; border-bottom:1px solid var(--line-soft)}
+.sidetabs button{
+  flex:1; border:1px solid var(--line); background:var(--surface-2); color:var(--muted);
+  border-radius:8px; padding:6px 8px; font-size:12px; cursor:pointer;
+}
+.sidetabs button.on{background:var(--accent-soft); border-color:var(--accent); color:var(--accent-ink); font-weight:700}
+.sidetoc{display:none}
+.stoc-head{font-size:11px; font-weight:800; color:var(--muted); letter-spacing:.04em; padding:10px 10px 6px}
+.stoc{
+  display:flex; align-items:flex-start; gap:8px; width:100%; text-align:left; border:0;
+  background:transparent; padding:7px 10px; border-radius:8px; cursor:pointer; line-height:1.45;
+}
+.stoc:hover{background:var(--surface-2)}
+.stoc.on{background:var(--accent-soft)}
+.stoc.on .t{color:var(--accent-ink); font-weight:700}
+.stoc .n{font-family:var(--mono); font-size:10.5px; color:var(--muted); padding-top:2px; min-width:14px}
+.stoc .t{flex:1; font-size:12.5px; min-width:0}
+.stoc.dim .t{color:var(--muted); opacity:.75}
+.stoc .dot{width:6px; height:6px; border-radius:50%; background:var(--accent); margin-top:6px; flex:none}
+
+/* ---------- 요약·인사이트·주장·사례 ---------- */
+.sumbox{
+  background:var(--surface-2); border:1px solid var(--line-soft); border-radius:10px;
+  padding:12px 15px; margin:0 0 10px;
+}
+.sumbox .lbl, .insbox .lbl, .claims .lbl{
+  display:block; font-size:10.5px; font-weight:800; letter-spacing:.05em;
+  color:var(--muted); margin-bottom:6px;
+}
+.sumbox p{margin:0; font-size:14px; line-height:1.75}
+.insbox{
+  border:1px solid var(--accent); border-left:3px solid var(--accent);
+  background:var(--accent-soft); border-radius:10px; padding:12px 15px; margin:0 0 16px;
+}
+.insbox .lbl{color:var(--accent-ink)}
+.insbox p{margin:0; font-size:14px; line-height:1.75; color:var(--accent-ink)}
+.insbox.none{background:transparent; border-color:var(--line); border-left-color:var(--line)}
+.insbox.none .lbl{color:var(--muted)}
+.insbox.none p{color:var(--muted); font-size:13px}
+
+.claims{margin:0 0 16px}
+.claims .claim{
+  border-left:3px solid var(--line); padding:2px 0 2px 12px; margin:0 0 11px;
+}
+.claims.author .claim{border-left-color:var(--t-reads)}
+.claims.expert .claim{border-left-color:var(--t-interview)}
+.claims.case .claim{border-left-color:var(--t-roundup)}
+.claims.author .lbl{color:var(--t-reads)}
+.claims.expert .lbl{color:var(--t-interview)}
+.claims.case .lbl{color:var(--t-roundup)}
+.claim p{margin:0}
+.claim .who{font-size:13px; margin-bottom:3px; display:flex; gap:7px; align-items:baseline; flex-wrap:wrap}
+.claim .who b{font-size:13.5px}
+.claim .role, .claim .scale{
+  font-size:11.5px; color:var(--muted); background:var(--surface-2);
+  padding:1px 7px; border-radius:5px;
+}
+.claim .c{font-size:14px; line-height:1.7}
+.claim .e{font-size:13px; line-height:1.7; color:var(--muted); margin-top:4px}
+.claim .e span{
+  font-size:10px; font-weight:800; letter-spacing:.04em; color:var(--muted);
+  background:var(--surface-2); padding:1px 6px; border-radius:4px; margin-right:6px;
+}
+
+/* ---------- 건너뛰어도 되는 꼭지 ---------- */
+.sec.skip{background:transparent; border:1px dashed var(--line); border-radius:var(--radius); margin:0 0 16px}
+.sec.skip summary{
+  list-style:none; cursor:pointer; padding:11px 16px; display:flex; align-items:center;
+  gap:9px; flex-wrap:wrap; color:var(--muted); font-size:13px;
+}
+.sec.skip summary::-webkit-details-marker{display:none}
+.sec.skip summary::after{content:'펼치기'; margin-left:auto; font-size:11.5px; color:var(--muted); opacity:.8}
+.sec.skip[open] summary::after{content:'접기'}
+.sec.skip summary:hover{background:var(--surface-2); border-radius:var(--radius)}
+.skipbadge{
+  font-size:10.5px; font-weight:800; padding:2px 8px; border-radius:5px;
+  background:var(--line-soft); color:var(--muted); letter-spacing:.02em; flex:none;
+}
+.skiptitle{font-weight:600; color:var(--muted)}
+.skipnote{font-size:11.5px; color:var(--muted); opacity:.85}
+.sec.skip[open]{background:var(--surface); border-style:solid}
+.sec.skip .secbody{padding-top:2px}
+.sec.skip .qa p, .sec.skip .term, .sec.skip .player{font-size:13px}
+
+/* ---------- 원문 번역본 나란히 보기 ---------- */
+.cmptoggle{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin:0 0 18px}
+.cmptoggle button{
+  border:1px solid var(--accent); background:var(--surface); color:var(--accent-ink);
+  border-radius:9px; padding:7px 13px; font-size:13px; font-weight:600; cursor:pointer;
+}
+.cmptoggle button.on{background:var(--accent); color:#fff}
+:root[data-theme="dark"] .cmptoggle button.on{color:#0e1a16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cmptoggle button.on{color:#0e1a16}}
+.cmptoggle span{font-size:12.5px; color:var(--muted)}
+.sec.cmp{overflow:visible}
+.cmprow{display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:0}
+/* 비교 모드에서는 본문 폭을 넓혀, 정리 노트는 원래 폭(860px)을 그대로 두고
+   왼쪽 여백에 원문 번역본 열을 새로 만든다. */
+.wrap.cmpon{max-width:1560px}
+.wrap.cmpon > h2,
+.wrap.cmpon > .meta,
+.wrap.cmpon > .hook,
+.wrap.cmpon > .tldr,
+.wrap.cmpon > .toc,
+.wrap.cmpon > .later,
+.wrap.cmpon > .themebar,
+.wrap.cmpon > .pager,
+.wrap.cmpon > .cmptoggle{max-width:860px; margin-left:auto; margin-right:0}
+.wrap.cmpon .cmprow{grid-template-columns:minmax(0,1fr) minmax(0,860px)}
+.wrap.cmpon .rawcol p{font-size:15px}
+.rawcol{
+  padding:16px 20px 8px; background:var(--surface);
+  border-right:2px solid var(--line); min-width:0;
+}
+.notecol{padding:16px 20px 8px; min-width:0; background:var(--surface-2)}
+.rawlbl{
+  display:inline-block; font-size:10.5px; font-weight:800; letter-spacing:.05em;
+  padding:2px 8px; border-radius:5px; margin-bottom:10px;
+  background:var(--t-reads-bg); color:var(--t-reads);
+}
+.rawlbl.note{background:var(--accent-soft); color:var(--accent-ink)}
+.rawcol p{font-size:15px; line-height:1.85; margin:0 0 13px; color:var(--text)}
+@media (max-width:1320px){
+  .wrap.cmpon{max-width:900px}
+  .wrap.cmpon .cmprow, .cmprow{grid-template-columns:minmax(0,1fr)}
+  .rawcol{border-right:0; border-bottom:1px solid var(--line)}
+  .wrap.cmpon > h2, .wrap.cmpon > .meta, .wrap.cmpon > .hook, .wrap.cmpon > .tldr,
+  .wrap.cmpon > .toc, .wrap.cmpon > .later, .wrap.cmpon > .themebar,
+  .wrap.cmpon > .pager, .wrap.cmpon > .cmptoggle{margin-right:auto}
+}
+.themebar{display:flex; flex-wrap:wrap; gap:5px; margin:22px 0 0}
+.tt{font-size:11.5px; padding:3px 9px; border-radius:999px; background:var(--surface-2); border:1px solid var(--line); color:var(--muted); cursor:pointer}
+.tt:hover{border-color:var(--accent); color:var(--accent-ink)}
+.later{border:1px dashed var(--accent); background:var(--accent-soft); border-radius:var(--radius); padding:12px 16px; margin:18px 0 0}
+.later .lbl{font-size:11px; font-weight:800; color:var(--accent-ink); letter-spacing:.05em; text-transform:uppercase}
+.later ul{margin:8px 0 0; padding-left:18px; font-size:13.5px}
+.pager{display:flex; justify-content:space-between; gap:10px; margin-top:34px; border-top:1px solid var(--line); padding-top:16px}
+.pager button{
+  border:1px solid var(--line); background:var(--surface); border-radius:9px; padding:9px 14px;
+  cursor:pointer; font-size:13px; max-width:48%; text-align:left; line-height:1.4;
+}
+.pager button:hover{border-color:var(--accent)}
+.pager small{display:block; color:var(--muted); font-size:11px}
+.empty{color:var(--muted); font-size:14px; padding:40px 0; text-align:center}
+
+/* glossary / themes / timeline */
+.gl-letter{font-size:12px; font-weight:800; color:var(--accent-ink); margin:22px 0 6px; letter-spacing:.05em}
+.gitem{border-bottom:1px solid var(--line-soft); padding:11px 0}
+.gitem h4{margin:0 0 3px; font-size:15px}
+.gitem h4 .ko{color:var(--accent-ink); font-size:13.5px; font-weight:600; margin-left:6px}
+.gitem p{margin:0; font-size:13.5px; color:var(--muted); line-height:1.7}
+.gitem .refs{margin-top:5px; display:flex; flex-wrap:wrap; gap:4px}
+.gitem .refs button{border:1px solid var(--line); background:var(--surface-2); color:var(--muted); border-radius:5px; font-size:10.5px; padding:1px 6px; cursor:pointer; font-family:var(--mono)}
+.gitem .refs button:hover{border-color:var(--accent); color:var(--accent-ink)}
+.tl-item{display:grid; grid-template-columns:84px minmax(0,1fr); gap:14px; padding:12px 0; border-bottom:1px solid var(--line-soft)}
+.tl-item .d{font-family:var(--mono); font-size:11.5px; color:var(--muted); padding-top:3px}
+.tl-item h4{margin:0 0 3px; font-size:14.5px}
+.tl-item p{margin:0; font-size:13.5px; color:var(--muted)}
+.themecard{border:1px solid var(--line); border-radius:var(--radius); background:var(--surface); padding:15px 18px; margin-bottom:12px}
+.themecard h3{margin:0 0 6px; font-size:16px}
+.themecard p{margin:0 0 10px; font-size:13.5px; color:var(--muted)}
+.themecard .refs{display:flex; flex-wrap:wrap; gap:4px}
+.themecard .refs button{border:1px solid var(--line); background:var(--surface-2); color:var(--muted); border-radius:5px; font-size:10.5px; padding:2px 7px; cursor:pointer; font-family:var(--mono)}
+.themecard .refs button:hover{border-color:var(--accent); color:var(--accent-ink)}
+.toc{background:var(--surface-2); border:1px solid var(--line-soft); border-radius:var(--radius); padding:12px 16px; margin:0 0 24px}
+.toc .lbl{font-size:11px; font-weight:800; color:var(--muted); letter-spacing:.05em; text-transform:uppercase}
+.toc ol{margin:8px 0 0; padding-left:20px; font-size:13.5px}
+.toc a{color:var(--text)}
+.note{font-size:12.5px; color:var(--muted); border-top:1px solid var(--line); margin-top:40px; padding-top:14px; line-height:1.7}
+mark{background:var(--accent-soft); color:var(--accent-ink); padding:0 2px; border-radius:3px}
+
+/* ---------- responsive ---------- */
+.scrim{display:none}
+@media (max-width:900px){
+  .app{grid-template-columns:1fr}
+  .side{
+    position:fixed; z-index:60; left:0; top:0; width:min(86vw,320px); height:100vh;
+    transform:translateX(-102%); transition:transform .2s ease; box-shadow:0 0 40px rgba(0,0,0,.18);
+  }
+  .side.open{transform:none}
+  .menubtn{display:block}
+  .scrim.on{display:block; position:fixed; inset:0; background:rgba(0,0,0,.35); z-index:50}
+  .wrap{padding:20px 16px 100px}
+  .doc h2{font-size:21px}
+  .tl-item{grid-template-columns:1fr; gap:2px}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <aside class="side" id="side">
+    <div class="brand">
+      <h1>Health Tech Nerds 정리 노트</h1>
+      <p>미국 헬스케어를 처음 보는 사람 기준으로 풀어 쓴 55회차 요약</p>
+    </div>
+    <div class="searchwrap">
+      <input class="search" id="q" type="search" placeholder="검색 (회사·용어·주제…)" autocomplete="off">
+    </div>
+    <div class="navlinks" id="navlinks"></div>
+    <div class="filters" id="filters"></div>
+    <div class="sidetabs" id="sidetabs">
+      <button data-tab="list">회차 목록</button>
+      <button data-tab="toc">이 회차 꼭지</button>
+    </div>
+    <div class="issuelist" id="issuelist"></div>
+    <div class="issuelist sidetoc" id="sidetoc"></div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+  <main class="main">
+    <div class="topbar">
+      <button class="menubtn" id="menubtn" aria-label="목록 열기">☰</button>
+      <div class="crumb" id="crumb"></div>
+      <button class="iconbtn" id="themebtn" aria-label="밝기 전환">◐</button>
+    </div>
+    <div class="wrap doc" id="content"></div>
+  </main>
+</div>
+<script id="payload" type="application/json">__DATA__</script>
+<script>
+(function(){
+"use strict";
+var DB = JSON.parse(document.getElementById('payload').textContent);
+var ISSUES = DB.issues || [];
+var EXTRAS = DB.extras || {};
+var COMPANIES = DB.companies || {};
+var TYPE_LABEL = {reads:'테크 리즈', policy:'정책 브리핑', roundup:'그랜드 라운드업', interview:'인터뷰', event:'안내'};
+var THEME_LABEL = DB.themeLabels || {};
+
+/* ---------- theme toggle ---------- */
+var root = document.documentElement;
+try{ var saved = localStorage.getItem('htn-theme'); if(saved) root.setAttribute('data-theme', saved); }catch(e){}
+document.getElementById('themebtn').addEventListener('click', function(){
+  var cur = root.getAttribute('data-theme');
+  var next = cur === 'dark' ? 'light' : (cur === 'light' ? 'dark' : (matchMedia('(prefers-color-scheme: dark)').matches ? 'light' : 'dark'));
+  root.setAttribute('data-theme', next);
+  try{ localStorage.setItem('htn-theme', next); }catch(e){}
+});
+
+/* ---------- helpers ---------- */
+function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){
+  return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+function el(html){ var d = document.createElement('div'); d.innerHTML = html; return d; }
+function fmtDate(d){ if(!d) return ''; var p = d.split('-'); return p[0] + '.' + p[1] + '.' + p[2]; }
+function monthKey(d){ var p = String(d||'').split('-'); return p[0] + '년 ' + parseInt(p[1],10) + '월'; }
+function issueText(it){
+  if(it._txt) return it._txt;
+  var buf = [it.title_ko, it.title_en, it.hook, (it.tldr||[]).join(' ')];
+  (it.sections||[]).forEach(function(s){
+    buf.push(s.heading_ko, s.heading_en, s.what, s.why, s.structure, s.consumer);
+    (s.players||[]).forEach(function(p){ buf.push(p.name, p.what); });
+    (s.terms||[]).forEach(function(t){ buf.push(t.en, t.ko, t.plain); });
+    (s.numbers||[]).forEach(function(n){ buf.push(n.value, n.meaning); });
+  });
+  (it.glossary||[]).forEach(function(t){ buf.push(t.en, t.ko, t.plain); });
+  it._txt = buf.join(' ').toLowerCase();
+  return it._txt;
+}
+
+/* ---------- state ---------- */
+var state = { view:'home', id:null, q:'', types:{}, theme:null, raw:null, tab:'list' };
+try{ state.cmp = localStorage.getItem('htn-cmp') === '1'; }catch(e){}
+
+/* ---------- sidebar ---------- */
+var NAV = [
+  {k:'home',  t:'시작하기'},
+  {k:'primer',t:'미국 헬스케어 101'},
+  {k:'consumer', t:'소비자 시장'},
+  {k:'companies',t:'투자받은 회사'},
+  {k:'themes',t:'주제별'},
+  {k:'timeline',t:'타임라인'},
+  {k:'glossary',t:'용어사전'}
+];
+function renderNav(){
+  document.getElementById('navlinks').innerHTML = NAV.map(function(n){
+    return '<button class="navlink' + (state.view===n.k?' on':'') + '" data-nav="' + n.k + '">' + esc(n.t) + '</button>';
+  }).join('');
+}
+function renderFilters(){
+  var counts = {};
+  ISSUES.forEach(function(i){ counts[i.type] = (counts[i.type]||0)+1; });
+  var keys = Object.keys(TYPE_LABEL).filter(function(k){ return counts[k]; });
+  document.getElementById('filters').innerHTML = keys.map(function(k){
+    return '<button class="chip' + (state.types[k]?' on':'') + '" data-type="' + k + '">' +
+      esc(TYPE_LABEL[k]) + ' ' + counts[k] + '</button>';
+  }).join('');
+}
+function filtered(){
+  var q = state.q.trim().toLowerCase();
+  var anyType = Object.keys(state.types).some(function(k){ return state.types[k]; });
+  return ISSUES.filter(function(it){
+    if(anyType && !state.types[it.type]) return false;
+    if(state.theme && (it.themes||[]).indexOf(state.theme) < 0) return false;
+    if(q && issueText(it).indexOf(q) < 0) return false;
+    return true;
+  });
+}
+function renderList(){
+  var list = filtered(), out = [], lastM = '';
+  if(!list.length){ document.getElementById('issuelist').innerHTML = '<div class="empty">조건에 맞는 회차가 없습니다</div>'; return; }
+  list.forEach(function(it){
+    var m = monthKey(it.date);
+    if(m !== lastM){ out.push('<div class="ilist-month">' + esc(m) + '</div>'); lastM = m; }
+    out.push(
+      '<button class="irow' + (state.view==='issue' && state.id===it.index ? ' on':'') + '" data-issue="' + esc(it.index) + '">' +
+        '<span class="r1"><span class="num">' + esc(it.index) + '</span>' +
+        '<span class="badge b-' + esc(it.type) + '">' + esc(TYPE_LABEL[it.type]||it.type) + '</span></span>' +
+        '<span class="ttl">' + esc(it.title_ko) + '</span>' +
+        '<span class="sub">' + esc(fmtDate(it.date)) + ' · ' + esc((it.hook||'').slice(0,44)) + '…</span>' +
+      '</button>');
+  });
+  document.getElementById('issuelist').innerHTML = out.join('');
+}
+
+/* ---------- views ---------- */
+function qaHTML(cls, label, text){
+  /* 줄바꿈으로 나뉜 덩어리를 문단으로 만든다. 줄바꿈이 없고 길기만 하면
+     문장 경계를 찾아 대략 260자 단위로 끊어 읽기 부담을 줄인다. */
+  var parts = String(text).split(/\n\s*\n|\n/).map(function(x){ return x.trim(); }).filter(Boolean);
+  if(parts.length === 1 && parts[0].length > 420){
+    var sents = parts[0].match(/[^.!?]+[.!?]+(?:\s|$)|[^.!?]+$/g) || [parts[0]];
+    var acc = [], cur = '';
+    sents.forEach(function(sn){
+      cur += sn;
+      if(cur.length >= 260){ acc.push(cur.trim()); cur = ''; }
+    });
+    if(cur.trim()) {
+      if(acc.length && cur.trim().length < 90) acc[acc.length-1] += ' ' + cur.trim();
+      else acc.push(cur.trim());
+    }
+    parts = acc;
+  }
+  return '<div class="qa ' + cls + '"><span class="lbl">' + esc(label) + '</span>' +
+    parts.map(function(x){ return '<p>' + esc(x) + '</p>'; }).join('') + '</div>';
+}
+function rawHTML(raw, n){
+  /* 원문을 번역만 한 대조군. 정리 노트 꼭지와 순서가 1대 1로 맞는다. */
+  if(!raw || !raw.sections || !raw.sections[n]) return '';
+  var r = raw.sections[n];
+  var paras = String(r.body || '').split(/\n\s*\n|\n/).map(function(x){ return x.trim(); }).filter(Boolean);
+  return '<div class="rawcol"><span class="rawlbl">원문 번역만</span>' +
+    paras.map(function(x){ return '<p>' + esc(x) + '</p>'; }).join('') + '</div>';
+}
+var SKIP_LABEL = {
+  sponsor: {t:'광고', d:'후원사가 돈을 내고 실은 자리다. 건너뛰어도 된다.'},
+  promo:   {t:'홍보·안내', d:'뉴스레터가 자기 행사나 커뮤니티를 알리는 자리다. 건너뛰어도 된다.'},
+  admin:   {t:'잡다한 안내', d:'인사말이나 일정 공지처럼 내용이 거의 없는 자리다.'}
+};
+function secHTML(s, n){
+  var b = [];
+
+  /* 맨 위: 요약과 인사이트 */
+  if(s.summary){
+    b.push('<div class="sumbox"><span class="lbl">요약</span><p>' + esc(s.summary) + '</p></div>');
+  }
+  if(s.insight){
+    b.push('<div class="insbox"><span class="lbl">3개월 안에 만들 수 있는 것</span><p>' + esc(s.insight) + '</p></div>');
+  }
+  if(s.signal){
+    b.push('<div class="insbox sig"><span class="lbl">소비자 시장 신호</span><p>' + esc(s.signal) + '</p></div>');
+  }
+  if(!s.insight && !s.signal && !s.skip && s.summary){
+    b.push('<div class="insbox none"><span class="lbl">건질 것</span><p>없다.</p></div>');
+  }
+
+  /* 필자의 주장과 근거 */
+  if(s.author && s.author.length){
+    b.push('<div class="claims author"><span class="lbl">필자의 주장과 근거</span>' +
+      s.author.map(function(c){
+        return '<div class="claim"><p class="c">' + esc(c.claim) + '</p>' +
+          (c.evidence ? '<p class="e"><span>근거</span>' + esc(c.evidence) + '</p>' : '') + '</div>';
+      }).join('') + '</div>');
+  }
+
+  /* 전문가의 주장과 근거 */
+  if(s.experts && s.experts.length){
+    b.push('<div class="claims expert"><span class="lbl">전문가의 주장과 근거</span>' +
+      s.experts.map(function(c){
+        return '<div class="claim"><p class="who"><b>' + esc(c.who) + '</b>' +
+          (c.role ? '<span class="role">' + esc(c.role) + '</span>' : '') + '</p>' +
+          '<p class="c">' + esc(c.claim) + '</p>' +
+          (c.evidence ? '<p class="e"><span>근거</span>' + esc(c.evidence) + '</p>' : '') + '</div>';
+      }).join('') + '</div>');
+  }
+
+  /* 실제 사례 */
+  if(s.cases && s.cases.length){
+    b.push('<div class="claims case"><span class="lbl">실제 사례</span>' +
+      s.cases.map(function(c){
+        return '<div class="claim"><p class="who"><b>' + esc(c.name) + '</b>' +
+          (c.scale ? '<span class="scale">' + esc(c.scale) + '</span>' : '') + '</p>' +
+          '<p class="c">' + esc(c.what) + '</p>' +
+          (c.note ? '<p class="e"><span>눈여겨볼 대목</span>' + esc(c.note) + '</p>' : '') + '</div>';
+      }).join('') + '</div>');
+  }
+
+  /* 모르면 막히는 말 */
+  if(s.notes && s.notes.length){
+    b.push('<div class="terms"><span class="lbl">모르면 막히는 말</span>' +
+      s.notes.map(function(t){
+        return '<div class="term core"><b>' + esc(t.term) + '</b> <span class="ko">' + esc(t.ko || '') + '</span>' +
+          '<span class="pl">' + esc(t.plain) + '</span></div>';
+      }).join('') + '</div>');
+  }
+
+  var body = b.join('');
+  var sk = s.skip && SKIP_LABEL[s.skip] ? SKIP_LABEL[s.skip] : null;
+  var raw = rawHTML(state.raw, n);
+  var head = esc(s.heading_ko) + (s.heading_en ? '<span class="en">' + esc(s.heading_en) + '</span>' : '');
+
+  if(sk){
+    var inner = raw
+      ? '<div class="cmprow">' + raw + '<div class="notecol">' + body + '</div></div>'
+      : '<div class="secbody">' + body + '</div>';
+    return '<details class="sec skip"><summary>' +
+      '<span class="skipbadge">' + esc(sk.t) + '</span>' +
+      '<span class="skiptitle">' + esc(s.heading_ko) + '</span>' +
+      '<span class="skipnote">' + esc(sk.d) + '</span></summary>' + inner + '</details>';
+  }
+  if(raw){
+    return '<section class="sec cmp"><h3 id="s' + n + '">' + head + '</h3>' +
+      '<div class="cmprow">' + raw +
+      '<div class="notecol"><span class="rawlbl note">정리 노트</span>' + body + '</div></div></section>';
+  }
+  return '<section class="sec"><h3 id="s' + n + '">' + head + '</h3>' +
+    '<div class="secbody">' + body + '</div></section>';
+}
+function viewIssue(id){
+  var i = ISSUES.findIndex(function(x){ return x.index === id; });
+  if(i < 0){ document.getElementById('content').innerHTML = '<div class="empty">해당 회차를 찾을 수 없습니다</div>'; return; }
+  var it = ISSUES[i], h = [];
+  var secs = it.sections || [];
+  /* 원문 번역본은 늘 함께 보여 준다. 켜고 끄는 단추를 두지 않는다. */
+  state.raw = (DB.raw && DB.raw[it.index]) ? DB.raw[it.index] : null;
+  document.getElementById('content').className = 'wrap doc' + (state.raw ? ' cmpon' : '');
+
+  /* --- 1. 제목 --- */
+  h.push('<div class="ihead">');
+  h.push('<h2>' + esc(it.title_ko) + '</h2>');
+  h.push('<div class="meta"><span class="badge b-' + esc(it.type) + '">' + esc(TYPE_LABEL[it.type]||it.type) + '</span>' +
+    '<span>' + esc(fmtDate(it.date)) + '</span><span>·</span><span>' + esc(it.index) + '회차</span>' +
+    '<span>·</span><span>' + esc(it.title_en||'') + '</span></div>');
+  if(it.hook) h.push('<div class="hook">' + esc(it.hook) + '</div>');
+
+  /* --- 2. 전체 요약 --- */
+  if(it.tldr && it.tldr.length){
+    h.push('<div class="tldr"><span class="lbl">이 회차 요약</span><ol>' +
+      it.tldr.map(function(t){
+        if(typeof t === 'string') return '<li><span class="pt">' + esc(t) + '</span></li>';
+        return '<li><span class="pt">' + esc(t.point) + '</span>' +
+          (t.note ? '<span class="nt">' + esc(t.note) + '</span>' : '') + '</li>';
+      }).join('') + '</ol></div>');
+  }
+
+  /* --- 3. 회차 전체 실행 인사이트 --- */
+  var ii = it.issue_insight;
+  var insSecs = [];
+  secs.forEach(function(s, n){ if(s.insight || s.signal) insSecs.push(n); });
+  if(ii && (ii.summary || (ii.build||[]).length || (ii.signal||[]).length)){
+    var build = ii.build || [], signal = ii.signal || [];
+    var yes = ii.verdict !== 'no' && (build.length || signal.length);
+    function bullets(arr, cls){
+      return '<ul class="ibul ' + cls + '">' + arr.map(function(x){
+        var sn = (typeof x.section === 'number') ? (x.section - 1) : null;
+        return '<li><b>' + esc(x.title) + '</b>' +
+          (x.detail ? '<span>' + esc(x.detail) + '</span>' : '') +
+          (sn !== null && secs[sn] ? '<button class="src" data-anchor="s' + sn + '">' +
+            x.section + '. ' + esc(secs[sn].heading_ko) + '</button>' : '') + '</li>';
+      }).join('') + '</ul>';
+    }
+    h.push('<div class="issueins ' + (yes ? 'yes' : 'no') + '">' +
+      '<span class="lbl">이 회차에서 건질 것' + (yes ? '' : ' (없음)') + '</span>' +
+      (ii.summary ? '<p>' + esc(ii.summary) + '</p>' : ''));
+    if(build.length) h.push('<div class="igrp b"><span class="gl">3개월 안에 만들 수 있는 것</span>' + bullets(build, 'b') + '</div>');
+    if(signal.length) h.push('<div class="igrp s"><span class="gl">소비자 시장 신호</span>' + bullets(signal, 's') + '</div>');
+    if(!build.length && !signal.length && insSecs.length){
+      h.push('<div class="jump">' + insSecs.map(function(n){
+        return '<button data-anchor="s' + n + '">' + (n+1) + '. ' + esc(secs[n].heading_ko) + '</button>';
+      }).join('') + '</div>');
+    }
+    h.push('</div>');
+  }
+
+  /* --- 4. 읽을 꼭지 고르기 --- */
+  h.push('<div class="picker"><span class="lbl">꼭지 고르기 · ' + secs.length + '개' +
+    (insSecs.length ? ' 가운데 건질 것 ' + insSecs.length + '개' : '') + '</span>');
+  secs.forEach(function(s, n){
+    var sk = s.skip && SKIP_LABEL[s.skip] ? SKIP_LABEL[s.skip] : null;
+    h.push('<button class="prow' + (sk ? ' dim' : '') + ((s.insight||s.signal) ? ' has' : '') + '" data-anchor="s' + n + '">' +
+      '<span class="pn">' + (n+1) + '</span>' +
+      '<span class="pmain"><span class="pt">' + esc(s.heading_ko) + '</span>' +
+      (sk ? '' : '<span class="ps">' + esc((s.summary||'').slice(0,72)) + ((s.summary||'').length > 72 ? '…' : '') + '</span>') +
+      '</span>' +
+      (s.insight ? '<span class="pbadge ins">만들 것</span>' : '') +
+      (s.signal ? '<span class="pbadge sig">시장 신호</span>' : '') +
+      (sk ? '<span class="pbadge skip">' + esc(sk.t) + '</span>' : '') +
+      '</button>');
+  });
+  h.push('</div>');
+  h.push('</div>');  /* ihead 끝 */
+
+  /* --- 5. 꼭지 본문 --- */
+  secs.forEach(function(s, n){ h.push(secHTML(s, n)); });
+
+  if(it.themes && it.themes.length){
+    h.push('<div class="themebar">' + it.themes.map(function(t){
+      return '<button class="tt" data-theme-go="' + esc(t) + '">#' + esc(THEME_LABEL[t]||t) + '</button>'; }).join('') + '</div>');
+  }
+  var prev = ISSUES[i-1], next = ISSUES[i+1];
+  h.push('<div class="pager">' +
+    (prev ? '<button data-issue="' + esc(prev.index) + '"><small>이전 회차</small>' + esc(prev.title_ko) + '</button>' : '<span></span>') +
+    (next ? '<button data-issue="' + esc(next.index) + '" style="text-align:right"><small>다음 회차</small>' + esc(next.title_ko) + '</button>' : '<span></span>') +
+    '</div>');
+  document.getElementById('content').innerHTML = h.join('');
+  document.getElementById('crumb').textContent = fmtDate(it.date) + ' · ' + it.title_ko;
+  buildSideToc(it, secs, insSecs);
+}
+
+/* 사이드바를 이 회차의 꼭지 목차로 바꾼다. 스크롤을 따라 현재 위치를 표시한다. */
+function buildSideToc(it, secs, insSecs){
+  var el2 = document.getElementById('sidetoc');
+  if(!el2) return;
+  el2.innerHTML = '<div class="stoc-head">' + esc(it.index) + '회차 · 꼭지 ' + secs.length + '개</div>' +
+    secs.map(function(s, n){
+      var sk = s.skip && SKIP_LABEL[s.skip] ? SKIP_LABEL[s.skip] : null;
+      return '<button class="stoc' + (sk ? ' dim' : '') + '" data-anchor="s' + n + '" data-sn="' + n + '">' +
+        '<span class="n">' + (n+1) + '</span><span class="t">' + esc(s.heading_ko) + '</span>' +
+        (s.insight ? '<span class="dot"></span>' : '') +
+        (s.signal ? '<span class="dot sig"></span>' : '') + '</button>';
+    }).join('');
+  setTab('toc');
+  trackScroll();
+}
+var scrollTimer = null;
+function trackScroll(){
+  if(scrollTimer) return;
+  scrollTimer = setInterval(function(){
+    var secsEl = document.querySelectorAll('[id^="s"]');
+    var cur = -1, top = 120;
+    secsEl.forEach(function(e){
+      if(!/^s\d+$/.test(e.id)) return;
+      if(e.getBoundingClientRect().top <= top) cur = parseInt(e.id.slice(1), 10);
+    });
+    document.querySelectorAll('.stoc').forEach(function(b){
+      b.classList.toggle('on', parseInt(b.dataset.sn, 10) === cur);
+    });
+  }, 400);
+}
+function mdish(t){
+  /* very small formatter: **bold**, `code`, paragraphs, - lists, ## heads */
+  var lines = String(t||'').split('\n'), out = [], inList = false;
+  function inline(s){
+    return esc(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>')
+                 .replace(/`(.+?)`/g,'<code>$1</code>')
+                 .replace(/\[\[(\d{2})\]\]/g,'<button class="tt" data-issue="$1" style="padding:1px 7px">$1회차</button>');
+  }
+  lines.forEach(function(l){
+    var s = l.trim();
+    if(!s){ if(inList){ out.push('</ul>'); inList=false; } return; }
+    if(/^###\s/.test(s)){ if(inList){out.push('</ul>');inList=false;} out.push('<h4>'+inline(s.replace(/^###\s/,''))+'</h4>'); return; }
+    if(/^##\s/.test(s)){ if(inList){out.push('</ul>');inList=false;} out.push('<h3>'+inline(s.replace(/^##\s/,''))+'</h3>'); return; }
+    if(/^[-*]\s/.test(s)){ if(!inList){ out.push('<ul>'); inList=true; } out.push('<li>'+inline(s.replace(/^[-*]\s/,''))+'</li>'); return; }
+    if(inList){ out.push('</ul>'); inList=false; }
+    out.push('<p>'+inline(s)+'</p>');
+  });
+  if(inList) out.push('</ul>');
+  return out.join('');
+}
+function viewDoc(key, title){
+  var d = EXTRAS[key];
+  document.getElementById('crumb').textContent = title;
+  if(!d){ document.getElementById('content').innerHTML = '<div class="empty">준비 중입니다</div>'; return; }
+  var h = ['<h2>' + esc(d.title || title) + '</h2>'];
+  if(d.lede) h.push('<div class="hook">' + esc(d.lede) + '</div>');
+  if(d.toc && d.sections){
+    h.push('<div class="toc"><span class="lbl">차례</span><ol>' + d.sections.map(function(s,n){
+      return '<li><a href="#d' + n + '" data-anchor="d' + n + '">' + esc(s.heading) + '</a></li>'; }).join('') + '</ol></div>');
+  }
+  (d.sections||[]).forEach(function(s,n){
+    h.push('<h3 id="d' + n + '">' + esc(s.heading) + '</h3>');
+    h.push(mdish(s.body));
+  });
+  if(d.body) h.push(mdish(d.body));
+  document.getElementById('content').innerHTML = h.join('');
+}
+function viewGlossary(){
+  document.getElementById('crumb').textContent = '용어사전';
+  var g = (EXTRAS.glossary && EXTRAS.glossary.items) || [];
+  var q = state.q.trim().toLowerCase();
+  if(q) g = g.filter(function(t){ return (t.en+' '+t.ko+' '+t.plain).toLowerCase().indexOf(q) >= 0; });
+  var h = ['<h2>용어사전</h2><p style="color:var(--muted);font-size:14px">뉴스레터에 나온 미국 헬스케어 용어를 한글로 풀었습니다. 위 검색창으로 걸러집니다. 총 ' + g.length + '개.</p>'];
+  var last = '';
+  g.forEach(function(t){
+    var L = (t.en||'?').charAt(0).toUpperCase();
+    if(L !== last){ h.push('<div class="gl-letter">' + esc(L) + '</div>'); last = L; }
+    h.push('<div class="gitem"><h4>' + esc(t.en) + '<span class="ko">' + esc(t.ko) + '</span></h4>' +
+      '<p>' + esc(t.plain) + '</p>' +
+      ((t.refs && t.refs.length) ? '<div class="refs">' + t.refs.slice(0,12).map(function(r){
+        return '<button data-issue="' + esc(r) + '">' + esc(r) + '회차</button>'; }).join('') + '</div>' : '') + '</div>');
+  });
+  if(!g.length) h.push('<div class="empty">검색 결과가 없습니다</div>');
+  document.getElementById('content').innerHTML = h.join('');
+}
+function viewThemes(){
+  document.getElementById('crumb').textContent = '주제별';
+  var t = (EXTRAS.themes && EXTRAS.themes.items) || [];
+  var h = ['<h2>주제별로 보기</h2><p style="color:var(--muted);font-size:14px">55회차에 반복해서 나온 큰 줄기 ' + t.length + '개. 각 줄기가 무슨 이야기인지 먼저 읽고, 해당 회차로 넘어가세요.</p>'];
+  t.forEach(function(x){
+    h.push('<div class="themecard"><h3>' + esc(x.title) + '</h3><p>' + esc(x.summary) + '</p>' +
+      ((x.refs && x.refs.length) ? '<div class="refs">' + x.refs.map(function(r){
+        return '<button data-issue="' + esc(r) + '">' + esc(r) + '회차</button>'; }).join('') + '</div>' : '') + '</div>');
+  });
+  document.getElementById('content').innerHTML = h.join('');
+}
+function viewTimeline(){
+  document.getElementById('crumb').textContent = '타임라인';
+  var t = (EXTRAS.timeline && EXTRAS.timeline.items) || [];
+  var h = ['<h2>2026년 미국 헬스케어, 무슨 일이 있었나</h2>' +
+    '<p style="color:var(--muted);font-size:14px">뉴스레터가 다룬 사건을 시간 순으로 세웠습니다.</p>'];
+  t.forEach(function(x){
+    h.push('<div class="tl-item"><div class="d">' + esc(fmtDate(x.date)) + '</div><div>' +
+      '<h4>' + esc(x.title) + '</h4><p>' + esc(x.note) + '</p>' +
+      ((x.refs&&x.refs.length) ? '<div class="refs" style="margin-top:5px;display:flex;gap:4px;flex-wrap:wrap">' + x.refs.map(function(r){
+        return '<button class="tt" data-issue="' + esc(r) + '" style="font-family:var(--mono);font-size:10.5px;padding:1px 6px">' + esc(r) + '회차</button>'; }).join('') + '</div>' : '') +
+      '</div></div>');
+  });
+  document.getElementById('content').innerHTML = h.join('');
+}
+var SELLS_LABEL = {
+  consumer:'소비자에게 직접', provider:'병원·의사에게', payer:'보험사에게',
+  employer:'고용주에게', pharma:'제약사에게', mixed:'여러 곳에'
+};
+var TRACTION_LABEL = {
+  funding:'투자', partnership:'협약', regulatory:'규제 통과', revenue:'매출',
+  traffic:'트래픽', customers:'고객', award:'수상'
+};
+function viewCompanies(){
+  document.getElementById('crumb').textContent = '투자받은 회사';
+  var list = Object.keys(COMPANIES).map(function(k){ return COMPANIES[k]; });
+  var q = state.q.trim().toLowerCase();
+  if(q) list = list.filter(function(c){
+    return ((c.name||'') + (c.one_liner||'') + (c.problem||'')).toLowerCase().indexOf(q) >= 0; });
+  var h = ['<h2>투자받은 회사</h2>',
+    '<p style="color:var(--muted);font-size:14px">뉴스레터에 한 줄로만 나온 회사를, 더 찾아보지 않고도 이해할 수 있게 정리했다. 총 ' + list.length + '곳.</p>'];
+  if(!list.length){ h.push('<div class="empty">아직 정리된 회사가 없습니다</div>'); }
+  list.sort(function(a,b){ return (a.name||'').localeCompare(b.name||''); });
+  list.forEach(function(c){
+    h.push('<button class="ccard" data-company="' + esc(c.slug) + '">' +
+      '<span class="cn">' + esc(c.name) + '</span>' +
+      (c.sells_to ? '<span class="cs">' + esc(SELLS_LABEL[c.sells_to] || c.sells_to) + '</span>' : '') +
+      '<span class="co">' + esc(c.one_liner || '') + '</span>' +
+      ((c.seen_in||[]).length ? '<span class="cr">' + c.seen_in.map(function(x){
+        return x.issue + '회차'; }).join(', ') + '</span>' : '') + '</button>');
+  });
+  document.getElementById('content').innerHTML = h.join('');
+}
+function viewCompany(slug){
+  var c = COMPANIES[slug];
+  if(!c){ document.getElementById('content').innerHTML = '<div class="empty">해당 회사를 찾을 수 없습니다</div>'; return; }
+  document.getElementById('crumb').textContent = '회사 · ' + c.name;
+  var h = ['<button class="backlink" data-nav="companies">회사 목록으로</button>'];
+  h.push('<h2>' + esc(c.name) + '</h2>');
+  h.push('<div class="meta">' +
+    (c.sells_to ? '<span class="badge b-reads">' + esc(SELLS_LABEL[c.sells_to] || c.sells_to) + '</span>' : '') +
+    (c.site ? '<span>' + esc(c.site.replace(/^https?:\/\//,'')) + '</span>' : '') +
+    ((c.seen_in||[]).map(function(x){
+      return '<span>·</span><button class="tt" data-issue="' + esc(x.issue) + '">' + esc(x.issue) + '회차</button>'; }).join('')) +
+    '</div>');
+  if(c.one_liner) h.push('<div class="hook">' + esc(c.one_liner) + '</div>');
+
+  function block(title, body, cls){
+    if(!body) return;
+    h.push('<div class="cblock ' + (cls||'') + '"><span class="lbl">' + esc(title) + '</span>' +
+      String(body).split(/\n\s*\n|\n/).filter(Boolean).map(function(x){
+        return '<p>' + esc(x.trim()) + '</p>'; }).join('') + '</div>');
+  }
+  block('푸는 문제', c.problem);
+  block('솔루션', c.solution);
+  if((c.features||[]).length){
+    h.push('<div class="cblock"><span class="lbl">기능 상세</span><ul class="cfeat">' +
+      c.features.map(function(f){
+        return '<li><b>' + esc(f.name) + '</b><span>' + esc(f.detail||'') + '</span></li>'; }).join('') + '</ul></div>');
+  }
+  block('차별점', c.differentiator);
+  if((c.screenshots||[]).length){
+    h.push('<div class="cblock"><span class="lbl">화면</span><div class="cshots">' +
+      c.screenshots.map(function(sh){
+        var src = 'assets/companies/' + esc(sh.file);
+        return '<figure><a href="' + src + '" target="_blank" rel="noopener">' +
+          '<img src="' + src + '" alt="' + esc(sh.caption||'') + '" loading="lazy"></a>' +
+          '<figcaption>' + esc(sh.caption||'') + '</figcaption></figure>'; }).join('') + '</div></div>');
+  }
+  if((c.team||[]).length){
+    h.push('<div class="cblock"><span class="lbl">팀</span><ul class="cteam">' +
+      c.team.map(function(t){
+        return '<li><b>' + esc(t.name) + '</b>' + (t.role ? '<span class="role">' + esc(t.role) + '</span>' : '') +
+          (t.background ? '<span>' + esc(t.background) + '</span>' : '') + '</li>'; }).join('') + '</ul></div>');
+  }
+  if((c.traction||[]).length){
+    h.push('<div class="cblock"><span class="lbl">성과</span><ul class="ctrac">' +
+      c.traction.map(function(t){
+        return '<li><span class="tt2 t-' + esc(t.type||'') + '">' + esc(TRACTION_LABEL[t.type] || t.type || '') + '</span>' +
+          '<span class="d">' + esc(t.detail||'') + '</span>' +
+          (t.when ? '<span class="w">' + esc(t.when) + '</span>' : '') + '</li>'; }).join('') + '</ul></div>');
+  }
+  block('주의해서 볼 대목', c.caveats, 'warn');
+  block('우리 목적에 비추어', c.for_us, 'forus');
+  if((c.sources||[]).length){
+    h.push('<div class="cblock"><span class="lbl">확인한 자료</span><ul class="csrc">' +
+      c.sources.map(function(x){
+        return '<li><a href="' + esc(x.url) + '" target="_blank" rel="noopener">' + esc(x.title||x.url) + '</a>' +
+          (x.note ? '<span>' + esc(x.note) + '</span>' : '') + '</li>'; }).join('') + '</ul></div>');
+  }
+  document.getElementById('content').innerHTML = h.join('');
+}
+function viewHome(){
+  document.getElementById('crumb').textContent = '시작하기';
+  var d = EXTRAS.home;
+  var h = ['<h2>Health Tech Nerds 정리 노트</h2>'];
+  h.push('<div class="hook">미국 헬스케어 업계 뉴스레터 ' + ISSUES.length + '회차(2026년 1월~8월)를, 헬스케어도 영어도 익숙하지 않은 사람이 읽을 수 있게 한글로 다시 쓴 노트입니다.</div>');
+  if(d && d.sections){ d.sections.forEach(function(s,n){ h.push('<h3 id="h'+n+'">' + esc(s.heading) + '</h3>'); h.push(mdish(s.body)); }); }
+  h.push('<h3>회차 한눈에 보기</h3>');
+  var byType = {};
+  ISSUES.forEach(function(i){ (byType[i.type] = byType[i.type] || []).push(i); });
+  h.push('<div class="stats">' + Object.keys(byType).map(function(k){
+    return '<div class="stat"><b>' + byType[k].length + '</b><span>' + esc(TYPE_LABEL[k]||k) + '</span></div>'; }).join('') + '</div>');
+  h.push('<p style="color:var(--muted);font-size:13.5px">왼쪽 목록에서 회차를 고르거나, <button class="tt" data-nav="primer">미국 헬스케어 101</button> 부터 읽어보세요.</p>');
+  document.getElementById('content').innerHTML = h.join('');
+}
+
+/* ---------- router ---------- */
+function render(){
+  renderNav(); renderFilters(); renderList();
+  var v = state.view;
+  /* 회차 화면만 비교 모드로 넓어진다. 나머지 화면은 기본 폭으로 되돌린다. */
+  if(v !== 'issue'){ document.getElementById('content').className = 'wrap doc';
+    document.getElementById('sidetoc').innerHTML = ''; setTab('list'); }
+  if(v === 'issue') viewIssue(state.id);
+  else if(v === 'companies') viewCompanies();
+  else if(v === 'company') viewCompany(state.id);
+  else if(v === 'glossary') viewGlossary();
+  else if(v === 'themes') viewThemes();
+  else if(v === 'timeline') viewTimeline();
+  else if(v === 'primer') viewDoc('primer','미국 헬스케어 101');
+  else if(v === 'consumer') viewDoc('consumer','소비자 시장');
+  else viewHome();
+  document.querySelector('.main').scrollTop = 0;
+  window.scrollTo(0,0);
+}
+function go(view, id){
+  state.view = view; state.id = id || null;
+  var hash = (view === 'issue' || view === 'company') ? '#/' + view + '/' + id : '#/' + view;
+  if(location.hash !== hash) location.hash = hash;
+  else render();
+  closeSide();
+}
+function fromHash(){
+  var m = /^#\/issue\/(\w+)/.exec(location.hash);
+  if(m){ state.view='issue'; state.id=m[1]; return; }
+  var mc = /^#\/company\/([\w-]+)/.exec(location.hash);
+  if(mc){ state.view='company'; state.id=mc[1]; return; }
+  var m2 = /^#\/(\w+)/.exec(location.hash);
+  state.view = m2 ? m2[1] : 'home'; state.id = null;
+}
+window.addEventListener('hashchange', function(){ fromHash(); render(); });
+
+/* ---------- events ---------- */
+function setTab(which){
+  state.tab = which;
+  var hasToc = document.getElementById('sidetoc').innerHTML.trim().length > 0;
+  if(which === 'toc' && !hasToc) which = 'list';
+  /* CSS 기본값이 display:none 이므로 빈 문자열이 아니라 값을 명시해야 한다. */
+  document.getElementById('issuelist').style.display = which === 'list' ? 'block' : 'none';
+  document.getElementById('sidetoc').style.display = which === 'toc' ? 'block' : 'none';
+  document.getElementById('filters').style.display = which === 'list' ? 'flex' : 'none';
+  document.querySelectorAll('#sidetabs button').forEach(function(b){
+    b.classList.toggle('on', b.dataset.tab === which);
+  });
+  document.getElementById('sidetabs').style.display = hasToc ? 'flex' : 'none';
+}
+function closeSide(){ document.getElementById('side').classList.remove('open'); document.getElementById('scrim').classList.remove('on'); }
+document.getElementById('menubtn').addEventListener('click', function(){
+  document.getElementById('side').classList.toggle('open');
+  document.getElementById('scrim').classList.toggle('on');
+});
+document.getElementById('scrim').addEventListener('click', closeSide);
+document.addEventListener('click', function(e){
+  var t = e.target.closest('[data-issue],[data-nav],[data-type],[data-theme-go],[data-anchor],[data-cmp],[data-tab],[data-company]');
+  if(!t) return;
+  if(t.dataset.company){ e.preventDefault(); go('company', t.dataset.company); return; }
+  if(t.dataset.tab){ e.preventDefault(); setTab(t.dataset.tab); return; }
+  if(t.dataset.cmp){ e.preventDefault(); state.cmp = !state.cmp;
+    try{ localStorage.setItem('htn-cmp', state.cmp ? '1' : '0'); }catch(err){}
+    render(); return; }
+  if(t.dataset.issue){ e.preventDefault(); state.theme=null; go('issue', t.dataset.issue); return; }
+  if(t.dataset.nav){ e.preventDefault(); state.theme=null; go(t.dataset.nav); return; }
+  if(t.dataset.type){ e.preventDefault(); state.types[t.dataset.type] = !state.types[t.dataset.type]; renderFilters(); renderList(); return; }
+  if(t.dataset.themeGo){ e.preventDefault(); state.theme = t.dataset.themeGo; state.q=''; document.getElementById('q').value=''; renderList(); closeSide();
+    document.getElementById('crumb').textContent = '#' + (THEME_LABEL[state.theme]||state.theme) + ' 로 목록 필터됨'; return; }
+  if(t.dataset.anchor){ e.preventDefault(); closeSide();
+    var el2 = document.getElementById(t.dataset.anchor);
+    if(el2) el2.scrollIntoView({behavior:'smooth', block:'start'});
+    return; }
+});
+var qt;
+document.getElementById('q').addEventListener('input', function(e){
+  clearTimeout(qt); var v = e.target.value;
+  qt = setTimeout(function(){ state.q = v; state.theme=null; renderList(); if(state.view==='glossary') viewGlossary(); }, 120);
+});
+document.addEventListener('keydown', function(e){
+  if(e.key === '/' && document.activeElement.tagName !== 'INPUT'){ e.preventDefault(); document.getElementById('q').focus(); }
+  if(state.view==='issue' && !e.metaKey && !e.ctrlKey && document.activeElement.tagName !== 'INPUT'){
+    var i = ISSUES.findIndex(function(x){ return x.index === state.id; });
+    if(e.key === 'ArrowLeft' && ISSUES[i-1]) go('issue', ISSUES[i-1].index);
+    if(e.key === 'ArrowRight' && ISSUES[i+1]) go('issue', ISSUES[i+1].index);
+  }
+});
+
+fromHash(); render();
+})();
+</script>
+</body>
+</html>

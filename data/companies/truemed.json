@@ -1,0 +1,219 @@
+{
+  "slug": "truemed",
+  "name": "Truemed",
+  "one_liner": "미국 직장인이 세금 혜택이 붙은 의료비 전용 계좌에 쌓아 둔 돈으로 운동기구와 보조제, 사우나 같은 건강 상품을 살 수 있도록, 온라인 상점 결제 화면에서 의사 소견서를 붙여 주는 결제 연동 회사다.",
+  "site": "https://www.truemed.com",
+  "sells_to": "mixed",
+  "seen_in": [
+    {
+      "issue": "01",
+      "section": 9,
+      "headline": "HSA와 FSA에 쌓인 혜택 자금을 쓸 수 있게 해 주는 마켓플레이스로 소개되면서, a16z가 주도한 3,400만 달러 투자를 받았다고 나왔다."
+    }
+  ],
+
+  "problem": "미국 직장인은 급여에서 세금을 떼기 전에 일부를 미리 떼어 HSA나 FSA라는 의료비 전용 계좌에 쌓아 둔다. HSA는 본인이 먼저 부담하는 금액이 큰 보험에 든 사람만 열 수 있고 남은 돈을 해마다 계속 이월할 수 있는 반면, FSA는 고용주가 제공하며 그해에 쓰지 못한 돈은 고용주가 정한 제도에 따라 2025년 기준 660달러까지만 다음 해로 넘길 수 있고 나머지는 사라진다. 문제는 이 돈을 쓸 수 있는 범위가 세법 213(d)조에 따라 질병의 진단과 치료, 완화, 처치, 예방으로 좁게 묶여 있어서, 헬스장 회원권이나 보조제, 운동기구처럼 건강에 도움이 되기만 하는 지출은 원칙적으로 인정되지 않는다는 점이다. 그래서 계좌에는 돈이 쌓여 있는데 정작 쓸 곳이 마땅치 않은 상황이 생기고, FSA 가입자는 연말이 되면 남은 돈을 잃는다. 한국의 연말정산 의료비 세액공제는 이미 쓴 돈을 사후에 깎아 주는 방식이라 이런 문제가 생기지 않으며, 급여를 미리 떼어 별도 계좌에 쌓아 두는 제도 자체가 한국에는 없다.",
+
+  "solution": "소비자는 Truemed와 제휴한 브랜드의 온라인 상점에서 상품을 고른 뒤 결제 화면에서 Truemed를 선택한다. 그러면 현재 건강 상태와 진단받은 병, 이 상품을 사려는 이유를 묻는 건강 설문이 뜨고, Truemed와 계약한 독립 면허 의료인이 그 답변을 검토한다. 의료인이 그 상품을 그 사람의 건강 상태에 필요하다고 판단하면 의학적 필요 소견서(Letter of Medical Necessity)를 발급하고, 소비자는 그 자리에서 HSA나 FSA 카드로 결제한다. 결제 화면에 Truemed가 붙어 있지 않은 상점이거나 구독 상품이면 일반 카드로 먼저 결제한 다음 같은 날 설문에 답하고, 보통 24시간에서 48시간 안에 검토 결과를 받아 계좌 운영사에 환급을 신청한다. 한 번 발급된 소견서는 12개월 동안 유효하고 같은 상품을 다시 살 때 재사용할 수 있다. 소비자가 Truemed에 따로 내는 돈은 없으며, 회사는 자사 서비스 비용이 이미 상품 가격에 포함돼 있다고 고지하고 있어 비용을 무는 쪽은 제휴 브랜드다. 소비자용 모바일 앱은 없으며, 모든 절차는 제휴 상점의 결제 화면과 웹 마켓플레이스에서 이루어진다.",
+
+  "features": [
+    {
+      "name": "결제 화면 연동",
+      "detail": "Shopify와 WooCommerce, BigCommerce, 직접 API로 상점에 붙어서 HSA·FSA 카드 결제를 그 자리에서 처리한다. 상품 페이지에는 이 상품이 대상인지 알려 주는 안내 표시가 붙는다."
+    },
+    {
+      "name": "건강 설문과 의료인 검토",
+      "detail": "소비자가 답한 건강 설문을 제휴 면허 의료인이 검토해 의학적 필요 소견서를 발급하거나 거절한다. 거절되면 결제 자체가 이루어지지 않는다."
+    },
+    {
+      "name": "환급 지원",
+      "detail": "결제 연동이 없는 상점이나 구독 상품은 일반 카드로 먼저 결제한 뒤, 소견서를 받아 계좌 운영사에 환급을 신청하도록 돕는다."
+    },
+    {
+      "name": "소비자 마켓플레이스",
+      "detail": "제휴 브랜드 3,000곳과 15개가 넘는 상품 분류를 모아 보여 주고, 상품을 고르면 해당 브랜드 상점으로 보낸다. 결제는 마켓플레이스가 아니라 브랜드 상점에서 이루어진다."
+    },
+    {
+      "name": "상품 분류",
+      "detail": "운동기구, 헬스 기기, 수면, 보조제, 적색광 치료, 기능성 신발, 사우나와 냉수욕, 재택 건강, 헬스장과 스튜디오로 나뉜다. 헬스장과 스튜디오 분류에는 Barry's와 ClassPass, Club Pilates가 올라 있고 투자 보도자료에는 24 Hour Fitness도 제휴처로 나오므로, 헬스장 회원권도 실제로 대상이 된다."
+    }
+  ],
+
+  "differentiator": "같은 일을 하는 회사로 Flex와 Sika Health가 있고, 결제 화면에서 건강 설문을 받아 소견서를 발급한다는 구조는 세 회사가 같다. 실질적인 차이는 어느 브랜드와 붙어 있느냐이며, 소비자는 사려는 브랜드가 어느 회사를 쓰는지에 따라 선택이 갈린다. Truemed는 제휴 브랜드가 3,000곳이 넘는다고 밝혀 세 회사 가운데 가장 많은 제휴처를 확보했다고 주장하며, Peloton과 Eight Sleep, Nike Strength, Garmin, 24 Hour Fitness처럼 이름이 알려진 브랜드를 제휴처로 확보했다. 기술 자체는 세 회사가 같기 때문에, 제휴 영업의 규모가 경쟁을 가르는 시장이다.",
+
+  "team": [
+    {
+      "name": "Justin Mares",
+      "role": "공동창업자, CEO",
+      "background": "식품 브랜드 Kettle & Fire와 Perfect Keto를 창업해 키운 사람이다."
+    },
+    {
+      "name": "Calley Means",
+      "role": "공동창업자",
+      "background": "맞춤 웨딩드레스 회사 Anomalie를 공동창업해 David's Bridal에 매각했고, 그 전에는 식품과 제약 업계를 상대하는 컨설턴트로 일했다. 2025년 3월부터 백악관 자문 자격으로 미국 보건복지부 장관을 보좌했고, 그해 말 정부 일을 정리하는 과정에서 Truemed 지분을 전량 매각했다고 밝혔다."
+    }
+  ],
+
+  "traction": [
+    {
+      "type": "funding",
+      "detail": "3,400만 달러 규모 시리즈 A를 마감했다. a16z가 주도했고 Bessemer Venture Partners와 Long Journey Ventures, BoxGroup, Trust Ventures가 참여했다.",
+      "when": "2025-12",
+      "source": "PR Newswire 보도자료, a16z 투자 공지"
+    },
+    {
+      "type": "funding",
+      "detail": "창업 초기에 350만 달러를 SAFE 방식으로 모았다. Mark Hyman과 Thrive Market, Eight Sleep, Levels 창업자들이 참여했다.",
+      "when": "2023-09",
+      "source": "TechCrunch"
+    },
+    {
+      "type": "customers",
+      "detail": "제휴 가맹 브랜드가 3,000곳을 넘는다고 밝혔다.",
+      "when": "2025-12",
+      "source": "a16z 투자 공지, Truemed 마켓플레이스 페이지"
+    },
+    {
+      "type": "revenue",
+      "detail": "2년 연속으로 전년 대비 매출이 3배 늘었다고 밝혔다.",
+      "when": "2025-12",
+      "source": "PR Newswire 보도자료"
+    },
+    {
+      "type": "customers",
+      "detail": "이용자가 100만 명을 넘었다고 자사 마켓플레이스에 표기하고 있다.",
+      "when": "2026-09",
+      "source": "shopping.truemed.com 화면"
+    },
+    {
+      "type": "partnership",
+      "detail": "Peloton과 Eight Sleep, Nike Strength, 24 Hour Fitness, Rogue Fitness, Garmin, Barry's, Thorne, Tonal, Plunge, AG1 등이 제휴 브랜드로 공개돼 있다.",
+      "when": "2025-12",
+      "source": "a16z 투자 공지, PR Newswire 보도자료, Truemed 마켓플레이스 화면"
+    }
+  ],
+
+  "caveats": "미국 국세청은 2024년 3월 6일에 이 방식을 겨냥한 경고를 냈다(IR-2024-65). 본인이 스스로 보고한 건강 정보만 근거로 의사가 써 준 소견서로는 원래 개인 지출인 식품과 운동 비용을 의료비로 바꿀 수 없고, 인정되지 않는 지출을 갚아 준 계좌는 자격을 잃어 그 계좌에서 나간 돈 전부가 소득으로 잡힐 수 있다는 내용이다. 다만 이 경고는 Truemed를 이름으로 지목하지 않았고, 회사는 진단받은 병이 있어야 인정된다고 안내하면서 국세청 기준을 지키고 있다고 주장한다. 공동창업자 Calley Means를 둘러싼 이해충돌도 계속 문제가 됐다. Means는 2025년 3월 18일에 특별정부직원 신분으로 백악관 자문에 임명돼 보건복지부 장관 Robert F. Kennedy Jr.를 보좌하면서 Truemed 지분을 그대로 들고 있었다. 지분 규모는 보도마다 달라 2,000만 달러대에서 5,000만 달러 사이로 엇갈리게 전해지므로 특정 금액을 확정해서 인용하지 않는 편이 안전하다. 하원의원 Jake Auchincloss는 2025년 6월 16일 Means 본인과 Truemed 이사회에 각각 서한을 보내, Truemed의 기업 가치가 2024년 1월 이후 3배 가까이 올랐고 그 시점이 Means의 임명 시기와 겹친다는 점을 문제 삼았다. 같은 의원과 상원의원 Adam Schiff는 2025년 10월 31일 백악관 비서실장과 보건복지부 장관에게 보낸 공동 서한에서, Means가 직접 만든 정책으로 자기 회사가 이득을 봤다고 지적했다. 두 사람은 그 예로 Truemed가 비데(Alpha JX2 Bidet)까지 자가면역과 소화기, 관절 건강에 도움이 된다며 HSA 대상 상품으로 광고한다는 점을 들었고, 근거 자료로는 9,000달러짜리 사우나에 세금 혜택을 받게 해 준다는 New York Times 기사(2025년 7월 18일)를 인용했다. Means는 2025년 말 정부를 떠나거나 정규직으로 자리를 옮기는 과정에서 지분을 전량 매각했다고 밝혔으나, 매각 시점에 대한 보도가 서로 조금씩 다르다. 2026년 6월에는 법무법인 Migliaccio & Rathod가 소비자에게 예상치 못한 세금 부담이 생겼는지 조사한다고 공지했으나, 소송이 실제로 제기되지는 않았다. 제휴 브랜드 3,000곳과 이용자 100만 명, 2년 연속 매출 3배 성장은 모두 회사가 스스로 낸 수치이고 제삼자가 확인한 것이 아니다. 평균 30퍼센트 절약이라는 문구도 소득이 있는 미국 중위 납세자의 세율을 가정해 계산한 값이라고 회사가 밝히고 있어서 개인마다 실제 절감액은 달라진다. 위험을 누가 지는지도 분명하다. 회사의 이용약관은 소견서를 받았다고 해서 계좌 운영사나 고용주가 인정한다는 보장이 없고, 미국 국세청이나 주·지방 세무당국이 그 지출을 213(d)조 인정 의료비로 볼 것이라는 보장도 없다고 적은 뒤, 소견서에 기대어 자격을 입증하는 일은 전적으로 이용자 본인의 위험이며 그에 따른 금전적 책임도 본인이 전부 진다고 명시한다. 회사 블로그에서는 국세청 규정에 어긋나지 않는다는 오해 풀이를 싣고 있지만, 약관에서는 그 책임을 이용자에게 넘겨 두었다는 점을 함께 봐야 한다. 참고로 회사 소개 페이지에는 이제 Justin Mares만 나오고 Calley Means의 이름은 나오지 않는다. 한편 헬스장 회원권과 운동비를 연 500달러까지 HSA 인정 의료비로 삼는 조항은 2025년 세법 개정안 가운데 하원 통과본에는 들어 있었으나 최종 법에서 삭제됐다. 그래서 지금 헬스장 회원권에 HSA를 쓰는 길은 이 소견서 방식밖에 없다. 이 회사의 사업이 법 개정 하나에 크게 흔들릴 수 있다는 뜻이기도 하다.",
+  "for_us": "이 회사가 파는 것은 상품이 아니라 이 지출이 의료비로 인정된다는 판정과 그 근거 문서다. 결제 화면에서 설문 몇 개를 받아 판정을 붙여 주는 것만으로 소비자가 실제로 내는 값이 30퍼센트 가까이 줄어들기 때문에, 필요한 것은 기기나 임상 데이터가 아니라 소프트웨어와 제휴다. 다만 우리가 같은 일을 직접 하려면 면허 의료인 발급 체계와 세법 판단 책임을 함께 떠안아야 해서 3개월 안에 시도하기에는 위험이 크다. 대신 우리 앱 화면 안에서 할 수 있는 일이 두 가지 있다. 첫째, 미국 이용자에게 지금 HSA나 FSA에 얼마가 남아 있는지 알려 주고, FSA라면 연말까지 쓰지 않으면 사라지는 금액을 계산해 보여 주는 안내다. 둘째, Truemed나 Flex의 제휴 브랜드로 연결해 주는 자리를 만드는 것이며, 이렇게 하면 세법 판단은 그 회사가 하고 우리는 이용자를 연결하는 역할만 맡는다. 연말이라는 정해진 기한이 있고 쓰지 않으면 돈이 사라진다는 조건은 앱에서 알림과 목표를 붙이기에 잘 맞는다.",
+
+  "screenshots": [
+    {
+      "file": "truemed_shop.png",
+      "caption": "소비자용 마켓플레이스 첫 화면이다. HSA·FSA 자금을 실제로 원하는 상품에 쓰라는 문구와 평균 30퍼센트 절약, 이용자 100만 명이라는 표기가 보인다.",
+      "from": "https://shopping.truemed.com/hsa-fsa-shopping"
+    },
+    {
+      "file": "truemed_brands.png",
+      "caption": "같은 페이지 전체다. Peloton과 Thorne, Tonal, Plunge, Orthofeet 같은 제휴 브랜드와 결제, 건강 설문, HSA·FSA 결제로 이어지는 3단계 이용 절차가 나와 있다.",
+      "from": "https://shopping.truemed.com/hsa-fsa-shopping"
+    },
+    {
+      "file": "truemed_help.png",
+      "caption": "고객 도움말의 자격 기준 안내다. 세법 213(d)조를 근거로 삼되 일반적인 건강에 이롭기만 한 지출은 인정되지 않는다고 회사가 직접 설명하고 있다.",
+      "from": "https://help.truemed.com/eligibility-qualification/eligibility-qualification-overview"
+    },
+    {
+      "file": "truemed_merchant.png",
+      "caption": "가맹점용 기술 문서다. 결제 처리와 환급 지원이라는 두 갈래로 상점에 붙는다는 설명이 나와 있다.",
+      "from": "https://docs.truemed.com/guides/get-started/how-truemed-works"
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "Investing in Truemed",
+      "url": "https://a16z.com/announcement/investing-in-truemed/",
+      "note": "a16z가 밝힌 투자 이유와 제휴 브랜드 3,000곳, 평균 30퍼센트 절약 수치를 확인했다."
+    },
+    {
+      "title": "Truemed Closes $34 Million Series A To Unlock HSA/FSA Funds For Lifestyle Interventions",
+      "url": "https://www.prnewswire.com/news-releases/truemed-closes-34-million-series-a-to-unlock-hsafsa-funds-for-lifestyle-interventions-302647740.html",
+      "note": "투자 규모와 참여 투자사, 본사 위치, 매출 3배 성장 발표를 확인했다."
+    },
+    {
+      "title": "How Truemed works (가맹점용 기술 문서)",
+      "url": "https://docs.truemed.com/guides/get-started/how-truemed-works",
+      "note": "결제 연동 방식과 소견서 12개월 유효, 24시간에서 48시간 검토 시간을 확인했다."
+    },
+    {
+      "title": "Eligibility & Qualification Overview (고객 도움말)",
+      "url": "https://help.truemed.com/eligibility-qualification/eligibility-qualification-overview",
+      "note": "인정 기준과 헬스장 회원권 포함 여부, 계좌 운영사가 최종 판단권을 가진다는 안내를 확인했다."
+    },
+    {
+      "title": "HSA/FSA Eligible Products (소비자 마켓플레이스)",
+      "url": "https://shopping.truemed.com/hsa-fsa-shopping",
+      "note": "제휴 브랜드 목록과 3단계 이용 절차, 이용자 100만 명 표기를 확인했다."
+    },
+    {
+      "title": "Disclosures (Truemed 고지 문서)",
+      "url": "https://www.truemed.com/disclosures",
+      "note": "서비스 비용이 상품 가격에 포함된다는 안내와, 계좌 운영사가 청구를 거절할 수 있고 사실과 다르게 답하면 세금 불이익이 생길 수 있다는 면책 문구를 확인했다."
+    },
+    {
+      "title": "Gyms & Studios (Truemed 상품 분류)",
+      "url": "https://www.truemed.com/shop/gym-studios",
+      "note": "헬스장과 스튜디오 회원권이 실제 대상 분류로 있고 Barry's, ClassPass, Club Pilates가 제휴돼 있음을 확인했다."
+    },
+    {
+      "title": "Publication 969, Health Savings Accounts and Other Tax-Favored Health Plans",
+      "url": "https://www.irs.gov/publications/p969",
+      "note": "HSA와 FSA의 가입 조건, 이월 규칙, 인정 의료비 정의를 확인했다."
+    },
+    {
+      "title": "IRS alert: Beware of companies misrepresenting nutrition, wellness and general health expenses as medical care for FSAs, HSAs, HRAs and MSAs (IR-2024-65)",
+      "url": "https://www.irs.gov/newsroom/irs-alert-beware-of-companies-misrepresenting-nutrition-wellness-and-general-health-expenses-as-medical-care-for-fsas-hsas-hras-and-msas",
+      "note": "자기 보고 정보만으로 발급한 소견서를 인정하지 않는다는 국세청 경고와 계좌 자격 상실 위험을 확인했다."
+    },
+    {
+      "title": "TrueMed's payment integration platform unlocks HSA/FSA for health, not sickness",
+      "url": "https://techcrunch.com/2023/09/18/truemed-payment-integration-hsa-fsa/",
+      "note": "창업 배경과 초기 투자 350만 달러, 창업자 경력을 확인했다."
+    },
+    {
+      "title": "Congressman Auchincloss Probes Corruption of Healthcare Executives in the Trump Administration",
+      "url": "https://auchincloss.house.gov/media/press-releases/congressman-auchincloss-probes-corruption-of-healthcare-executives-in-the-trump-administration",
+      "note": "Calley Means의 이해충돌을 문제 삼은 의회 서한 내용을 확인했다."
+    },
+    {
+      "title": "Terms of Service (Truemed 이용약관)",
+      "url": "https://www.truemed.com/terms",
+      "note": "소견서에 기대어 자격을 입증하는 일이 전적으로 이용자 본인의 위험이고, 국세청이 213(d)조 인정 의료비로 볼 것이라는 보장이 없다는 조항을 원문으로 확인했다."
+    },
+    {
+      "title": "Letter from Representative Auchincloss to the TrueMed Board of Directors",
+      "url": "https://auchincloss.house.gov/imo/media/doc/auchincloss_letter_to_truemed_board_of_directors.pdf",
+      "note": "2025년 6월 16일 자 서한 원문이다. 기업 가치가 2024년 1월 이후 3배 가까이 올랐다는 지적과 본사 주소를 확인했다."
+    },
+    {
+      "title": "What the One Big Beautiful Bill Act Means for Employee Benefits",
+      "url": "https://www.tasconline.com/legislative-updates/what-the-one-big-beautiful-bill-act-means-for-employee-benefits/",
+      "note": "헬스장 회원권과 운동비를 연 500달러까지 HSA 인정 의료비로 삼는 조항이 최종 법에서 삭제됐다는 사실을 항목별 목록으로 확인했다."
+    },
+    {
+      "title": "Auchincloss and Schiff Letter on Potential Conflict of Interest with Calley Means",
+      "url": "https://www.schiff.senate.gov/wp-content/uploads/2025/11/Auchincloss-Schiff-Letter-on-Potential-COI-with-Calley-Means.pdf",
+      "note": "2025년 10월 31일 자 공동 서한 원문이다. 임명일과 이해충돌 지적, Truemed가 비데를 HSA 대상으로 광고한다는 사례를 확인했다."
+    },
+    {
+      "title": "A Kennedy Aide's Start-Up Can Get You a Tax Break on a $9,000 Sauna",
+      "url": "https://www.nytimes.com/2025/07/18/business/truemed-fsa-hsa-calley-means-maha.html",
+      "note": "이 방식을 비판적으로 다룬 New York Times 기사다. 본문은 열지 못했고 의회 서한의 인용을 통해 존재와 논지를 확인했다."
+    },
+    {
+      "title": "Truemed HSA/FSA Medical Necessity Investigation",
+      "url": "https://classlawdc.com/2026/06/02/truemed-hsa-fsa-medical-necessity-investigation/",
+      "note": "법무법인이 소비자 피해 여부를 조사 중이라는 공지를 확인했다. 소송 제기 단계는 아니다."
+    },
+    {
+      "title": "A List of Tax Provisions Left Out of the Big Beautiful Bill",
+      "url": "https://bipartisanpolicy.org/explainer/tax-provisions-left-out-of-obbb/",
+      "note": "헬스장 회원권을 HSA 대상에 넣는 조항이 최종 법에서 빠졌다는 사실을 확인했다."
+    },
+    {
+      "title": "Truemed Lands $34M To Grow HSA/FSA Purchase Platform",
+      "url": "https://athletechnews.com/truemed-34-million-funding-hsa-fsa/",
+      "note": "피트니스 업계 관점의 투자 보도와 창업자 발언을 확인했다."
+    }
+  ]
+}

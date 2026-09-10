@@ -1,0 +1,11 @@
+.DS_Store
+*.pyc
+__pycache__/
+
+# 옛 판본 보관 폴더는 배포에 넣지 않는다.
+data/notes_prestyle/
+data/notes_v1/
+data/_excluded/
+data/_digest.md
+data/_terms.md
+data/_players.md
