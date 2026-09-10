@@ -195,15 +195,40 @@ button{font-family:inherit; font-size:inherit; color:inherit}
 .term .ko{color:var(--accent-ink); font-weight:600}
 .term .pl{color:var(--muted); display:block}
 /* ---------- 투자받은 회사 ---------- */
-.ccard{
-  display:block; width:100%; text-align:left; border:1px solid var(--line); background:var(--surface);
-  border-radius:var(--radius); padding:14px 17px; margin:0 0 10px; cursor:pointer; line-height:1.6;
+.cbig{border:1px solid var(--line); background:var(--surface); border-radius:var(--radius); padding:16px 18px; margin:0 0 16px}
+.cbig-h{display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px}
+.cspacer{flex:1}
+.cname{border:0; background:transparent; padding:0; font-size:18px; font-weight:700; cursor:pointer; letter-spacing:-.01em}
+.cname:hover{color:var(--accent-ink); text-decoration:underline}
+.cs{font-size:11px; font-weight:700; padding:2px 8px; border-radius:5px; background:var(--t-reads-bg); color:var(--t-reads)}
+.cissue{border:1px solid var(--line); background:var(--surface-2); color:var(--muted); border-radius:5px;
+  font-size:11px; padding:1px 7px; cursor:pointer; font-family:var(--mono)}
+.cissue:hover{border-color:var(--accent); color:var(--accent-ink)}
+.cmore{border:1px solid var(--accent); background:var(--surface); color:var(--accent-ink); border-radius:8px;
+  font-size:12.5px; font-weight:600; padding:5px 12px; cursor:pointer}
+.cmore:hover{background:var(--accent); color:#fff}
+:root[data-theme="dark"] .cmore:hover{color:#0e1a16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .cmore:hover{color:#0e1a16}}
+.cone{margin:0 0 9px; font-size:14.5px; line-height:1.7; font-weight:600}
+.ctags{display:flex; flex-wrap:wrap; gap:5px; margin:0 0 10px}
+.ctags span{font-size:11.5px; padding:2px 9px; border-radius:999px; background:var(--surface-2);
+  border:1px solid var(--line-soft); color:var(--muted)}
+.csum{margin:0 0 12px; font-size:14px; line-height:1.8; color:var(--muted)}
+.ctab{width:100%; border-collapse:collapse; margin:0 0 12px; font-size:13.5px}
+.ctab th{
+  text-align:left; width:118px; vertical-align:top; padding:7px 10px 7px 0; font-weight:700;
+  color:var(--muted); font-size:12px; white-space:nowrap; border-top:1px solid var(--line-soft);
 }
-.ccard:hover{border-color:var(--accent); background:var(--surface-2)}
-.ccard .cn{font-size:16px; font-weight:700; margin-right:8px}
-.ccard .cs{font-size:11px; font-weight:700; padding:2px 8px; border-radius:5px; background:var(--t-reads-bg); color:var(--t-reads)}
-.ccard .co{display:block; font-size:13.5px; color:var(--muted); margin-top:4px}
-.ccard .cr{display:inline-block; font-size:11px; color:var(--muted); font-family:var(--mono); margin-top:6px}
+.ctab td{padding:7px 0; line-height:1.7; border-top:1px solid var(--line-soft)}
+.ctab tr:first-child th, .ctab tr:first-child td{border-top:0}
+.ctab tr.w th{color:var(--t-policy)}
+.ctab tr.w td{color:var(--t-policy)}
+.cthumbs{display:grid; grid-template-columns:repeat(3,1fr); gap:9px}
+.cthumbs figure{margin:0; min-width:0}
+.cthumbs a{display:block; border:1px solid var(--line); border-radius:8px; overflow:hidden; background:var(--surface-2)}
+.cthumbs img{width:100%; height:132px; object-fit:cover; object-position:top; display:block}
+.cthumbs figcaption{font-size:11px; color:var(--muted); margin-top:4px; line-height:1.5}
+@media (max-width:760px){ .cthumbs{grid-template-columns:1fr 1fr} .ctab th{width:92px} }
 .backlink{
   border:1px solid var(--line); background:var(--surface); color:var(--muted);
   border-radius:8px; padding:5px 11px; font-size:12.5px; cursor:pointer; margin:0 0 14px;
@@ -964,18 +989,49 @@ function viewCompanies(){
   var list = Object.keys(COMPANIES).map(function(k){ return COMPANIES[k]; });
   var q = state.q.trim().toLowerCase();
   if(q) list = list.filter(function(c){
-    return ((c.name||'') + (c.one_liner||'') + (c.problem||'')).toLowerCase().indexOf(q) >= 0; });
-  var h = ['<h2>투자받은 회사</h2>',
-    '<p style="color:var(--muted);font-size:14px">뉴스레터에 한 줄로만 나온 회사를, 더 찾아보지 않고도 이해할 수 있게 정리했다. 총 ' + list.length + '곳.</p>'];
-  if(!list.length){ h.push('<div class="empty">아직 정리된 회사가 없습니다</div>'); }
+    return JSON.stringify(c).toLowerCase().indexOf(q) >= 0; });
   list.sort(function(a,b){ return (a.name||'').localeCompare(b.name||''); });
+
+  var h = ['<h2>투자받은 회사</h2>',
+    '<p style="color:var(--muted);font-size:14px">뉴스레터에 한 줄로만 나온 회사를 직접 찾아보고 정리했다. ' +
+    '목록에서 요약과 화면을 훑고, 더 볼 것만 눌러서 들어가면 된다. 총 ' + list.length + '곳.</p>'];
+  if(!list.length) h.push('<div class="empty">아직 정리된 회사가 없습니다</div>');
+
   list.forEach(function(c){
-    h.push('<button class="ccard" data-company="' + esc(c.slug) + '">' +
-      '<span class="cn">' + esc(c.name) + '</span>' +
+    var cd = c.card || {};
+    var shots = (c.screenshots || []).slice(0, 3);
+    h.push('<div class="cbig">');
+    /* 머리: 이름, 판매 대상, 회차 */
+    h.push('<div class="cbig-h">' +
+      '<button class="cname" data-company="' + esc(c.slug) + '">' + esc(c.name) + '</button>' +
       (c.sells_to ? '<span class="cs">' + esc(SELLS_LABEL[c.sells_to] || c.sells_to) + '</span>' : '') +
-      '<span class="co">' + esc(c.one_liner || '') + '</span>' +
-      ((c.seen_in||[]).length ? '<span class="cr">' + c.seen_in.map(function(x){
-        return x.issue + '회차'; }).join(', ') + '</span>' : '') + '</button>');
+      ((c.seen_in||[]).map(function(x){
+        return '<button class="cissue" data-issue="' + esc(x.issue) + '">' + esc(x.issue) + '회차</button>'; }).join('')) +
+      '<span class="cspacer"></span>' +
+      '<button class="cmore" data-company="' + esc(c.slug) + '">자세히</button>' +
+      '</div>');
+    h.push('<p class="cone">' + esc(c.one_liner || '') + '</p>');
+    if((cd.tags||[]).length){
+      h.push('<div class="ctags">' + cd.tags.map(function(t){
+        return '<span>' + esc(t) + '</span>'; }).join('') + '</div>');
+    }
+    if(cd.summary) h.push('<p class="csum">' + esc(cd.summary) + '</p>');
+    /* 표: 값, 성과, 주의 */
+    var rows = [];
+    if(cd.price) rows.push(['소비자가 내는 값', esc(cd.price), '']);
+    if(cd.headline_traction) rows.push(['성과', esc(cd.headline_traction), '']);
+    if(cd.watch) rows.push(['주의', esc(cd.watch), 'w']);
+    if(rows.length){
+      h.push('<table class="ctab"><tbody>' + rows.map(function(r){
+        return '<tr class="' + r[2] + '"><th>' + r[0] + '</th><td>' + r[1] + '</td></tr>'; }).join('') + '</tbody></table>');
+    }
+    if(shots.length){
+      h.push('<div class="cthumbs">' + shots.map(function(sh){
+        return '<figure><a href="assets/companies/' + esc(sh.file) + '" target="_blank" rel="noopener">' +
+          '<img src="assets/companies/' + esc(sh.file) + '" alt="' + esc(sh.caption||'') + '" loading="lazy"></a>' +
+          '<figcaption>' + esc((sh.caption||'').slice(0,40)) + '</figcaption></figure>'; }).join('') + '</div>');
+    }
+    h.push('</div>');
   });
   document.getElementById('content').innerHTML = h.join('');
 }
