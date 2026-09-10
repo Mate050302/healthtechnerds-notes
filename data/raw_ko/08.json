@@ -1,0 +1,95 @@
+{
+  "index": "08",
+  "title_en": "Weekly Health Tech Reads 1/25/2026",
+  "subtitle": "OpenEvidence의 펀딩 라운드, McKinsey의 프로핏 풀, 그리고 그 밖의 소식에 대한 이야기",
+  "sections": [
+    {
+      "heading_en": "Sponsored by: Wing Assistant",
+      "body": "Wing은 케어 딜리버리 조직과, 스케줄링·빌링·문서 작성·환자 커뮤니케이션 등을 처리하는 숙련된 버추얼 어시스턴트를 연결해 줍니다. 케어 플로우와 기술에 경험이 있는 이들의 어시스턴트는 감독이 거의 필요하지 않아, 내부 인력이 환자 진료에 집중할 여력을 확보해 줍니다.\n\n작은 가정의학과 클리닉에서부터 Cedars Sinai, Curana Health 같은 대형 병원과 전국 단위 조직에 이르기까지, Wing은 규모를 가리지 않고 여러 팀과 함께 일하며 운영을 개선합니다.\n\n더 알아보기\n\n뉴스레터 스폰서십에 관심이 있으시면 알려 주세요!"
+    },
+    {
+      "heading_en": "A MUSING ON AI FUNDING",
+      "body": "OpenEvidence의 120억 달러 펀딩 라운드와 메디컬 슈퍼인텔리전스의 미래\n\n소문으로 돌던 OpenEvidence의 라운드가 이번 주 발표되었습니다. Thrive Capital과 DST Global이 주도해 120억 달러 밸류에이션에 1억 5,000만 달러를 조달했습니다. 플랫폼 내 광고를 통해 상업화에 나선 지 불과 몇 달 만에 연 매출 런레이트 1억 달러에 도달했습니다.\n\nOpenEvidence는 이달 초 JPMorgan에서 자사 플랫폼의 임상 컨설트가 2025년 12월 1,790만 건으로, 2024년 12월 월 260만 건에서 늘었다고 밝혔습니다. 임상의들 사이에서 하나의 동사(verb)로 자리 잡아 가는 것으로 보이는 헬스케어 기업으로서는 놀라운 성장 궤적입니다. 펀딩 궤적도 그에 못지않게 놀랍습니다. 지난 한 해 동안 OpenEvidence는 네 차례 라운드에 걸쳐 약 6억 3,500만 달러를 조달했고, 밸류에이션은 12배 올랐습니다. 이전 라운드는 다음과 같습니다.\n\n- 시리즈 C, 2025년 10월: 60억 달러 밸류에이션에 2억 달러\n- 시리즈 B, 2025년 7월: 35억 달러 밸류에이션에 2억 1,000만 달러\n- 시리즈 A, 2025년 2월: 10억 달러 밸류에이션에 7,500만 달러\n\n당신이 Sequoia Capital이고 2월 시리즈 A를 주도했다면, 7,500만 달러 투자금이 1년 만에 10억 달러에 가까운 규모로 불어난 셈입니다. 두말할 것 없이 이들은 OpenEvidence에 아주 만족하고 있을 겁니다. 당신이 OpenEvidence CEO인 Daniel Nadler이고 여전히 회사 지분의 58%를 보유하고 있다면, 더 기쁘리라 짐작합니다.\n\n여기서 밸류에이션 문제는 아주 흥미로운데, 아래에서 더 깊이 들어가 보겠습니다. 120억 달러 밸류에이션의 이번 시리즈 D 라운드에 참여한 투자자들이라면, OpenEvidence가 500억 달러 이상의 사업이 될 경로를 보고 있어야 하고, 적어도 1,000억 달러 이상 기업이 될 가능성도 어느 정도 보고 있어야 합니다.\n\nOpenEvidence의 최대 경쟁자인 Doximity가 현재 연 매출 약 6억 2,000만 달러를 내고 시가총액이 약 75억 달러라는 점은 짚어 둘 만합니다. 미국 헬스케어 디지털 광고 시장 전체의 지출 규모는 260억 달러로 추정됩니다. 요컨대 여기 새로 들어온 투자자들이 수익을 보려면 OpenEvidence가 시장 자체를 새로 정의해야 할 것으로 보입니다."
+    },
+    {
+      "heading_en": "The Medical Superintelligence Narrative",
+      "body": "✍️ 더 깊이 들어가기\n\n이번 펀딩 라운드에서 제게 가장 흥미로운 지점은, 이것이 메디컬 슈퍼인텔리전스 구축을 중심에 둔 OpenEvidence 비전의 다음 단계를 위한 토대를 놓는다는 점입니다. 보도자료는 이를 다음과 같이 설명합니다.\n\n출처: OpenEvidence 보도자료\n\nNadler는 지난주 JPMorgan 발표에서도 이 구상을 이야기했습니다. 제가 들은 바로는 Mayo Clinic의 디지털 트윈처럼 들렸습니다. 각 전문과목에서 최고 수준인 AI 모델들이 서로 협력해 의사들의 까다로운 질문에 답하는 것입니다.\n\n이 내러티브에 투자자들이 군침을 흘리는 이유는 어렵지 않게 상상할 수 있습니다. 조지아주 시골의 종양내과 의사가 OpenEvidence를 통해 세계 최고 전문의 전원에 맞먹는 지식에 즉시 접근할 수 있다고 상상해 보십시오. 이론적으로는 헬스케어 시스템을 밑바닥부터 다시 배선하는 좋은 방법으로 보입니다.\n\n저는 결코 세계 최고의 AI 전문가가 아니지만, 기술적 관점에서 이것이 앞으로 몇 년 안에 실현 가능하다는 게 그리 터무니없어 보이지는 않습니다. 제가 훨씬 더 회의적인 쪽은 그 뒤에 있는 비즈니스 모델입니다."
+    },
+    {
+      "heading_en": "OpenEvidence's Business Today: Selling Provider Attention",
+      "body": "분명 매력적인 비전이지만, 오늘의 사업에서 보면 엄청난 도약이기도 합니다. 지금의 OpenEvidence는 의사들의 주목을 제약사에 팔아 빠르게 1억 달러 매출로 성장한 회사입니다.\n\nOpenEvidence가 1억 달러 매출로 빠르게 성장하는 과정의 역학을 잘 요약해 준다고 생각한 인용문을 하나 접했습니다.\n\n독특한 시장입니다. 제가 본 어떤 시장과도 다릅니다. 약을 처방하는 사람들에게 영향을 주려고 연간 140억 달러를 쓰는 제약 산업이 있습니다. 약을 처방할 수 있는 사람은 60만 명뿐이니, 60만 명을 상대로 140억 달러가 쓰이는 셈입니다. 그 돈을 어떻게 쓸 수 있는지에 대한 온갖 규정이 있습니다. 그냥 돈을 줄 수는 없습니다. 이 의사들에게 닿는 채널을 가지고 있다면, 그것은 금광입니다.\n\n출처: Kirk Loevner 인터뷰\n\n반전은 이렇습니다. 그 인용문은 Epocrates CEO Kirk Loevner가 Epocrates 앞에 놓인 기회에 대해 이야기한 2009년 인터뷰에서 나온 것입니다. 25년을 거슬러 올라가 보면, Epocrates와 OpenEvidence의 서사 궤적에는 비슷한 점이 많습니다. 임상 진료를 개선하기 위해 방대한 정보에 더 쉽게 접근할 수 있게 해 주는 새로운 기술이 등장한다는 것입니다. 25년 전 그 새로운 기술은 PalmPilot이었습니다. 오늘날 그 기술은 AI입니다. 두 경우 모두 임상의가 정보에 접근하는 더 효율적인 방법입니다. 도입을 유도하기 위해 무료로 제공하고, 그 도구를 쓰는 프로바이더들의 주목을 팔아 수익화합니다. Loevner의 말대로, 금광입니다.\n\nEpocrates의 여정은 OpenEvidence 앞에 필연적으로 놓일 과제도 시사합니다. 제약사가 프로바이더 대상 광고에 연간 수십억 달러를 기꺼이 쓰는 이유는 그 광고에서 ROI가 나오기 때문일 것입니다. 거기서 생기는 긴장은 명백하며, Epocrates는 상장사가 된 뒤 이 문제로 어려움을 겪기 시작했습니다. EHR을 포함해 다른 제품군을 만들어 보려 했지만 크게 휘청였고, 결국 2012년 athenahealth에 인수되었습니다.\n\n그 여정은 이것이 기술 역량의 문제가 아니라 신뢰의 문제라고 제가 생각하는 이유를 잘 보여 줍니다. 당신이 조지아주 시골의 암 전문의이고, 이 플랫폼이 종양 치료제 제조사의 광고를 당신에게 띄우고 있다는 걸 안다면, 환자에 관한 까다로운 의학적 질문에 답할 때 이 플랫폼을 \"의학 지식의 기본 운영체제\"로 정말 신뢰하겠습니까? 저는 정말 그렇지 않다고 봅니다. OpenEvidence의 발목을 잡을 것은 기술이 아니라 사람입니다.\n\n그래서 저는 OpenEvidence 앞에 놓인 더 어려운 질문이 기술 문제가 아니라 비즈니스 모델 혁신의 문제라고 생각합니다. 현재 모델은 빠른 성장을 가능하게 하고 있지만, 더 큰 비전과는 근본적으로 어긋나 있는 것으로 보입니다. 조직 설계가 잘못되어 있습니다. 그러니 AI 시대의 Doximity를 만드는 길은 분명해 보이지만, 그 사업은 필연적으로 오늘의 Doximity와 매우 비슷한 모습, 즉 프로바이더의 주목을 팔아 수억 달러의 매출을 내는 모습일 것입니다.\n\n그 증거로는 OpenEvidence의 커머셜 팀을 보면 됩니다. 대부분이 지난 12개월 사이 Doximity에서 영입된 인력인데, 소수의 제약사 바이어들과 이미 맺어 온 상업적 관계를 활용하려는 것으로 보입니다. 경쟁사의 매출을 빼앗는 레드오션 전략에서는 논리적인 수로 보이지만, 새로운 형태의 메디컬 슈퍼인텔리전스를 만들고 있다면 취할 만한 수는 아니라는 인상을 받습니다.\n\n이번 OpenEvidence 라운드의 투자자들은 정의상 제 견해에 동의하지 않을 텐데, 밸류에이션을 둘러싼 유명한 과거 논쟁을 빌려 이를 좀 더 풀어 보는 것이 흥미로울 것 같습니다."
+    },
+    {
+      "heading_en": "Open Evidence & the Gurley-Damodaran Debate on Valuation",
+      "body": "OpenEvidence의 가파른 부상은 10년 전 Aswath Damodaran과 Bill Gurley 사이의 유명한 밸류에이션 논쟁을 떠올리게 합니다. Uber가 2014년 6월 180억 달러 밸류에이션에 자금을 조달한 뒤, Damodaran과 Gurley는 Uber의 밸류에이션을 두고 공방을 벌였습니다. DCF에 관한 책을 쓴 교수인 Damodaran은 자신의 분석에 근거해 Uber가 크게 고평가되어 있으며 60억 달러가 더 적절하다고 주장했습니다. Uber 이사회에 있던 Gurley는 Damodaran이 핵심을 놓쳤다고 반박했습니다. Uber의 서비스는 시장을 근본적으로 재정의할 수 있기 때문에, DCF에는 드러나지 않는 방식으로 크게 저평가되어 있다는 것이었습니다. 정말 훌륭하고 품위 있는 공개 논쟁이었습니다.\n\n오늘날 Uber의 시가총액이 약 1,700억 달러라는 점을 보면, Gurley가 Damodaran이 보지 못한 무언가를 봤다는 것이 분명해 보입니다. 이 모든 것을 생각할 때 OpenEvidence에도 비슷한 렌즈를 적용해 보는 것이 흥미롭다고 생각합니다.\n\n인정하건대 OpenEvidence에 관해서라면 저는 Damodaran 진영에 속합니다. 여기 투자자들이 보고 있을 시장 기회로 가는 경로가 제게는 보이지 않습니다. 제가 보기에 이들 투자자에게 최선의 시나리오는, 헬스케어에서 전략적 한 수가 절실한 대형 플레이어에게 시장 고점에 매각하는 Livongo나 Oak Street 같은 엑싯입니다. 그리고 Nadler가 Doximity 영업팀에 보낸 문자가 어떤 단서라면, 그것이 그의 계획이기도 한 듯합니다. 법정에서 진행 중인 Doximity와 OpenEvidence의 법적 분쟁 덕분에, 그가 앞으로 2~3년 안에 은퇴할 계획을 밝힌 문자들 일부를 볼 수 있습니다.\n\n위의 어느 것도 사람들이 진료에 접근하는 방식을 근본적으로 바꾸려는 리더의 행동으로는 보이지 않습니다.\n\n이 OpenEvidence 밸류에이션 문제에 대해 커뮤니티가 어떻게 생각하는지 궁금합니다. 5년 뒤 얼마의 가치가 될 것 같으신가요?\n\n5년 뒤 OpenEvidence의 가치는 얼마일 것 같습니까?\n\n- 오늘의 10배 초과: 1,200억 달러 이상\n- 3배에서 10배: 360억 달러에서 1,200억 달러\n- 1배에서 3배: 120억 달러에서 360억 달러\n- 0.5배에서 1배: 60억 달러에서 120억 달러\n- 0.01배에서 0.5배: 1억 2,000만 달러에서 60억 달러\n- 0"
+    },
+    {
+      "heading_en": "McKinsey's Profit Pools",
+      "body": "헬스케어가 어디로 가는지 실마리를 읽어 보려는 사람이라면, McKinsey의 프로핏 풀 분석이 늘 가장 좋은 출발점 중 하나라고 생각합니다. 이들은 지난주 최신 분석을 내놓으며 2026년과 그 이후 산업이 어디로 향하는지를 살폈습니다. 2028년과 2029년의 기회에 앞서, 단기적으로는 어려운 그림을 그리고 있습니다. 특히 2027년 세그먼트별 EBITDA를 본 아래 차트는 정말 놀랍습니다. 그래프 왼쪽 아래를 보면 Medicaid가 산업 세그먼트로서 마이너스 EBITDA를 기록할 것으로 전망되는데, 이런 차트에서 그런 모습을 본 기억은 제게 이번이 처음입니다.\n\n출처: McKinsey 분석"
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "목요일에 페이어 CEO들이 워싱턴 DC로 불려 가 Ways & Means Committee와 Energy and Commerce Health Subcommittee 양쪽에서 이 나라의 헬스케어 비용을 끌어올리는 요인에 대해 증언했습니다. 이 세션들은 제게 요즘 의회에서 오가는 대화의 수준을 다시 확인시켜 주는 자리였습니다. 정치적 연출은 넘치고 알맹이는 적었습니다. 대부분의 세션에 보험사 CEO들이 굳이 있어야 했는지 모르겠습니다. 공화당과 민주당이 각자의 헬스케어 정책이 가진 결함을 두고 간접적으로 다투고, 여기에 수직 통합에 대한 전반적인 반감이 뒤섞이며, 소셜미디어 캠페인용 사운드바이트를 만들어 내려는 자리처럼 느껴졌습니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "UnitedHealth Group CEO Steve Hemsley는 목요일 의회 증언에 앞서 준비한 발언에서, UHC가 2026년 ACA 익스체인지에서 내는 이익을 자발적으로 환급하겠다고 밝혔습니다. Martin이 목요일 Health Policy Briefing에서 이야기했듯, 페이어들이 현재의 정치적 환경과 익스체인지에서의 향후 경로를 헤쳐 나가려는 상황에서 UHG로서는 영리한 수로 보입니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Amazon One Medical도 AI 발표 대열에 합류해, 이번 주 AI 기반 헬스 어시스턴트를 출시했다고 밝혔습니다. 경영진이 AI로 인한 시장 변화에 대응하면서 앞으로 몇 달간 이런 미투(me-too) 성격의 AI 제품 출시 발표가 줄을 이을 것은 불가피해 보입니다. 이런 일이 더 이상 뉴스가 되지 않는 날을 기다리고 있고, 그날이 곧 오리라 생각합니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Healthier Capital이 2억 2,000만 달러 규모 첫 펀드의 클로징을 발표했습니다. Healthier는 2017년부터 2023년까지 One Medical을 이끌며 2020년 IPO와 2022년 Amazon 인수를 거친 것으로 가장 잘 알려진 Amir Dan Rubin이 설립했습니다. 이미 Hyro, Qualified Health, Ezra, Zarminali Pediatrics 등 여러 곳에 투자했습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "프로바이더를 위한 ChatGPT인 OpenEvidence가 120억 달러 밸류에이션에 2억 5,000만 달러를 조달했습니다. 자세한 내용은 위의 논의를 참고하세요."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "소아 진료 딜리버리 모델인 Zarminali Pediatrics가 1억 1,000만 달러를 조달했습니다. One Medical의 전 CEO Amir Dan Rubin이 공동 창업한 펀드 Healthier Capital이 라운드를 주도했습니다. Zarminali는 현재 여덟 개 주에서 28개 클리닉을 운영하고 있으며, 2026년에 15개 클리닉을 신규로 열고 M&A를 통해 기존 진료소들도 더할 계획입니다. One Medical이 프라이머리 케어 시장에서 했던 것과 크게 다르지 않은, 새로운 전국 단위 소아과 브랜드를 향한 큰 승부수로 보입니다. Hospitalogy가 2024년에 Zarminali를 잘 정리한 개요를 낸 바 있습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "가상 ABA 플랫폼인 AnswersNow가 4,000만 달러를 조달했습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "제약사용 컴패니언 앱을 만드는 BrightInsight가 1,300만 달러를 조달했습니다. 보도자료는 한 사례로 Patient App을 소개하는데, Sanofi와 Regeneron이 만든 자가 주사형 바이오의약품의 환자 복약 순응도를 높이는 데 도움을 줍니다. Mayo Clinic, General Catalyst, Insight Partners, Eclipse, New Leaf Venture Partners가 투자했습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "고용주를 대상으로 하는 온사이트/가상 프라이머리 케어 모델인 One to One Health가 Frist Cressey Ventures로부터 1,200만 달러 규모의 소수 지분 그로스 캐피털 투자를 받았습니다. 보도자료는 이 모델이 직원 한 명당 연간 최대 4,000달러를 절감할 수 있다고 밝히는데, 그 계산이 어떻게 나오는지 무척 보고 싶습니다. 현재 650개 조직과 협업하며 50만 명의 멤버를 두고 있습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "GI 질환의 케어 익스텐더인 Salvo Health가 500만 달러를 조달했습니다. Salvo는 지역 프로바이더들과 협업해 GI 및 대사성 간 질환에 대한 \"래퍼라운드 케어\"를 제공하며, 해당 프로바이더들이 RPM과 CCM 코드로 청구할 수 있게 해 줍니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "포스트 어큐트 케어를 위한 레비뉴 사이클 플랫폼인 Claim Health가 440만 달러를 조달했습니다. Claim은 1년이 채 안 되는 기간에 매출이 30배 성장했다고 밝히며, Ascend Health, Interim HealthCare, Home Care RN 등 초기 고객들이 행정 업무량 50% 감소, 리퍼럴 처리량 4배 증가, 예방 가능한 거절 건수 30~50% 감소를 경험했다고 전했습니다. Maverick Ventures가 라운드를 주도했습니다."
+    },
+    {
+      "heading_en": "What I'm Reading",
+      "body": "An Updated Analysis of Coding Pattern Differences in Medicare Advantage, Chris Klomp, Joe Albanese, Alec Aramanda, John Brooks\n\n이번 주에 접하고 무척 흥미로웠던 글입니다. Center for Medicare의 리더들이 v28이 Medicare Advantage의 리스크 어저스트먼트 게이밍 문제를 이미 상당 부분 해결한 것으로 보인다고 이야기합니다. 아래 시각 자료가 v28이 코딩에 이미 얼마나 큰 영향을 미쳤는지를 잘 보여 줍니다.\n\n더 읽기"
+    },
+    {
+      "heading_en": "What I'm Reading",
+      "body": "State of Health AI 2026, Sofia Guerra, Steve Kraus, Andrew Hedin, Marla Jalbut\n\nBessemer 팀이 정리한 AI 헬스케어 지형에 대한 좋은 조망입니다.\n\n더 읽기"
+    },
+    {
+      "heading_en": "What I'm Reading",
+      "body": "Suki ROI Validations 2026, KLAS\n\nAI의 현주소 이야기가 나온 김에, Rush 같은 시스템에서 Suki가 어떻게 쓰이고 있는지 다룬 KLAS의 이 케이스 스터디가 흥미로웠습니다. 프로바이더당 매출 증가와 Suki가 \"문서 작성과 코딩의 개선\"을 어떻게 이끌고 있는지에 대한 눈이 번쩍 뜨이는 수치들이 담겨 있습니다. McLeod Health에서는 재진 인카운터 기준으로 Suki가 Level 5 인카운터 5% 증가, Level 4 인카운터 7.3% 증가, Level 3 인카운터 18.2% 감소를 이끌고 있습니다. 페이어의 리스크 어저스트먼트 농간을 둘러싼 지금의 우려를 생각하면, 이 행태가 그것과 무엇이 크게 다른지 저는 잘 모르겠습니다.\n\n더 읽기"
+    },
+    {
+      "heading_en": "What I'm Reading",
+      "body": "Treatment of a teenager with an ultra-rare condition is a medical milestone, The Economist\n\n영국에서 의약품 개발 과정에 기반해 n=1 약물 치료의 승인을 시도하는 임상시험을 시작하려는 노력을 다룬 흥미로운 글입니다. 승인 속도를 높이는 동시에 이런 약의 개발 비용을 낮추는 흥미로운 접근으로 보입니다.\n\n더 읽기"
+    },
+    {
+      "heading_en": "HTN Radio",
+      "body": "The Grand Round-Up: 01/22/26\n\nMartin과 저는 화요일에 즐겁게 이야기를 나눴습니다. JPM과 ACA 등록 등에 대해 다뤘습니다. 그가 영상까지 녹화하고 있는 줄은 몰랐으니, 제 상어 스웨트셔츠는 못 본 척해 주세요. 읽기보다 듣는 쪽을 선호하신다면, 저희가 최근에 녹음한 다른 것들도 있습니다.\n\n- Rebecca Springer와의 인터뷰: JPM에서의 PE 관련 대화에서 얻은 시사점\n- Doctronic의 Adam Oskowitz와의 인터뷰: 유타 파일럿에 대해\n- Aledade의 Farzad Mostashari와의 인터뷰: VBC에 대해"
+    }
+  ]
+}

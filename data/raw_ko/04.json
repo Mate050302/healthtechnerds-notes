@@ -1,0 +1,103 @@
+{
+  "index": "04",
+  "title_en": "Weekly Health Tech Reads 1/11/26",
+  "subtitle": "HTN이 JPM에 가고, OpenAI의 홍보 총공세, Doctronic과 Utah의 AI 시험, CMS가 새 클레임 플랫폼에 대한 RFI를 내고, 그 밖의 소식",
+  "sections": [
+    {
+      "heading_en": "Last day to sign up for our pop-up coverage of JPM this week!",
+      "body": "많은 분들과 마찬가지로 저도 오늘 늦게 JP Morgan 2026을 위해 SF로 떠납니다. 올해는 기업 발표들을 취재하면서 그 자리에서 논의되는 내용에 대한 제 관점을 팝업 뉴스레터로 공유하게 되어 기대가 큽니다. 이번 주 내내 매일 태평양 시간 오전 6시경에 보내드릴 예정입니다.\n\n매일 무슨 일이 벌어지는지에 대한 제 정리가 궁금하시다면 아래에서 신청하시기를 권합니다. 제가 특히 눈여겨보고 있는 주제 몇 가지는 다음과 같습니다.\n\nAI: 모두가 좋아하는 화제의 주제입니다. Abridge, Open Evidence, Open AI이 모두 발표 명단에 올라 있고 그 외에도 더 있습니다. 지난주에 나온 소식들을 감안하면 OpenAI는 특히 시의적절할 것입니다.\n\nVBC: Astrana, Cityblock, Somatus, ThymeCare 등이 VBC의 현주소에 대해 흥미로운 업데이트를 들려줄 것입니다. 저는 특히 전문 진료 영역의 VBC 시장이 어떻게 진화하고 있는지가 궁금합니다.\n\nGovernment programs: 대형 보험사들은 빠져 있지만 Clover와 Alignment가 MA 시장에 대한 업데이트를 내놓을 것이고, 저는 ACA/Medicaid 시장 변화에 대해 프로바이더들이 어떤 이야기를 하는지 듣고 싶습니다.\n\nMartin과 제가 다룰 예정인 기업들의 현재 목록을 비롯해 더 자세한 내용은 이 페이지에서 확인하실 수 있습니다.\n\n위의 여러 발표와 주제에서 나온 핵심 정리를 따라가고 싶으시다면 아래 버튼으로 신청해서 확인해 보세요. 이 별도의 심층 분석은 349달러에 제공합니다.\n\nSign up for HTN's Coverage of JPM 2026"
+    },
+    {
+      "heading_en": "OpenAI's healthcare PR efforts go warp speed this week",
+      "body": "OpenAI는 이번 주 여러 소식을 전하며 온통 뉴스를 채웠습니다.\n\n먼저 OpenAI는 \"AI as a Healthcare Ally\"라는 꽤 흥미로운 리포트를 냈습니다. 이 리포트는 사람들이 AI를 어떻게 쓰고 있는지를 파고들기 때문에 그 자체로 시간을 들여 곱씹어 볼 만합니다. Axios가 5일에 이 리포트를 잘 다뤘는데, 전 세계에서 4천만 명 넘는 사람들이 매일 ChatGPT를 건강 정보를 얻는 데 쓰고 있다는 점을 짚었습니다. 제게 가장 흥미로웠던 수치는 건강보험을 이해하기 위해 ChatGPT에 보내는 메시지가 주당 거의 200만 건에 달한다는 것이었습니다. 이 리포트에 누가 신이 났을지 아시겠죠? 헬스플랜과 헬스시스템 양쪽에 프런트도어 전략을 다시 짜자고 제안하는 컨설턴트들입니다. 당연하게도 이 새로운 환경에서 헬스케어 브랜드들이 어떻게 관심을 놓고 경쟁할지에 대한 이야기가 많이 오갈 것입니다. Martin과 제가 최근 여러 자리에서 이야기해 온 것처럼, 저는 여기서 더 사람다운 \"front of house\" 전략을 갖추는 것이 이기는 수라고 계속 생각합니다. 아무튼, OpenAI의 한 주 이야기에서 옆길로 샜네요.\n\n수요일에 OpenAI는 소비자용 PHR 성격의 도구인 ChatGPT Health를 발표했습니다. 저는 지금까지 너무 많은 PHR 발표를 겪어 와서 하나 더 나왔다고 들뜨지는 않지만, 위에서 OpenAI가 인용한 사용량을 보면 이번에는 다를지도 모르겠습니다. Brendan Keeler가 여기에 아주 좋은 분석을 남겼습니다. 헬스케어 스타트업 b.well이 여기서 큰 수혜자가 될 가능성이 있어 보입니다. OpenAI가 기반이 되는 상호운용성 인프라를 위해 이들과 파트너십을 맺고 있기 때문입니다.\n\n목요일에 OpenAI는 OpenAI for Healthcare를 발표했습니다. 여기에는 ChatGPT for Healthcare와 OpenAI API라는 두 가지 별도의 제공물이 포함됩니다. ChatGPT for Healthcare는 이미 AdventHealth, Baylor Scott & White Health, HCA, Memorial Sloan Kettering 등 여러 선도 헬스시스템에서 쓰이고 있는 엔터프라이즈 제공물입니다. 이 제공물에는 임상 검색, 케어 패스웨이 관리, 의뢰서 생성 등 여러 기능이 묶여 있습니다. 제 생각에 이것이 이번 주 가장 흥미로운 전개입니다. OpenAI가 엔터프라이즈 중심 접근을 통해 OpenEvidence/UpToDate/Doximity 같은 곳들과 프로바이더의 관심을 놓고 더 직접적으로 경쟁하는 자리로 옮겨 가는 것이기 때문입니다. 그리고 함께 출발한 헬스시스템 이름들도 꽤 묵직해 보입니다.\n\n휴. 이것으로 OpenAI가 이번 주에 공유한 모든 것에 대한 제 이해를 정리했습니다. 다른 어떤 회사가 이틀 사이에 소비자용 PHR 제공물과 헬스시스템용 엔터프라이즈급 AI 플랫폼을 동시에 내놓는다는 발표를 두 건이나 했다면, 대화의 중심은 그 조직 안에 얼마나 큰 혼란이 벌어지고 있길래 그러느냐, 그리고 한 회사가 이런 전략들을 동시에 실행하는 것이 조금이라도 가능하느냐는 의문이었을 것 같습니다. 이 모든 것을 실행하는 난이도는 거의 불가능에 가까워 보입니다.\n\n그런데 동시에, 주 초에 나온 리포트의 이용량 수치와 이미 엔터프라이즈 제공물에 이름을 올린 헬스시스템들을 함께 놓고 보면, 어쩌면 OpenAI에는 이걸 해낼 만한 추진력이 있는 걸까요? JPMorgan에서 어떤 논의가 오갈지 흥미로울 것은 분명합니다."
+    },
+    {
+      "heading_en": "Doctronic & Utah launch pilot testing AI for medication refills",
+      "body": "이번 주 또 다른 AI 소식으로, Doctronic과 Utah주는 환자의 약 재처방을 돕는 데 AI를 활용하는 시범 프로그램을 지난달 시작했다고 발표했습니다. Politico의 보도가 이 파일럿을 잘 다뤘는데, 파일럿은 범위가 제한적이고 접근 방식을 펼치는 과정에서 여러 안전장치를 두고 있습니다. 그럼에도 Doctronic에게도, 그리고 AI가 임상 진료에 통합되는 방식이라는 더 넓은 맥락에서도 의미 있는 진전으로 보입니다. 현재까지 수백 명의 환자가 파일럿에 등록했고, Doctronic은 2026년에 몇 개 주가 비슷한 조치를 취할 것으로 예상합니다. 주목할 점은 Doctronic이 이 작업을 위해 의료과실 보험에 가입했다는 것인데, 이 활동을 의료행위로 본다는 관점을 뒷받침합니다.\n\n화요일에 Doctronic의 공동창업자 Dr. Adam Oskowitz와 이야기를 나눌 기회가 있었습니다. 규제 전략, Doctronic이 파일럿을 어떻게 펼치고 있는지, 그리고 'Doctronic 2.0'의 함의를 더 깊이 들여다보고 싶으시다면 여기서 시청하실 수 있습니다.\n\nAI Prescription Medication Renewals Discussion with Doctronic's Co-Founder Dr. Adam Oskowitz\n\n특히 흥미로웠던 것은 Doctronic이 환자들을 자사의 처방 재조제 웹사이트로 이끌기 위해 어떻게 일하고 있는지였습니다. 직접 발로 뛰는 방식으로, 동네 약국을 찾아가 이점을 설명하고 거기서부터 넓혀 갈 계획입니다. 이 모든 일에 사람의 요소가 있다는 점을 다시 일깨워 주는 대목이고, Doctronic은 지역 시장에서 인지도를, 그리고 신뢰를 쌓는 데 사려 깊게 접근하고 있는 것으로 보입니다.\n\n이 소식에 대해 더 생각해 보고 싶으시다면, 이번 주 Slack에서도 그 대화에 대한 제 정리를 더 깊이 풀어놓았습니다."
+    },
+    {
+      "heading_en": "Revisiting the VBC Topic of the Week",
+      "body": "지난주 VBC 설문에 대한 응답 결과입니다. 설문에 답한 379명 가운데 41%는 VBC가 아직 거기까지 가지는 못했지만 옳은 방향으로 가고 있다는 쪽이었습니다. 명백한 성공이라고 보는 사람은 우리 중 소수에 불과했습니다. 한편 47명(12%)은 이제 VBC에서 넘어갈 때가 됐다고 답했습니다.\n\n출처: HTN 1/4 뉴스레터 설문, 총 379개 응답\n\n설문 응답 외에도, 왜 그 답을 골랐는지에 대해 여러분이 아주 사려 깊은 코멘트를 많이 남겨 주셨습니다. 그것들을 전부 요약해 보려 하기보다는, 여기서 살펴보실 수 있게 Google Doc에 담아 두었습니다(응답에서 신원을 알아볼 수 있는 내용은 제거했습니다).\n\n이번 주에는 Aledade의 CEO인 Farzad Mostashari를 인터뷰할 기회도 있었습니다. VBC에 대해 나누는 어떤 대화에서든 Aledade는 원칙을 지키면서 성공적으로 실행하는 방법의 대표 사례로 등장하기 때문에, 위 질문에 답할 때 참고하기 좋은 예라고 생각합니다.\n\nFarzad와 저는 Aledade가 최근 발표한 크레딧 퍼실리티와 VBC 모델의 더 기술적인 측면들, MSSP를 넘어 MA와 커머셜, Medicaid로 확장하는 것에 대한 그의 생각, 그리고 VBC가 어디로 향하고 있는지에 대한 더 큰 질문들을 그가 어떻게 보는지 이야기했습니다. 제 생각에는 스펙트럼에서 더 낙관적인 쪽을 보여 주는 좋은 사례입니다.\n\nFinancing value-based care with Aledade CEO and Co-Founder Farzad Mostashari, M.D."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "CMS 지도부가 Consumer Electronics Show에서 Medicare FFS 청구를 위한 새로운 클레임 처리 플랫폼에 대한 RFI를 낸다고 밝혔고, 이제 여기서 확인할 수 있습니다. CMS가 실제로 1970년대식 COBOL 시스템에서 더 현대적인 시스템으로 클레임 처리를 갈아탄다면 이는 큰 움직임으로 보입니다. 실현 가능한 선택지가 그리 많아 보이지 않는다는 점을 감안하면, CMS가 어떤 플랫폼으로 옮겨 갈지 생각해 보는 것도 흥미롭습니다. Brad Smith가 CMMI의 10년 성과에 대해 자주 인용되는 NEJM 기고문을 썼을 때, CMMI 모델의 발목을 잡은 운영상의 난제 사례 가운데 하나로 Next Generation Accountable Care Organization 모델이 노후한 시스템 탓에 수천 건의 청구에 시범사업 코드를 잘못 적용해 5,000만 달러 손실을 봤다는 점을 들었던 것을 기억하시는 분도 있을 것입니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "역시 Consumer Electronics Show에서, FDA는 일부 AI 및 웰니스 제품에 대한 감독을 완화하겠다고 발표했습니다. 놀랍지 않게도, Whoop(2025년 7월 혈압 인사이트 기능과 관련해 FDA로부터 경고 서한을 받은 바 있습니다) 같은 조직들은 이 조치를 반겼습니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Novo는 자사의 Wegovy 알약이 이제 CVS와 Costco 약국, Ro, LifeMD, Weight Watchers, NovoCare Pharmacy, GoodRx 등 여러 채널을 통해 미국 소비자에게 제공된다고 발표했습니다. Ro도 이 소식에 대한 보도자료를 냈는데, 목록에 오른 다른 브랜드들과 함께 2026년에 이들에게 견실한 성장을 가져다줄 것으로 예상됩니다. GLP-1 시장은 여러 플레이어가 소비자를 자사 사이트로 데려와 체중감량 약을 사게 만드는 방법을 헤쳐 나가면서 계속해서 브랜딩의 흥미로운 실습장이 되고 있습니다.\n\nNovo는 또한 첫 \"State of Weight and Health Report\"를 내놓으며, 이 나라의 이른바 Obesity Trap을 들여다보고 비만을 안고 살아가는 사람들이 마주하는 여러 어려움을 조명했습니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Altaris Capital이 헬스시스템 대상 기술 서비스 제공업체 Tegria를 Providence로부터 인수했습니다. Providence는 2020년에 아홉 개 서비스 사업을 합쳐 Tegria를 처음 출범시켰는데, 이들 사업은 합쳐서 2,500명의 직원이 350개 의료 기관을 지원하고 있었습니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Sky News는 TPG가 UHG로부터 Optum UK를 12억~14억 파운드(16억~18억 달러)에 인수하기 위해 협상 중이며, 몇 주 안에 거래가 발표될 수 있다고 보도했습니다. Optum UK는 잉글랜드의 GP를 위한 EMR 소프트웨어를 제공합니다. UHG는 2022년 6월에 발표된 거래에서 EMIS를 15억 달러에 인수했습니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Dr Oz는 화요일 Minnesota 주지사 Tim Walz에게 서한을 보내, CMS가 주의 과거 분기별 수령 내역을 검토하고 있으며 부정수급에 대응하기 위해 필요하다면 앞으로 Medicaid 자금 지급을 유예하고 보류하겠다고 통보했습니다. CMS는 또한 Minnesota에서 부정수급 고위험군인 14개 Medicaid 프로그램을 확인했다고 밝히면서, \"프로바이더 등록과 지급액의 이례적인 증가\"를 발견했지만 주는 아무런 조치를 취하지 않았다고 지적했습니다. CMS에 따르면 이들 14개 프로그램은 주와 연방 납세자의 돈 37억 5,000만 달러를 썼습니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Amazon One Medical이 시카고에서 Rush University System for Health와 파트너십을 맺으면서, 시카고 시장의 오랜 파트너였던 Advocate Aurora와 갈라섰습니다. One Medical과 Advocate Aurora는 2019년에 처음 파트너십을 맺었습니다. 이제 One Medical이 파트너를 바꾼 지역이 두 곳이 된 만큼, 다른 시장에서도 이 흐름을 지켜볼 만합니다. 맨해튼에서도 2019년 Mount Sinai와 파트너십을 맺은 뒤 최근 Monefiore로 갈아탔습니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Walmart는 LillyDirect를 포함해 고객을 위한 비대면 진료 상품을 큐레이션해 주는 웹사이트 Better Care Services라는 새로운 서비스를 발표했습니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "CVAUSA가 피닉스에 기반을 둔 심장내과 그룹 Cardiovascular Consultants를 인수했습니다. Cardiovascular Consultants는 CVAUSA가 2024년 4월에 인수한 또 다른 피닉스 심장내과 그룹 Atria Heart의 일부가 됩니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "IntelyCare가 CareRev을 인수하며 두 인력 공급 플랫폼을 결합했습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "산모 케어 모델 Pomelo Care가 17억 달러 밸류에이션에 9,200만 달러를 조달했습니다. Stripes가 라운드를 리드했습니다. 보도자료에 따르면 주로 Medicaid와 고용주 인구를 대상으로 하는 Pomelo Care는 이제 커버드 라이프가 2,500만 명에 이릅니다. 미국 출산의 7%를 지원합니다. 이번 자금은 산모 영역을 넘어 여성과 아동 헬스케어 전반으로 확장하는 데 쓰입니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "수술실용 AI 플랫폼 Apella가 지분과 부채로 8,000만 달러를 조달했습니다. 시리즈 B 라운드는 HighlandX가 리드했고 Houston Methodist 등도 참여했습니다. 보도자료에 따르면 Houston Methodist, Tampa General Hospital, MUSC가 고객이며, 병원 고객들은 평균 5%의 수술 볼륨 증가를 보였습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "리얼월드 데이터 플랫폼 Protege가 3,000만 달러를 조달했습니다. a16z가 라운드를 리드했습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "헬스시스템용 안전 플랫폼 Canopy가 2,200만 달러를 조달했습니다. 111° West Capital과 ACME Capital이 라운드를 리드했습니다. Canopy는 현재 60개 헬스시스템에 걸쳐 30만 명 이상의 직원과 함께 일하고 있습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "행동건강 클리닉을 위한 AI 운영체제 Oasys가 460만 달러를 조달했습니다. Pathlight Ventures가 라운드를 리드했습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "specialty pharma의 prior auth를 위한 새로운 모델 Ethicos Health가 프리시드 자금을 조달했습니다. Flare Capital 등이 투자했습니다."
+    },
+    {
+      "heading_en": "What I'm Reading",
+      "body": "Making AI work for us: The Defining Health System CEO Leadership Challenge of 2026, Tom Cassels, Seth Frazier, Tracey Massel, Jared Augenstein 씀\n\nManatt의 팀이 오늘 아침 이 리포트를 냈는데, 빠르게 훑어본 바로는 헬스시스템 리더십이 AI 도입을 어떻게 바라봐야 하는지에 대한 사려 깊은 정리가 여럿 담겨 있는 것 같습니다."
+    },
+    {
+      "heading_en": "What I'm Reading",
+      "body": "Hospitals Are a Proving Ground for What AI Can Do, and What It Can't, Te-Ping Chen과 Chao Deng 씀\n\n헬스시스템이 AI를 어떻게 도입하고 있는지에 대한 WSJ의 좋은 기사였습니다. 최근 Menlo Ventures 리포트를 인용해 현재 27%가 상용 AI 라이선스를 유료로 쓰고 있다고 짚습니다. 일부 시스템이 AI를 구현하는 과정에서 드러나는 가능성과 어려움을 모두 잘 그려 냅니다. 구체적으로, Mount Sinai는 보험 지급 거절을 뒤집으면서 1,200만 달러의 효과를 봤지만, 의사가 환자에게 보내는 메시지를 생성해 주려던 Epic 도구의 사용은 중단해야 했다는 내용을 다룹니다. 그 도구가 실수를 저지르고 있었는데, 다행히 상대적으로 위험이 낮은 상황들이었습니다. 예를 들어 보행보조기를 요청한 환자에게 도와줄 수 없다고 답하는 식이었습니다."
+    },
+    {
+      "heading_en": "What I'm Reading",
+      "body": "\"Bullsh*t\" - The New Way Health Giants Hide Billions, Laura Wadsten과 Nathaniel Horwitz 씀\n\nHunterbrook Media의 팀이 3대 PBM 조직이 소유한 GPO에 대한 폭로 기사를 냈고 여기저기서 회자되고 있습니다. 다만 PBM GPO들이 원격으로 일할 수도 있다는 사실 말고는 새로운 내용이 그리 많지는 않다고 봅니다. 기사에 나오는 재무 관련 논의는 대부분 2023년 Nephron Research 리포트에 기대고 있는데, 저는 그 리포트가 PBM 재무와 GPO(그리고 specialty pharma)가 지난 몇 년간 PBM 이익에서 차지하는 비중이 커져 온 방식에 대해 훨씬 결이 섬세한 논의라고 봅니다. 이 모든 것이 저로서는 종잡을 수 없는 복잡한 난장판처럼 보이고, 복잡성과 불투명성이 회의를 부르는 문화적 국면에 있는 만큼 이런 기사들이 힘을 얻는 이유는 쉽게 알 수 있습니다.\n\n이런 유형의 서사에서 제가 늘 헷갈리는 지점이 하나 있습니다. 기사는 고용주들이 이미 3대 PBM을 넘어 더 투명한 상품으로 옮겨 가고 있다고 적습니다. 그렇다면 이 GPO 문제가 고용주로부터 수십억 달러의 이익을 숨기는 그렇게 노골적인 방법이라면, 시장이 이 문제를 꽤 빠르게 정리해야 하는 것 아닐까요? 짐작건대 고용주들이 이런 행태에 지쳤다면 이제 선택지가 있으니 발로 투표할 수 있는 것 아닌가요?"
+    },
+    {
+      "heading_en": "What I'm Reading",
+      "body": "UnitedHealth Group Medicare Advantage Risk Adjustment, FTI Consulting 씀\n\nUHG가 자사의 리스크 조정 관행을 살펴본 FTI Consulting의 리포트를 공개했습니다. UHG의 리스크 조정 정책을 훑어 나가는 33쪽짜리 꽤 너드한 문서로, 내부적으로 적절한 정책과 통제가 갖춰져 있다고 결론짓습니다. 이 리포트를 위의 논의와 대비해 보는 것이 흥미롭습니다. 큰 조직이 무슨 일이 벌어지고 있는지 설명하는데 그 내용이 실제로는 꽤 밋밋할 때는, 앞선 손가락질보다 훨씬 적은 관심을 받는 것으로 보입니다. 이 역시 우리가 겪고 있는 지금의 문화적 국면을 보여 주는 것 같습니다."
+    }
+  ]
+}

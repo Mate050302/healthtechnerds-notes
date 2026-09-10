@@ -1,0 +1,139 @@
+{
+  "index": "20",
+  "title_en": "Weekly Health Tech Reads 3/8/26",
+  "subtitle": "다가오는 CGT의 물결에 대한 단상, 응급실 분쟁, Hims / Novo의 새로운 파트너십, AI 도입과 디플레이션적 지불에 대한 CMS의 시각, 그리고 그 밖의 소식",
+  "sections": [
+    {
+      "heading_en": "",
+      "body": "👋 이번 주 일요일 헬스케어 뉴스 정리에 오신 것을 환영합니다. 이번 주에 저는 태평양 북서부에서 벌어진 두 건의 응급실 분쟁을 둘러싼 서로 다른 이야기들에 푹 빠져 있었습니다. 또 주 Medicaid 기관들이 세포·유전자 치료제 도입을 어떻게 바라보고 있는지에 대한 대화를 나눈 뒤로 Cell and Gene Therapies가 계속 머릿속에 맴돌았습니다. 앞으로 10년간 이곳에서 거대한 주제가 될 것으로 보입니다. 그 밖의 짧은 소식들: OpenEvidence가 흥미로운 새 콘텐츠 파트너십을 발표했고, Klomp이 Better Medicare Alliance Policy Summit에서 연설했으며, Hims는 Novo와의 새로운 딜 소문이 나온 뒤 금요일 밤 40% 올랐습니다. 잠깐, 뭐라고요?!\n\n- Kevin"
+    },
+    {
+      "heading_en": "MUSING: Startups and states preparing for the coming “tsunami” of pharma innovation",
+      "body": "몇 년 전, 저는 Cigna의 2024 Investor Presentation에서 아래 슬라이드를 봤던 기억이 있습니다. 앞으로 10년간 제약 혁신에서 그들이 보고 있는 거대한 기회를 강조한 슬라이드였습니다. y축이 없는 차트를 소개하려면 저에게는 상당한 결심이 필요하지만, 이 차트는 계속 기억에 남았습니다. GLP-1과 Cell and Gene Therapies(CGTs) 전반의 Rx 지출 증가에 힘입어 2024년에서 2034년 사이 총 케어 비용이 얼마나 늘어날 것이라고 신호를 보내고 있는지 보십시오:\n\n출처: Cigna 2024 Investor Presentation\n\n이 슬라이드는 앞으로 10년의 비즈니스 맥락을 깔끔하게 정리해 줍니다 — 우리는 제약 혁신, 그중에서도 특히 Cell and Gene Therapies에 대해 아주 많이 이야기하게 될 것입니다. 그 큰 이유 중 하나는 천문학적인 비용입니다 — 오늘날 시장에 나와 있는 CGT는 치료 한 건당 100만 달러에서 400만 달러 사이입니다.\n\n하지만 비즈니스 임팩트보다 더 중요한 것은, 여기서 사람들의 삶에 미칠 수 있는 긍정적 영향이 엄청나다는 점입니다. 2025년 12월 60 Minutes 보도는 이 약물의 물결이 이미 개인의 삶에 어떤 영향을 주고 있는지를 훌륭하게 보여 줍니다. 저는 그 영상을 보면서 눈물을 흘리지 않기가 어렵습니다 — 이 치료제들은 말 그대로 아이들의 생명을 구할 수 있습니다. 또한 이것이 마냥 좋기만 한 이야기는 아니라는 점도 짚어 둘 만합니다. 이런 종류의 이야기에는 곱씹어 볼 만한 미묘한 지점이 많습니다.\n\n60 Minutes 에피소드는 이 모든 것에 담긴 긴장을 잘 보여 줍니다. 미주리주의 직원 5,000명 규모 비영리 헬스 시스템 Mosaic Life Care의 CEO는 자가보험 플랜에 미칠 비용 부담 420만 달러 때문에, CGT 치료가 필요했던 한 직원의 쌍둥이에 대한 보장을 거절했습니다. 그 직원은 거절 사실을 공개했고, CEO는 살해 협박을 받기 시작했습니다. CEO는 주 Medicaid 기관에 호소했고, 그 기관이 치료 비용을 부담했습니다. 풀어낼 이야기가 정말 많습니다.\n\n이 일에서 놀라운 대목은, 생명을 구하는 이런 치료제가 시장에 겨우 몇 개밖에 없는 지금 이미 이런 이야기들이 나오고 있다는 것입니다. 이 약물들의 파이프라인은 어마어마합니다 — 오늘날 FDA 승인을 받은 것은 30개지만, 개발 중인 유전자 치료제는 4,000개입니다. Obamacare 설계자 Jonathan Gruber가 60 Minutes 클립에서 말했듯이: \"저는 이것을 다가오는 쓰나미에 비유합니다. 기본적으로 고용주 기반 헬스케어 시스템을 압도하게 될 것입니다.\"\n\n이 모든 것을 배경에 두고 보니, 주 Medicaid 기관들이 CGT를 도입하는 데 내재된 과제에 어떻게 접근하고 있는지 다룬 이 Health Affairs 기사가 무척 흥미로웠습니다. 놀랍지 않게도, 운영 인프라부터 페이어 역학, 이 약물을 전달할 임상 전문성, 실제 세계 아웃컴 추적에 이르기까지 복잡한 과정입니다. 저는 저자들에게 이야기를 나눠 보자고 청했고, Bruce Greenstein(Louisiana Department of Health의 Secretary)과 Will Shrank(Aradigm의 CEO)이 이번 주 초 아래 대화에 함께해 주었습니다:\n\nHow state Medicaid programs are preparing for cell and gene therapies\n\n😎 좋아하는 HTN Radio 채널에서 이 대화를 확인해 보세요: Spotify. Apple. YouTube.\n\nLouisiana 같은 주들이 다가올 치료제의 물결에 대비하기 위해 어떻게 앞서 나가고 있는지, 그리고 눈앞에 놓인 어려운 트레이드오프가 무엇인지 배우는 것이 꽤 유익했고, 저는 이 치료제들을 도입하는 데 얼마나 많은 인프라 변화가 필요한지를 충분히 이해하지 못하고 있었습니다. 자원 제약을 감안하면 민관 협력이 꽃필 만한 논리적인 자리로 보이며, 앞으로 몇 년간 이 영역이 어떻게 진화할지 지켜보는 것도 흥미로울 것입니다. Shrank의 스타트업 Aradigm은 CGT를 전달하는 데 얽힌 다양한 금융 및 케어 딜리버리 역학을 헤쳐 나가기 위한 카브아웃 모델을 만들고 있습니다. 그리고 바로 이번 주, 또 다른 스타트업 NexCure가 CAR-T 치료를 제공하는 클리닉 네트워크를 구축하기 위한 자금 조달을 발표했습니다. NexCure의 보도자료는 오늘날 미국 병원 중 CAR-T 치료를 시행할 수 있는 곳이 3%에 불과하다는 점을 언급하는데 — 6,100곳 중 200곳 — 앞으로 필요한 인프라 구축을 잘 보여 줍니다.\n\nCGT 시장에서 한 발 물러나 보면, 이 제약 붐의 함의를 곱씹어 보는 것도 흥미롭습니다. 우리는 이미 종양학 시장에서 그 모습이 어떨지 엿보고 있습니다. 그곳에서는 임상 아웃컴과 케어 비용이 제약에 의해 좌우됩니다. Cigna를 비롯한 이들의 예상이 맞다면 이것이 표준이 될 것이고, 이 나라 헬스케어의 접근성, 질, 부담 가능성에 광범위한 함의를 갖게 될 것입니다. 신경 쓰지 마세요, 이게 어떻게 흘러갈지 곱씹으면서 마지막에 iron triangle 이야기를 한 번 더 슬쩍 끼워 넣은 것뿐이니까요."
+    },
+    {
+      "heading_en": "QUOTE OF THE WEEK: The CMS perspective on AI’s deflationary potential",
+      "body": "CMS 리더 Chris Klomp과 John Brooks는 MA Advance Notice에 달린 약 47,000건의 의견을 읽던 일을 잠시 멈추고, 화요일 Better Medicare Alliance Executive Policy Summit에서 업계를 향해 이야기했습니다. 가장 흥미로웠던 발언은, 헬스케어가 \"엄청나게 강력한 파괴적 기술을 가져다가 땅에 처박아 버리고 거기서 정확히 제로의 가치를 얻는\" 일이 벌어지지 않도록 CMS가 AI 활용을 어떻게 생각하고 있는지에 대한 것이었습니다.\n\n꽤 생생한 그림입니다. Klomp은 그런 운명을 피하려면 참이어야 할 세 가지를 제시했는데, 세 번째가 디플레이션적 지불 메커니즘이었습니다:\n\n우리에게는 디플레이션적 지불 메커니즘이 필요합니다. 지금 헬스케어의 대부분은 솔직히 말해 여전히 오리지널 Medicare 수가표와 벤치마크에 연동되어 있습니다. 이것들은 시간에 기반한 구성물이고, 상대가치단위를 사용했습니다. 우리는 거기에 환산지수를 곱합니다. 그게 우리가 지불하는 방식입니다.\n\n작년에 한 컨퍼런스에서 어떤 창업자가 저에게 다가왔습니다. 그들은 영상의학 분야에서 정말 흥미로운 AI 기술을 만들었고 이렇게 말했습니다. 저기요, 저희는 이 CPT 코드로 청구하려고 하는데요. 의견을 좀 듣고 싶습니다. 이건 15 단위 증분으로 청구됩니다. 저희가 시간 두 단위를 청구해도 될까요? 저는 이렇게 답했습니다. 만약 그렇게 하기로 결정한다면 저는 일부러라도 그 코드를 없애 버릴 겁니다. 그건 우리가 원하는 것과 정확히 반대되는 일이니까요. AI는 사이클로 사고합니다. 토큰을 씁니다. 우리는 그것을 시간으로 생각하지 않습니다. 그게 CMMI의 동료들이 씨름하고 있는 일입니다.\n\n- Chris Klomp, Better Medicare Alliance Policy Summit에서\n\n전체 발언을 들어 볼 가치가 있지만, 특히 저 대목이 눈에 띄었습니다. 지금 CMS 리더십이 지불 수준과 이익 풀을 어떻게 생각하고 있는지에 대해 거기서 추론해 낼 수 있는 것이 많아 보입니다.\n\n그 입장과 혁신·경쟁을 지원하는 것 사이의 긴장은 분명합니다 — Kintsugi의 최근 포스트모템이 짚었듯이, 규제 자본 요건은 높은 반면 AI 기술에 투자하는 벤처 투자자들은 OpenEvidence 같은 매출 성장 차트를 기대합니다. CMS 리더십은 그 수수께끼를 푸는 데 내재된 어려움을 잘 알고 있는 듯하고, 저는 그들이 이를 계속 어떻게 다뤄 나갈지 궁금합니다."
+    },
+    {
+      "heading_en": "A NUMBER TO PONDER",
+      "body": "60억 달러\n\nCMS가 Elevance의 리스크 어저스트먼트 데이터 USB 드라이브 우편 발송에 마침내 질려 버린 탓에 이번 주 Elevance가 잃은 시가총액. 이런.\n\nCMS는 Elevance에 2026년 3월 31일 자로 45개 계약 전반의 신규 가입을 동결하는 제재 서한을 발부했습니다. 이 조치로 Elevance 주가는 주간 기준 약 8% 하락했고, 시가총액 약 60억 달러가 증발했습니다. 이 문제는 2018년까지 거슬러 올라가는 것으로 보이며, CMS는 최근인 2025년 10월까지도 계속되었다고 시사하는 반면 Elevance는 8-K에서 2023년에 관행을 바꿨다고 밝혔습니다. 그 불일치가 Elevance의 입장에 도움이 될지 해가 될지는 잘 모르겠지만, 어느 쪽이든 2027년 가입 시즌 전에 문제를 고칠 시간은 적어도 있을 것입니다."
+    },
+    {
+      "heading_en": "CHART OF THE WEEK: Blue’s view into AI-driven upcoding coding intensity increases",
+      "body": "출처: Blue Health Intelligence Analysis\n\nBlue Health Intelligence는 병원에서의 AI 주도 코딩 인텐시티를 평가하기 위해 BCBS 상업 보험 입원 클레임을 분석했습니다. 위 차트는 코딩 인텐시티 증가가 주로 병원의 10%에 의해 주도되었음을 보여 줍니다. 위 그림에서 연한 파란색 선으로 표시된 그 10%의 병원은 2022년 2분기에서 2025년 1분기 사이 복합 입원 비율이 46.8%에서 59.8%로 늘어난 반면, 나머지 90%의 병원은 상대적으로 평탄했습니다."
+    },
+    {
+      "heading_en": "NEWS: The drama of emergency departments in the Pacific Northwest",
+      "body": "오리건주 Eugene에서 Peace Health는 최근 응급실 서비스 계약을 지역 그룹에서 ApolloMD로 옮기려 했습니다. ApolloMD는 그 지역 그룹을 포함한 여러 곳과의 경쟁 RFP 과정을 거쳐 선정된 것으로 보입니다. 이는 지역 사회의 분노를 불러일으켰습니다. PeaceHealth가 지역 그룹에서 PE 자본을 받은 것으로 인식되는 전국 단위 회사로 옮기는 것을 좋아하지 않기 때문인데, ApolloMD 웹사이트는 자사가 의사 소유이며 외부 자본이 없다고 명시하고 있습니다.\n\n지역 PeaceHealth 프로바이더들은 최근 계약 변경을 이유로 리더십에 대한 불신임 투표를 했습니다. 이 모든 일은 인근의 다른 응급실이 최근 문을 닫으면서 이 응급실로 물량이 몰려들던 와중에 벌어졌습니다. PeaceHealth는 최근 몇 년간 현금을 계속 소진해 왔는데, 그 지역 시장이 마주한 어려움을 보여 줍니다. 그곳의 누구에게도 이길 수 없는 상황으로 보입니다.\n\n북동쪽으로 약 500마일 떨어진 아이다호주 Post Falls에서는 응급실을 무대로 아주 다른 이야기가 펼쳐지고 있습니다. 주 의회가 Nutex Health가 운영하는 응급실의 No Surprises Act IDR 프로세스 남용을 막기 위한 새 법안을 검토하고 있는 것입니다. BCBS Idaho는 작년에 Nutex Health가 IDR 프로세스에 클레임을 쏟아붓고 있다고 지적했습니다. 아이다호의 약 40개 응급실 가운데, BCBS는 Nutex가 운영하는 단 한 곳의 응급실에서 월 280건의 IDR 클레임을 받는 반면 나머지 39개 응급실은 다 합쳐 월 14건을 제출한다고 합니다. 한 예로 BCBS는 무릎 염좌에 대해 시장 가격이 $,700인데도 Nutex가 자사 응급실에서 8,588달러를 받으려 했다고 말합니다.\n\n상장된 마이크로 병원/독립형 응급실 운영사 Nutex Health는 No Surprises Act IDR 프로세스를 과도하고 수상쩍게 활용한다는 이유로 2024년 7월 공매도 리포트의 대상이 된 바 있습니다. Nutex는 목요일에 실적을 발표했는데, 5,500만 달러 규모의 중재 클레임이 자격 없음으로 판정되면서 매출이 큰 타격을 입어 주가가 한때 40% 하락했습니다. 그럼에도 IDR을 핵심 전략 지렛대로 쓰는 데 위축된 기색은 없어 보이며, 자사의 접근을 다윗과 골리앗의 싸움이라고 부르고 있습니다. Nutex는 스스로를 공정한 경쟁을 해치는 악랄한 보험사들에 맞서 싸우는 선한 힘으로 여깁니다. 이 모든 일이, Nutex가 Medicare 수가의 약 1,000%를 받으려 하는 경우가 잦아 보이는 와중에 벌어지고 있습니다.\n\nNutex는 헬스케어 혁신의 흥미로운 사례 연구입니다. 한 세트의 사실만 놓고 보면 여기에는 정말 설득력 있는 서사가 있습니다: 새로운 마이크로 병원 모델이 작은 시장들에 등장해 필요한 케어 접근점을 만들고 있고, 환자 리뷰는 5점 만점에 4.8점이며, 그러면서도 매출은 82% 성장하고 조정 EBITDA 마진 30%를 보고합니다. Rule of 110짜리 마이크로 병원에 투자할 수 있는데 누가 Rule of 40짜리 SaaS 사업에 투자하고 싶겠습니까?\n\n몬태나주의 일부 의원들도 적어도 그렇게 느끼는 듯합니다. 이 법안에 반대표를 던진 한 주 상원의원의 발언을 보십시오:\n\n\"시장에서 그걸 제공하고 싶고 그 가격을 낼 의향이 있는 소비자가 있다면, 그건 좋은 일입니다.\" Lenney가 말했다. \"저는 그들이 나쁜 행위자라고 생각하지 않습니다. 상원 본회의장에서 우리는 자본주의자라는 말을 들었는데, 정작 여기서 우리는 이 회사 하나를 문 닫게 하려 하고 있습니다. 우리가 지금 뭘 하고 있는 겁니까? 누군가 거기서 임신 테스트를 받고 싶다면, 마음껏 하게 두면 됩니다.\"\n\n출처: Idaho 주 상원의원 Brian Lenney, Idaho Statesman 인용\n\n거기서 표현된 견해는… 저에게는 당혹스럽다고 인정할 수밖에 없습니다. 특히 여기서 벌어지고 있는 것으로 보이는 일의 맥락을 감안하면 말이죠. 우선, 저 발언에서 저는 Lenney가 보험이라는 개념을 이해하고 있다는 인상을 받지 못했습니다 — 누군가 그에게 다른 사람이 Nutex에서 그 임신 테스트를 받고 싶어 한다는 이유로 당신이 헬스케어에 더 많은 돈을 내야 하느냐고 물었다면, 그는 다르게 답했을 것 같습니다.\n\n오해하지 마세요, 저도 자본주의를 전적으로 지지합니다. 하지만 나쁜 행동을 억제하는 효과적인 규제 틀을 마련할 수 있는 유능한 정치인이 있는 것도 중요하다고 생각합니다. Lenney의 반대에도 불구하고, 제안된 법안은 위원회를 통과해 전체 표결로 넘어갑니다."
+    },
+    {
+      "heading_en": "From The Public Markets",
+      "body": "Bloomberg가 Hims가 이르면 월요일에 Novo Nordisk와의 파트너십을 발표해 Novo의 브랜드 체중 감량 약물을 판매할 것이라고 보도한 뒤, Hims 주가는 금요일 장 마감 후 40% 뛰었습니다. 이는 제가 지금까지 다룬 뉴스 중 가장 예상 밖의 것 축에 듭니다. 올해 초 Novo가 Hims를 상대로 소송을 제기했고 작년에는 기만적 마케팅을 했다고 비난했으며, 그 모든 일이 앞선 파트너십에서 발을 뺀 뒤에 벌어졌기 때문입니다. Novo가 계속해서 테이블로 돌아오고 있다는 사실은 Hims에 대한 강세 논리를 보여 주는 듯합니다."
+    },
+    {
+      "heading_en": "From The Public Markets",
+      "body": "Omada는 목요일 장 마감 후 좋은 4분기 실적을 발표했고, 주가는 주간 기준 약 14% 올랐습니다. 2025년 매출은 2억 6,000만 달러로 전년 대비 53% 증가했습니다. 4분기에 순이익이 흑자로 전환했고, 연간 기준으로 조정 EBITDA 600만 달러를 창출했습니다. Omada는 2026년 매출이 22% 성장해 약 3억 1,700만 달러가 되고 조정 EBITDA는 약 1,100만 달러로 늘어날 것으로 예상합니다. Omada는 현재 GLP-1을 쓰는 멤버 15만 명을 지원하고 있으며 이는 2024년 말 5만 명에서 늘어난 수치라고 밝혔고, GLP-1 관련 상품을 계속 확대하고 있습니다. Omada는 새로운 GLP-1 상품이 2026년 가이던스에 포함되어 있지 않다고 언급했는데, 이는 여기서의 상방 시나리오를 암시하는 듯합니다."
+    },
+    {
+      "heading_en": "From The Public Markets",
+      "body": "Ardent Health는 수요일 장 마감 후 실적을 발표했고, 2026년 조정 EBITDA 전망을 낮추면서 주가가 몇 퍼센트 하락했습니다. 2025년에 5억 4,500만 달러를 기록해 전년 대비 약 9% 성장한 뒤, Ardent는 2026년 전망을 4억 8,500만~5억 3,500만 달러로 하향하고 2027년에 성장으로 돌아설 것으로 보고 있습니다."
+    },
+    {
+      "heading_en": "From The Public Markets",
+      "body": "Surgery Partners는 월요일에 실적을 발표했고, 실적 발표 후 주가가 약 20% 하락했다가 소폭 반등했습니다. 분기 매출은 추정치를 상회했지만, Surgery Partners는 2025년을 \"두 개의 반기 이야기\"라고 표현했습니다. 2025년 상반기의 상당한 모멘텀이 2025년 하반기에 역풍으로 바뀌었고, 4분기 마진은 이미 3분기에 하향 조정했던 전망치에도 미치지 못했습니다."
+    },
+    {
+      "heading_en": "From The Public Markets",
+      "body": "Astrana는 월요일에 실적을 발표했고 주가는 30% 올랐습니다. Astrana는 MA 시장에서 조용히 꾸준한 성장을 이어 가며 2025년에 매출 32억 달러와 조정 EBITDA 2억 540만 달러를 창출했는데, 대부분 capitated 계약에 속한 회사로서 2025년 조정 EBITDA 마진 6.5%는 인상적입니다. Astrana는 2026년 가이던스 중간값을 매출 39억 5,000만 달러, 조정 EBITDA 2억 6,500만 달러로 제시하고 있습니다. 어려운 MA 환경 속에서 견고한 결과입니다. Astrana는 지난주 소규모 Medicare Advantage 플레이어들의 흐름을 이어 가며, 아무것도 바뀌지 않더라도 2027 Advance Notice와 관련해 자사가 놓인 위치에 대해 괜찮게 느끼고 있고 업계보다 덜 영향을 받을 것으로 예상한다고 밝혔습니다. 다시 한 번 짚어 둘 만한 점은, 작은 플레이어들이 모두 업계보다 덜 영향받을 것이라 예상하고 큰 플레이어들은 모두 업계 전반에 걸쳐 일관된 영향을 예상한다면, 누군가는 틀리게 되어 있다는 것입니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "Bloomberg에 따르면, New Mountain Capital이 Thoreau, 그리고 다섯 개 헬스케어 AI 자산을 전 New Mountain Capital 파트너 Matt Holt에게 매각하려던 계획된 딜에서 손을 뗐습니다. Bloomberg는 New Mountain이 투자자들에게 보낸 서한을 인용해, Holt가 예정된 오퍼 마감을 놓치고 대신 여러 불확실성이 있는 더 낮은 오퍼를 제출했다고 전했습니다. New Mountain은 또한 해당 사업들의 상방 가능성에 대해 낙관적이며, 이 과정이 운영에 점점 부담이 되고 있다고 봤다고 밝혔습니다. 시장에서 가장 흥미로운 헬스케어 플랫폼 중 하나가 될 수도 있었던 것의 아쉽고 갑작스러운 종결이며, 어쩌면 지금 사모 시장의 불확실성을 보여 주는 신호이기도 합니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "OpenEvidence가 이번 주 Wiley와 새로운 콘텐츠 파트너십을 발표했습니다. 저에게는 무척 흥미로운 딜입니다 — JPMorgan에서 OpenEvidence의 CEO Daniel Nadler는 OpenEvidence의 핵심 언락이, 지금까지 자사의 핵심 혁신을 AI Napster들로 가득한 시장 속의 Spotify로 본다는 데 있다고 말했습니다. 즉, OpenEvidence는 퍼블리셔들에게 돈을 지불하고 있다는 뜻입니다. Wiley는 이번 주 실적을 발표한 상장 기업으로, 실적 콜에서 이번 딜이 5년, 수백만 달러 규모의 계약이며 그 일부로 Wiley가 OpenEvidence의 지분을 받는다고 밝혔습니다. Wiley는 앞으로의 AI 전략에 대해 매우 강세로 보는 듯합니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "고용주 베네핏 시장에서는 Quantum Health가 CirrusMD를 인수했습니다. Quantum의 최근 두 번째 인수인데 — 작년에 프로바이더 데이터 스타트업 Embold Health를 인수한 바 있습니다 — CirrusMD의 버추얼 케어 플랫폼을 더 넓은 고용주 내비게이션 상품에 더할 예정입니다. 지금이 고용주 시장에서 이런 종류의 상품을 스케일하기에 흥미로운 시점이라는 생각이 계속 듭니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "DoseSpot과 Arrive Health가 합병해, e-프리스크라이빙 플랫폼과 베네핏 데이터를 결합해 약값에 대한 실시간 투명성을 제공합니다. Interra Health라는 이름의 합병 회사는 Fierce Healthcare에 따르면 2026년에 1억 달러의 매출을 내고 연 40% 성장할 것으로 예상됩니다. 여기서는 Bain Capital이 합병 자금을 대고 사업의 과반 지분을 갖습니다. PSG, Providence, UPMC Enterprises가 소수 투자자로 참여합니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "TPG가 SDoH 플랫폼 FindHelp과 파트너십을 맺고, 임팩트 투자 펀드에서 2억 5,000만 달러를 이 사업에 투자했습니다. FindHelp에 2억 5,000만 달러를 투자했습니다. 보도자료는 FindHelp이 이제 Medicare와 Medicaid 베네핏 등록 검증을 지원한다고 시사하는데, 흥미로운 비즈니스 모델 확장으로 보입니다."
+    },
+    {
+      "heading_en": "Other Top Headlines",
+      "body": "FDA가 컴파운딩 GLP-1의 불법 마케팅을 이유로 텔레헬스 기업 30곳에 경고 서한을 발부했습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "치료사를 위한 MSO 성격의 플랫폼 Grow Therapy가 30억 달러 밸류에이션으로 1억 5,000만 달러를 조달했습니다. TCV와 Goldman Sachs Alternatives가 라운드를 주도했고, Bloomberg는 Grow Therapy가 현재 연 매출 10억 달러를 넘기고 있다고 전했습니다. 이 소식은 이런 사업에서 매출이 어떻게 잡히는지, 그리고 그중 몇 퍼센트가 Grow 네트워크의 프로바이더들에게 가고 얼마가 Grow에 남는지를 두고 Slack에서 흥미로운 대화를 촉발했습니다. Grow에 실제로 돌아가는 매출은 아마 그 숫자의 30% 미만일 것으로 보입니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "요양원/어시스티드 리빙을 위한 플랫폼 Sage가 6,500만 달러를 조달했습니다. Goldman Sachs Alternatives가 라운드를 주도했고 IVP와 Goldcrest가 참여했습니다. 웹사이트에 따르면 제품은 간호사 호출 기기, 낙상 관리 센서, 앱, 애널리틱스 플랫폼으로 구성됩니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "행동 건강을 위한 AI 운영 체제 Ease가 4,100만 달러를 조달했습니다. a16z가 라운드를 주도했습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "헬스 시스템을 위한 텔레헬스 플랫폼 KeyCare가 2,740만 달러를 조달했습니다. Health X Ventures가 라운드를 주도했고, 여러 전략적 투자자가 함께했으며 Exact Sciences도 포함되었는데 눈에 띄는 이름이었습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "NP가 이끄는 케어 모델 Greater Good Health가 2,050만 달러를 조달했습니다. Allumia Ventures가 라운드를 주도했습니다. Martin이 Greater Good 리더십 팀과 훌륭한 심층 대화를 나눴습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "CAR-T 치료를 위한 외래 클리닉 모델 NexCure가 1,900만 달러를 조달했습니다. RA Capital이 NexCure를 인큐베이팅했고 라운드를 주도했으며, Cencora Ventures와 Oncology Ventures도 참여했습니다."
+    },
+    {
+      "heading_en": "Funding Announcements",
+      "body": "케어 딜리버리 운영을 위한 에이전틱 AI 플랫폼 UnityAI가 850만 달러를 조달했습니다. Third Prime이 라운드를 주도했습니다. 보도자료는 UnityAI가 Tennessee Oncology와 Peregrine Health를 포함한 대형 전문 진료 그룹들과 함께 일하고 있다고 밝힙니다."
+    },
+    {
+      "heading_en": "What I’m Reading: Addressing Social Needs Saves Money and Improves Health in Medicaid. Now Scale It.",
+      "body": "Mandy Cohen, Melinda Dutton 씀\n\nAccountable Health Communities와 Healthy Outcomes Pilots를 살펴보는 좋은 읽을거리로, 이런 상류의 필요를 충족하는 모델들을 스케일하는 것이 앞으로 Medicaid 인구를 지원하는 데 핵심적인 부분이라고 제안합니다."
+    },
+    {
+      "heading_en": "What I’m Reading: Virtual Gastrointestinal Care Solutions",
+      "body": "PHTI 씀\n\nPHTI가 버추얼 GI 지형을 파고들어, 랩어라운드 솔루션(Cylinder, Digbi)과 임상의 주도 솔루션(Ayble, Oshi, Salvo)을 함께 평가합니다. 전반적으로 이 영역에서 버추얼 솔루션의 확대 도입에 대해 긍정적인 임상적·경제적 근거를 발견합니다."
+    },
+    {
+      "heading_en": "What I’m Reading: Value-Based Payments Are Catching On, but Rural and Small Practices Lag",
+      "body": "Celli Horstman 씀\n\nCommonwealth Fund에 실린 짧은 읽을거리로, 2025년 PCP 설문 데이터를 바탕으로 1차 진료에서 밸류 기반 지불의 현주소를 다루며 농촌 지역 진료 기관이 다른 유형의 진료 기관보다 VBP 도입에서 뒤처져 있음을 짚습니다."
+    },
+    {
+      "heading_en": "What I’m Reading: ACCESS: A Fix For Digital Health Companies, Not Medicare’s Costliest Patients",
+      "body": "Morish Shah, Graham Walker, Sudeep Bansal 씀\n\nCMMI의 ACCESS 모델에 대한 Health Affairs Forefront의 비판으로, 이 모델이 디지털 헬스 기업들에게는 재정적 생명줄이지만 복합적 인구에게는 상황을 더 나쁘게 만들 위험이 있다고 봅니다."
+    },
+    {
+      "heading_en": "What I’m Reading: Will The New CMS ACO Model LEAD To Better Care For High-Need Medicare Beneficiaries?",
+      "body": "William Roberts, José Figueroa 씀\n\nCMMI의 LEAD 모델이 dual eligible 인구와 관련해 마주할 수 있는 어려움에 대한 Health Affairs Forefront의 관점으로, 이 모델이 REACH 모델에 있던 명시적인 형평성 기반 지불 조정을 없앴다는 점을 짚습니다."
+    },
+    {
+      "heading_en": "More from Health Tech Nerds",
+      "body": "Weekly Health Policy Briefing 3/5/26."
+    },
+    {
+      "heading_en": "More from Health Tech Nerds",
+      "body": "Community Brain Trust 3/4/26."
+    },
+    {
+      "heading_en": "More from Health Tech Nerds",
+      "body": "Guest Post: AI, Equity, and the Workforce That Makes Whole-Person Care Possible."
+    },
+    {
+      "heading_en": "More from Health Tech Nerds",
+      "body": "HTN Radio\n\n- The Grand Round Up, 3월 2일. Spotify. Apple. YouTube.\n\n- The clinical model behind Alignment Healthcare's success in Medicare Advantage | John Kao (Alignment Health). Spotify. Apple. YouTube.\n\n- How state Medicaid programs are preparing for cell and gene therapies | Bruce Greenstein (Louisiana DoH), Will Shrank (Aradigm). Spotify. Apple. YouTube.\n\n- Why preventative care is hard to finance and how Truemed is trying to fix it | Justin Mares (Truemed). Spotify. Apple."
+    }
+  ]
+}
