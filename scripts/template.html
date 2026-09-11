@@ -194,6 +194,51 @@ button{font-family:inherit; font-size:inherit; color:inherit}
 .term b{color:var(--text)}
 .term .ko{color:var(--accent-ink); font-weight:600}
 .term .pl{color:var(--muted); display:block}
+/* ---------- PON 리스트 ---------- */
+.pon-scheme{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:13px 17px; margin:0 0 14px}
+.pon-scheme .lbl{display:block; font-size:11px; font-weight:800; letter-spacing:.05em; color:var(--muted); margin-bottom:6px}
+.pon-scheme p{margin:0; font-size:14px; line-height:1.75; color:var(--muted)}
+.pon-filters{margin:0 0 16px; display:flex; flex-direction:column; gap:8px}
+.pf-row{display:flex; flex-wrap:wrap; gap:5px; align-items:center}
+.pf-lbl{font-size:11px; font-weight:800; color:var(--muted); margin-right:4px; letter-spacing:.04em}
+.pf{border:1px solid var(--line); background:var(--surface-2); color:var(--muted); border-radius:999px; padding:4px 11px; font-size:12px; cursor:pointer}
+.pf.on{background:var(--accent); border-color:var(--accent); color:#fff; font-weight:700}
+:root[data-theme="dark"] .pf.on{color:#0e1a16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pf.on{color:#0e1a16}}
+.pon-tablewrap{overflow-x:auto; border:1px solid var(--line); border-radius:var(--radius); background:var(--surface)}
+table.pon{border-collapse:collapse; width:100%; min-width:1100px; font-size:13.5px}
+table.pon th{position:sticky; top:0; background:var(--surface-2); text-align:left; font-size:11px; font-weight:800; letter-spacing:.04em; color:var(--muted); padding:10px 12px; border-bottom:1px solid var(--line); z-index:1}
+table.pon td{padding:12px 12px; border-bottom:1px solid var(--line-soft); vertical-align:top; line-height:1.7}
+table.pon tr:last-child td{border-bottom:0}
+table.pon .c-id{width:64px; font-family:var(--mono); font-size:11.5px; color:var(--muted); white-space:nowrap}
+table.pon .c-kind{width:72px; white-space:nowrap}
+table.pon .c-title{width:220px}
+table.pon .c-desc{min-width:300px}
+table.pon .c-ev{min-width:240px; color:var(--muted); font-size:13px}
+table.pon .c-case{width:210px}
+table.pon .c-cat{width:120px}
+.kb{display:inline-block; width:22px; height:22px; line-height:22px; text-align:center; border-radius:6px; font-weight:800; font-size:12px; margin-right:6px; color:#fff}
+.kb.k-P{background:var(--t-interview)} .kb.k-O{background:var(--accent)} .kb.k-N{background:var(--t-policy)}
+:root[data-theme="dark"] .kb{color:#0e1a16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .kb{color:#0e1a16}}
+.c-kind small{font-size:11px; color:var(--muted)}
+.pf.k-P.on{background:var(--t-interview); border-color:var(--t-interview)}
+.pf.k-N.on{background:var(--t-policy); border-color:var(--t-policy)}
+.c-title b{display:block; font-size:14px; line-height:1.6}
+.prior{margin-top:5px; font-size:11.5px; color:var(--muted); background:var(--surface-2); padding:2px 7px; border-radius:5px; display:inline-block}
+.feas{margin-top:8px; font-size:12.5px; color:var(--accent-ink); background:var(--accent-soft); padding:6px 9px; border-radius:7px; line-height:1.6}
+.feas span{font-size:10px; font-weight:800; margin-right:6px; letter-spacing:.04em}
+.c-ev .refs{display:flex; flex-wrap:wrap; gap:4px; margin-top:7px}
+.c-ev .refs button{border:1px solid var(--line); background:var(--surface-2); color:var(--muted); border-radius:5px; font-size:11px; padding:2px 7px; cursor:pointer; font-family:var(--mono)}
+.c-ev .refs button:hover{border-color:var(--accent); color:var(--accent-ink)}
+.cs-row{margin-bottom:7px; font-size:12.5px; line-height:1.55}
+.cs-row button{border:1px solid var(--accent); background:var(--surface); color:var(--accent-ink); border-radius:6px; padding:2px 8px; font-size:12px; font-weight:600; cursor:pointer}
+.cs-row button:hover{background:var(--accent); color:#fff}
+.cs-row b{font-size:12.5px}
+.cs-row span{display:block; color:var(--muted); margin-top:2px}
+.ct{display:inline-block; font-size:11.5px; padding:2px 8px; border-radius:999px; background:var(--surface-2); border:1px solid var(--line); margin:0 4px 4px 0; color:var(--text)}
+.ct.sub{opacity:.7}
+
 /* ---------- 건질 것 모음 리포트 ---------- */
 .rpt-lead{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:16px 20px; margin:0 0 16px}
 .rpt-lead p{margin:0 0 12px; font-size:15px; line-height:1.85}
@@ -720,6 +765,7 @@ var NAV = [
   {k:'primer',t:'미국 헬스케어 101'},
   {k:'consumer', t:'소비자 시장'},
   {k:'report',t:'건질 것 모음'},
+  {k:'pon',t:'PON 리스트'},
   {k:'companies',t:'투자받은 회사'},
   {k:'themes',t:'주제별'},
   {k:'timeline',t:'타임라인'},
@@ -1093,6 +1139,70 @@ var TRACTION_LABEL = {
   funding:'투자', partnership:'협약', regulatory:'규제 통과', revenue:'매출',
   traffic:'트래픽', customers:'고객', award:'수상'
 };
+var KIND_LABEL = {P:'문제', O:'기회', N:'니즈'};
+var KIND_LONG = {P:'Problem · 미국 소비자가 실제로 겪는 곤란', O:'Opportunity · 우리 앱이 3개월 안에 들어갈 자리', N:'Needs · 소비자가 이미 찾고 있는 것'};
+function viewPon(){
+  document.getElementById('crumb').textContent = 'PON 리스트';
+  needExtras(function(){ drawPon(); });
+}
+function drawPon(){
+  var d = (EXTRAS && EXTRAS.pon) || null;
+  if(!d || !(d.items||[]).length){ document.getElementById('content').innerHTML = '<div class="empty">아직 정리되지 않았습니다</div>'; return; }
+  var items = d.items, cats = d.categories || [];
+  var kf = state.ponKind || '', cf = state.ponCat || '';
+  var shown = items.filter(function(x){
+    return (!kf || x.kind === kf) && (!cf || x.category === cf || x.category2 === cf);
+  });
+  var cnt = {P:0,O:0,N:0}; items.forEach(function(x){ cnt[x.kind] = (cnt[x.kind]||0)+1; });
+
+  var h = ['<h2>PON 리스트 · ' + items.length + '개</h2>'];
+  h.push('<div class="hook">미국에 가서 3개월 동안, 미국인에게 지금 우리 앱에 없는 건강 가치를 주어 앱을 쓸 이유를 만든다. 그 일을 위해 32회차와 회사 33곳에서 뽑은 문제 · 기회 · 니즈다.</div>');
+  if(d.scheme) h.push('<div class="pon-scheme"><span class="lbl">카테고리는 어떻게 나눴나</span><p>' + esc(d.scheme) + '</p></div>');
+
+  /* 필터 */
+  h.push('<div class="pon-filters">');
+  h.push('<div class="pf-row"><span class="pf-lbl">구분</span>' +
+    '<button class="pf' + (!kf?' on':'') + '" data-pon-kind="">전체 ' + items.length + '</button>' +
+    ['P','O','N'].map(function(k){
+      return '<button class="pf k-' + k + (kf===k?' on':'') + '" data-pon-kind="' + k + '" title="' + esc(KIND_LONG[k]) + '">' +
+        k + ' ' + esc(KIND_LABEL[k]) + ' ' + (cnt[k]||0) + '</button>'; }).join('') + '</div>');
+  if(cats.length){
+    h.push('<div class="pf-row"><span class="pf-lbl">카테고리</span>' +
+      '<button class="pf' + (!cf?' on':'') + '" data-pon-cat="">전체</button>' +
+      cats.map(function(c){
+        return '<button class="pf' + (cf===c.key?' on':'') + '" data-pon-cat="' + esc(c.key) + '" title="' + esc(c.definition||'') + '">' +
+          esc(c.label) + (c.count ? ' ' + c.count : '') + '</button>'; }).join('') + '</div>');
+  }
+  h.push('</div>');
+
+  /* 표 */
+  h.push('<div class="pon-tablewrap"><table class="pon"><thead><tr>' +
+    '<th class="c-id">번호</th><th class="c-kind">구분</th><th class="c-title">타이틀</th>' +
+    '<th class="c-desc">설명</th><th class="c-ev">근거</th><th class="c-case">관련 사례 · 자료</th><th class="c-cat">카테고리</th>' +
+    '</tr></thead><tbody>');
+  shown.forEach(function(x){
+    var catLabel = function(k){ var c = cats.filter(function(y){ return y.key===k; })[0]; return c ? c.label : k; };
+    h.push('<tr class="k-' + esc(x.kind) + '">' +
+      '<td class="c-id">' + esc(x.id||'') + '</td>' +
+      '<td class="c-kind"><span class="kb k-' + esc(x.kind) + '">' + esc(x.kind) + '</span><small>' + esc(KIND_LABEL[x.kind]||'') + '</small></td>' +
+      '<td class="c-title"><b>' + esc(x.title) + '</b>' +
+        (x.prior ? '<div class="prior">' + esc(x.prior) + '</div>' : '') + '</td>' +
+      '<td class="c-desc">' + esc(x.description||'') +
+        (x.feasibility ? '<div class="feas"><span>3개월 안에</span>' + esc(x.feasibility) + '</div>' : '') + '</td>' +
+      '<td class="c-ev">' + esc(x.evidence||'') +
+        ((x.refs||[]).length ? '<div class="refs">' + x.refs.map(function(r){
+          return '<button data-issue="' + esc(r.issue) + '">' + esc(r.issue) + '회차' + (r.section ? ' ' + r.section + '번' : '') + '</button>'; }).join('') + '</div>' : '') + '</td>' +
+      '<td class="c-case">' + (x.cases||[]).map(function(c){
+          return '<div class="cs-row">' + (c.slug && COMPANIES[c.slug] ? '<button data-company="' + esc(c.slug) + '">' + esc(c.name) + '</button>' : '<b>' + esc(c.name) + '</b>') +
+            (c.note ? '<span>' + esc(c.note) + '</span>' : '') + '</div>'; }).join('') + '</td>' +
+      '<td class="c-cat"><span class="ct">' + esc(catLabel(x.category)) + '</span>' +
+        (x.category2 ? '<span class="ct sub">' + esc(catLabel(x.category2)) + '</span>' : '') + '</td>' +
+      '</tr>');
+  });
+  h.push('</tbody></table></div>');
+  if(!shown.length) h.push('<div class="empty">조건에 맞는 항목이 없습니다</div>');
+  document.getElementById('content').innerHTML = h.join('');
+}
 function viewReport(){
   document.getElementById('crumb').textContent = '건질 것 모음';
   needExtras(function(){ drawReport(); });
@@ -1297,6 +1407,7 @@ function render(){
     document.getElementById('sidetoc').innerHTML = ''; setTab('list'); }
   if(v === 'issue') viewIssue(state.id);
   else if(v === 'report') viewReport();
+  else if(v === 'pon') viewPon();
   else if(v === 'companies') viewCompanies();
   else if(v === 'company') viewCompany(state.id);
   else if(v === 'glossary') needExtras(viewGlossary);
@@ -1346,9 +1457,11 @@ document.getElementById('menubtn').addEventListener('click', function(){
 });
 document.getElementById('scrim').addEventListener('click', closeSide);
 document.addEventListener('click', function(e){
-  var t = e.target.closest('[data-issue],[data-nav],[data-type],[data-theme-go],[data-anchor],[data-cmp],[data-tab],[data-company]');
+  var t = e.target.closest('[data-issue],[data-nav],[data-type],[data-theme-go],[data-anchor],[data-cmp],[data-tab],[data-company],[data-pon-kind],[data-pon-cat]');
   if(!t) return;
   if(t.dataset.company){ e.preventDefault(); go('company', t.dataset.company); return; }
+  if(t.dataset.ponKind !== undefined){ e.preventDefault(); state.ponKind = t.dataset.ponKind; drawPon(); return; }
+  if(t.dataset.ponCat !== undefined){ e.preventDefault(); state.ponCat = t.dataset.ponCat; drawPon(); return; }
   if(t.dataset.tab){ e.preventDefault(); setTab(t.dataset.tab); return; }
   if(t.dataset.cmp){ e.preventDefault(); state.cmp = !state.cmp;
     try{ localStorage.setItem('htn-cmp', state.cmp ? '1' : '0'); }catch(err){}
