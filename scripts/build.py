@@ -103,6 +103,9 @@ def merge_glossary(issues, extras):
         seen_here = set()
         pool = list(iss.get("glossary") or [])
         for s in iss.get("sections") or []:
+            # 새 구조는 notes(term/ko/plain), 옛 구조는 terms(en/ko/plain) 를 쓴다.
+            for t in s.get("notes") or []:
+                pool.append({"en": t.get("term", ""), "ko": t.get("ko", ""), "plain": t.get("plain", "")})
             pool.extend(s.get("terms") or [])
         for t in pool:
             en = (t.get("en") or "").strip()

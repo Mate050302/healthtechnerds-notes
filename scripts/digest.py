@@ -35,13 +35,21 @@ def main():
         if n.get("hook"):
             out.append(f"- 훅: {n['hook']}")
         for t in n.get("tldr") or []:
-            out.append(f"- 요약: {t}")
+            pt = t.get("point") if isinstance(t, dict) else t
+            out.append(f"- 요약: {pt}")
+        ii = n.get("issue_insight") or {}
+        if ii.get("summary"):
+            out.append(f"- 회차 판단({ii.get('verdict','')}): {ii['summary']}")
+        for b in ii.get("build") or []:
+            out.append(f"- 만들 것: {b.get('title')} — {b.get('detail','')[:80]}")
+        for b in ii.get("signal") or []:
+            out.append(f"- 시장 신호: {b.get('title')} — {b.get('detail','')[:80]}")
         secs = n.get("sections") or []
         if secs:
             out.append(f"- 꼭지 {len(secs)}개:")
             for s in secs:
-                nums = ", ".join(f"{x.get('value')}({x.get('meaning','')[:22]})" for x in (s.get("numbers") or [])[:3])
-                out.append(f"    - {s.get('heading_ko')}" + (f"  [{nums}]" if nums else ""))
+                mark = " (건너뜀)" if s.get("skip") else ""
+                out.append(f"    - {s.get('heading_ko')}{mark}")
         if n.get("themes"):
             out.append(f"- 테마: {', '.join(n['themes'])}")
         if n.get("for_later"):
@@ -56,8 +64,8 @@ def main():
     for n in notes:
         seen = set()
         for s in n.get("sections") or []:
-            for t in s.get("terms") or []:
-                en = (t.get("en") or "").strip()
+            for t in (s.get("notes") or []) + (s.get("terms") or []):
+                en = (t.get("term") or t.get("en") or "").strip()
                 if not en:
                     continue
                 k = re.sub(r"\W+", "", en.lower())
@@ -81,13 +89,13 @@ def main():
     for n in notes:
         seen = set()
         for s in n.get("sections") or []:
-            for pl in s.get("players") or []:
+            for pl in (s.get("cases") or []) + (s.get("players") or []):
                 nm = (pl.get("name") or "").strip()
                 if not nm or nm.lower() in seen:
                     continue
                 seen.add(nm.lower())
                 pc[nm] += 1
-                pd.setdefault(nm, pl.get("what", ""))
+                pd.setdefault(nm, (pl.get("what", "") or "")[:90])
     plines = ["# 등장 회사·기관 빈도표", f"총 {len(pc)}곳.", ""]
     for nm, c in pc.most_common():
         plines.append(f"- **{nm}** ({c}회차) — {pd.get(nm,'')}")
