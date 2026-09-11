@@ -20,6 +20,15 @@ scripts/digest.py      부록 집필용 다이제스트 생성
 index.html             빌드 결과 (GitHub Pages 가 서빙)
 ```
 
+## PON 리스트 2판 (`#/pon`)
+다른 작업자의 "미국 3개월 P/O/N 리스트" 형식을 따른다. 32개 항목을 영어 원문과 대조해 확신도(높음·중간·낮음)를 매기고,
+착수 후보 · 보류 · 제외로 가른 뒤, 착수 후보는 사람 말 제목 · 장면 · 핵심 숫자 · 크기·빈도·심각성(없으면 미측정) ·
+왜 지금 · 만들 것 · 가장 큰 위험 · 핵심·보강·반증 근거 · 상황 이해 다섯 문단으로 쓴다.
+
+- 생성: `scripts/wf_pon2.js` (채점 8묶음 → 상황 이해 → 재판정 → 머리글) · 합치기 `scripts/merge_pon2.py`
+- 조각: `data/_pon2_part_N.json`(카드) · `data/_pon2_ctx_N.json`(상황 이해) · `data/_pon2_verdict.json`(최종 판정) · `data/_pon2_overview.json`(머리글·카테고리·용어)
+- 1판(표 형식 32개)은 `data/pon_v1.json`
+
 ## 빌드
 
 ```bash
