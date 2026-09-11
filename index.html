@@ -239,6 +239,27 @@ table.pon .c-cat{width:120px}
 .ct{display:inline-block; font-size:11.5px; padding:2px 8px; border-radius:999px; background:var(--surface-2); border:1px solid var(--line); margin:0 4px 4px 0; color:var(--text)}
 .ct.sub{opacity:.7}
 
+.pon-head{display:grid; grid-template-columns:minmax(0,1.1fr) minmax(0,1.4fr) minmax(0,1.1fr) minmax(0,.8fr); gap:14px;
+  font-size:11px; font-weight:800; letter-spacing:.04em; color:var(--muted); padding:0 16px 8px; border-bottom:1px solid var(--line)}
+.pon-head span:first-child{grid-column:1 / -1}
+.pon-head span:nth-child(n+2){display:none}
+.pon-row{border:1px solid var(--line); border-left:4px solid var(--line); background:var(--surface); border-radius:var(--radius); padding:14px 16px 12px; margin:12px 0}
+.pon-row.k-P{border-left-color:var(--t-interview)} .pon-row.k-O{border-left-color:var(--accent)} .pon-row.k-N{border-left-color:var(--t-policy)}
+.pr-top{display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:10px}
+.pr-id{font-family:var(--mono); font-size:11.5px; color:var(--muted)}
+.pr-kind{font-size:11.5px; color:var(--muted); margin-right:4px}
+.pr-title{font-size:15.5px; line-height:1.55; flex:1 1 420px; letter-spacing:-.01em}
+.pr-cats{display:flex; gap:4px; flex-wrap:wrap}
+.pr-grid{display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,1.1fr) minmax(0,.8fr); gap:16px; font-size:13.5px; line-height:1.75}
+.pr-grid .pl{display:block; font-size:10.5px; font-weight:800; letter-spacing:.05em; color:var(--muted); margin-bottom:5px}
+.pr-ev{color:var(--muted); font-size:13px; border-left:1px solid var(--line-soft); padding-left:14px}
+.pr-case{border-left:1px solid var(--line-soft); padding-left:14px}
+.pr-case .none{color:var(--muted); font-size:12.5px}
+.pr-ev .refs{display:flex; flex-wrap:wrap; gap:4px; margin-top:8px}
+.pr-ev .refs button{border:1px solid var(--line); background:var(--surface-2); color:var(--muted); border-radius:5px; font-size:11px; padding:2px 7px; cursor:pointer; font-family:var(--mono)}
+.pr-ev .refs button:hover{border-color:var(--accent); color:var(--accent-ink)}
+.prior{margin-top:8px; font-size:12px; color:var(--muted); background:var(--surface-2); padding:5px 9px; border-radius:6px; display:block; line-height:1.6}
+@media (max-width:1100px){ .pr-grid{grid-template-columns:1fr} .pr-ev,.pr-case{border-left:0; padding-left:0; border-top:1px solid var(--line-soft); padding-top:10px} }
 /* ---------- 건질 것 모음 리포트 ---------- */
 .rpt-lead{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:16px 20px; margin:0 0 16px}
 .rpt-lead p{margin:0 0 12px; font-size:15px; line-height:1.85}
@@ -1143,6 +1164,7 @@ var KIND_LABEL = {P:'문제', O:'기회', N:'니즈'};
 var KIND_LONG = {P:'Problem · 미국 소비자가 실제로 겪는 곤란', O:'Opportunity · 우리 앱이 3개월 안에 들어갈 자리', N:'Needs · 소비자가 이미 찾고 있는 것'};
 function viewPon(){
   document.getElementById('crumb').textContent = 'PON 리스트';
+  document.getElementById('content').className = 'wrap doc cmpon';
   needExtras(function(){ drawPon(); });
 }
 function drawPon(){
@@ -1175,31 +1197,30 @@ function drawPon(){
   }
   h.push('</div>');
 
-  /* 표 */
-  h.push('<div class="pon-tablewrap"><table class="pon"><thead><tr>' +
-    '<th class="c-id">번호</th><th class="c-kind">구분</th><th class="c-title">타이틀</th>' +
-    '<th class="c-desc">설명</th><th class="c-ev">근거</th><th class="c-case">관련 사례 · 자료</th><th class="c-cat">카테고리</th>' +
-    '</tr></thead><tbody>');
+  /* 격자: 제목 줄 + (설명 | 근거 | 사례) 세 칸 */
+  var catLabel = function(k){ var c = cats.filter(function(y){ return y.key===k; })[0]; return c ? c.label : (k||''); };
+  h.push('<div class="pon-head"><span>번호 · 구분 · 타이틀 · 카테고리</span><span>설명</span><span>근거</span><span>관련 사례 · 자료</span></div>');
   shown.forEach(function(x){
-    var catLabel = function(k){ var c = cats.filter(function(y){ return y.key===k; })[0]; return c ? c.label : k; };
-    h.push('<tr class="k-' + esc(x.kind) + '">' +
-      '<td class="c-id">' + esc(x.id||'') + '</td>' +
-      '<td class="c-kind"><span class="kb k-' + esc(x.kind) + '">' + esc(x.kind) + '</span><small>' + esc(KIND_LABEL[x.kind]||'') + '</small></td>' +
-      '<td class="c-title"><b>' + esc(x.title) + '</b>' +
-        (x.prior ? '<div class="prior">' + esc(x.prior) + '</div>' : '') + '</td>' +
-      '<td class="c-desc">' + esc(x.description||'') +
-        (x.feasibility ? '<div class="feas"><span>3개월 안에</span>' + esc(x.feasibility) + '</div>' : '') + '</td>' +
-      '<td class="c-ev">' + esc(x.evidence||'') +
-        ((x.refs||[]).length ? '<div class="refs">' + x.refs.map(function(r){
-          return '<button data-issue="' + esc(r.issue) + '">' + esc(r.issue) + '회차' + (r.section ? ' ' + r.section + '번' : '') + '</button>'; }).join('') + '</div>' : '') + '</td>' +
-      '<td class="c-case">' + (x.cases||[]).map(function(c){
-          return '<div class="cs-row">' + (c.slug && COMPANIES[c.slug] ? '<button data-company="' + esc(c.slug) + '">' + esc(c.name) + '</button>' : '<b>' + esc(c.name) + '</b>') +
-            (c.note ? '<span>' + esc(c.note) + '</span>' : '') + '</div>'; }).join('') + '</td>' +
-      '<td class="c-cat"><span class="ct">' + esc(catLabel(x.category)) + '</span>' +
-        (x.category2 ? '<span class="ct sub">' + esc(catLabel(x.category2)) + '</span>' : '') + '</td>' +
-      '</tr>');
+    h.push('<div class="pon-row k-' + esc(x.kind) + '">' +
+      '<div class="pr-top">' +
+        '<span class="pr-id">' + esc(x.id||'') + '</span>' +
+        '<span class="kb k-' + esc(x.kind) + '">' + esc(x.kind) + '</span><span class="pr-kind">' + esc(KIND_LABEL[x.kind]||'') + '</span>' +
+        '<b class="pr-title">' + esc(x.title) + '</b>' +
+        '<span class="pr-cats"><span class="ct">' + esc(catLabel(x.category)) + '</span>' +
+          (x.category2 ? '<span class="ct sub">' + esc(catLabel(x.category2)) + '</span>' : '') + '</span>' +
+      '</div>' +
+      '<div class="pr-grid">' +
+        '<div class="pr-desc"><span class="pl">설명</span>' + esc(x.description||'') +
+          (x.feasibility ? '<div class="feas"><span>3개월 안에</span>' + esc(x.feasibility) + '</div>' : '') +
+          (x.prior ? '<div class="prior">기존 리스트와의 관계: ' + esc(x.prior) + '</div>' : '') + '</div>' +
+        '<div class="pr-ev"><span class="pl">근거</span>' + esc(x.evidence||'') +
+          ((x.refs||[]).length ? '<div class="refs">' + x.refs.map(function(r){
+            return '<button data-issue="' + esc(r.issue) + '">' + esc(r.issue) + '회차' + (r.section ? ' ' + r.section + '번' : '') + '</button>'; }).join('') + '</div>' : '') + '</div>' +
+        '<div class="pr-case"><span class="pl">관련 사례 · 자료</span>' + ((x.cases||[]).length ? (x.cases||[]).map(function(c){
+            return '<div class="cs-row">' + (c.slug && COMPANIES[c.slug] ? '<button data-company="' + esc(c.slug) + '">' + esc(c.name) + '</button>' : '<b>' + esc(c.name) + '</b>') +
+              (c.note ? '<span>' + esc(c.note) + '</span>' : '') + '</div>'; }).join('') : '<span class="none">없음</span>') + '</div>' +
+      '</div></div>');
   });
-  h.push('</tbody></table></div>');
   if(!shown.length) h.push('<div class="empty">조건에 맞는 항목이 없습니다</div>');
   document.getElementById('content').innerHTML = h.join('');
 }
