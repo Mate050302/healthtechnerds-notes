@@ -194,6 +194,74 @@ button{font-family:inherit; font-size:inherit; color:inherit}
 .term b{color:var(--text)}
 .term .ko{color:var(--accent-ink); font-weight:600}
 .term .pl{color:var(--muted); display:block}
+/* ---------- 건질 것 모음 리포트 ---------- */
+.rpt-lead{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:16px 20px; margin:0 0 16px}
+.rpt-lead p{margin:0 0 12px; font-size:15px; line-height:1.85}
+.rpt-lead p:last-child{margin-bottom:0}
+.rpt-themes{margin:0 0 24px}
+.rpt-themes > .lbl, .rpt-nav > .lbl{
+  display:block; font-size:11px; font-weight:800; letter-spacing:.05em; color:var(--muted); margin-bottom:10px;
+}
+.rt{border-left:3px solid var(--accent); background:var(--surface); padding:12px 16px; margin:0 0 10px; border-radius:0 9px 9px 0}
+.rt b{display:block; font-size:15px; line-height:1.6; margin-bottom:5px}
+.rt .rn{
+  display:inline-block; width:20px; height:20px; line-height:20px; text-align:center; margin-right:8px;
+  background:var(--accent); color:#fff; border-radius:50%; font-size:11px; font-family:var(--mono);
+}
+:root[data-theme="dark"] .rt .rn{color:#0e1a16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rt .rn{color:#0e1a16}}
+.rt p{margin:0; font-size:14px; line-height:1.8; color:var(--muted)}
+.rrefs, .irefs{display:flex; flex-wrap:wrap; gap:5px; margin-top:8px}
+.rrefs button, .irefs button{
+  border:1px solid var(--line); background:var(--surface-2); color:var(--muted);
+  border-radius:6px; font-size:11.5px; padding:3px 9px; cursor:pointer;
+}
+.rrefs button:hover, .irefs button:hover{border-color:var(--accent); color:var(--accent-ink)}
+
+.rpt-nav{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:13px 16px; margin:0 0 24px; position:sticky; top:52px; z-index:5}
+.rn-row{display:flex; flex-wrap:wrap; gap:4px}
+.rnb{
+  border:1px solid var(--line); background:var(--surface-2); border-radius:7px; padding:3px 8px;
+  font-size:11.5px; font-family:var(--mono); cursor:pointer; color:var(--text); display:flex; align-items:center; gap:4px;
+}
+.rnb:hover{border-color:var(--accent)}
+.rnb span{background:var(--accent); color:#fff; border-radius:4px; font-size:10px; padding:0 4px; font-family:var(--sans)}
+:root[data-theme="dark"] .rnb span{color:#0e1a16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .rnb span{color:#0e1a16}}
+.rnb.none{opacity:.4}
+
+.rpt-iss{border-top:1px solid var(--line); padding:20px 0 6px; scroll-margin-top:120px}
+.rpt-iss.empty-iss{opacity:.55}
+.ri-head{display:flex; align-items:baseline; gap:9px; flex-wrap:wrap; margin-bottom:6px}
+.ri-num{
+  border:1px solid var(--accent); background:var(--accent-soft); color:var(--accent-ink);
+  border-radius:6px; padding:2px 9px; font-size:12px; font-weight:700; cursor:pointer; font-family:var(--mono);
+}
+.ri-num:hover{background:var(--accent); color:#fff}
+:root[data-theme="dark"] .ri-num:hover{color:#0e1a16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ri-num:hover{color:#0e1a16}}
+.ri-date{font-size:12px; color:var(--muted); font-family:var(--mono)}
+.ri-title{font-size:16px; font-weight:700; letter-spacing:-.01em}
+.ri-why{margin:0 0 12px; font-size:14px; line-height:1.8; color:var(--muted)}
+.ri-none{margin:0 0 4px; font-size:13.5px; color:var(--muted)}
+.ri-item{border:1px solid var(--line); border-left:3px solid var(--accent); background:var(--surface); border-radius:0 10px 10px 0; padding:13px 16px; margin:0 0 10px}
+.ri-item.signal{border-left-color:var(--t-policy)}
+.ri-item .ik{
+  display:inline-block; font-size:10px; font-weight:800; letter-spacing:.04em; padding:2px 8px;
+  border-radius:5px; background:var(--accent); color:#fff; margin-bottom:7px;
+}
+.ri-item.signal .ik{background:var(--t-policy-bg); color:var(--t-policy)}
+:root[data-theme="dark"] .ri-item .ik{color:#0e1a16}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .ri-item .ik{color:#0e1a16}}
+.ri-item b{display:block; font-size:15px; line-height:1.65; margin-bottom:5px}
+.ri-item p{margin:0; font-size:14px; line-height:1.8}
+.ri-item .iw{margin-top:7px; color:var(--muted); font-size:13.5px}
+.ri-item .iw span{
+  font-size:10px; font-weight:800; background:var(--surface-2); color:var(--muted);
+  padding:1px 6px; border-radius:4px; margin-right:6px;
+}
+@media (max-width:760px){ .rpt-nav{position:static} }
+
 /* ---------- 투자받은 회사 ---------- */
 .cbig{border:1px solid var(--line); background:var(--surface); border-radius:var(--radius); padding:16px 18px; margin:0 0 16px}
 .cbig-h{display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px}
@@ -651,6 +719,7 @@ var NAV = [
   {k:'home',  t:'시작하기'},
   {k:'primer',t:'미국 헬스케어 101'},
   {k:'consumer', t:'소비자 시장'},
+  {k:'report',t:'건질 것 모음'},
   {k:'companies',t:'투자받은 회사'},
   {k:'themes',t:'주제별'},
   {k:'timeline',t:'타임라인'},
@@ -1024,6 +1093,71 @@ var TRACTION_LABEL = {
   funding:'투자', partnership:'협약', regulatory:'규제 통과', revenue:'매출',
   traffic:'트래픽', customers:'고객', award:'수상'
 };
+function viewReport(){
+  document.getElementById('crumb').textContent = '건질 것 모음';
+  needExtras(function(){ drawReport(); });
+}
+function drawReport(){
+  var r = (EXTRAS && EXTRAS.report) || null;
+  if(!r){ document.getElementById('content').innerHTML = '<div class="empty">아직 정리되지 않았습니다</div>'; return; }
+  var h = ['<h2>' + esc(r.title || '건질 것 모음') + '</h2>'];
+  if(r.lede) h.push('<div class="hook">' + esc(r.lede) + '</div>');
+
+  /* 전체를 관통하는 발견 */
+  if(r.overview){
+    var o = r.overview;
+    if(o.summary) h.push('<div class="rpt-lead">' + mdish(o.summary) + '</div>');
+    if((o.themes||[]).length){
+      h.push('<div class="rpt-themes"><span class="lbl">32회차를 관통하는 줄기</span>');
+      o.themes.forEach(function(t, i){
+        h.push('<div class="rt"><b><span class="rn">' + (i+1) + '</span>' + esc(t.title) + '</b>' +
+          '<p>' + esc(t.detail) + '</p>' +
+          ((t.refs||[]).length ? '<div class="rrefs">' + t.refs.map(function(x){
+            return '<button data-issue="' + esc(x) + '">' + esc(x) + '회차</button>'; }).join('') + '</div>' : '') +
+          '</div>');
+      });
+      h.push('</div>');
+    }
+  }
+
+  /* 회차별 */
+  var list = r.issues || [];
+  var withItems = list.filter(function(x){ return (x.items||[]).length; });
+  h.push('<div class="rpt-nav"><span class="lbl">회차 ' + list.length + '건 가운데 건질 것이 있는 회차 ' +
+    withItems.length + '건</span><div class="rn-row">' +
+    list.map(function(x){
+      var n = (x.items||[]).length;
+      return '<button class="rnb' + (n ? '' : ' none') + '" data-anchor="r' + esc(x.index) + '">' +
+        esc(x.index) + (n ? '<span>' + n + '</span>' : '') + '</button>';
+    }).join('') + '</div></div>');
+
+  list.forEach(function(x){
+    var items = x.items || [];
+    h.push('<section class="rpt-iss' + (items.length ? '' : ' empty-iss') + '" id="r' + esc(x.index) + '">');
+    h.push('<div class="ri-head"><button class="ri-num" data-issue="' + esc(x.index) + '">' + esc(x.index) + '회차</button>' +
+      '<span class="ri-date">' + esc(fmtDate(x.date)) + '</span>' +
+      '<span class="ri-title">' + esc(x.title_ko || '') + '</span></div>');
+    if(x.why_read) h.push('<p class="ri-why">' + esc(x.why_read) + '</p>');
+    if(!items.length){
+      h.push('<p class="ri-none">건질 것이 없다.</p>');
+    } else {
+      items.forEach(function(it){
+        h.push('<div class="ri-item ' + esc(it.kind || 'build') + '">' +
+          '<span class="ik">' + (it.kind === 'signal' ? '시장 신호' : '만들 것') + '</span>' +
+          '<b>' + esc(it.title) + '</b>' +
+          '<p>' + esc(it.detail) + '</p>' +
+          (it.why ? '<p class="iw"><span>왜</span>' + esc(it.why) + '</p>' : '') +
+          '<div class="irefs">' +
+          '<button data-issue="' + esc(x.index) + '">' + esc(x.index) + '회차 원문 보기</button>' +
+          ((it.companies||[]).map(function(c){
+            return '<button data-company="' + esc(c) + '">' + esc((COMPANIES[c] && COMPANIES[c].name) || c) + '</button>'; }).join('')) +
+          '</div></div>');
+      });
+    }
+    h.push('</section>');
+  });
+  document.getElementById('content').innerHTML = h.join('');
+}
 function viewCompanies(){
   document.getElementById('crumb').textContent = '투자받은 회사';
   var list = Object.keys(COMPANIES).map(function(k){ return COMPANIES[k]; });
@@ -1162,6 +1296,7 @@ function render(){
   if(v !== 'issue'){ document.getElementById('content').className = 'wrap doc';
     document.getElementById('sidetoc').innerHTML = ''; setTab('list'); }
   if(v === 'issue') viewIssue(state.id);
+  else if(v === 'report') viewReport();
   else if(v === 'companies') viewCompanies();
   else if(v === 'company') viewCompany(state.id);
   else if(v === 'glossary') needExtras(viewGlossary);
