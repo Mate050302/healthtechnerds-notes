@@ -1,0 +1,243 @@
+{
+  "slug": "withings",
+  "name": "Withings",
+  "one_liner": "체중계와 혈압계처럼 집에서 쓰는 건강 측정 기기를 소비자에게 팔고, 그 측정값을 읽어 주는 앱에 월 구독을 붙이며, 2026년부터는 같은 기기로 메디케어 환자의 만성질환 진료까지 직접 제공하기 시작한 프랑스 회사다.",
+  "site": "https://www.withings.com",
+  "sells_to": "mixed",
+  "seen_in": [
+    {
+      "issue": "33",
+      "section": 3,
+      "headline": "정부가 정한 수가를 보고 디지털 헬스 기업 대부분이 ACCESS 모델 신청을 접은 가운데, 필자가 가장 눈여겨보는 참여자로 Whoop과 함께 소비자용 기기 회사인 Withings를 지목한 대목에서 나왔다."
+    }
+  ],
+  "card": {
+    "problem": "고혈압이나 당뇨처럼 매일 숫자를 확인해야 하는 병을 앓아도, 미국에서는 1년에 몇 번 되는 진료 사이의 기간을 아무도 들여다보지 않는다. 기기를 사서 혼자 재는 사람은 그 값을 어떻게 해석하고 무엇을 바꿔야 하는지까지는 알기 어렵다.",
+    "solution": "통신 기능이 들어간 혈압계와 체중계를 집으로 보내고, 그 값을 매일 확인하는 임상팀을 붙였다. 소비자에게는 기기를 팔고 앱 구독을 붙여 팔며, 메디케어 환자에게는 기기와 진료를 묶어 정부에게서 돈을 받는다.",
+    "price": "기기를 사는 것이 기본 경로다. 혈압계 BPM Vision은 179.95달러, 체중계 BodyScan 2는 599.95달러이고, 앱 구독인 Withings+는 월 9.99달러 또는 연 99.99달러다. 메디케어 대상 진료 프로그램인 Withings Medical은 본인 부담이 0달러라고 안내한다.",
+    "tags": [
+      "가정용 측정 기기",
+      "혈압계",
+      "앱 월 구독",
+      "메디케어 진료",
+      "원격 환자 모니터링"
+    ],
+    "headline_traction": "2026년 4월에 CMS의 ACCESS 모델 첫 참여자로 승인받아 50개 주에서 메디케어 환자를 직접 맡게 됐고, 7월 8일에 진료 서비스인 Withings Medical을 열었다.",
+    "watch": "매출과 사용자 수는 모두 회사가 스스로 낸 수치이며 보도자료 각주에 내부 자료 기준이라고 적혀 있다. ACCESS 수가로 실제 수지가 맞는지는 아직 아무도 확인하지 못했다."
+  },
+  "problem": "한국에서 고혈압 약을 먹는 사람은 몇 달에 한 번 동네 의원에 가서 혈압을 재고 처방을 다시 받으면 되고, 그 값은 진료 기록으로 남는다. 미국에서는 진료 한 번에 드는 돈과 예약 대기가 커서 만성질환자가 의료진을 만나는 횟수 자체가 적고, 그 사이에 혈압이 오르거나 체중이 늘어도 이를 보는 사람이 없다. 기기를 사서 혼자 재는 사람도 있지만, 숫자가 나와도 그것이 약을 바꿀 일인지 그냥 둘 일인지 판단해 줄 사람이 붙어 있지 않다. 심혈관과 신장, 대사 질환은 미국에서 만성질환 부담을 키우는 가장 큰 축이고, 미국심장협회는 이를 공중보건 비상 상황이라고 부른다. GLP-1 계열 비만 치료제처럼 효과가 확인된 약이 이미 있는데도 널리 쓰이지 못하는 이유를, Withings는 약을 안전하게 조절할 근거가 되는 연속 측정값이 없기 때문이라고 정리한다.",
+  "solution": "소비자 쪽 흐름은 단순하다. 사용자가 혈압계나 체중계, 하이브리드 시계를 사서 집에 두면 측정값이 Withings 앱으로 자동으로 올라가고, 앱 자체는 무료다. 여기에 월 9.99달러 또는 연 99.99달러짜리 Withings+ 구독을 붙이면 AI 건강 비서와 심전도 심장전문의 판독, 영양 코칭 같은 기능이 열리며, 기기를 사면 1개월은 무료로 준다. 2026년 7월부터는 메디케어 대상 진료 서비스인 Withings Medical이 따로 열렸는데, 이쪽은 사용자가 5분짜리 가입을 마치면 혈액 검사로 기준값을 잡고, 그 결과에 맞춰 통신형 혈압계 BPM Pro 2와 체중계 Body Pro를 무료로 보내 준다. 그다음부터는 전담 의료진이 매일 올라오는 값을 보고, 수치가 흔들리면 같은 주 안에 먼저 연락해 약을 조정하거나 생활 습관을 코칭하고, 처방은 약국으로 바로 보낸다. 회사는 이 프로그램을 Original Medicare 가입자 기준 본인 부담 0달러로 안내하며, 검사비는 메디케어에 청구하되 메디케어가 보장하지 않는 항목에는 일부 본인 부담이 생길 수 있다고 밝힌다.",
+  "features": [
+    {
+      "name": "가정용 측정 기기 묶음",
+      "detail": "혈압계 BPM Vision이 179.95달러, 체중계 BodyScan 2가 599.95달러, 하이브리드 시계 ScanWatch 2가 369.95달러, 여러 값을 한 번에 재는 BeamO가 249.95달러, 수면 측정 매트 Sleep이 199.95달러다. 미국에서는 거의 모든 기기를 세제 혜택 의료비 계좌인 FSA와 HSA로 결제할 수 있다."
+    },
+    {
+      "name": "Withings 앱",
+      "detail": "기기 값을 한곳에 모으는 무료 앱이다. Apple Health와 Health Connect, Strava, MyFitnessPal에 더해 Abbott의 연속혈당측정기인 Lingo까지 연결해 체중과 활동, 수면, 혈압, 생리 주기를 한 화면에서 본다."
+    },
+    {
+      "name": "Withings+ 구독",
+      "detail": "앱 안에서 파는 유료 구독이며 월 9.99달러 또는 연 99.99달러다. 사용자의 측정 이력을 기억하는 AI 건강 비서, 심전도 판독, 체중과 영양을 잇는 NutriCare, 노화 정도 평가가 여기에 들어간다. 회사는 2025년에 이 구독의 매출이 거의 두 배가 됐다고 밝혔다."
+    },
+    {
+      "name": "심전도 심장전문의 판독",
+      "detail": "ScanWatch로 잰 심전도를 미국 전문의 자격을 가진 심장전문의가 읽어 준다. HeartBeat Health와 함께 제공하며, 앱스토어에는 59.99달러짜리 별도 결제 항목으로도 올라 있다."
+    },
+    {
+      "name": "Withings Health Solutions",
+      "detail": "병원과 디지털 헬스 기업, 연구기관에 통신형 기기와 원격 환자 모니터링 체계를 파는 사업부다. 기기 배송과 기술 연동, 전담 고객 담당자까지 묶어 제공하며, 회사는 이 사업부가 전체 매출의 17%를 만든다고 밝혔다."
+    },
+    {
+      "name": "Withings Medical",
+      "detail": "2026년 7월 8일에 연 진료 서비스다. 의료진으로 구성된 Withings Medical Group이 개인별 치료 계획을 세우고, 진료 지침에 따라 약을 처방하고 조정하며, 생활 습관 변화를 돕는다. 고혈압과 당뇨, 비만을 우선 다루고 환자의 기존 주치의를 대체하지 않는 방식으로 설계했다."
+    },
+    {
+      "name": "조건별 주간 레슨",
+      "detail": "가입자의 주된 질환에 맞춰 짧은 학습 자료를 매주 보낸다. 혈압, 혈당, 체중이라는 세 갈래에 더해 누구에게나 공통인 걷기와 호흡, 수면, 복약 습관 자료가 있다."
+    },
+    {
+      "name": "다른 ACCESS 참여자에게 기기 공급",
+      "detail": "ACCESS 도구 목록을 통해 다른 참여 기업도 Withings의 FDA 인증 통신형 기기를 쓸 수 있게 했다. 혈압과 환자가 직접 답한 내용을 측정 시점에 함께 받는 BPM Pro 2가 대표 제품이다."
+    },
+    {
+      "name": "의뢰한 의사에게 주는 조정 수당",
+      "detail": "환자를 Withings Medical로 의뢰한 주치의는 진료 경과 검토 한 건당 최대 30달러, 초기 등록 지원에 10달러를 받는다. 환자 한 명당 연 3회까지이며 환자의 추가 부담은 없다고 안내한다."
+    }
+  ],
+  "differentiator": "같은 ACCESS 명단에 올라 있는 Whoop과 비교하면 차이가 분명하다. Whoop은 손목 밴드 하나로 초기 심혈관 대사 트랙만 맡았고, Withings는 초기 트랙과 본격 심혈관 신장 대사 트랙을 둘 다 맡았다. 이는 이미 당뇨나 만성 신장질환, 죽상경화성 심혈관질환을 앓는 환자까지 받는다는 뜻이고, 혈압계와 체중계라는 치료 판단에 바로 쓰이는 측정 기기를 갖고 있기에 가능한 선택이다. Oura나 Whoop이 구독료를 주된 수입으로 삼는 것과 달리 Withings는 2025년 매출의 66%가 FDA 인증 의료기기에서 나왔다고 밝히고 있으며, 병원과 프로그램에 기기를 대는 B2B 사업을 되사기 이전부터 쌓아 왔다. 결과적으로 소비자에게 기기를 파는 회사에서 정부에게 진료비를 받는 회사로 넘어가는 길목에, 다른 소비자 기기 회사보다 기기와 임상 근거를 더 많이 들고 서 있다.",
+  "team": [
+    {
+      "name": "Eric Carreel",
+      "role": "Chairman and Co-founder",
+      "background": "2008년에 Withings를 공동 창업했고, 2016년 Nokia가 1억 6,400만 유로에 인수한 회사를 2018년에 직접 되사 왔다."
+    },
+    {
+      "name": "Patrick Sheehan",
+      "role": "Vice President of Value-Based Care",
+      "background": ""
+    },
+    {
+      "name": "Nisha Basu",
+      "role": "Clinical Advisor, Withings Medical (MD, MPH)",
+      "background": ""
+    },
+    {
+      "name": "Mikela Yarawamai",
+      "role": "Medical Director, Withings Medical Group (MD)",
+      "background": ""
+    }
+  ],
+  "traction": [
+    {
+      "type": "regulatory",
+      "detail": "CMS의 ACCESS 모델 첫 참여자로 승인받았다. 초기 심혈관 신장 대사 트랙과 심혈관 신장 대사 트랙 두 가지를 50개 주에서 맡으며, 7월 5일 모델 시작과 함께 메디케어 가입자를 받기 시작한다고 밝혔다.",
+      "when": "2026-04",
+      "source": "Withings 보도자료(2026년 4월 20일)와 CMS의 ACCESS 승인 신청자 명단. 명단에 'Withings Medical Group', 트랙은 eCKM과 CKM으로 올라 있다."
+    },
+    {
+      "type": "partnership",
+      "detail": "진료 서비스 Withings Medical을 미국에서 열었다. 측정만 하던 회사에서 진료를 제공하는 회사로 넘어가는 첫걸음이라고 밝혔고, 고혈압과 당뇨, 비만부터 다룬다.",
+      "when": "2026-07",
+      "source": "Withings 보도자료(2026년 7월 8일)"
+    },
+    {
+      "type": "revenue",
+      "detail": "2025년 연간 흑자를 달성했다고 발표했다. 2018년 Nokia로부터 되산 뒤 전 세계 매출이 약 90% 늘었고, 미국이 가장 큰 시장이며, 2025년 매출의 66%가 FDA 인증 의료기기에서 나왔다고 밝혔다.",
+      "when": "2026-04",
+      "source": "Withings 기업 보도자료. 회사가 스스로 낸 수치이며 각주에 내부 자료 기준이라고 적혀 있다."
+    },
+    {
+      "type": "customers",
+      "detail": "전 세계 활성 사용자가 1,500만 명이고 그 가운데 360만 명이 의료 목적 사용자로 분류된다고 밝혔다. 2025년 한 해에 기기가 기록한 측정이 10억 건이 넘고 그중 약 35%인 3억 6,000만 건이 임상 또는 의료 수준의 측정이라고 설명했다.",
+      "when": "2026-04",
+      "source": "Withings 기업 보도자료. 회사가 스스로 낸 수치다."
+    },
+    {
+      "type": "customers",
+      "detail": "병원과 프로그램에 기기를 대는 B2B 사업에서 등록 환자가 74만 명을 넘었다고 밝혔다. 2018년 되사기 전에는 약 2만 5,500명이었다고 비교했고, 비만 관리 프로그램에 등록된 환자만 50만 명이 넘는다고 덧붙였다.",
+      "when": "2026-04",
+      "source": "Withings 기업 보도자료. 회사가 스스로 낸 수치이며 파트너로 MedStar Health, Calibrate, 9amHealth를 들었다."
+    },
+    {
+      "type": "revenue",
+      "detail": "Withings+ 구독 매출이 2025년에 거의 두 배가 됐다고 밝혔다.",
+      "when": "2026-04",
+      "source": "Withings 기업 보도자료. 회사가 스스로 낸 수치이며 금액은 공개하지 않았다."
+    },
+    {
+      "type": "funding",
+      "detail": "2019년 이후 6,100만 유로, 미화로 약 7,142만 달러를 조달했으며 전 세계 인력은 400명이라고 밝혔다.",
+      "when": "2026-04",
+      "source": "Withings 기업 보도자료"
+    },
+    {
+      "type": "traffic",
+      "detail": "미국 앱스토어에서 5점 만점에 4.6점이고 평가가 36만 4,000건이다. 구글 플레이에서는 4.3점에 평가 22만 6,000건이며 설치가 500만 회를 넘었다.",
+      "when": "2026-09",
+      "source": "미국 앱스토어와 구글 플레이 제품 페이지"
+    },
+    {
+      "type": "award",
+      "detail": "CES 혁신상을 28번 받았다고 밝혔다.",
+      "when": "2026-04",
+      "source": "Withings 보도자료에 실린 Patrick Sheehan의 발언. 회사가 스스로 낸 수치다."
+    }
+  ],
+  "caveats": "매출 관련 수치는 모두 회사가 낸 자료이고, 기업 보도자료 끝에 재무 수치는 내부 자료를 바탕으로 한 대략값이라고 명시돼 있다. 활성 사용자 1,500만 명, 의료 사용자 360만 명, B2B 환자 74만 명, 92%에 이르는 기기 유지율 역시 제삼자가 확인한 값이 아니다. 홈페이지에 걸린 '사용자의 87%가 건강에 긍정적 영향을 받았다'는 문구는 2025년 6월에 자사 사용자 3,274명을 상대로 한 자체 설문 결과다. 사업부 소개 페이지에는 사용자가 100만 명이 넘는다고 적혀 있고 다른 페이지에는 1,500만 명이라고 적혀 있어, 같은 회사 안에서도 무엇을 세는지에 따라 숫자가 달라진다. 심전도 판독 소요 시간도 같은 페이지 안에서 24시간과 4시간으로 엇갈리게 적혀 있다. 뉴스레터가 다룬 맥락 자체가 더 큰 주의 사항이다. ACCESS 출범 당시 관심을 보인 68개 기업 가운데 22곳만 신청했고, 그 수가로 사업이 되는지에 대해 정부와 업계의 계산이 정면으로 엇갈린다. Withings가 참여했다는 사실은 참여를 결정했다는 것일 뿐, 그 수가로 이익을 낸다는 증거가 아니다. CMS도 명단에 오른 것이 참여를 보장하지 않는다고 밝히고 있다. 본인 부담 0달러라는 안내는 Original Medicare 가입자에게 적용되는 것이며, 회사가 환자 부담분을 스스로 면제하기로 한 결정이라 계속 유지될지는 별개 문제다. 소비자 기기 자체의 평가도 고르지 않아서, 자사 몰의 별점이 BodyScan 2는 5점 만점에 3.8점, 수면 측정 매트 Sleep은 1점으로 표시돼 있다.",
+  "for_us": "기기를 만드는 일은 우리 범위 밖이지만, 이 회사가 소비자에게 실제로 파는 가치는 기기가 아니라 '내 숫자를 매일 누군가 보고 있다'는 경험이다. 그 부분은 소프트웨어만으로 흉내 낼 수 있다. 첫째, Withings Medical의 화면 구성은 우리가 3개월 안에 만들 수 있는 형태에 가깝다. 오늘 할 일 목록, 질환별 주간 레슨, 측정값 추이, 담당자와 나누는 대화창이 한 앱 안에 있고, 이 가운데 레슨과 추이 화면은 기기 없이도 만들 수 있다. 둘째, 조건별 레슨 트랙을 혈압, 혈당, 체중이라는 세 갈래로만 나눈 점은 참고할 만하다. 주제를 늘리지 않고 한 사람에게 하나만 붙인다. 셋째, 기기를 사면 구독 1개월을 무료로 주고 심전도 판독 같은 단건 결제를 따로 두는 방식은, 무료 앱에서 유료 기능으로 넘어가는 경로를 설계할 때 참고할 수 있다. 넷째, 우리 앱은 기기가 없으므로 사용자가 이미 가진 기기와 앱의 값을 받아 오는 쪽이 현실적이며, Withings 앱이 Apple Health와 Health Connect, Lingo 연속혈당측정기까지 받아들이는 구조가 그 예시다. 다만 이 회사의 핵심 수입은 기기 판매와 정부 지불이므로, 앱 구독만으로 같은 것을 만들려 하면 값을 매길 근거가 약해진다는 점은 감안해야 한다.",
+  "screenshots": [
+    {
+      "file": "withings_home.png",
+      "caption": "미국 공식 사이트 첫 화면이다. 시계와 체중계, 혈압 측정 기기가 함께 놓여 있어 무엇을 파는 회사인지 바로 보인다.",
+      "from": "https://www.withings.com/us/en/"
+    },
+    {
+      "file": "withings_plus.png",
+      "caption": "앱 구독인 Withings+ 안내 화면이다. 심장전문의 심전도 판독과 AI 건강 비서를 구독 혜택으로 내세운다.",
+      "from": "https://www.withings.com/us/en/withings-plus"
+    },
+    {
+      "file": "withings_medical.png",
+      "caption": "메디케어 대상 진료 서비스 Withings Medical의 소비자용 첫 화면이다. Original Medicare 가입자는 본인 부담이 0달러라고 못 박아 놓았다.",
+      "from": "https://www.withings.com/medical"
+    },
+    {
+      "file": "withings_ios.png",
+      "caption": "미국 앱스토어의 Withings 앱 페이지다. 앱은 무료이고 월 9.99달러와 연 99.99달러짜리 구독, 59.99달러짜리 심전도 판독이 인앱 결제로 올라 있다.",
+      "from": "https://apps.apple.com/us/app/withings-health-mate/id542701020"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Health Tech Nerds 33회차 3번 꼭지",
+      "url": "",
+      "note": "ACCESS 모델 신청 결과를 다루면서 필자가 Whoop과 Withings를 가장 눈여겨보는 참여자로 지목한 대목이다."
+    },
+    {
+      "title": "CMS, ACCESS Model Accepted Applicants",
+      "url": "https://www.cms.gov/priorities/innovation/access-model-accepted-applicants",
+      "note": "정부 명단에서 'Withings Medical Group'이 eCKM과 CKM 트랙으로 올라 있는 것을 직접 확인했다."
+    },
+    {
+      "title": "CMS, ACCESS Model 개요",
+      "url": "https://www.cms.gov/priorities/innovation/innovation-models/access-model",
+      "note": "모델이 성과에 연동된 지불 방식이고 2026년 7월 5일에 시작해 10년간 운영된다는 사실을 확인했다."
+    },
+    {
+      "title": "CMS, ACCESS Model Request for Applications (PDF)",
+      "url": "https://www.cms.gov/priorities/innovation/files/access-rfa.pdf",
+      "note": "eCKM과 CKM이 각각 어떤 환자를 받는지, 지불액에 통신형 혈압계 기기 값이 반영된다는 점을 확인했다."
+    },
+    {
+      "title": "Withings 보도자료, ACCESS 모델 승인",
+      "url": "https://media-cdn.withings.com/press/press-releases/cms-access-model/PR_Withings-Accepted-into-CMS-ACCESS-Model.pdf",
+      "note": "2026년 4월 20일 자료다. 50개 주 참여, 환자 본인 부담 면제, 다른 참여자에 대한 기기 공급 계획, Patrick Sheehan의 직함을 확인했다."
+    },
+    {
+      "title": "Withings 보도자료, Withings Medical 출시",
+      "url": "https://media-cdn.withings.com/press/press-releases/withings-medical/Withings-Medical-US-PR.pdf",
+      "note": "2026년 7월 8일 자료다. 진료 서비스의 범위와 Eric Carreel, Nisha Basu의 직함을 확인했다."
+    },
+    {
+      "title": "Withings 기업 보도자료, 2025년 연간 흑자",
+      "url": "https://media-cdn.withings.com/press/press-releases/withings-nokia/Withings_US_Corporate%20Story_2026.pdf",
+      "note": "Nokia 인수 금액과 되사기, 매출 구성, 사용자 수, B2B 환자 수, 조달 금액과 인력 규모를 확인했다. 모든 수치가 회사 내부 자료 기준이다."
+    },
+    {
+      "title": "Withings Medical 소비자 페이지",
+      "url": "https://www.withings.com/medical",
+      "note": "가입 절차 네 단계, 배송되는 기기, 검사 항목, 본인 부담 안내, 의료진 구성, 질환별 주간 레슨을 확인했다."
+    },
+    {
+      "title": "Withings Medical 의료진용 페이지",
+      "url": "https://www.withings.com/en-us/pages/withings-medical",
+      "note": "의뢰한 의사에게 주는 건당 30달러 조정 수당과 회사가 내세우는 규모 수치를 확인했다."
+    },
+    {
+      "title": "Withings+ 안내 페이지",
+      "url": "https://www.withings.com/us/en/withings-plus",
+      "note": "구독에 포함되는 기능과 HeartBeat Health와의 심전도 판독 제휴를 확인했다."
+    },
+    {
+      "title": "Withings Health Solutions 소개",
+      "url": "https://www.withings.com/en-us/pages/about-withings-health-solutions",
+      "note": "B2B 사업부의 범위와 Eric Carreel의 직함 표기를 확인했다."
+    },
+    {
+      "title": "Withings 미국 스토어",
+      "url": "https://www.withings.com/us/en/",
+      "note": "BodyScan 2, ScanWatch 2, BeamO, Sleep, BPM Vision의 판매 가격과 FSA, HSA 결제 가능 여부를 확인했다."
+    },
+    {
+      "title": "미국 앱스토어, Withings 앱",
+      "url": "https://apps.apple.com/us/app/withings-health-mate/id542701020",
+      "note": "별점과 평가 수, 인앱 결제 항목과 가격을 확인했다."
+    },
+    {
+      "title": "구글 플레이, Withings 앱",
+      "url": "https://play.google.com/store/apps/details?id=com.withings.wiscale2",
+      "note": "별점과 평가 수, 설치 수, 연동되는 외부 앱 목록을 확인했다."
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "slug": "cost-plus-drugs",
+  "name": "Mark Cuban Cost Plus Drugs",
+  "one_liner": "보험을 거치지 않고 처방약을 파는 미국의 우편 배송 온라인 약국이다. 약을 사 오는 값에 15%를 붙이고 조제비 5달러를 더한 금액을 그대로 공개해서 판다.",
+  "site": "https://costplusdrugs.com",
+  "sells_to": "mixed",
+  "seen_in": [
+    {
+      "issue": "39",
+      "section": 12,
+      "headline": "원가에 정해진 마진만 붙여 파는 이 약국이 수직 통합 보험사 Humana의 약국 사업과 제휴한 다음 날, 창업자 Mark Cuban이 수직 통합 보험사를 해체하라고 요구한 모순을 지적하는 대목에서 나왔다."
+    }
+  ],
+  "card": {
+    "problem": "미국에서는 같은 약도 약국과 보험, 약제비 관리 회사를 거치며 값이 제각각이 되고, 소비자는 창구에서 값을 부르기 전까지 얼마를 낼지 알 수 없다. 보험이 없거나 자기부담금이 큰 사람은 흔한 약조차 감당하기 어려운 금액을 낸다.",
+    "solution": "약을 사 오는 값에 15%와 조제비 5달러를 더한 금액을 그대로 공개하고, 그 값에 우편으로 보내 준다. 의사가 이 회사의 약국으로 처방전을 보내면 소비자가 직접 결제해서 받는다.",
+    "price": "아토르바스타틴 10mg 30알이 5.25달러이고, 배송비 5.25달러가 따로 붙는다. 리시노프릴 10mg 30알은 5.38달러, 이매티닙 400mg 30알은 34.50달러다.",
+    "tags": [
+      "온라인 약국",
+      "원가 공개",
+      "현금 결제",
+      "우편 배송",
+      "처방 필요"
+    ],
+    "headline_traction": "2026년 4월 Humana의 약국 사업 CenterWell Pharmacy와 제휴해, 이 회사가 만든 약국 운영 소프트웨어 SwiftyRx를 CenterWell이 쓰기로 했다.",
+    "watch": "'최대 80% 절약'과 화면에 뜨는 비교 가격은 회사가 정한 기준으로 낸 수치다. 제삼자 연구에서는 보험 가입자의 처방 가운데 이곳이 더 싼 경우가 5~12%에 그쳤다."
+  },
+  "problem": "미국에서 처방약 값은 하나로 정해져 있지 않다. 제조사에서 도매상과 약제비 관리 회사, 보험사, 약국을 차례로 거치는 동안 각 단계가 값을 다시 매기기 때문에, 같은 약이라도 어느 약국에서 어떤 보험으로 사느냐에 따라 금액이 크게 달라진다. 그 계산이 밖에서 보이지 않아서, 소비자는 약국 창구에서 금액을 부를 때까지 자기가 얼마를 낼지 알 수 없다. 보험이 아예 없는 사람과, 보험은 있어도 연간 자기부담 한도를 채우기 전까지 사실상 전액을 내야 하는 고액공제형 보험 가입자에게는 흔한 만성질환 약조차 부담이 된다. 한국은 건강보험이 전 국민에게 적용되고 급여 약값이 전국에서 같기 때문에 이런 종류의 문제 자체가 생기지 않는다.",
+  "solution": "소비자는 먼저 사이트에서 약 이름을 검색해 값을 확인한다. 값을 보는 데는 회원 가입도 결제도 필요하지 않고, 제조사에서 사 온 값과 15% 마진, 조제비 5달러, 배송비가 각각 얼마인지 항목별로 나뉘어 표시된다. 마음에 들면 자기 의사에게 이 회사의 조제 협력사인 HealthDyne 약국으로 처방전을 보내 달라고 요청한다. 처방전이 도착하면 계정을 만들어 결제하고, 약은 집으로 배송된다. 조제에 2~3영업일이 걸리고 일반 배송은 그 뒤로 5~7영업일이 더 걸리므로, 오늘 당장 약이 필요한 사람에게는 맞지 않는다. 2026년 9월 11일에 직접 확인한 값으로는 아토르바스타틴 10mg 30알이 5.25달러(사 온 값 0.22달러, 마진 0.03달러, 조제비 5달러), 리시노프릴 10mg 30알이 5.38달러, 설트랄린 50mg 30알이 5.69달러, 백혈병 약 이매티닙 400mg 30알이 34.50달러였다. 배송비는 처방 1~2건에 5.25달러이고 건수가 늘면 7.50달러, 9.50달러, 16달러로 올라가며, 냉장 배송은 건당 55달러다.",
+  "features": [
+    {
+      "name": "항목별 원가 공개 가격 계산기",
+      "detail": "약을 고르고 용량과 개수를 누르면 제조사에서 사 온 값, 15% 마진, 조제비 5달러, 배송비가 각각 얼마인지 나뉘어 나온다. 옆에는 '다른 약국의 소매가'와 절약 금액도 함께 표시된다."
+    },
+    {
+      "name": "의사가 처방전을 보내는 방식의 주문",
+      "detail": "쿠폰을 받아 동네 약국에 가는 방식이 아니라, 의사가 이 회사의 조제 협력사인 HealthDyne 약국으로 처방전을 새로 보내야 한다. 다른 약국에 이미 보낸 처방전을 옮겨 오는 것도 가능하지만, 마약류로 분류된 약은 취급하지 않는다."
+    },
+    {
+      "name": "보험 청구 지원",
+      "detail": "처음에는 보험을 아예 받지 않았으나, 2026년 9월 기준으로 AffirmedRx, Capital Blue Cross, SelectHealth, SmithRx, WellDyne 등 29곳의 처방 보험과 약제비 관리 회사를 인네트워크로 받는다. 회사는 보험을 쓰더라도 결제 금액이 보험을 안 쓴 값보다 높아지지는 않는다고 밝힌다. 보험으로 결제하면 그 금액이 본인부담 한도 계산에 들어간다는 점이 소비자에게 실익이다."
+    },
+    {
+      "name": "제조사가 비용을 대는 브랜드 약",
+      "detail": "모든 약이 원가에 15%를 붙이는 방식은 아니다. 혈액 항응고제 Eliquis 5mg 60알은 345달러로 표시되는데, 이 경우 마진과 배송비, 조제비를 제조사인 Bristol Myers Squibb이 부담한다고 화면에 적혀 있다. 아달리무맙과 우스테키누맙 같은 바이오시밀러도 취급한다."
+    },
+    {
+      "name": "고용주와 보험사를 상대로 한 약국 혜택",
+      "detail": "자가보험을 운영하는 기업과 관리의료 조직, 제삼자 관리 회사를 상대로, 기존 약제비 관리 회사의 약국 망에 들어가거나 그 위에 얹는 형태로 원가 기반 가격을 제공한다고 안내한다. 가입자는 평소 쓰던 처방 카드를 그대로 쓰면 된다."
+    },
+    {
+      "name": "병원과 클리닉을 상대로 한 도매 구매 플랫폼",
+      "detail": "병원, 투석 센터, 수술 센터, 종양 센터, 약국을 상대로 GraphiteRx 기반 구매 플랫폼을 운영한다. 주문과 추적, 보고를 한 화면에서 하도록 만든 기업용 서비스다."
+    },
+    {
+      "name": "약국 운영 소프트웨어 SwiftyRx",
+      "detail": "약 주문 처리를 자동화하는 자체 소프트웨어다. 2026년 4월 제휴로 Humana의 CenterWell Pharmacy가 이 소프트웨어를 쓰기로 했고, 우선 Humana 임직원 보험 가입자를 대상으로 한 우편 배송 약국에 적용된다. 약을 파는 회사가 소프트웨어도 판다는 점이 이 제휴의 핵심이다."
+    },
+    {
+      "name": "모바일 앱 없음",
+      "detail": "회사는 공식 자주 묻는 질문에서 앱이 없으며 휴대폰 브라우저로 쓰도록 만들었다고 밝힌다. 취급 품목은 2026년 9월 11일 기준 사이트맵에 상품 페이지 2,398개로, 성분과 용량, 제형 조합 단위로 세어 그렇다."
+    }
+  ],
+  "differentiator": "가장 자주 비교되는 GoodRx와는 사업의 성격 자체가 다르다. GoodRx는 약국을 갖지 않고, 약제비 관리 회사가 이미 정해 둔 할인가를 쿠폰으로 보여 주는 비교 서비스이며 소비자에게 돈을 받지 않는다. 반면 Cost Plus Drugs는 스스로 약을 사 오는 약국이고, 자기가 얼마에 사 왔는지를 공개한 뒤 그 위에 붙는 마진을 15%로 못 박는다. 대신 GoodRx는 동네 약국에서 오늘 바로 약을 받을 수 있는 데 비해, 이쪽은 의사가 처방전을 새로 보내야 하고 일주일 넘게 기다려야 한다. Amazon Pharmacy와 Costco의 회원 가격도 같은 자리를 노리지만, 사 온 값을 그대로 공개하는 곳은 이 회사뿐이다.",
+  "team": [
+    {
+      "name": "Alexander Oshmyansky",
+      "role": "창업자 겸 최고경영자",
+      "background": "영상의학과 의사다. 공식 사이트 설명에 따르면 18세에 콜로라도 대학교 볼더 캠퍼스에서 생화학 학사를 마치고 듀크 의대에서 의학 박사를, 마셜 장학생으로 옥스퍼드에서 수학 박사를 받았다. 브리검 여성병원에서 외과 인턴을, 존스홉킨스에서 영상의학 전공의와 소아 영상의학 전임의를 마쳤고 스탠퍼드 의대 겸임 교수를 지냈다. 환자들이 내는 제네릭 약값이 치솟는 것에 분개해 이 회사를 세웠다고 밝힌다. 대학원 재학 중 병원 내 감염을 줄이는 회사 Altitude Medical을 창업한 경력도 있다."
+    },
+    {
+      "name": "Mark Cuban",
+      "role": "공동창업자 겸 투자자",
+      "background": "회사 이름에 자기 이름이 들어가 있고, 공식 사이트의 사명 페이지에 실린 창업 편지를 쓴 사람이다. 자주 묻는 질문에서는 투자자로, 2026년 4월 제휴 보도에서는 공동창업자로 소개된다. 이 세션에서 그 밖의 경력은 확인하지 않았다."
+    }
+  ],
+  "traction": [
+    {
+      "type": "partnership",
+      "detail": "Humana의 약국 사업 CenterWell Pharmacy와 제휴했다. CenterWell이 Cost Plus Drugs의 약국 운영 소프트웨어 SwiftyRx를 주문 처리에 쓰고, 우선 Humana 임직원 보험 가입자에게 우편 배송 약국을 제공한다.",
+      "when": "2026-04",
+      "source": "Healthcare Finance News 2026년 4월 29일 기사, Business Wire 2026년 4월 27일 보도자료"
+    },
+    {
+      "type": "customers",
+      "detail": "Mark Cuban이 2024년 3월에 '아마도 200만 명 정도'의 환자에게 약을 보냈고 제네릭 약 약 2,500종을 취급한다고 말했다. 회사가 스스로 낸 수치이며 제삼자가 확인한 것은 아니다.",
+      "when": "2024-03",
+      "source": "Fierce Healthcare 2024년 6월 18일 기사에 인용된 발언"
+    },
+    {
+      "type": "partnership",
+      "detail": "처방 보험과 약제비 관리 회사 29곳을 인네트워크로 받는다. AffirmedRx, Capital Blue Cross, SelectHealth, SmithRx, WellDyne 등이 이름을 올리고 있다.",
+      "when": "2026-09",
+      "source": "공식 사이트 자주 묻는 질문(2026년 9월 11일 확인)"
+    },
+    {
+      "type": "partnership",
+      "detail": "병원과 클리닉, 수술 센터, 종양 센터를 상대로 GraphiteRx 기반 도매 구매 플랫폼을 운영한다.",
+      "when": "2026-09",
+      "source": "business.costplusdrugs.com(2026년 9월 11일 확인)"
+    }
+  ],
+  "caveats": "회사가 낸 수치와 제삼자가 확인한 수치를 구분해서 볼 필요가 크다. 첫째, 첫 화면의 '최대 80% 절약'과 상품 화면의 '다른 약국의 소매가'는 회사가 정한 기준으로 낸 값이다. 자주 묻는 질문에는 그 소매가가 제삼자 자료로 만든 다른 약국들의 평균이며 약을 처음 등록할 때 적어 둔 값이라 지금 시세와 다를 수 있다고 적혀 있다. 아토르바스타틴 10mg 30알의 비교 가격 55.20달러가 그런 예다. 둘째, 값이 싼 대상이 한정된다. 2024년 6월 JAMA Health Forum에 실린 연구는 2019년 제네릭 약 124종의 처방 8억 4,400만 건을 따져, 이 회사에서 샀을 때 본인 부담이 줄어드는 처방은 11.8%뿐이었다고 보고했다. 무보험자는 28.9%였지만 메디케어 5.5%, 민간 보험 7.1%, 메디케이드는 0%였고 절감액 중앙값은 처방 한 건당 4.96달러였다. 2025년 8월 JAMA Network Open의 신경과 약 연구에서는 보험 가입자 기준 본인 부담이 오히려 75% 높았고, 조사한 33종 가운데 본인 부담이 더 싼 약은 두 종뿐이었다. 셋째, 제도 전체로 보면 절감 여지가 크다는 연구도 함께 있다. 2024년 PharmacoEconomics 연구는 90일분 기준으로 메디케어 파트 D가 86억 달러를 아낄 수 있다고 봤고, 2026년 2월 Health Services Research의 혈압약 연구는 87종 가운데 90알 기준 58종에서 절감이 나오며 평균 인하율이 23.2%라고 보고했다. 다만 같은 연구에서 30알 기준으로는 87종 중 39종만 더 쌌다. 넷째, 조제비 5달러와 배송비 5.25달러가 고정으로 붙기 때문에 아주 싼 제네릭은 총액이 10달러 아래로 내려가지 않는다. 값이 크게 벌어지는 구간은 이매티닙처럼 원래 비쌌던 제네릭이다. 다섯째, 마약류는 취급하지 않고 쿠폰이나 할인 카드를 받지 않으며, 조제와 배송에 일주일 이상 걸린다.",
+  "for_us": "약을 파는 일 자체는 우리가 할 수 없지만, 세 가지가 참고가 된다. 첫째, 이 회사가 소비자에게 준 가치의 핵심은 싼 값이 아니라 '값이 어떻게 만들어졌는지 항목별로 보여 준 것'이다. 사 온 값, 마진, 조제비, 배송비를 나눠 보여 주는 화면 하나로 신뢰를 만들었고, 그 화면은 순수하게 소프트웨어로 만든 것이다. 둘째, 정작 소비자에게 실제로 싼지는 그 사람의 보험 상태에 따라 갈린다. 제삼자 연구가 보여 준 대로 무보험자와 비싼 제네릭에서만 이득이 크므로, '당신 상황에서 이게 정말 싼가'를 판정해 주는 기능이 값 자체보다 더 큰 가치가 될 수 있다. 다만 우리 쪽에서는 이미 미국 약값 최저가 판정을 검토하면서 탐색과 실행을 분리해야 하고 기대 금액이 크지 않다는 결론을 냈으므로, 그 결론을 뒤집을 근거가 되지는 않는다. 셋째, 이 회사에는 모바일 앱이 없다. 앱 없이 웹만으로 운영하는 서비스가 미국 헬스케어에 흔하다는 사실 자체가, 앱 화면을 이미 갖고 있는 우리 쪽 강점이 무엇인지 보여 준다.",
+  "screenshots": [
+    {
+      "file": "cost-plus-drugs_home.png",
+      "caption": "첫 화면이다. '중간상 없음, 가격 장난 없음, 큰 약값 절약'과 '최대 80% 절약'을 내걸고 약 검색창을 가운데 둔다.",
+      "from": "https://costplusdrugs.com/"
+    },
+    {
+      "file": "cost-plus-drugs_product.png",
+      "caption": "아토르바스타틴 10mg 30알 상품 화면이다. 값 5.25달러와 함께 다른 약국 소매가 55.20달러, 절약 49.95달러가 표시된다.",
+      "from": "https://costplusdrugs.com/medications/atorvastatin-10mg-tablet/"
+    },
+    {
+      "file": "cost-plus-drugs_mission.png",
+      "caption": "사명 페이지에 실린 Mark Cuban의 창업 편지다. 보험이 없거나 자기부담금이 큰 사람에게는 기본적인 약조차 큰 돈이 든다는 문제 인식을 앞세운다.",
+      "from": "https://costplusdrugs.com/mission/"
+    },
+    {
+      "file": "cost-plus-drugs_employers.png",
+      "caption": "고용주와 보험사를 상대로 한 페이지다. 기존 약제비 관리 회사의 약국 망에 들어가거나 그 위에 얹는 두 가지 방식을 제안한다.",
+      "from": "https://www.markcubancostplusdrugcompany.com/payers"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cost Plus Drugs 첫 화면",
+      "url": "https://costplusdrugs.com/",
+      "note": "무엇을 파는지, '최대 80% 절약' 문구, 가격 구성 항목을 확인했다."
+    },
+    {
+      "title": "Cost Plus Drugs 사명 페이지",
+      "url": "https://costplusdrugs.com/mission/",
+      "note": "Mark Cuban의 창업 편지와 15% 마진 계산 방식, 최고경영자 Alexander Oshmyansky의 경력을 확인했다."
+    },
+    {
+      "title": "Cost Plus Drugs 자주 묻는 질문",
+      "url": "https://costplusdrugs.com/faq/",
+      "note": "배송비 구간, 조제와 배송 소요일, 취급 보험 29곳, 마약류 미취급, 쿠폰 미사용, 앱이 없다는 사실, 소매가 비교 기준을 확인했다."
+    },
+    {
+      "title": "아토르바스타틴 10mg 상품 페이지",
+      "url": "https://costplusdrugs.com/medications/atorvastatin-10mg-tablet/",
+      "note": "30알 5.25달러와 항목별 내역(0.22달러, 0.03달러, 5달러, 배송 5.25달러)을 직접 확인했다."
+    },
+    {
+      "title": "이매티닙 400mg 상품 페이지",
+      "url": "https://costplusdrugs.com/medications/imatinib-400mg-tablet/",
+      "note": "30알 34.50달러와 회사가 제시한 비교 소매가 9,657.30달러를 확인했다."
+    },
+    {
+      "title": "Eliquis 5mg 60정 상품 페이지",
+      "url": "https://costplusdrugs.com/medications/eliquis-5mg-bottle-of-60-tablets-60-eliquis/",
+      "note": "브랜드 약은 345달러이며 마진과 배송비, 조제비를 제조사가 부담한다는 표시를 확인했다."
+    },
+    {
+      "title": "Cost Plus Drugs 고용주와 보험사 페이지",
+      "url": "https://www.markcubancostplusdrugcompany.com/payers",
+      "note": "기업과 관리의료 조직을 상대로 한 약국 혜택 구조를 확인했다."
+    },
+    {
+      "title": "Cost Plus Drugs 기업 구매 사이트",
+      "url": "https://business.costplusdrugs.com/",
+      "note": "병원과 클리닉을 상대로 한 GraphiteRx 기반 도매 구매 플랫폼을 확인했다."
+    },
+    {
+      "title": "Cost Plus Drugs 사이트맵",
+      "url": "https://costplusdrugs.com/sitemap.xml",
+      "note": "2026년 9월 11일 기준 약 상품 페이지 2,398개를 세었다."
+    },
+    {
+      "title": "Humana teams with Mark Cuban's Cost-Plus Drug Company (Healthcare Finance News)",
+      "url": "https://www.healthcarefinancenews.com/news/humana-teams-mark-cubans-cost-plus-drug-company",
+      "note": "CenterWell Pharmacy 제휴의 내용과 SwiftyRx 소프트웨어, Humana 임직원 대상 적용을 확인했다."
+    },
+    {
+      "title": "Mark Cuban's D2C pharmacy won't beat most insured patients' out of pocket drug prices (Fierce Healthcare)",
+      "url": "https://www.fiercehealthcare.com/payers/mark-cubans-d2c-pharmacy-wont-beat-most-insured-patients-out-pocket-drug-prices-study-finds",
+      "note": "JAMA Health Forum 연구의 11.8%, 보험 종류별 비율, 절감액 중앙값 4.96달러와 Cuban의 200만 명 발언을 확인했다."
+    },
+    {
+      "title": "Potential Medicare Part D Savings on Generic Drugs From the Mark Cuban Cost Plus Drug Company (Annals of Internal Medicine)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35724381/",
+      "note": "메디케어 파트 D 36억 달러 절감 추정의 원 논문이다."
+    },
+    {
+      "title": "Medicare could save billions buying generic drugs at Mark Cuban's prices (NBC News)",
+      "url": "https://www.nbcnews.com/health/health-news/medicare-drug-prices-us-billions-generics-buying-mark-cuban-prices-stu-rcna33949",
+      "note": "위 논문의 89종 중 77종, 81억 달러 대 45억 달러라는 세부 수치를 확인했다."
+    },
+    {
+      "title": "Projected Savings for Generic Oncology Drugs Purchased via Mark Cuban Cost Plus Drug Company Versus in Medicare (Journal of Clinical Oncology)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37290029/",
+      "note": "항암 제네릭 7종에서 6억 6,180만 달러(78.8%) 절감, 다만 3종은 절감 없음을 확인했다."
+    },
+    {
+      "title": "Drug Pricing Stewardship from Mark Cuban's Cost Plus Generic Drug Program (PharmacoEconomics)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39167355/",
+      "note": "90일분 기준 메디케어 파트 D 86억 달러 절감 추정을 확인했다."
+    },
+    {
+      "title": "Disrupting Drug Costs: The Role of Cost-Plus Pricing in Reducing Medicare Spending on Hypertension Treatments (Health Services Research)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40971147/",
+      "note": "혈압약 87종 가운데 30알 기준 39종, 90알 기준 58종만 더 싸다는 결과를 확인했다."
+    },
+    {
+      "title": "Neurologic Medication Costs in a Direct-to-Consumer Pharmacy vs Commercial Insurance Plans (JAMA Network Open)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40828537/",
+      "note": "보험 가입자 기준 본인 부담이 75% 높고 33종 중 2종만 더 싸다는 결과를 확인했다."
+    }
+  ]
+}

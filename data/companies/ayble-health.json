@@ -1,0 +1,220 @@
+{
+  "slug": "ayble-health",
+  "name": "Ayble Health",
+  "one_liner": "소화기내과 의사와 영양사, 약사, 심리 담당자를 한 팀으로 묶어 배탈과 복통, 역류, 크론병 같은 소화기 문제를 온라인으로 진료하는 미국 회사다. 진료비를 환자에게 직접 받지 않고 보험에 청구하며, 고용주와 보험사가 직원 복리후생으로 깔아 주는 경로로 환자가 들어온다.",
+  "site": "https://www.ayblehealth.com",
+  "sells_to": "mixed",
+  "seen_in": [
+    {
+      "issue": "20",
+      "section": 26,
+      "headline": "PHTI가 버추얼 소화기 케어 제품들을 평가한 보고서를 소개하는 대목에서, 임상의가 직접 붙어 진료하는 쪽 사례로 Oshi, Salvo와 함께 이름만 언급됐다."
+    }
+  ],
+  "card": {
+    "problem": "미국 성인 다섯 명 가운데 한 명이 소화기 증상을 겪지만, 소화기내과 전문의 예약 대기는 전체 전문과에서 세 번째로 길고 미국 카운티의 약 70%에는 소화기내과 의사가 한 명도 없다. 여러 직역이 한 팀으로 보는 다학제 진료는 대학병원에나 있어서, 대부분의 환자는 약을 바꿔 가며 시험해 보는 방식으로 몇 해를 보낸다.",
+    "solution": "소화기내과 의사가 처방까지 맡고 영양사와 약사, 심리 담당자, 건강코치가 같은 치료 계획에 함께 붙는 팀을 온라인으로 꾸려 준다. 4분짜리 문진으로 보험 적용 여부를 확인한 뒤 30~45분짜리 첫 진료를 받고, 그 다음부터는 앱으로 식사와 증상을 기록하면서 채팅과 화상으로 관리받는다.",
+    "price": "보험 인네트워크 진료라서 대부분 진료 1회당 본인부담금 0~30달러이며, 증상 기록 앱은 무료다. 공제액이 큰 보험에 든 사람은 처음에 더 낼 수 있다고 회사가 밝혔다.",
+    "tags": [
+      "소화기 진료",
+      "원격 진료",
+      "다학제 팀",
+      "보험 청구",
+      "고용주 복지"
+    ],
+    "headline_traction": "2026년 3월 PHTI 평가에서 임상의 주도형 소화기 솔루션 다섯 곳 가운데 하나로 다뤄졌고, 2026년 8월에는 Castlight, 9월에는 Amazon의 복리후생 안내 창구에 소화기 분야 첫 업체로 올랐다.",
+    "watch": "회사가 내세우는 '1인당 연 2,901달러 절감'은 Ayble 환자를 실제로 측정한 값이 아니라 PHTI가 임상의 주도형 제품 전체를 놓고 특정 환자군에 겨냥했을 때를 가정해 계산한 모형값이다. PHTI는 Ayble의 비용 효과를 다룬 연구가 한 건도 없다고 적었다."
+  },
+  "problem": "미국에서 소화기 질환은 성인 다섯 명 가운데 한 명이 겪는 흔한 문제이고, 해마다 1,120억 달러가 여기에 쓰인다. 그런데 진료를 받기가 어렵다. 소화기내과는 전문과 가운데 예약 대기가 세 번째로 긴 과이고, 미국 카운티의 70% 가까이에는 소화기내과 의사가 아예 한 명도 없다. 게다가 과민성 대장 증후군이나 염증성 장질환처럼 오래 가는 병은 약만으로 잡히지 않아서 식이 조절과 심리 치료를 함께 받아야 하는데, 이렇게 여러 직역이 한 팀으로 보는 다학제 진료는 대학병원 안에나 거의 다 몰려 있다. 그래서 환자는 소화기내과, 영양사, 심리 상담을 각각 따로 찾아다니거나, 약을 바꿔 가며 시험해 보는 방식으로 몇 해를 보내게 된다. 한국은 동네 내과나 소화기내과를 바로 찾아가 진료를 받고 내시경도 비교적 쉽게 잡을 수 있으므로, 미국에서 '전문의를 만나기까지 몇 달을 기다린다'는 대목이 이 회사가 서 있는 자리를 이해하는 열쇠가 된다.",
+  "solution": "환자는 먼저 4분 정도 걸리는 문진에 증상과 목표를 적고, 그 자리에서 자기 보험으로 진료를 받을 수 있는지 확인한다. 다음으로 30~45분짜리 첫 진료를 받는데, 소화기내과 의사나 전문간호사가 진료를 맡고 검사가 필요하면 여기서 지시한다. 진료 결과로 치료 계획이 하나 만들어지고, 그 계획 안에 약 처방과 식이 조절, 장과 뇌의 연결을 다루는 심리 프로그램이 함께 들어간다. 그 다음부터는 무료 앱으로 식사와 증상을 기록하면서 어떤 음식이 증상을 일으키는지 찾아 나가고, 영양사와 약사, 건강코치가 채팅과 화상 진료로 계속 붙는다. 회사는 대부분의 환자가 진료 1회당 0~30달러를 낸다고 밝혔고, Amazon 창구를 통해 들어온 환자는 본인부담금이 10달러 미만인 경우가 많다고 했다. PHTI 보고서에 따르면 임상의 주도형 제품의 값은 12개월 기준으로 참여 회원 한 사람당 1,025달러 정도인데, 이 돈은 환자가 아니라 고용주나 보험사가 낸다.",
+  "features": [
+    {
+      "name": "보험 자격 확인 문진",
+      "detail": "증상과 목표를 묻는 4분짜리 문진을 마치면 자기 보험으로 진료를 받을 수 있는지 그 자리에서 확인된다. Aetna, Anthem, Blue Cross Blue Shield, Cigna, UnitedHealthcare, Priority Health와 인네트워크 계약이 되어 있다고 회사가 밝혔다."
+    },
+    {
+      "name": "다학제 진료팀",
+      "detail": "소화기내과 의사와 전문간호사가 처방을 포함한 치료 계획을 맡고, 영양사와 임상 약사, 심리 담당자, 건강코치가 같은 계획에 붙어 움직인다. PHTI 비교표에서 임상 약사를 표준 구성으로 두는 곳은 평가 대상 다섯 곳 가운데 Ayble뿐이었다."
+    },
+    {
+      "name": "개인화 식이 프로그램",
+      "detail": "영양사가 증상을 일으키는 음식을 가려내고 제한식을 어떻게 진행할지 안내하며, 오래 유지할 수 있는 식사 습관을 잡아 준다."
+    },
+    {
+      "name": "장과 뇌를 다루는 프로그램",
+      "detail": "스트레스가 소화기 증상으로 이어지는 통로를 다루는 프로그램이다. 회사는 소화기 증상을 겪는 사람 열 명 가운데 일곱 명에게 이 접근이 도움이 된다고 주장한다."
+    },
+    {
+      "name": "증상과 식사 기록 앱",
+      "detail": "iOS와 Android에서 무료로 받을 수 있다. 식사와 증상을 기록해 무엇이 증상을 일으키는지 찾고, 진료팀과 채팅으로 이어진다."
+    },
+    {
+      "name": "성과 보증 계약",
+      "detail": "고용주와 보험사를 상대로는 임상 성과와 재무 성과에 값을 연동하는 계약을 제공한다고 PHTI가 적었다. 같은 분류에 든 Oshi는 총진료비를 기준으로 성과를 보증한다."
+    }
+  ],
+  "differentiator": "PHTI는 버추얼 소화기 제품을 두 갈래로 나누었는데, Cylinder와 Digbi처럼 의사가 직접 진료하지 않고 코치와 영양사, 심리 담당자만 붙는 랩어라운드형과, Ayble과 Oshi Health, Salvo Health처럼 의사가 처방까지 맡는 임상의 주도형이다. Ayble은 뒤쪽에 속하면서도 Salvo와는 파는 상대가 다른데, Salvo는 개원한 소화기내과 의원에 팔아서 의원이 보험에 청구하게 하는 반면 Ayble은 고용주와 보험사를 상대로 팔되 자기가 인네트워크 진료 기관이 되어 직접 청구한다. Oshi와는 사업 구조가 거의 같고, 차이는 Ayble이 Cleveland Clinic에서 쓰던 진료 프로토콜을 독점으로 라이선스해 왔다는 점과 임상 약사를 팀에 상시로 두는 점 정도다. 다만 누적 투자액은 Ayble이 1,140만 달러로 Oshi의 1억 1,850만 달러에 견주면 열 배 이상 작아서, 같은 분류 안에서 가장 작은 회사에 해당한다.",
+  "team": [
+    {
+      "name": "Sam Jactel",
+      "role": "창업자 겸 최고경영자",
+      "background": "2014년에 궤양성 대장염 진단을 받았고, 좋은 의사에게 진료받을 형편이 되는데도 열 해 가까이 병을 다스리지 못해 크게 악화된 일이 여섯 번 있었고 그때마다 응급실에 갔다고 회사 사이트에서 밝혔다. 그 경험을 창업 동기로 든다."
+    },
+    {
+      "name": "Trent Haywood, MD, JD",
+      "role": "임상 담당",
+      "background": "회사 사이트는 담당 영역만 밝히고 이전 경력은 적지 않았다."
+    },
+    {
+      "name": "Miguel Regueiro, MD",
+      "role": "임상 자문",
+      "background": "Cleveland Clinic 소화기질환연구소 소장이자 부사장으로 소개돼 있다."
+    },
+    {
+      "name": "Stephen Lupe, PsyD",
+      "role": "임상 자문",
+      "background": "Cleveland Clinic 소화기내과 행동의학 책임자로 소개돼 있다. PHTI 보고서가 인용한 Ayble 관련 연구 가운데 이 사람의 이름이 붙은 2025년 연구가 있다."
+    }
+  ],
+  "traction": [
+    {
+      "type": "funding",
+      "detail": "2026년 2월 기준 누적 투자액은 1,140만 달러다. 회사 사이트는 투자사로 m13, Upfront Ventures, Founder Collective, DigiTx Partners, Cleveland Clinic을 걸어 두었으나 각 라운드의 금액과 시점은 밝히지 않았다.",
+      "when": "2026-02",
+      "source": "PHTI 보고서가 인용한 PitchBook 집계, 회사 사이트 투자사 표기"
+    },
+    {
+      "type": "partnership",
+      "detail": "Mayo Clinic과 손잡고, 증상이 심한 환자는 Mayo 소화기내과로 넘기고 그 뒤 다시 Ayble이 식이와 행동 관리를 맡는 방식을 만들었다.",
+      "when": "2023-11",
+      "source": "MedCity News"
+    },
+    {
+      "type": "partnership",
+      "detail": "Cleveland Clinic 소화기질환연구소와 함께 진료 경로와 행동 치료 콘텐츠를 만들어, 만성 소화기 질환 진료에 Ayble 플랫폼을 붙였다.",
+      "when": "2024-10",
+      "source": "회사 보도자료, Fierce Healthcare"
+    },
+    {
+      "type": "partnership",
+      "detail": "복리후생 안내 서비스 Castlight에 소화기 분야로는 처음 올라갔다.",
+      "when": "2026-08",
+      "source": "Fierce Healthcare"
+    },
+    {
+      "type": "partnership",
+      "detail": "Amazon의 Health Benefits Connector에 소화기 분야 첫 제공자로 들어갔다. 회사는 이 창구가 8,000만 명이 넘는 가입자를 덮는다고 밝혔다.",
+      "when": "2026-09",
+      "source": "PR Newswire 보도자료"
+    },
+    {
+      "type": "award",
+      "detail": "2026년 Prix Galien USA 최우수 디지털 헬스 솔루션 부문 후보에 올랐다.",
+      "when": "2026-08",
+      "source": "PR Newswire 보도자료"
+    },
+    {
+      "type": "customers",
+      "detail": "Aetna, Anthem, Blue Cross Blue Shield, Cigna, UnitedHealthcare, Priority Health와 인네트워크 계약이 되어 있다고 밝혔다. 개별 고용주 고객의 이름은 공개하지 않는다.",
+      "when": "2026-09",
+      "source": "회사 사이트"
+    },
+    {
+      "type": "traffic",
+      "detail": "소비자용 앱은 크지 않다. 2023년 4월에 나온 Android 앱의 내려받기 수는 1,000회 이상 구간이고, iOS 앱의 별점은 20명이 매긴 5점 만점에 4.7이다.",
+      "when": "2026-09",
+      "source": "Google Play, Apple App Store"
+    }
+  ],
+  "caveats": "회사가 스스로 낸 수치와 제삼자가 확인한 수치를 갈라 봐야 한다. 회사 사이트에 걸린 '더부룩함 82% 감소', '복통 68% 감소', '94%가 증상이 크게 좋아졌다고 답함', '응급실 이용 47% 감소', '결근 40% 감소'는 모두 회사가 발표한 값이고 제삼자가 확인한 값이 아니다. 특히 조심할 대목은 고용주용 페이지에 '피터슨 헬스 테크놀로지 인스티튜트가 독립적으로 검토했다'는 설명과 함께 걸린 '회원 1인당 연 2,901달러 절감'이다. PHTI 보고서 원문을 보면 이 숫자는 Ayble 환자를 측정한 값이 아니라, 임상의 주도형 제품 전체를 놓고 '과민성 대장 증후군 환자와 중등도 이상 염증성 장질환 환자에게 겨냥해 쓴다면'을 가정해 계산한 모형값이다. 같은 표에서 겨냥하지 않고 평균적인 염증성 장질환 환자까지 섞으면 절감액은 1,539달러로 떨어지고, 이는 의사가 붙지 않는 랩어라운드형의 1,889달러보다 오히려 적다. 그리고 PHTI는 Ayble에 대해 '비용이나 의료 이용량에 미친 영향을 다룬 연구는 한 건도 없었다'고 명시했다. 임상 근거도 대조군이 없는 단일군 연구 두 건뿐이어서, PHTI는 임상의 주도형 전체의 근거 확실성을 '낮음'으로, 랩어라운드형은 과민성 대장 증후군에 한해 '높음'으로 매겼다. 즉 의사가 붙는 쪽이 더 비싼데 근거는 더 얇다는 것이 이 보고서의 결론에 가깝다.",
+  "for_us": "뉴스레터의 분류대로 보면 이 회사는 의사를 고용하고 주별 면허를 갖춰야 하는 형태라서 3개월 안에 따라 만들 수 있는 대상이 아니다. 그런데 PHTI 보고서를 열어 보면 우리에게 쓸모 있는 판정이 따로 나온다. 의사가 붙지 않고 코치와 영양사, 심리 프로그램만으로 이루어진 랩어라운드형이 과민성 대장 증후군 환자에 대해서는 근거 확실성 '높음'을 받았고 1인당 절감액도 더 컸다는 대목이다. 다시 말해 소화기 증상 영역에서 소프트웨어와 비의료 인력만으로 돌아가는 형태가 이미 근거로 인정받은 자리다. Ayble이 앱에서 하는 일 가운데 식사와 증상을 기록해 증상을 일으키는 음식을 찾아 주는 부분과 장과 뇌의 연결을 다루는 프로그램은 진료 면허가 필요 없는 영역이고, 우리 앱의 식단 기록 기능과 붙는 지점이 있다. 한 가지 더 눈여겨볼 것은 이런 회사의 환자가 앱스토어에서 오지 않는다는 사실이다. Android 내려받기가 1,000회대이고 iOS 별점이 20개뿐인데도 회사는 성장하고 있는데, 유입이 전부 고용주와 보험사의 복리후생 안내 창구에서 오기 때문이다. 미국에서 건강 앱을 B2C로 퍼뜨리려 할 때 이 구조를 염두에 둘 필요가 있다.",
+  "screenshots": [
+    {
+      "file": "ayble-health_home.png",
+      "caption": "첫 화면이다. '소화기 증상을 혼자 감당하지 마세요'라는 문구와 함께 화상 진료를 받는 장면을 보여 주고, 맨 위 띠에 '보험 인네트워크로 소화기 전문 진료를 받는다'고 적어 두었다.",
+      "from": "https://www.ayblehealth.com"
+    },
+    {
+      "file": "ayble-health_howitworks.png",
+      "caption": "환자가 겪는 흐름을 보여 주는 페이지다. 4분 문진, 30~45분 첫 진료, 이어지는 관리라는 세 단계와 진료팀 구성, 본인부담금 0~30달러 안내가 들어 있다.",
+      "from": "https://www.ayblehealth.com/how-it-works"
+    },
+    {
+      "file": "ayble-health_employers.png",
+      "caption": "고용주와 보험사를 상대로 파는 페이지다. 투자 대비 3배 회수와 회원 1인당 연 2,901달러 절감을 앞세우며 PHTI가 독립적으로 검토했다고 적어 두었는데, 이 숫자의 출처는 caveats에서 따로 짚었다.",
+      "from": "https://www.ayblehealth.com/employers"
+    },
+    {
+      "file": "ayble-health_ios.png",
+      "caption": "미국 앱스토어의 소비자용 앱 페이지다. 무료이고 평가는 20명이 매긴 4.7점이다. 이 회사의 환자가 앱스토어를 통해 들어오지 않는다는 것을 보여 준다.",
+      "from": "https://apps.apple.com/us/app/ayble-health-gi-gut-care/id1642365544"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ayble Health 공식 사이트 첫 화면",
+      "url": "https://www.ayblehealth.com",
+      "note": "무엇을 파는지, 어떤 보험과 인네트워크인지, 본인부담금이 얼마인지 확인했다."
+    },
+    {
+      "title": "Ayble Health 이용 흐름 안내",
+      "url": "https://www.ayblehealth.com/how-it-works",
+      "note": "4분 문진과 30~45분 첫 진료, 진료팀 구성, 앱의 역할을 확인했다."
+    },
+    {
+      "title": "Ayble Health 고용주용 페이지",
+      "url": "https://www.ayblehealth.com/employers",
+      "note": "고용주와 보험사를 상대로 내세우는 절감 수치와 계약 방식을 확인했다."
+    },
+    {
+      "title": "Ayble Health 창업 이야기와 구성원",
+      "url": "https://www.ayblehealth.com/our-story",
+      "note": "창업자 Sam Jactel의 진단 경험, 리더십 구성, 임상 자문, 투자사 표기를 확인했다."
+    },
+    {
+      "title": "Ayble Health 뉴스룸",
+      "url": "https://www.ayblehealth.com/newsroom",
+      "note": "Mayo Clinic, Cleveland Clinic, Castlight, Amazon 관련 소식과 시점을 확인했다."
+    },
+    {
+      "title": "PHTI, 버추얼 소화기 케어 솔루션 평가",
+      "url": "https://www.phti.org/assessment/virtual-solutions-gi-conditions/",
+      "note": "뉴스레터가 소개한 보고서다. 랩어라운드형과 임상의 주도형의 구분, 두 갈래의 임상 근거와 경제성 판정을 확인했다."
+    },
+    {
+      "title": "PHTI 평가 본문 보고서(PDF)",
+      "url": "https://www.phti.org/wp-content/uploads/2026/05/PHTI-Virtual-GI-Care-Solutions-Assessment-Report-v1.1.pdf",
+      "note": "Ayble의 설립 연도 2020년과 누적 투자 1,140만 달러, 임상의 주도형의 값 1,025달러, Ayble 근거가 단일군 연구 두 건뿐이고 비용 효과 연구는 없다는 서술을 확인했다."
+    },
+    {
+      "title": "PHTI 평가 요약본(PDF)",
+      "url": "https://www.phti.org/wp-content/uploads/2026/03/PHTI-Virtual-GI-Care-Solutions-Executive-Summary.pdf",
+      "note": "1인당 연 절감액 표(랩어라운드 1,889달러, 임상의 주도형 1,539달러와 2,901달러)와 근거 확실성 등급을 확인했다."
+    },
+    {
+      "title": "Ayble Health, Amazon 복리후생 창구 합류 보도자료",
+      "url": "https://www.prnewswire.com/news-releases/ayble-health-joins-amazons-health-benefits-connector-to-expand-virtual-gi-care-access-to-millions-of-americans-302868228.html",
+      "note": "2026년 9월 3일 발표, 소화기 분야 첫 제공자라는 사실과 회사가 밝힌 증상 개선 수치를 확인했다."
+    },
+    {
+      "title": "MedCity News, Mayo Clinic 협력 기사",
+      "url": "https://medcitynews.com/2023/11/mayo-clinic-digestive-healthcare/",
+      "note": "2020년 설립, 고용주와 보험사에 팔며 회원 단위로 값을 받되 상당 부분을 성과에 연동한다는 초기 사업 구조를 확인했다."
+    },
+    {
+      "title": "Cleveland Clinic 협력 발표",
+      "url": "https://www.ayblehealth.com/press/ayble-health-the-cleveland-clinic-expand-chronic-digestive-disease-care",
+      "note": "2024년 10월 협력 내용과 회사가 내세우는 연구 기반 서술을 확인했다."
+    },
+    {
+      "title": "Apple App Store, Ayble Health: GI & Gut Care",
+      "url": "https://apps.apple.com/us/app/ayble-health-gi-gut-care/id1642365544",
+      "note": "무료, 2023년 4월 출시, 평가 20건에 4.7점, 사업자명 Agora Health Inc.를 확인했다."
+    },
+    {
+      "title": "Google Play, Ayble Health",
+      "url": "https://play.google.com/store/apps/details?id=com.ayblehealth.app",
+      "note": "2023년 4월 출시, 내려받기 1,000회 이상 구간임을 확인했다."
+    }
+  ]
+}

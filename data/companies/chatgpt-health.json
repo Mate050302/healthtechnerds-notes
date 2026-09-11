@@ -1,0 +1,258 @@
+{
+  "slug": "chatgpt-health",
+  "name": "ChatGPT Health",
+  "one_liner": "OpenAI가 ChatGPT 안에 넣은 소비자용 건강 기능이다. 미국 병원의 진료 기록과 아이폰 건강 앱 자료를 본인 동의로 끌어와, 검사 수치와 복용 약, 수면과 활동 기록을 근거로 대화하게 한다. 별도 앱이 아니라 기존 ChatGPT의 한 메뉴이며 값을 따로 받지 않는다.",
+  "site": "https://chatgpt.com/health",
+  "sells_to": "consumer",
+  "seen_in": [
+    {
+      "issue": "04",
+      "section": 2,
+      "headline": "OpenAI가 한 주 동안 쏟아 낸 세 가지 헬스케어 소식 가운데 수요일에 나온 소비자용 개인건강기록 도구로 짧게 소개됐다. 필자는 개인건강기록 발표를 그동안 너무 많이 겪어 들뜨지 않는다면서도, OpenAI가 함께 공개한 이용량 수치를 보면 이번은 다를지도 모른다고 적었다."
+    }
+  ],
+
+  "card": {
+    "problem": "미국에서는 진료 기록이 병원마다 따로 보관되고 검사 결과지는 수치와 전문 용어로만 적혀 있어서, 환자가 자기 상태를 한눈에 보거나 무슨 뜻인지 알기 어렵다. 이미 수억 명이 챗봇에 건강 질문을 하고 있으나 그 대화에는 정작 본인의 검사 수치와 복용 약이 빠져 있었다.",
+    "solution": "흩어진 기록을 ChatGPT 안으로 끌어온다. 미국 병원의 환자 포털과 One Medical, Function Health 계정을 연결하고 아이폰 건강 앱을 붙이면, 검사 수치가 어떻게 변했는지와 진료 뒤 무엇이 달라졌는지를 본인 기록에 근거해 설명한다.",
+    "price": "추가 요금이 없다. 무료 요금제에서도 쓸 수 있다.",
+    "tags": [
+      "건강 기록",
+      "챗봇",
+      "검사 결과 해석",
+      "애플 건강",
+      "무료"
+    ],
+    "headline_traction": "2026년 1월 7일 대기자 명단으로 시작해 7월 23일 미국 이용자 전체에게 열었고, OpenAI는 주당 3억 명이 넘는 사람이 ChatGPT에 건강 질문을 한다고 밝혔다.",
+    "watch": "이용량 수치는 전부 OpenAI가 자체 집계해 발표한 값이며 제삼자 검증이 없다. 또 OpenAI 스스로 이 기능에는 미국 의료정보 보호법인 HIPAA가 적용되지 않는다고 문서에 밝혀 두었다."
+  },
+
+  "problem": "미국에서는 병원마다 전자의무기록 시스템이 따로 돌아가서, 다른 병원으로 옮기면 앞선 진료 기록이 따라오지 않는다. 환자 본인이 병원별 환자 포털에 각각 로그인해 결과지를 내려받아야 하고, 그 결과지는 수치와 전문 용어로만 적혀 있어 무슨 뜻인지 따로 물어봐야 한다. 한국은 건강보험공단과 건강보험심사평가원에 기록이 모여 있어 앱 하나로 상당 부분 확인되지만, 미국에는 그런 중앙 창구가 없다. 그래서 흩어진 기록을 한곳에 모아 주겠다는 개인건강기록 서비스가 20년 넘게 반복해서 나왔고 대부분 자리를 잡지 못했으며, 뉴스레터 필자가 이번 발표에도 시큰둥했던 이유가 그것이다. 그러는 사이 사람들은 이미 챗봇을 첫 창구로 삼기 시작했는데, OpenAI 자체 집계로는 전 세계 주간 이용자 네 명 가운데 한 명이 매주 건강 질문을 보내고 하루 4천만 명이 넘는 사람이 건강 질문을 하면서도, 그 대화에는 본인의 검사 수치와 복용 약이 빠져 있었다.",
+
+  "solution": "사용자는 ChatGPT 왼쪽 메뉴에서 Health를 열고 연결을 시작한다. 연결할 수 있는 것은 세 갈래인데, 미국 병원의 환자 포털 계정과 1차 진료 체인 One Medical 및 혈액 검사 회사 Function Health의 계정, 그리고 아이폰의 건강 앱이다. 동기화가 끝나면 끌려 들어온 진단명과 복용 약, 가족력을 사용자가 직접 확인하고 더는 해당하지 않는 항목을 지우거나 빠진 것을 채운다. 그 뒤로는 Health 메뉴 안에서든 바깥의 평범한 대화에서든 콜레스테롤 수치가 어떻게 변했는지, 지난 진료 이후 무엇이 달라졌는지를 물으면 본인 기록을 근거로 답한다. 기본 설정에서는 ChatGPT가 건강 정보를 쓰기 전에 매번 허락을 구하고, 사용자가 원하면 항상 허용으로 바꿀 수 있다. 값은 따로 받지 않아 무료 요금제에서도 쓸 수 있으나, 미국에 등록된 18세 이상 계정만 웹과 아이폰에서 쓸 수 있고 안드로이드는 대상이 아니다.",
+
+  "features": [
+    {
+      "name": "의료 기록 연결",
+      "detail": "미국 병원의 환자 포털 계정을 연결해 검사 결과와 진료 요약, 과거 병력을 끌어온다. 이 연결은 OpenAI가 직접 만든 것이 아니라 b.well이라는 헬스케어 회사의 데이터 연결망을 쓴다. 목록에 없는 병원은 고객센터에 추가를 요청하라고 안내한다."
+    },
+    {
+      "name": "애플 건강 앱 연결",
+      "detail": "아이폰의 건강 앱에 쌓인 걸음과 이동 거리, 수면, 활동 기록을 읽어 온다. 아이폰이 있어야 연결된다."
+    },
+    {
+      "name": "웨어러블 간접 연결",
+      "detail": "Whoop, Oura, Garmin, Strava, MyFitnessPal 같은 기기와 앱은 ChatGPT와 직접 연결되지 않고 애플 건강 앱을 거쳐 들어온다. 그래서 각 회사가 자체 계산해 보여 주는 수면 점수 같은 값은 넘어오지 않을 수 있다고 공식 문서가 밝힌다."
+    },
+    {
+      "name": "One Medical, Function Health 연결",
+      "detail": "아마존이 소유한 1차 진료 체인 One Medical과 혈액 검사 구독 회사 Function Health의 계정을 따로 연결할 수 있다."
+    },
+    {
+      "name": "기록 검토와 수정",
+      "detail": "연결된 기록에서 현재 진단명과 복용 약 목록을 뽑아 사용자에게 확인시키고, 이미 끊은 약처럼 더는 맞지 않는 항목을 지우거나 가족력을 직접 보태게 한다. 병원이 보관한 원본 기록은 고칠 수 없다."
+    },
+    {
+      "name": "Health 전용 화면",
+      "detail": "최근 수치와 추세, 동기화된 기록 목록, 추천 질문, 지난 건강 대화, 연결한 계정 관리를 한자리에서 본다. 2026년 1월 처음 나왔을 때는 이 화면 안에서만 건강 대화를 할 수 있었으나, 7월 개편으로 바깥 대화에서도 건강 정보를 쓰게 바뀌었다."
+    },
+    {
+      "name": "사용 허락 요청과 호출",
+      "detail": "기본값은 ChatGPT가 건강 정보를 쓰기 전에 매번 물어보는 것이다. 한 번만 허용하거나 항상 허용을 고를 수 있다. 원하는데도 쓰지 않으면 메시지에 @Health를 붙여 직접 부른다."
+    },
+    {
+      "name": "읽기 전용",
+      "detail": "ChatGPT는 연결된 의료 기록과 애플 건강 앱에서 읽기만 한다. 애플 건강 앱이나 병원 기록에 무언가를 써넣을 수 없다."
+    },
+    {
+      "name": "의사가 참여한 평가",
+      "detail": "OpenAI는 60개국 260명이 넘는 의사 네트워크와 함께 모델 답변을 평가해 왔고 검토한 답변 예시가 70만 건이 넘는다고 밝힌다. 평가 틀로는 의사가 쓴 채점 기준을 쓰는 HealthBench를 내세운다."
+    },
+    {
+      "name": "쓸 수 없는 자리",
+      "detail": "음성 모드에서는 연결된 앱과 플러그인을 지원하지 않아 Health가 동작하지 않는다. 코딩 도구인 Codex에서도 지원하지 않는다."
+    }
+  ],
+
+  "differentiator": "가장 큰 차이는 새 앱을 만들지 않았다는 점이다. 지금까지 개인건강기록 서비스는 기록을 모아 주는 별도 앱을 내려받게 했고 대부분 사용자를 모으지 못했는데, OpenAI는 사람들이 이미 매일 쓰는 ChatGPT 안에 건강 메뉴를 하나 붙였다. 상호운용성 분야 분석가 Brendan Keeler는 발표 다음 날 쓴 글에서 이 점을 짚으며, 기술 대기업의 진짜 자산은 새 앱이 아니라 이미 확보한 일간 사용자라고 정리했다. 기록을 실제로 끌어오는 연결망은 직접 만들지 않고 b.well에서 사 왔기 때문에, 데이터 연결 자체로는 다른 개인건강기록 회사와 크게 다르지 않다. 함께 발표된 기업용 상품 ChatGPT for Healthcare가 OpenEvidence나 UpToDate, Doximity 같은 의사용 서비스와 겨루는 자리라면, ChatGPT Health는 그 반대편인 소비자 쪽에 서 있고 Function Health와 MyFitnessPal 같은 회사를 경쟁자가 아니라 연결 상대로 들여왔다.",
+
+  "team": [
+    {
+      "name": "Sam Altman",
+      "role": "OpenAI 최고경영자",
+      "background": "2025년 8월 GPT-5 발표 자리에서 ChatGPT가 자기 건강 여정을 스스로 끌고 가게 해 준다고 말하며 헬스케어 쪽 의지를 미리 드러냈다."
+    },
+    {
+      "name": "Nate Gross",
+      "role": "OpenAI 헬스케어 전략 총괄",
+      "background": "의사용 직업 네트워크 Doximity를 공동창업하고 최고전략책임자를 지냈으며, 디지털 헬스 투자와 조사 기관 Rock Health의 공동창업자이기도 하다. 2025년 6월에 OpenAI에 합류했다."
+    },
+    {
+      "name": "Ashley Alexander",
+      "role": "OpenAI 건강 부문 제품 부사장",
+      "background": "메타에서 12년을 일했고 그 가운데 11년을 인스타그램 제품팀에서 광고와 창작자 수익화, 동영상 기능을 만들며 보냈다. 2025년 8월에 합류해 소비자와 의료진용 제품을 맡는다고 OpenAI 대변인이 밝혔다."
+    },
+    {
+      "name": "Karan Singhal",
+      "role": "OpenAI 헬스케어 AI 연구 총괄",
+      "background": "구글에서 의료용 대규모 언어 모델 Med-PaLM 개발을 이끈 연구자 출신이다."
+    }
+  ],
+
+  "traction": [
+    {
+      "type": "customers",
+      "detail": "2026년 1월 7일 대기자 명단을 받는 제한 공개로 시작했다. 이때는 유럽경제지역과 스위스, 영국을 뺀 지역의 Free, Go, Plus, Pro 이용자 가운데 소수만 쓸 수 있었다.",
+      "when": "2026-01",
+      "source": "OpenAI 발표문 Introducing ChatGPT Health"
+    },
+    {
+      "type": "customers",
+      "detail": "2026년 7월 23일에 미국의 18세 이상 로그인 이용자 전체로 열었다. Free, Go, Plus, Pro 네 요금제 모두 대상이며 웹과 아이폰에서 쓴다.",
+      "when": "2026-07",
+      "source": "OpenAI 발표문 Launching Health in ChatGPT, help.openai.com 공식 문서"
+    },
+    {
+      "type": "traffic",
+      "detail": "OpenAI 자체 집계로 매주 3억 명이 넘는 사람이 ChatGPT에 건강 관련 질문을 한다. 2026년 1월 발표 때는 같은 기준으로 2억 3천만 명이었다.",
+      "when": "2026-07",
+      "source": "OpenAI 발표문 Launching Health in ChatGPT"
+    },
+    {
+      "type": "traffic",
+      "detail": "OpenAI 리포트 AI as a Healthcare Ally에 따르면 전 세계 ChatGPT 메시지의 5% 이상이 헬스케어에 관한 것이고, 8억 명이 넘는 정기 이용자 가운데 네 명에 한 명이 매주 건강 질문을 보내며, 하루 4천만 명이 넘는 사람이 건강 질문을 한다.",
+      "when": "2026-01",
+      "source": "OpenAI 리포트 AI as a Healthcare Ally (2026년 1월) 원문 PDF"
+    },
+    {
+      "type": "traffic",
+      "detail": "같은 리포트에서 건강보험을 다루는 메시지가 주당 160만 건에서 190만 건이라고 밝혔다. 보험 상품 비교, 가격 이해, 청구와 청구서 처리, 자격과 가입, 보장 범위와 본인부담 확인이 여기에 들어간다.",
+      "when": "2026-01",
+      "source": "OpenAI 리포트 AI as a Healthcare Ally (2026년 1월) 원문 PDF"
+    },
+    {
+      "type": "customers",
+      "detail": "제한 공개 기간에 건강 관련 대화의 70% 이상이 전용 Health 화면 바깥에서 일어났다고 OpenAI가 밝혔고, 이를 근거로 전용 공간에 가두는 구조를 걷어냈다.",
+      "when": "2026-07",
+      "source": "OpenAI 발표문 Launching Health in ChatGPT"
+    },
+    {
+      "type": "partnership",
+      "detail": "미국 병원 기록 연결은 b.well Connected Health의 연결망을 쓴다. OpenAI는 b.well을 미국 소비자를 위한 가장 크고 안전한 실시간 건강 데이터 네트워크라고 소개했다. b.well은 2025년 12월에 건강 AI 비서용 SDK를 내놓으면서 의료진 220만 명과 건강보험 300곳이 넘는 연결 범위를 내세웠다.",
+      "when": "2026-01",
+      "source": "OpenAI 발표문, b.well SDK 보도자료(PR Newswire), Brendan Keeler 분석"
+    },
+    {
+      "type": "partnership",
+      "detail": "출시 당시 연결 상대로 애플 건강 앱, Function, MyFitnessPal, Weight Watchers, AllTrails, Instacart, Peloton이 이름을 올렸다. 이 가운데 AllTrails, Instacart, Peloton은 이미 ChatGPT 앱 생태계에 있던 곳이다. 7월 개편 뒤 공식 문서가 연결 대상으로 밝히는 것은 애플 건강 앱, 미국 병원 환자 포털, One Medical, Function Health다.",
+      "when": "2026-07",
+      "source": "OpenAI 발표문 두 건, help.openai.com 공식 문서"
+    },
+    {
+      "type": "regulatory",
+      "detail": "OpenAI는 공식 문서에서 Health가 임상용이나 의료기관용이 아니며 HIPAA 수탁 계약(BAA)을 제공하지 않는다고 밝혔다. 대신 별도로 낸 건강 개인정보 고지에서 워싱턴주 My Health My Data Act와 네바다주 소비자 건강정보 보호법의 적용을 받는다고 인정한다.",
+      "when": "2026-07",
+      "source": "help.openai.com 공식 문서, OpenAI Health Privacy Notice"
+    }
+  ],
+
+  "caveats": "이용량 수치는 전부 OpenAI가 자기 서비스의 익명 처리된 메시지를 스스로 집계해 발표한 값이고, 제삼자가 확인한 것이 아니다. 나누어 볼 대목도 있다. 하루 4천만 명과 네 명 가운데 한 명은 리포트가 전 세계 기준이라고 못 박은 값이지만, 보험 관련 주당 160만에서 190만 건은 미국을 다루는 장 안에 놓여 있으면서도 미국만의 수치인지는 리포트가 밝히지 않는다. 규제 쪽은 더 조심해서 봐야 한다. 미국의 의료정보 보호법 HIPAA는 병원과 보험사, 그리고 그들의 수탁 사업자에게만 적용되는 법이어서, 소비자가 OpenAI에 직접 건네는 건강 정보는 애초에 그 법의 보호 범위 밖이다. OpenAI도 이 점을 부인하지 않고 공식 문서에 임상용이 아니며 수탁 계약을 제공하지 않는다고 적어 두었다. 한국 독자가 흔히 전제하는 의료 정보는 법으로 보호된다는 감각이 여기에는 그대로 적용되지 않는다. 의료 행위 쪽도 같은 방식으로 비켜 간다. 진단과 치료를 목적으로 하지 않는다고 선언하고 기록을 읽기만 하며 병원 기록에는 쓰지 않는 구조이고, OpenAI 이용정책은 여전히 면허를 요구하는 맞춤 의료 조언을 면허 전문가의 적절한 관여 없이 제공하는 것을 금지한다. 모델 학습에서 빼겠다는 약속에도 단서가 있다. 기초 모델 학습에는 쓰지 않지만, 안전성 개선 목적으로는 승인된 소수 인원과 위탁 사업자가 접근할 수 있다고 건강 개인정보 고지가 밝힌다. 광고도 갈라서 봐야 한다. OpenAI는 연결된 의료 기록과 애플 건강 정보를 광고 표적화에 쓰지 않는다고 밝히지만, Go 요금제 자체에는 광고가 붙을 수 있다고 가격 안내가 적고 있고, 애플 앱스토어의 개인정보 표시에는 건강과 피트니스 자료가 신원과 연결된 채 분석과 제품 개인화 목적으로 수집될 수 있다고 나와 있다. 제품 완성도에도 의문이 제기됐다. Brendan Keeler는 발표 다음 날 쓴 글에서 기존 ChatGPT 앱 연동을 직접 써 본 결과 오래된 일정을 답하거나 기본 질문에 실패하거나 사실 근거 없는 말을 만들어 냈다고 적으면서, 같은 수준의 불안정함이 건강 영역에서 벌어지면 감당하기 어렵다고 지적했다. 병원 연결 범위에도 구멍이 있다. 미국에서 환자가 기록을 가져오는 통로는 크게 두 갈래인데 한쪽은 주요 전자의무기록만 연결돼 있고 다른 쪽은 병원 포털 아이디와 비밀번호를 일일이 넣어야 해서, 어느 쪽이든 사용자가 겪는 경험이 고르지 않다는 것이다. 마지막으로 2026년 1월 발표 내용 가운데 상당수는 7월 개편으로 이미 달라졌다. 건강 대화를 가두던 전용 공간과 별도 메모리 구조가 사라졌고, 초기에 이름을 올렸던 MyFitnessPal과 Weight Watchers는 지금 공식 문서의 연결 대상 목록에 없다.",
+
+  "for_us": "우리 목적에 비추어 건질 대목은 세 가지다. 첫째는 OpenAI가 자기 돈을 들여 확인해 준 실측이다. 건강 기능을 전용 화면 안에 가두었더니 건강 대화의 70% 이상이 그 바깥에서 일어났고, 그래서 전용 공간을 걷어내고 건강 맥락을 앱 전체로 풀었다. 우리가 앱에 건강 탭을 따로 만들려 할 때 그대로 대입할 수 있는 결론이다. 둘째는 범위를 가르는 선이다. 아이폰 건강 앱 읽기와 검사 결과지 사진 또는 PDF 해석은 3개월 안에 소프트웨어 인력만으로 닿는 자리이지만, 미국 병원의 진료 기록을 직접 끌어오는 일은 b.well 같은 연결망을 사야 하는 일이라 3개월 밖이다. OpenAI조차 직접 만들지 않고 사 왔다는 사실이 그 난이도를 말해 준다. 셋째는 규제를 비켜서는 설계의 본보기다. 진단과 치료 목적이 아니라고 선언하고, 기록을 읽기만 하고 쓰지 않으며, 18세 이상 미국 이용자로 한정하고, 별도의 건강 개인정보 고지를 두어 주 단위 소비자 건강정보법에 맞추는 방식이다. 우리가 미국에서 건강 기능을 낼 때 그대로 참고할 틀이다. 다만 경쟁 관점에서 경고도 같이 봐야 한다. 검사 결과를 쉬운 말로 풀어 주는 일 자체는 이제 무료로 제공되므로, 그것만으로는 우리 앱을 쓸 이유가 되지 못한다. 뉴스레터가 짚은 보험 이해 질문이 주당 160만에서 190만 건이라는 수치는 여전히 열려 있는 자리이고, 보험 안내문과 청구 명세를 사진으로 올리면 어디까지 보장되는지 풀어 주는 화면이 여기에서 곧바로 따라 나온다.",
+
+  "screenshots": [
+    {
+      "file": "chatgpt-health_web.png",
+      "caption": "제품 안내 페이지 첫 화면이다. 애플 건강 앱과 미국 병원 기록을 연결하라고 권하면서, 걸음과 수면 같은 생활 기록과 백혈구, 혈당, 콜레스테롤 같은 검사 수치를 한 화면에 나란히 올려 보여 준다. 그 아래에 무료와 Go, Plus, Pro 이용자 가운데 미국에 있는 18세 이상만 쓸 수 있다고 적어 두었다.",
+      "from": "https://chatgpt.com/health"
+    },
+    {
+      "file": "chatgpt-health_hipaa.png",
+      "caption": "공식 도움말 문서의 문답 부분이다. 애플 건강 앱이나 병원 기록에 무언가를 써넣을 수 없고 읽기만 한다는 답과, 이 기능은 임상용이나 의료기관용이 아니어서 HIPAA 수탁 계약을 제공하지 않는다는 답이 나란히 붙어 있다. 의료 규제를 어떻게 비켜 가는지가 이 두 문답에 드러난다.",
+      "from": "https://help.openai.com/en/articles/20001036-health-in-chatgpt"
+    },
+    {
+      "file": "chatgpt-health_ios.png",
+      "caption": "미국 애플 앱스토어의 ChatGPT 앱 페이지다. 건강 전용 앱이 따로 없고 이 앱 안에 기능이 들어가 있다. 분류는 생산성이고 평가 1천만 건에 평점 4.8이며, 아래쪽 개인정보 표시에는 건강과 피트니스 자료가 신원과 연결돼 수집될 수 있다고 적혀 있다.",
+      "from": "https://apps.apple.com/us/app/chatgpt/id6448311069"
+    }
+  ],
+
+  "sources": [
+    {
+      "title": "Introducing ChatGPT Health (OpenAI 발표문)",
+      "url": "https://openai.com/index/introducing-chatgpt-health/",
+      "note": "2026년 1월 7일 최초 발표문이다. 초기 구조와 연결 상대 목록, 대기자 명단 방식, 유럽경제지역과 스위스, 영국 제외 조건을 확인했다."
+    },
+    {
+      "title": "Launching Health in ChatGPT (OpenAI 발표문)",
+      "url": "https://openai.com/index/health-in-chatgpt/",
+      "note": "2026년 7월 23일 미국 전체 공개 발표문이다. 주당 3억 명 수치, 전용 공간을 걷어낸 이유와 70% 관련 수치, 개인정보 보호 정책을 확인했다."
+    },
+    {
+      "title": "Health in ChatGPT (OpenAI 공식 도움말)",
+      "url": "https://help.openai.com/en/articles/20001036-health-in-chatgpt",
+      "note": "이용 조건과 연결 방법, 웨어러블 간접 연결, 읽기 전용이라는 점, 음성 모드와 Codex 미지원, HIPAA 수탁 계약을 제공하지 않는다는 문답을 확인했다."
+    },
+    {
+      "title": "Health in ChatGPT 제품 안내 페이지",
+      "url": "https://chatgpt.com/health",
+      "note": "소비자에게 내거는 문구와 이용 자격 안내를 확인했다."
+    },
+    {
+      "title": "OpenAI Health Privacy Notice (건강 개인정보 고지)",
+      "url": "https://openai.com/policies/health-privacy-policy/",
+      "note": "수집 항목, 워싱턴주 My Health My Data Act와 네바다주 소비자 건강정보법 적용 사실, 안전성 개선 목적의 인력 접근 단서를 확인했다."
+    },
+    {
+      "title": "HIPAA eligible products and functionality (OpenAI 공식 도움말)",
+      "url": "https://help.openai.com/en/articles/20001069-hipaa-eligible-products-and-functionality",
+      "note": "수탁 계약을 맺을 수 있는 제품 목록에 소비자용 Health가 들어 있지 않다는 사실을 확인했다."
+    },
+    {
+      "title": "OpenAI Usage Policies (이용정책)",
+      "url": "https://openai.com/policies/usage-policies/",
+      "note": "면허를 요구하는 맞춤 의료 조언을 면허 전문가의 적절한 관여 없이 제공하는 것을 금지한다는 조항을 확인했다."
+    },
+    {
+      "title": "AI as a Healthcare Ally (OpenAI 리포트, 2026년 1월)",
+      "url": "https://cdn.openai.com/pdf/2cb29276-68cd-4ec6-a5f4-c01c5e7a36e9/OpenAI-AI-as-a-Healthcare-Ally-Jan-2026.pdf",
+      "note": "원문 PDF다. 전체 메시지의 5% 이상, 하루 4천만 명, 주간 이용자 네 명 중 한 명이 전 세계 기준이라는 점과 보험 관련 주당 160만에서 190만 건 수치를 직접 확인했다."
+    },
+    {
+      "title": "Improving health intelligence in ChatGPT (OpenAI)",
+      "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt/",
+      "note": "60개국 260명 이상의 의사 네트워크와 70만 건이 넘는 답변 검토, HealthBench 평가 방식을 확인했다."
+    },
+    {
+      "title": "Introducing OpenAI for Healthcare (OpenAI 발표문)",
+      "url": "https://openai.com/index/openai-for-healthcare/",
+      "note": "같은 주에 나온 기업용 상품이다. 소비자용 Health와 달리 수탁 계약을 제공하고 병원에 파는 상품이라는 대비를 확인했다."
+    },
+    {
+      "title": "The End of the Standalone PHR (Brendan Keeler, Health API Guy)",
+      "url": "https://healthapiguy.substack.com/p/the-end-of-the-standalone-phr",
+      "note": "발표 다음 날 나온 제삼자 분석이다. 새 앱을 만들지 않은 전략의 의미, b.well 연결망의 위치, 기존 ChatGPT 앱 연동을 직접 써 본 결과의 불안정함, 미국 병원 기록 연결의 구멍을 확인했다."
+    },
+    {
+      "title": "OpenAI taps Instagram and Doximity execs to lead its next AI healthcare push (Business Insider)",
+      "url": "https://www.businessinsider.com/openai-taps-doximity-cofounder-to-lead-its-next-healthcare-push-2025-8",
+      "note": "Nate Gross와 Ashley Alexander, Karan Singhal의 직함과 이전 경력을 확인했다."
+    },
+    {
+      "title": "미국 애플 앱스토어 ChatGPT 앱 페이지",
+      "url": "https://apps.apple.com/us/app/chatgpt/id6448311069",
+      "note": "건강 전용 앱이 따로 없다는 점, 분류가 생산성이라는 점, 평가 1천만 건에 평점 4.8, 개인정보 표시에 건강과 피트니스 자료가 신원과 연결돼 수집된다는 내용을 확인했다."
+    },
+    {
+      "title": "ChatGPT 요금제 안내",
+      "url": "https://openai.com/chatgpt/pricing/",
+      "note": "Free, Go, Plus, Pro 네 요금제 구성과 Go 요금제에 광고가 붙을 수 있다는 안내를 확인했다."
+    },
+    {
+      "title": "b.well Connected Health 공식 사이트",
+      "url": "https://www.icanbwell.com/",
+      "note": "OpenAI가 의료 기록 연결에 쓰는 회사다. 소비자 매개 건강 데이터 연결망과 자체 AI 비서 상품을 파는 곳임을 확인했다."
+    }
+  ]
+}
